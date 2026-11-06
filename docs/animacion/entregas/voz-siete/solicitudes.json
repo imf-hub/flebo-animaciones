@@ -1,0 +1,114 @@
+[
+  {
+    "id": "viaje-venoso",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Vamos a seguir el regreso de la sangre desde el pie hasta el corazón, en una anatomía simplificada.<break time=\"0.9s\"/>Las venas profundas recorren los planos situados por debajo de la fascia muscular.<break time=\"0.9s\"/>Desde la pierna, el trayecto continúa por la vena poplítea y las venas del muslo.<break time=\"0.9s\"/>La safena mayor pertenece al sistema superficial y se une a la vena femoral común cerca de la ingle.<break time=\"0.9s\"/>La safena menor asciende por detrás de la pantorrilla; su terminación puede variar entre personas.<break time=\"0.9s\"/>El retorno sigue por las venas ilíacas y la vena cava inferior hasta la aurícula derecha.<break time=\"0.9s\"/>Los colores y las proporciones ayudan a reconocer los caminos; no son una medición del flujo de una persona.</speak>",
+    "scenes": [
+      "Vamos a seguir el regreso de la sangre desde el pie hasta el corazón, en una anatomía simplificada.",
+      "Las venas profundas recorren los planos situados por debajo de la fascia muscular.",
+      "Desde la pierna, el trayecto continúa por la vena poplítea y las venas del muslo.",
+      "La safena mayor pertenece al sistema superficial y se une a la vena femoral común cerca de la ingle.",
+      "La safena menor asciende por detrás de la pantorrilla; su terminación puede variar entre personas.",
+      "El retorno sigue por las venas ilíacas y la vena cava inferior hasta la aurícula derecha.",
+      "Los colores y las proporciones ayudan a reconocer los caminos; no son una medición del flujo de una persona."
+    ]
+  },
+  {
+    "id": "venas-superficiales",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>No todas las venas visibles tienen la misma forma ni ocupan el mismo plano de la piel.<break time=\"0.9s\"/>Las telangiectasias, llamadas arañitas, son vasos pequeños visibles en la piel.<break time=\"0.9s\"/>Las venas reticulares suelen dibujar una red algo mayor bajo la superficie.<break time=\"0.9s\"/>Las várices son venas superficiales dilatadas que pueden sobresalir y hacerse tortuosas.<break time=\"0.9s\"/>Al separar las capas puedes comparar su relación con la dermis y el tejido subcutáneo.<break time=\"0.9s\"/>Son ejemplos distintos, no una transformación obligatoria de una arañita en una várice.<break time=\"0.9s\"/>Su apariencia no permite determinar por sí sola el origen de un problema venoso.</speak>",
+    "scenes": [
+      "No todas las venas visibles tienen la misma forma ni ocupan el mismo plano de la piel.",
+      "Las telangiectasias, llamadas arañitas, son vasos pequeños visibles en la piel.",
+      "Las venas reticulares suelen dibujar una red algo mayor bajo la superficie.",
+      "Las várices son venas superficiales dilatadas que pueden sobresalir y hacerse tortuosas.",
+      "Al separar las capas puedes comparar su relación con la dermis y el tejido subcutáneo.",
+      "Son ejemplos distintos, no una transformación obligatoria de una arañita en una várice.",
+      "Su apariencia no permite determinar por sí sola el origen de un problema venoso."
+    ]
+  },
+  {
+    "id": "compresion-medica",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Una media de compresión aplica presión externa sobre la pierna y da soporte a los tejidos.<break time=\"0.9s\"/>La prenda graduada se representa con mayor soporte distal, sin indicar aquí una presión concreta.<break time=\"0.9s\"/>Al caminar, la contracción muscular participa en el movimiento de la sangre hacia arriba.<break time=\"0.9s\"/>La compresión puede ayudar al control de síntomas y edema, pero no reconstruye por sí sola una válvula dañada.<break time=\"0.9s\"/>El efecto depende también del ajuste de la prenda y de las características de cada persona.<break time=\"0.9s\"/>La circulación arterial y otras condiciones deben valorarse antes de indicar compresión.<break time=\"0.9s\"/>Este modelo explica una relación mecánica; no sirve para elegir una talla, una presión o un tratamiento.</speak>",
+    "scenes": [
+      "Una media de compresión aplica presión externa sobre la pierna y da soporte a los tejidos.",
+      "La prenda graduada se representa con mayor soporte distal, sin indicar aquí una presión concreta.",
+      "Al caminar, la contracción muscular participa en el movimiento de la sangre hacia arriba.",
+      "La compresión puede ayudar al control de síntomas y edema, pero no reconstruye por sí sola una válvula dañada.",
+      "El efecto depende también del ajuste de la prenda y de las características de cada persona.",
+      "La circulación arterial y otras condiciones deben valorarse antes de indicar compresión.",
+      "Este modelo explica una relación mecánica; no sirve para elegir una talla, una presión o un tratamiento."
+    ]
+  },
+  {
+    "id": "ultrasonido-duplex",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>El ultrasonido permite relacionar la anatomía de los vasos con información sobre el flujo de sangre.<break time=\"0.9s\"/>El transductor envía y recibe ondas; en el panel vemos una imagen generada como esquema, no un estudio real.<break time=\"0.9s\"/>En modo be reconocemos las estructuras y la luz de los vasos.<break time=\"0.9s\"/>La compresión modifica una vena permeable, pero un único segmento no basta para establecer ni descartar una trombosis.<break time=\"0.9s\"/>En Doppler color, rojo y azul representan dirección respecto al haz según el mapa utilizado; no significan simplemente arteria y vena.<break time=\"0.9s\"/>El registro espectral permite observar una señal de flujo a lo largo del tiempo.<break time=\"0.9s\"/>La interpretación clínica requiere un examen completo, técnica adecuada y el contexto de la persona.</speak>",
+    "scenes": [
+      "El ultrasonido permite relacionar la anatomía de los vasos con información sobre el flujo de sangre.",
+      "El transductor envía y recibe ondas; en el panel vemos una imagen generada como esquema, no un estudio real.",
+      "En modo be reconocemos las estructuras y la luz de los vasos.",
+      "La compresión modifica una vena permeable, pero un único segmento no basta para establecer ni descartar una trombosis.",
+      "En Doppler color, rojo y azul representan dirección respecto al haz según el mapa utilizado; no significan simplemente arteria y vena.",
+      "El registro espectral permite observar una señal de flujo a lo largo del tiempo.",
+      "La interpretación clínica requiere un examen completo, técnica adecuada y el contexto de la persona."
+    ]
+  },
+  {
+    "id": "edema-linfatico",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Entre las células existe un espacio con líquido llamado intersticio.<break time=\"0.9s\"/>Parte del líquido de los pequeños vasos pasa hacia ese tejido mediante filtración.<break time=\"0.9s\"/>Los vasos linfáticos recogen líquido y proteínas y contribuyen a su retorno hacia la circulación.<break time=\"0.9s\"/>Si aumenta la carga de filtración, el sistema necesita transportar más líquido.<break time=\"0.9s\"/>Si el transporte resulta insuficiente, el líquido puede acumularse y producir hinchazón.<break time=\"0.9s\"/>En la mayoría de los tejidos, el equilibrio depende de forma importante del drenaje linfático.<break time=\"0.9s\"/>No toda hinchazón tiene la misma causa: puede haber factores venosos, linfáticos y enfermedades de otros órganos.</speak>",
+    "scenes": [
+      "Entre las células existe un espacio con líquido llamado intersticio.",
+      "Parte del líquido de los pequeños vasos pasa hacia ese tejido mediante filtración.",
+      "Los vasos linfáticos recogen líquido y proteínas y contribuyen a su retorno hacia la circulación.",
+      "Si aumenta la carga de filtración, el sistema necesita transportar más líquido.",
+      "Si el transporte resulta insuficiente, el líquido puede acumularse y producir hinchazón.",
+      "En la mayoría de los tejidos, el equilibrio depende de forma importante del drenaje linfático.",
+      "No toda hinchazón tiene la misma causa: puede haber factores venosos, linfáticos y enfermedades de otros órganos."
+    ]
+  },
+  {
+    "id": "clasificacion-ceap",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>La clasificación clínica describe manifestaciones que se observan en una pierna; no predice su futuro.<break time=\"0.9s\"/>Cero indica ausencia de signos visibles o palpables; uno incluye arañitas y venas reticulares.<break time=\"0.9s\"/>Dos corresponde a várices y tres a edema.<break time=\"0.9s\"/>Cuatro agrupa cambios de piel y tejido, con subcategorías para distintas manifestaciones.<break time=\"0.9s\"/>Entre ellas se distinguen pigmentación o eczema, cambios de fibrosis y la corona de pequeños vasos alrededor del tobillo.<break time=\"0.9s\"/>Cinco describe una úlcera cicatrizada; seis, una úlcera activa.<break time=\"0.9s\"/>Aquí puedes compararlas sin asumir que todas las personas pasarán de una categoría a otra.</speak>",
+    "scenes": [
+      "La clasificación clínica describe manifestaciones que se observan en una pierna; no predice su futuro.",
+      "Cero indica ausencia de signos visibles o palpables; uno incluye arañitas y venas reticulares.",
+      "Dos corresponde a várices y tres a edema.",
+      "Cuatro agrupa cambios de piel y tejido, con subcategorías para distintas manifestaciones.",
+      "Entre ellas se distinguen pigmentación o eczema, cambios de fibrosis y la corona de pequeños vasos alrededor del tobillo.",
+      "Cinco describe una úlcera cicatrizada; seis, una úlcera activa.",
+      "Aquí puedes compararlas sin asumir que todas las personas pasarán de una categoría a otra."
+    ]
+  },
+  {
+    "id": "ulcera-venosa",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Una úlcera es una zona donde la piel ha perdido su continuidad.<break time=\"0.9s\"/>En la enfermedad venosa, la presión elevada mantenida puede contribuir a cambios en la microcirculación.<break time=\"0.9s\"/>La alteración de la barrera y la inflamación participan en el daño de los tejidos.<break time=\"0.9s\"/>El corte permite relacionar epidermis, dermis, tejido subcutáneo y pequeños vasos.<break time=\"0.9s\"/>No toda herida del tobillo es venosa: también hay causas arteriales, mixtas y otras.<break time=\"0.9s\"/>La reparación incluye recuperar tejido y cubrir la superficie, pero su evolución depende de la causa y del manejo.<break time=\"0.9s\"/>Este cierre es una comparación didáctica, sin un plazo de curación ni una indicación de tratamiento.</speak>",
+    "scenes": [
+      "Una úlcera es una zona donde la piel ha perdido su continuidad.",
+      "En la enfermedad venosa, la presión elevada mantenida puede contribuir a cambios en la microcirculación.",
+      "La alteración de la barrera y la inflamación participan en el daño de los tejidos.",
+      "El corte permite relacionar epidermis, dermis, tejido subcutáneo y pequeños vasos.",
+      "No toda herida del tobillo es venosa: también hay causas arteriales, mixtas y otras.",
+      "La reparación incluye recuperar tejido y cubrir la superficie, pero su evolución depende de la causa y del manejo.",
+      "Este cierre es una comparación didáctica, sin un plazo de curación ni una indicación de tratamiento."
+    ]
+  }
+]

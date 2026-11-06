@@ -1,0 +1,623 @@
+{
+  "duration": 43.36326530612245,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Vamos a seguir el regreso de la sangre desde el pie hasta el corazón, en una anatomía simplificada.<break time=\"0.9s\"/>Las venas profundas recorren los planos situados por debajo de la fascia muscular.<break time=\"0.9s\"/>Desde la pierna, el trayecto continúa por la vena poplítea y las venas del muslo.<break time=\"0.9s\"/>La safena mayor pertenece al sistema superficial y se une a la vena femoral común cerca de la ingle.<break time=\"0.9s\"/>La safena menor asciende por detrás de la pantorrilla; su terminación puede variar entre personas.<break time=\"0.9s\"/>El retorno sigue por las venas ilíacas y la vena cava inferior hasta la aurícula derecha.<break time=\"0.9s\"/>Los colores y las proporciones ayudan a reconocer los caminos; no son una medición del flujo de una persona.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Vamos",
+      "start": 0.299,
+      "end": 0.5547
+    },
+    {
+      "word": "a",
+      "start": 0.597,
+      "end": 0.6827
+    },
+    {
+      "word": "seguir",
+      "start": 0.725,
+      "end": 0.896
+    },
+    {
+      "word": "el",
+      "start": 0.939,
+      "end": 1.024
+    },
+    {
+      "word": "regreso",
+      "start": 1.067,
+      "end": 1.4507
+    },
+    {
+      "word": "de",
+      "start": 1.493,
+      "end": 1.5787
+    },
+    {
+      "word": "la",
+      "start": 1.621,
+      "end": 1.7067
+    },
+    {
+      "word": "sangre",
+      "start": 1.749,
+      "end": 2.048
+    },
+    {
+      "word": "desde",
+      "start": 2.091,
+      "end": 2.347
+    },
+    {
+      "word": "el",
+      "start": 2.389,
+      "end": 2.432
+    },
+    {
+      "word": "pie",
+      "start": 2.475,
+      "end": 2.645
+    },
+    {
+      "word": "hasta",
+      "start": 2.816,
+      "end": 3.115
+    },
+    {
+      "word": "el",
+      "start": 3.157,
+      "end": 3.2
+    },
+    {
+      "word": "corazón,",
+      "start": 3.243,
+      "end": 3.669
+    },
+    {
+      "word": "en",
+      "start": 3.755,
+      "end": 4.096
+    },
+    {
+      "word": "una",
+      "start": 4.139,
+      "end": 4.352
+    },
+    {
+      "word": "anatomía",
+      "start": 4.395,
+      "end": 4.821
+    },
+    {
+      "word": "simplificada.",
+      "start": 4.864,
+      "end": 5.517
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 5.517,
+      "end": 6.417000000000001
+    },
+    {
+      "word": "Las",
+      "start": 6.417000000000001,
+      "end": 6.630000000000001
+    },
+    {
+      "word": "venas",
+      "start": 6.673000000000001,
+      "end": 6.886000000000001
+    },
+    {
+      "word": "profundas",
+      "start": 6.929,
+      "end": 7.484000000000001
+    },
+    {
+      "word": "recorren",
+      "start": 7.526000000000001,
+      "end": 7.953
+    },
+    {
+      "word": "los",
+      "start": 7.996,
+      "end": 8.081
+    },
+    {
+      "word": "planos",
+      "start": 8.166,
+      "end": 8.465
+    },
+    {
+      "word": "situados",
+      "start": 8.508,
+      "end": 8.934
+    },
+    {
+      "word": "por",
+      "start": 9.02,
+      "end": 9.148
+    },
+    {
+      "word": "debajo",
+      "start": 9.19,
+      "end": 9.574
+    },
+    {
+      "word": "de",
+      "start": 9.616999999999999,
+      "end": 9.702
+    },
+    {
+      "word": "la",
+      "start": 9.745,
+      "end": 9.788
+    },
+    {
+      "word": "fascia",
+      "start": 9.83,
+      "end": 10.086
+    },
+    {
+      "word": "muscular.",
+      "start": 10.129,
+      "end": 10.509
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 10.509,
+      "end": 11.244
+    },
+    {
+      "word": "Desde",
+      "start": 11.244,
+      "end": 11.628
+    },
+    {
+      "word": "la",
+      "start": 11.67,
+      "end": 11.713
+    },
+    {
+      "word": "pierna,",
+      "start": 11.756,
+      "end": 12.182
+    },
+    {
+      "word": "el",
+      "start": 12.31,
+      "end": 12.524
+    },
+    {
+      "word": "trayecto",
+      "start": 12.565999999999999,
+      "end": 12.993
+    },
+    {
+      "word": "continúa",
+      "start": 13.036,
+      "end": 13.59
+    },
+    {
+      "word": "por",
+      "start": 13.633,
+      "end": 13.718
+    },
+    {
+      "word": "la",
+      "start": 13.804,
+      "end": 13.846
+    },
+    {
+      "word": "vena",
+      "start": 13.889,
+      "end": 14.102
+    },
+    {
+      "word": "poplítea",
+      "start": 14.145,
+      "end": 14.7
+    },
+    {
+      "word": "y",
+      "start": 14.828,
+      "end": 14.87
+    },
+    {
+      "word": "las",
+      "start": 14.913,
+      "end": 15.041
+    },
+    {
+      "word": "venas",
+      "start": 15.084,
+      "end": 15.34
+    },
+    {
+      "word": "del",
+      "start": 15.382,
+      "end": 15.424999999999999
+    },
+    {
+      "word": "muslo.",
+      "start": 15.51,
+      "end": 15.868
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 15.868,
+      "end": 16.768
+    },
+    {
+      "word": "La",
+      "start": 16.768,
+      "end": 17.237000000000002
+    },
+    {
+      "word": "safena",
+      "start": 17.28,
+      "end": 17.579
+    },
+    {
+      "word": "mayor",
+      "start": 17.621000000000002,
+      "end": 17.877000000000002
+    },
+    {
+      "word": "pertenece",
+      "start": 17.963,
+      "end": 18.432000000000002
+    },
+    {
+      "word": "al",
+      "start": 18.517000000000003,
+      "end": 18.560000000000002
+    },
+    {
+      "word": "sistema",
+      "start": 18.603,
+      "end": 18.901000000000003
+    },
+    {
+      "word": "superficial",
+      "start": 18.987000000000002,
+      "end": 19.584000000000003
+    },
+    {
+      "word": "y",
+      "start": 19.755000000000003,
+      "end": 19.840000000000003
+    },
+    {
+      "word": "se",
+      "start": 19.883000000000003,
+      "end": 20.011000000000003
+    },
+    {
+      "word": "une",
+      "start": 20.053,
+      "end": 20.181
+    },
+    {
+      "word": "a",
+      "start": 20.267000000000003,
+      "end": 20.309
+    },
+    {
+      "word": "la",
+      "start": 20.352,
+      "end": 20.395000000000003
+    },
+    {
+      "word": "vena",
+      "start": 20.437,
+      "end": 20.608
+    },
+    {
+      "word": "femoral",
+      "start": 20.651000000000003,
+      "end": 21.035
+    },
+    {
+      "word": "común",
+      "start": 21.077,
+      "end": 21.461000000000002
+    },
+    {
+      "word": "cerca",
+      "start": 21.632,
+      "end": 22.016000000000002
+    },
+    {
+      "word": "de",
+      "start": 22.059,
+      "end": 22.144000000000002
+    },
+    {
+      "word": "la",
+      "start": 22.187,
+      "end": 22.229000000000003
+    },
+    {
+      "word": "ingle.",
+      "start": 22.272000000000002,
+      "end": 22.586000000000002
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 22.586000000000002,
+      "end": 23.486000000000004
+    },
+    {
+      "word": "La",
+      "start": 23.486000000000004,
+      "end": 23.998000000000005
+    },
+    {
+      "word": "safena",
+      "start": 24.041000000000004,
+      "end": 24.382000000000005
+    },
+    {
+      "word": "menor",
+      "start": 24.425000000000004,
+      "end": 24.681000000000004
+    },
+    {
+      "word": "asciende",
+      "start": 24.766000000000005,
+      "end": 25.321000000000005
+    },
+    {
+      "word": "por",
+      "start": 25.364000000000004,
+      "end": 25.492000000000004
+    },
+    {
+      "word": "detrás",
+      "start": 25.577000000000005,
+      "end": 25.875
+    },
+    {
+      "word": "de",
+      "start": 25.918,
+      "end": 26.003
+    },
+    {
+      "word": "la",
+      "start": 26.046,
+      "end": 26.089000000000006
+    },
+    {
+      "word": "pantorrilla;",
+      "start": 26.131,
+      "end": 26.793
+    },
+    {
+      "word": "su",
+      "start": 26.942,
+      "end": 27.283
+    },
+    {
+      "word": "terminación",
+      "start": 27.326,
+      "end": 27.924
+    },
+    {
+      "word": "puede",
+      "start": 28.009,
+      "end": 28.265
+    },
+    {
+      "word": "variar",
+      "start": 28.308,
+      "end": 28.649
+    },
+    {
+      "word": "entre",
+      "start": 28.82,
+      "end": 29.076
+    },
+    {
+      "word": "personas.",
+      "start": 29.118000000000002,
+      "end": 29.54
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 29.54,
+      "end": 30.260000000000005
+    },
+    {
+      "word": "El",
+      "start": 30.260000000000005,
+      "end": 30.729
+    },
+    {
+      "word": "retorno",
+      "start": 30.772000000000006,
+      "end": 31.199000000000005
+    },
+    {
+      "word": "sigue",
+      "start": 31.284,
+      "end": 31.54
+    },
+    {
+      "word": "por",
+      "start": 31.583000000000006,
+      "end": 31.668
+    },
+    {
+      "word": "las",
+      "start": 31.711000000000006,
+      "end": 31.839000000000006
+    },
+    {
+      "word": "venas",
+      "start": 31.881,
+      "end": 32.095
+    },
+    {
+      "word": "ilíacas",
+      "start": 32.18,
+      "end": 32.692
+    },
+    {
+      "word": "y",
+      "start": 32.82,
+      "end": 33.247
+    },
+    {
+      "word": "la",
+      "start": 33.289,
+      "end": 33.332
+    },
+    {
+      "word": "vena",
+      "start": 33.375,
+      "end": 33.545
+    },
+    {
+      "word": "cava",
+      "start": 33.588,
+      "end": 33.801
+    },
+    {
+      "word": "inferior",
+      "start": 33.844,
+      "end": 34.228
+    },
+    {
+      "word": "hasta",
+      "start": 34.399,
+      "end": 34.697
+    },
+    {
+      "word": "la",
+      "start": 34.74,
+      "end": 34.825
+    },
+    {
+      "word": "aurícula",
+      "start": 34.868,
+      "end": 35.295
+    },
+    {
+      "word": "derecha.",
+      "start": 35.337,
+      "end": 35.789
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 35.789,
+      "end": 36.689
+    },
+    {
+      "word": "Los",
+      "start": 36.689,
+      "end": 37.073
+    },
+    {
+      "word": "colores",
+      "start": 37.158,
+      "end": 37.5
+    },
+    {
+      "word": "y",
+      "start": 37.585,
+      "end": 38.14
+    },
+    {
+      "word": "las",
+      "start": 38.182,
+      "end": 38.396
+    },
+    {
+      "word": "proporciones",
+      "start": 38.481,
+      "end": 39.078
+    },
+    {
+      "word": "ayudan",
+      "start": 39.164,
+      "end": 39.334
+    },
+    {
+      "word": "a",
+      "start": 39.377,
+      "end": 39.461999999999996
+    },
+    {
+      "word": "reconocer",
+      "start": 39.505,
+      "end": 39.804
+    },
+    {
+      "word": "los",
+      "start": 39.846,
+      "end": 39.932
+    },
+    {
+      "word": "caminos;",
+      "start": 39.974,
+      "end": 40.358
+    },
+    {
+      "word": "no",
+      "start": 40.614,
+      "end": 40.871
+    },
+    {
+      "word": "son",
+      "start": 40.913,
+      "end": 41.127
+    },
+    {
+      "word": "una",
+      "start": 41.169,
+      "end": 41.297
+    },
+    {
+      "word": "medición",
+      "start": 41.339999999999996,
+      "end": 41.767
+    },
+    {
+      "word": "del",
+      "start": 41.809,
+      "end": 41.895
+    },
+    {
+      "word": "flujo",
+      "start": 41.937,
+      "end": 42.278999999999996
+    },
+    {
+      "word": "de",
+      "start": 42.321,
+      "end": 42.364
+    },
+    {
+      "word": "una",
+      "start": 42.407,
+      "end": 42.535
+    },
+    {
+      "word": "persona.",
+      "start": 42.577,
+      "end": 43.128571428571426
+    },
+    {
+      "word": "<end>",
+      "start": 43.36326530612245,
+      "end": 43.36326530612245
+    }
+  ]
+}

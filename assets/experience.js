@@ -6,7 +6,7 @@
   const element=id=>document.getElementById(id);
   const toast=text=>{element('toast').textContent=text;element('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{element('toast').hidden=true},2600)};
   function saveProgress(){try{localStorage.setItem(storageKey,JSON.stringify([...completed]))}catch{}updateProgress()}
-  function updateProgress(){element('progressText').textContent=completed.size+' de '+order.length+' temas explorados';element('courseProgress').value=completed.size;
+  function updateProgress(){element('progressText').textContent=completed.size+' de '+order.length+' temas explorados';element('courseProgress').max=order.length;element('courseProgress').value=completed.size;
     document.querySelectorAll('.card').forEach(card=>card.classList.toggle('is-complete',completed.has(MODS[+card.dataset.index].id)));
     if(cur){const done=completed.has(cur.m.id);element('completeLesson').setAttribute('aria-pressed',done);element('completeLesson').innerHTML=done?'Tema explorado <span aria-hidden="true">✓</span>':'Marcar como explorado <span aria-hidden="true">✓</span>'}
     element('startCourse').innerHTML=(completed.size?'Continuar mi recorrido':'Comenzar a explorar')+' <span aria-hidden="true">↗</span>';
@@ -39,6 +39,7 @@
   function mountLesson(){if(!cur||!cur.sim)return;const m=cur.m,lesson=COURSE.lessons[m.id],unit=COURSE.units.find(u=>u.ids.includes(m.id));if(!lesson)return;
     element('viewer').dataset.audience=AUD;element('vTitle').textContent=AUD==='paciente'?lesson.patientTitle:m.title;element('vCat').textContent=unit.title;element('viewerCounter').textContent='Tema '+(order.indexOf(m.id)+1)+' de '+order.length+' · '+(m.kind==='3d'?'Modelo 3D interactivo':'Esquema animado');
     element('learningObjective').textContent=AUD==='medico'?lesson.medObjective:lesson.objective;element('explanationSummary').textContent=AUD==='medico'?'Anatomía y mecanismo':'Entender el mecanismo';
+    element('lessonSources').hidden=!m.sources;element('lessonScope').textContent=m.scope||'';element('lessonSourceList').replaceChildren();for(const sourceId of m.sources||[]){const source=EXTENSION_SOURCES[sourceId];const item=document.createElement('li'),link=document.createElement('a');link.textContent=source.title;link.href=source.url;link.target='_blank';link.rel='noopener';item.append(link);element('lessonSourceList').append(item)}
     element('observationSteps').replaceChildren();lesson.steps.forEach((title,i)=>{const button=document.createElement('button');button.type='button';button.className='observation-step';button.innerHTML='<span></span><div></div>';button.firstChild.textContent=i+1;button.lastChild.textContent=title;button.setAttribute('aria-pressed','false');button.onclick=()=>runStep(i);element('observationSteps').appendChild(button)});
     element('stepHint').textContent=m.kind==='3d'?'Prueba un paso o elige una estructura del modelo.':'Prueba un paso. Usa + para acercarte y arrastra el esquema ampliado.';
     element('quizQuestion').textContent=lesson.question;element('quizOptions').replaceChildren();element('quizFeedback').textContent='';

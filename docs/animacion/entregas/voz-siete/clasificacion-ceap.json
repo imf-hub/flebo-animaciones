@@ -1,0 +1,508 @@
+{
+  "duration": 42.5534693877551,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>La clasificación clínica describe manifestaciones que se observan en una pierna; no predice su futuro.<break time=\"0.9s\"/>Cero indica ausencia de signos visibles o palpables; uno incluye arañitas y venas reticulares.<break time=\"0.9s\"/>Dos corresponde a várices y tres a edema.<break time=\"0.9s\"/>Cuatro agrupa cambios de piel y tejido, con subcategorías para distintas manifestaciones.<break time=\"0.9s\"/>Entre ellas se distinguen pigmentación o eczema, cambios de fibrosis y la corona de pequeños vasos alrededor del tobillo.<break time=\"0.9s\"/>Cinco describe una úlcera cicatrizada; seis, una úlcera activa.<break time=\"0.9s\"/>Aquí puedes compararlas sin asumir que todas las personas pasarán de una categoría a otra.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "La",
+      "start": 0.299,
+      "end": 0.469
+    },
+    {
+      "word": "clasificación",
+      "start": 0.512,
+      "end": 1.1947
+    },
+    {
+      "word": "clínica",
+      "start": 1.237,
+      "end": 1.536
+    },
+    {
+      "word": "describe",
+      "start": 1.707,
+      "end": 2.048
+    },
+    {
+      "word": "manifestaciones",
+      "start": 2.176,
+      "end": 2.944
+    },
+    {
+      "word": "que",
+      "start": 3.029,
+      "end": 3.1147
+    },
+    {
+      "word": "se",
+      "start": 3.157,
+      "end": 3.2427
+    },
+    {
+      "word": "observan",
+      "start": 3.285,
+      "end": 3.669
+    },
+    {
+      "word": "en",
+      "start": 3.712,
+      "end": 3.7547
+    },
+    {
+      "word": "una",
+      "start": 3.797,
+      "end": 3.968
+    },
+    {
+      "word": "pierna;",
+      "start": 4.011,
+      "end": 4.48
+    },
+    {
+      "word": "no",
+      "start": 4.608,
+      "end": 4.949
+    },
+    {
+      "word": "predice",
+      "start": 4.992,
+      "end": 5.2907
+    },
+    {
+      "word": "su",
+      "start": 5.419,
+      "end": 5.504
+    },
+    {
+      "word": "futuro.",
+      "start": 5.547,
+      "end": 5.914
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 5.914,
+      "end": 6.814
+    },
+    {
+      "word": "Cero",
+      "start": 6.814,
+      "end": 7.284
+    },
+    {
+      "word": "indica",
+      "start": 7.327,
+      "end": 7.583
+    },
+    {
+      "word": "ausencia",
+      "start": 7.668,
+      "end": 8.094
+    },
+    {
+      "word": "de",
+      "start": 8.137,
+      "end": 8.222999999999999
+    },
+    {
+      "word": "signos",
+      "start": 8.264999999999999,
+      "end": 8.564
+    },
+    {
+      "word": "visibles",
+      "start": 8.607,
+      "end": 9.033
+    },
+    {
+      "word": "o",
+      "start": 9.076,
+      "end": 9.118
+    },
+    {
+      "word": "palpables;",
+      "start": 9.161,
+      "end": 9.78
+    },
+    {
+      "word": "uno",
+      "start": 10.057,
+      "end": 10.356
+    },
+    {
+      "word": "incluye",
+      "start": 10.441,
+      "end": 10.953
+    },
+    {
+      "word": "arañitas",
+      "start": 10.996,
+      "end": 11.55
+    },
+    {
+      "word": "y",
+      "start": 11.593,
+      "end": 11.678
+    },
+    {
+      "word": "venas",
+      "start": 11.721,
+      "end": 11.934
+    },
+    {
+      "word": "reticulares.",
+      "start": 11.977,
+      "end": 12.583
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 12.583,
+      "end": 13.483
+    },
+    {
+      "word": "Dos",
+      "start": 13.483,
+      "end": 13.739
+    },
+    {
+      "word": "corresponde",
+      "start": 13.952,
+      "end": 14.379
+    },
+    {
+      "word": "a",
+      "start": 14.55,
+      "end": 14.592
+    },
+    {
+      "word": "várices",
+      "start": 14.635,
+      "end": 14.848
+    },
+    {
+      "word": "y",
+      "start": 15.062,
+      "end": 15.36
+    },
+    {
+      "word": "tres",
+      "start": 15.403,
+      "end": 15.616
+    },
+    {
+      "word": "a",
+      "start": 15.744,
+      "end": 15.957
+    },
+    {
+      "word": "edema.",
+      "start": 16,
+      "end": 16.336
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 16.336,
+      "end": 17.05
+    },
+    {
+      "word": "Cuatro",
+      "start": 17.05,
+      "end": 17.69
+    },
+    {
+      "word": "agrupa",
+      "start": 17.775,
+      "end": 18.287
+    },
+    {
+      "word": "cambios",
+      "start": 18.330000000000002,
+      "end": 18.671
+    },
+    {
+      "word": "de",
+      "start": 18.714,
+      "end": 18.842
+    },
+    {
+      "word": "piel",
+      "start": 18.884,
+      "end": 19.098
+    },
+    {
+      "word": "y",
+      "start": 19.268,
+      "end": 19.354
+    },
+    {
+      "word": "tejido,",
+      "start": 19.396,
+      "end": 19.994
+    },
+    {
+      "word": "con",
+      "start": 20.207,
+      "end": 20.335
+    },
+    {
+      "word": "subcategorías",
+      "start": 20.378,
+      "end": 21.103
+    },
+    {
+      "word": "para",
+      "start": 21.188,
+      "end": 21.359
+    },
+    {
+      "word": "distintas",
+      "start": 21.402,
+      "end": 21.828
+    },
+    {
+      "word": "manifestaciones.",
+      "start": 21.914,
+      "end": 22.791
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 22.791,
+      "end": 23.691
+    },
+    {
+      "word": "Entre",
+      "start": 23.691,
+      "end": 24.331
+    },
+    {
+      "word": "ellas",
+      "start": 24.416999999999998,
+      "end": 24.63
+    },
+    {
+      "word": "se",
+      "start": 24.715,
+      "end": 24.758
+    },
+    {
+      "word": "distinguen",
+      "start": 24.801,
+      "end": 25.27
+    },
+    {
+      "word": "pigmentación",
+      "start": 25.313,
+      "end": 26.081
+    },
+    {
+      "word": "o",
+      "start": 26.165999999999997,
+      "end": 26.250999999999998
+    },
+    {
+      "word": "eczema,",
+      "start": 26.293999999999997,
+      "end": 26.805999999999997
+    },
+    {
+      "word": "cambios",
+      "start": 27.019,
+      "end": 27.317999999999998
+    },
+    {
+      "word": "de",
+      "start": 27.360999999999997,
+      "end": 27.445999999999998
+    },
+    {
+      "word": "fibrosis",
+      "start": 27.488999999999997,
+      "end": 27.958
+    },
+    {
+      "word": "y",
+      "start": 28.086,
+      "end": 28.512999999999998
+    },
+    {
+      "word": "la",
+      "start": 28.555,
+      "end": 28.641
+    },
+    {
+      "word": "corona",
+      "start": 28.683,
+      "end": 28.982
+    },
+    {
+      "word": "de",
+      "start": 29.025,
+      "end": 29.11
+    },
+    {
+      "word": "pequeños",
+      "start": 29.153,
+      "end": 29.537
+    },
+    {
+      "word": "vasos",
+      "start": 29.578999999999997,
+      "end": 29.921
+    },
+    {
+      "word": "alrededor",
+      "start": 30.005999999999997,
+      "end": 30.433
+    },
+    {
+      "word": "del",
+      "start": 30.474999999999998,
+      "end": 30.602999999999998
+    },
+    {
+      "word": "tobillo.",
+      "start": 30.645999999999997,
+      "end": 31.118
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 31.118,
+      "end": 31.912
+    },
+    {
+      "word": "Cinco",
+      "start": 31.912,
+      "end": 32.424
+    },
+    {
+      "word": "describe",
+      "start": 32.509,
+      "end": 33.021
+    },
+    {
+      "word": "una",
+      "start": 33.106,
+      "end": 33.234
+    },
+    {
+      "word": "úlcera",
+      "start": 33.277,
+      "end": 33.576
+    },
+    {
+      "word": "cicatrizada;",
+      "start": 33.617999999999995,
+      "end": 34.556999999999995
+    },
+    {
+      "word": "seis,",
+      "start": 34.897999999999996,
+      "end": 35.367999999999995
+    },
+    {
+      "word": "una",
+      "start": 35.538,
+      "end": 35.836999999999996
+    },
+    {
+      "word": "úlcera",
+      "start": 35.879999999999995,
+      "end": 36.263999999999996
+    },
+    {
+      "word": "activa.",
+      "start": 36.306,
+      "end": 36.656
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 36.656,
+      "end": 37.556
+    },
+    {
+      "word": "Aquí",
+      "start": 37.556,
+      "end": 37.855
+    },
+    {
+      "word": "puedes",
+      "start": 37.897,
+      "end": 38.111
+    },
+    {
+      "word": "compararlas",
+      "start": 38.153,
+      "end": 38.751
+    },
+    {
+      "word": "sin",
+      "start": 38.879,
+      "end": 39.007
+    },
+    {
+      "word": "asumir",
+      "start": 39.049,
+      "end": 39.348
+    },
+    {
+      "word": "que",
+      "start": 39.433,
+      "end": 39.519
+    },
+    {
+      "word": "todas",
+      "start": 39.561,
+      "end": 39.903
+    },
+    {
+      "word": "las",
+      "start": 39.945,
+      "end": 40.031
+    },
+    {
+      "word": "personas",
+      "start": 40.073,
+      "end": 40.329
+    },
+    {
+      "word": "pasarán",
+      "start": 40.5,
+      "end": 40.841
+    },
+    {
+      "word": "de",
+      "start": 40.884,
+      "end": 40.969
+    },
+    {
+      "word": "una",
+      "start": 41.012,
+      "end": 41.14
+    },
+    {
+      "word": "categoría",
+      "start": 41.183,
+      "end": 41.737
+    },
+    {
+      "word": "a",
+      "start": 41.78,
+      "end": 41.823
+    },
+    {
+      "word": "otra.",
+      "start": 41.864999999999995,
+      "end": 42.315
+    },
+    {
+      "word": "<end>",
+      "start": 42.5534693877551,
+      "end": 42.5534693877551
+    }
+  ]
+}

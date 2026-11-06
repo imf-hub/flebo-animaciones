@@ -1,0 +1,518 @@
+{
+  "duration": 39.10530612244898,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>No todas las venas visibles tienen la misma forma ni ocupan el mismo plano de la piel.<break time=\"0.9s\"/>Las telangiectasias, llamadas arañitas, son vasos pequeños visibles en la piel.<break time=\"0.9s\"/>Las venas reticulares suelen dibujar una red algo mayor bajo la superficie.<break time=\"0.9s\"/>Las várices son venas superficiales dilatadas que pueden sobresalir y hacerse tortuosas.<break time=\"0.9s\"/>Al separar las capas puedes comparar su relación con la dermis y el tejido subcutáneo.<break time=\"0.9s\"/>Son ejemplos distintos, no una transformación obligatoria de una arañita en una várice.<break time=\"0.9s\"/>Su apariencia no permite determinar por sí sola el origen de un problema venoso.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "No",
+      "start": 0.299,
+      "end": 0.469
+    },
+    {
+      "word": "todas",
+      "start": 0.512,
+      "end": 0.853
+    },
+    {
+      "word": "las",
+      "start": 0.896,
+      "end": 0.981
+    },
+    {
+      "word": "venas",
+      "start": 1.067,
+      "end": 1.28
+    },
+    {
+      "word": "visibles",
+      "start": 1.323,
+      "end": 1.749
+    },
+    {
+      "word": "tienen",
+      "start": 1.792,
+      "end": 2.048
+    },
+    {
+      "word": "la",
+      "start": 2.091,
+      "end": 2.176
+    },
+    {
+      "word": "misma",
+      "start": 2.219,
+      "end": 2.56
+    },
+    {
+      "word": "forma",
+      "start": 2.603,
+      "end": 2.901
+    },
+    {
+      "word": "ni",
+      "start": 2.987,
+      "end": 3.2
+    },
+    {
+      "word": "ocupan",
+      "start": 3.243,
+      "end": 3.541
+    },
+    {
+      "word": "el",
+      "start": 3.584,
+      "end": 3.669
+    },
+    {
+      "word": "mismo",
+      "start": 3.755,
+      "end": 4.0107
+    },
+    {
+      "word": "plano",
+      "start": 4.096,
+      "end": 4.352
+    },
+    {
+      "word": "de",
+      "start": 4.395,
+      "end": 4.48
+    },
+    {
+      "word": "la",
+      "start": 4.523,
+      "end": 4.565
+    },
+    {
+      "word": "piel.",
+      "start": 4.608,
+      "end": 4.821
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 4.821,
+      "end": 5.721
+    },
+    {
+      "word": "Las",
+      "start": 5.721,
+      "end": 6.063
+    },
+    {
+      "word": "telangiectasias,",
+      "start": 6.105,
+      "end": 7.151
+    },
+    {
+      "word": "llamadas",
+      "start": 7.3,
+      "end": 7.684
+    },
+    {
+      "word": "arañitas,",
+      "start": 7.727,
+      "end": 8.472999999999999
+    },
+    {
+      "word": "son",
+      "start": 8.665,
+      "end": 8.836
+    },
+    {
+      "word": "vasos",
+      "start": 8.879,
+      "end": 9.135
+    },
+    {
+      "word": "pequeños",
+      "start": 9.22,
+      "end": 9.604
+    },
+    {
+      "word": "visibles",
+      "start": 9.647,
+      "end": 10.159
+    },
+    {
+      "word": "en",
+      "start": 10.244,
+      "end": 10.287
+    },
+    {
+      "word": "la",
+      "start": 10.329,
+      "end": 10.415
+    },
+    {
+      "word": "piel.",
+      "start": 10.457,
+      "end": 10.709
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 10.709,
+      "end": 11.434
+    },
+    {
+      "word": "Las",
+      "start": 11.434,
+      "end": 11.604
+    },
+    {
+      "word": "venas",
+      "start": 11.647,
+      "end": 11.86
+    },
+    {
+      "word": "reticulares",
+      "start": 11.903,
+      "end": 12.5
+    },
+    {
+      "word": "suelen",
+      "start": 12.586,
+      "end": 12.842
+    },
+    {
+      "word": "dibujar",
+      "start": 12.884,
+      "end": 13.226
+    },
+    {
+      "word": "una",
+      "start": 13.268,
+      "end": 13.439
+    },
+    {
+      "word": "red",
+      "start": 13.482,
+      "end": 13.61
+    },
+    {
+      "word": "algo",
+      "start": 13.738,
+      "end": 13.994
+    },
+    {
+      "word": "mayor",
+      "start": 14.036,
+      "end": 14.335
+    },
+    {
+      "word": "bajo",
+      "start": 14.463,
+      "end": 14.634
+    },
+    {
+      "word": "la",
+      "start": 14.676,
+      "end": 14.762
+    },
+    {
+      "word": "superficie.",
+      "start": 14.804,
+      "end": 15.359
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 15.359,
+      "end": 16.259
+    },
+    {
+      "word": "Las",
+      "start": 16.259,
+      "end": 16.599999999999998
+    },
+    {
+      "word": "várices",
+      "start": 16.643,
+      "end": 16.899
+    },
+    {
+      "word": "son",
+      "start": 17.07,
+      "end": 17.283
+    },
+    {
+      "word": "venas",
+      "start": 17.326,
+      "end": 17.582
+    },
+    {
+      "word": "superficiales",
+      "start": 17.624,
+      "end": 18.435
+    },
+    {
+      "word": "dilatadas",
+      "start": 18.478,
+      "end": 19.118
+    },
+    {
+      "word": "que",
+      "start": 19.288,
+      "end": 19.502
+    },
+    {
+      "word": "pueden",
+      "start": 19.544,
+      "end": 19.758
+    },
+    {
+      "word": "sobresalir",
+      "start": 19.8,
+      "end": 20.44
+    },
+    {
+      "word": "y",
+      "start": 20.568,
+      "end": 20.654
+    },
+    {
+      "word": "hacerse",
+      "start": 20.696,
+      "end": 21.08
+    },
+    {
+      "word": "tortuosas.",
+      "start": 21.123,
+      "end": 21.701
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 21.701,
+      "end": 22.601
+    },
+    {
+      "word": "Al",
+      "start": 22.601,
+      "end": 23.070999999999998
+    },
+    {
+      "word": "separar",
+      "start": 23.113,
+      "end": 23.412
+    },
+    {
+      "word": "las",
+      "start": 23.455,
+      "end": 23.583
+    },
+    {
+      "word": "capas",
+      "start": 23.625999999999998,
+      "end": 23.967
+    },
+    {
+      "word": "puedes",
+      "start": 24.052,
+      "end": 24.266
+    },
+    {
+      "word": "comparar",
+      "start": 24.351,
+      "end": 24.692
+    },
+    {
+      "word": "su",
+      "start": 24.778,
+      "end": 24.863
+    },
+    {
+      "word": "relación",
+      "start": 24.906,
+      "end": 25.331999999999997
+    },
+    {
+      "word": "con",
+      "start": 25.375,
+      "end": 25.503
+    },
+    {
+      "word": "la",
+      "start": 25.544999999999998,
+      "end": 25.631
+    },
+    {
+      "word": "dermis",
+      "start": 25.673,
+      "end": 26.014999999999997
+    },
+    {
+      "word": "y",
+      "start": 26.099999999999998,
+      "end": 26.270999999999997
+    },
+    {
+      "word": "el",
+      "start": 26.313,
+      "end": 26.355999999999998
+    },
+    {
+      "word": "tejido",
+      "start": 26.398999999999997,
+      "end": 26.654999999999998
+    },
+    {
+      "word": "subcutáneo.",
+      "start": 26.697,
+      "end": 27.346
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 27.346,
+      "end": 28.246000000000002
+    },
+    {
+      "word": "Son",
+      "start": 28.246000000000002,
+      "end": 28.417
+    },
+    {
+      "word": "ejemplos",
+      "start": 28.459000000000003,
+      "end": 28.801000000000002
+    },
+    {
+      "word": "distintos,",
+      "start": 28.843000000000004,
+      "end": 29.505000000000003
+    },
+    {
+      "word": "no",
+      "start": 29.654000000000003,
+      "end": 29.910000000000004
+    },
+    {
+      "word": "una",
+      "start": 29.952,
+      "end": 30.038000000000004
+    },
+    {
+      "word": "transformación",
+      "start": 30.080000000000002,
+      "end": 30.720000000000002
+    },
+    {
+      "word": "obligatoria",
+      "start": 30.763,
+      "end": 31.232000000000003
+    },
+    {
+      "word": "de",
+      "start": 31.403000000000002,
+      "end": 31.446
+    },
+    {
+      "word": "una",
+      "start": 31.488000000000003,
+      "end": 31.659000000000002
+    },
+    {
+      "word": "arañita",
+      "start": 31.702,
+      "end": 32.171
+    },
+    {
+      "word": "en",
+      "start": 32.214,
+      "end": 32.257
+    },
+    {
+      "word": "una",
+      "start": 32.299,
+      "end": 32.427
+    },
+    {
+      "word": "várice.",
+      "start": 32.47,
+      "end": 32.792
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 32.792,
+      "end": 33.692
+    },
+    {
+      "word": "Su",
+      "start": 33.692,
+      "end": 34.20400000000001
+    },
+    {
+      "word": "apariencia",
+      "start": 34.247,
+      "end": 34.801
+    },
+    {
+      "word": "no",
+      "start": 34.84400000000001,
+      "end": 35.143
+    },
+    {
+      "word": "permite",
+      "start": 35.185,
+      "end": 35.48400000000001
+    },
+    {
+      "word": "determinar",
+      "start": 35.569,
+      "end": 35.995999999999995
+    },
+    {
+      "word": "por",
+      "start": 36.123999999999995,
+      "end": 36.251999999999995
+    },
+    {
+      "word": "sí",
+      "start": 36.33800000000001,
+      "end": 36.507999999999996
+    },
+    {
+      "word": "sola",
+      "start": 36.551,
+      "end": 36.85000000000001
+    },
+    {
+      "word": "el",
+      "start": 36.935,
+      "end": 37.147999999999996
+    },
+    {
+      "word": "origen",
+      "start": 37.191,
+      "end": 37.532
+    },
+    {
+      "word": "de",
+      "start": 37.575,
+      "end": 37.66
+    },
+    {
+      "word": "un",
+      "start": 37.703,
+      "end": 37.788
+    },
+    {
+      "word": "problema",
+      "start": 37.831,
+      "end": 38.129999999999995
+    },
+    {
+      "word": "venoso.",
+      "start": 38.257999999999996,
+      "end": 38.85852607709751
+    },
+    {
+      "word": "<end>",
+      "start": 39.10530612244898,
+      "end": 39.10530612244898
+    }
+  ]
+}

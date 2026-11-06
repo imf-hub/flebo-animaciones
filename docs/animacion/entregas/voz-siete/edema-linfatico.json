@@ -1,0 +1,518 @@
+{
+  "duration": 41.19510204081632,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Entre las células existe un espacio con líquido llamado intersticio.<break time=\"0.9s\"/>Parte del líquido de los pequeños vasos pasa hacia ese tejido mediante filtración.<break time=\"0.9s\"/>Los vasos linfáticos recogen líquido y proteínas y contribuyen a su retorno hacia la circulación.<break time=\"0.9s\"/>Si aumenta la carga de filtración, el sistema necesita transportar más líquido.<break time=\"0.9s\"/>Si el transporte resulta insuficiente, el líquido puede acumularse y producir hinchazón.<break time=\"0.9s\"/>En la mayoría de los tejidos, el equilibrio depende de forma importante del drenaje linfático.<break time=\"0.9s\"/>No toda hinchazón tiene la misma causa: puede haber factores venosos, linfáticos y enfermedades de otros órganos.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Entre",
+      "start": 0.299,
+      "end": 0.5547
+    },
+    {
+      "word": "las",
+      "start": 0.597,
+      "end": 0.725
+    },
+    {
+      "word": "células",
+      "start": 0.768,
+      "end": 1.109
+    },
+    {
+      "word": "existe",
+      "start": 1.195,
+      "end": 1.536
+    },
+    {
+      "word": "un",
+      "start": 1.579,
+      "end": 1.621
+    },
+    {
+      "word": "espacio",
+      "start": 1.664,
+      "end": 2.048
+    },
+    {
+      "word": "con",
+      "start": 2.091,
+      "end": 2.2187
+    },
+    {
+      "word": "líquido",
+      "start": 2.261,
+      "end": 2.645
+    },
+    {
+      "word": "llamado",
+      "start": 2.688,
+      "end": 3.072
+    },
+    {
+      "word": "intersticio.",
+      "start": 3.157,
+      "end": 4.062
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 4.062,
+      "end": 4.962000000000001
+    },
+    {
+      "word": "Parte",
+      "start": 4.962000000000001,
+      "end": 5.218000000000001
+    },
+    {
+      "word": "del",
+      "start": 5.346000000000001,
+      "end": 5.474000000000001
+    },
+    {
+      "word": "líquido",
+      "start": 5.516000000000001,
+      "end": 5.815000000000001
+    },
+    {
+      "word": "de",
+      "start": 5.8580000000000005,
+      "end": 5.900000000000001
+    },
+    {
+      "word": "los",
+      "start": 5.9430000000000005,
+      "end": 6.028000000000001
+    },
+    {
+      "word": "pequeños",
+      "start": 6.071000000000001,
+      "end": 6.455000000000001
+    },
+    {
+      "word": "vasos",
+      "start": 6.498000000000001,
+      "end": 6.796000000000001
+    },
+    {
+      "word": "pasa",
+      "start": 6.882000000000001,
+      "end": 7.180000000000001
+    },
+    {
+      "word": "hacia",
+      "start": 7.266000000000001,
+      "end": 7.522000000000001
+    },
+    {
+      "word": "ese",
+      "start": 7.564000000000001,
+      "end": 7.735000000000001
+    },
+    {
+      "word": "tejido",
+      "start": 7.778000000000001,
+      "end": 8.204
+    },
+    {
+      "word": "mediante",
+      "start": 8.247,
+      "end": 8.46
+    },
+    {
+      "word": "filtración.",
+      "start": 8.631,
+      "end": 9.199
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 9.199,
+      "end": 10.099
+    },
+    {
+      "word": "Los",
+      "start": 10.099,
+      "end": 10.483
+    },
+    {
+      "word": "vasos",
+      "start": 10.526,
+      "end": 10.739
+    },
+    {
+      "word": "linfáticos",
+      "start": 10.782,
+      "end": 11.337
+    },
+    {
+      "word": "recogen",
+      "start": 11.379,
+      "end": 11.721
+    },
+    {
+      "word": "líquido",
+      "start": 11.763,
+      "end": 12.19
+    },
+    {
+      "word": "y",
+      "start": 12.233,
+      "end": 12.275
+    },
+    {
+      "word": "proteínas",
+      "start": 12.318,
+      "end": 12.787
+    },
+    {
+      "word": "y",
+      "start": 12.873000000000001,
+      "end": 13.257
+    },
+    {
+      "word": "contribuyen",
+      "start": 13.299,
+      "end": 13.811
+    },
+    {
+      "word": "a",
+      "start": 13.854000000000001,
+      "end": 13.897
+    },
+    {
+      "word": "su",
+      "start": 13.939,
+      "end": 14.025
+    },
+    {
+      "word": "retorno",
+      "start": 14.067,
+      "end": 14.494
+    },
+    {
+      "word": "hacia",
+      "start": 14.537,
+      "end": 14.707
+    },
+    {
+      "word": "la",
+      "start": 14.75,
+      "end": 14.793000000000001
+    },
+    {
+      "word": "circulación.",
+      "start": 14.835,
+      "end": 15.454
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 15.454,
+      "end": 16.354
+    },
+    {
+      "word": "Si",
+      "start": 16.354,
+      "end": 16.525
+    },
+    {
+      "word": "aumenta",
+      "start": 16.567,
+      "end": 16.781
+    },
+    {
+      "word": "la",
+      "start": 16.866,
+      "end": 16.951
+    },
+    {
+      "word": "carga",
+      "start": 16.994,
+      "end": 17.207
+    },
+    {
+      "word": "de",
+      "start": 17.25,
+      "end": 17.293
+    },
+    {
+      "word": "filtración,",
+      "start": 17.335,
+      "end": 17.975
+    },
+    {
+      "word": "el",
+      "start": 18.061,
+      "end": 18.317
+    },
+    {
+      "word": "sistema",
+      "start": 18.359,
+      "end": 18.701
+    },
+    {
+      "word": "necesita",
+      "start": 18.786,
+      "end": 19.213
+    },
+    {
+      "word": "transportar",
+      "start": 19.255,
+      "end": 19.81
+    },
+    {
+      "word": "más",
+      "start": 19.895,
+      "end": 20.151
+    },
+    {
+      "word": "líquido.",
+      "start": 20.237000000000002,
+      "end": 20.734
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 20.734,
+      "end": 21.634
+    },
+    {
+      "word": "Si",
+      "start": 21.634,
+      "end": 22.018
+    },
+    {
+      "word": "el",
+      "start": 22.061000000000003,
+      "end": 22.103
+    },
+    {
+      "word": "transporte",
+      "start": 22.146,
+      "end": 22.573
+    },
+    {
+      "word": "resulta",
+      "start": 22.615000000000002,
+      "end": 22.957
+    },
+    {
+      "word": "insuficiente,",
+      "start": 22.999000000000002,
+      "end": 23.810000000000002
+    },
+    {
+      "word": "el",
+      "start": 23.938000000000002,
+      "end": 24.152
+    },
+    {
+      "word": "líquido",
+      "start": 24.194000000000003,
+      "end": 24.536
+    },
+    {
+      "word": "puede",
+      "start": 24.578000000000003,
+      "end": 24.834000000000003
+    },
+    {
+      "word": "acumularse",
+      "start": 24.877000000000002,
+      "end": 25.304000000000002
+    },
+    {
+      "word": "y",
+      "start": 25.560000000000002,
+      "end": 25.602
+    },
+    {
+      "word": "producir",
+      "start": 25.645000000000003,
+      "end": 25.986
+    },
+    {
+      "word": "hinchazón.",
+      "start": 26.071,
+      "end": 26.6
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 26.6,
+      "end": 27.500000000000004
+    },
+    {
+      "word": "En",
+      "start": 27.500000000000004,
+      "end": 28.055000000000007
+    },
+    {
+      "word": "la",
+      "start": 28.098000000000006,
+      "end": 28.140000000000004
+    },
+    {
+      "word": "mayoría",
+      "start": 28.183000000000007,
+      "end": 28.524000000000004
+    },
+    {
+      "word": "de",
+      "start": 28.567000000000004,
+      "end": 28.610000000000007
+    },
+    {
+      "word": "los",
+      "start": 28.652000000000005,
+      "end": 28.738000000000007
+    },
+    {
+      "word": "tejidos,",
+      "start": 28.780000000000005,
+      "end": 29.314000000000004
+    },
+    {
+      "word": "el",
+      "start": 29.420000000000005,
+      "end": 29.506000000000004
+    },
+    {
+      "word": "equilibrio",
+      "start": 29.548000000000005,
+      "end": 29.975000000000005
+    },
+    {
+      "word": "depende",
+      "start": 30.018000000000004,
+      "end": 30.359000000000005
+    },
+    {
+      "word": "de",
+      "start": 30.402000000000005,
+      "end": 30.487000000000005
+    },
+    {
+      "word": "forma",
+      "start": 30.530000000000005,
+      "end": 30.743000000000006
+    },
+    {
+      "word": "importante",
+      "start": 30.786000000000005,
+      "end": 31.340000000000007
+    },
+    {
+      "word": "del",
+      "start": 31.511000000000006,
+      "end": 31.596000000000004
+    },
+    {
+      "word": "drenaje",
+      "start": 31.639000000000006,
+      "end": 32.023
+    },
+    {
+      "word": "linfático.",
+      "start": 32.108000000000004,
+      "end": 32.729000000000006
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 32.729000000000006,
+      "end": 33.629000000000005
+    },
+    {
+      "word": "No",
+      "start": 33.629000000000005,
+      "end": 34.098000000000006
+    },
+    {
+      "word": "toda",
+      "start": 34.141000000000005,
+      "end": 34.397000000000006
+    },
+    {
+      "word": "hinchazón",
+      "start": 34.44000000000001,
+      "end": 34.86600000000001
+    },
+    {
+      "word": "tiene",
+      "start": 34.952000000000005,
+      "end": 35.080000000000005
+    },
+    {
+      "word": "la",
+      "start": 35.165000000000006,
+      "end": 35.25000000000001
+    },
+    {
+      "word": "misma",
+      "start": 35.293000000000006,
+      "end": 35.50600000000001
+    },
+    {
+      "word": "causa:",
+      "start": 35.54900000000001,
+      "end": 36.12500000000001
+    },
+    {
+      "word": "puede",
+      "start": 36.36000000000001,
+      "end": 36.70100000000001
+    },
+    {
+      "word": "haber",
+      "start": 36.74400000000001,
+      "end": 36.82900000000001
+    },
+    {
+      "word": "factores",
+      "start": 36.91400000000001,
+      "end": 37.29800000000001
+    },
+    {
+      "word": "venosos,",
+      "start": 37.34100000000001,
+      "end": 38.06600000000001
+    },
+    {
+      "word": "linfáticos",
+      "start": 38.19400000000001,
+      "end": 38.96200000000001
+    },
+    {
+      "word": "y",
+      "start": 39.04800000000001,
+      "end": 39.17600000000001
+    },
+    {
+      "word": "enfermedades",
+      "start": 39.21800000000001,
+      "end": 39.68800000000001
+    },
+    {
+      "word": "de",
+      "start": 39.81600000000001,
+      "end": 39.94400000000001
+    },
+    {
+      "word": "otros",
+      "start": 39.98600000000001,
+      "end": 40.20000000000001
+    },
+    {
+      "word": "órganos.",
+      "start": 40.24200000000001,
+      "end": 40.96200000000001
+    },
+    {
+      "word": "<end>",
+      "start": 41.19510204081632,
+      "end": 41.19510204081632
+    }
+  ]
+}

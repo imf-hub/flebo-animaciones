@@ -1,6 +1,6 @@
 # Flebo Animaciones
 
-Web educativa del Instituto Mexicano de Flebología: 12 módulos de animación 2D/3D organizados en cuatro unidades, perfiles paciente/médico, 36 pasos de observación, preguntas de repaso, narraciones y progreso local. Los modelos 3D permiten seleccionar estructuras, aislarlas y separar capas.
+Web educativa del Instituto Mexicano de Flebología: 19 módulos (10 en 3D y 9 esquemas 2D) organizados en cuatro unidades, perfiles paciente/médico, 57 pasos de observación, 19 preguntas de repaso, narraciones y progreso local. Los modelos 3D permiten seleccionar estructuras, aislarlas y separar capas cuando corresponde al tema.
 
 - Web pública: https://imf-hub.github.io/flebo-animaciones/
 - Repositorio: https://github.com/imf-hub/flebo-animaciones
@@ -15,6 +15,8 @@ Para cualquier LLM, empezar por [AGENTS.md](AGENTS.md). Hay entradas equivalente
 
 - [Arquitectura e inventario de los 12 módulos](docs/animacion/ARQUITECTURA.md).
 - [Experiencia interactiva implementada y contratos actuales](docs/animacion/EXPERIENCIA_INTERACTIVA.md).
+- [Siete modelos nuevos: producción, comprobaciones y límites](docs/animacion/entregas/siete-modulos-2026-11-06.md).
+- [Contraste documental del contenido médico nuevo](docs/animacion/REVISION_MEDICA_SIETE_MODULOS.md).
 - [Estándar de calidad y mejoras prioritarias](docs/animacion/CALIDAD.md).
 - [Cómo producir e integrar animaciones y videos](docs/animacion/PRODUCCION.md).
 - [Skills y herramientas investigadas, con compatibilidad](docs/animacion/SKILLS_Y_HERRAMIENTAS.md).
@@ -42,12 +44,15 @@ El build añade versiones basadas en el contenido a los estilos y scripts de `in
 - `index.html`: estructura, identidad y metadatos.
 - `assets/styles.css` y `assets/experience.css`: estilos heredados y diseño adaptable actual.
 - `assets/app.js`: simulaciones, textos, guiones y reproductor.
+- `assets/anatomy-scenes.js` y `assets/anatomy-scenes.css`: siete escenas nuevas y sus componentes reutilizables de anatomía procedural.
+- `assets/extension-data.js`: lecciones, fuentes, fichas, guiones y recorrido ampliado.
+- `assets/extension-audio.js`: duraciones medidas y marcas de las narraciones nuevas.
 - `assets/course.js`: recorrido, objetivos por perfil, pasos, preguntas y fichas anatómicas.
 - `assets/experience.js`: aprendizaje, selección de estructuras, portada 3D y progreso local.
 - `assets/logos/`: logotipos originales del IMF.
 - `assets/vendor/`: Three.js 0.128.0 y OrbitControls, con su licencia MIT; se cargan al abrir un modelo 3D.
 - `assets/fonts/`: tipografías locales con sus licencias.
-- `audio/`: 12 narraciones originales MP3, cargadas solo al reproducir.
+- `audio/`: 12 narraciones originales y 7 nuevas en español, cargadas solo al reproducir.
 - `scripts/`: verificación, exportación y servidor local.
 - `docs/animacion/`: arquitectura, mínimo de calidad, producción, herramientas y referencia conservada.
 - `skills/flebo-animaciones/`: instrucciones reutilizables para agentes.

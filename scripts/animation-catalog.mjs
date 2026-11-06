@@ -4,7 +4,7 @@ import { pathToFileURL } from 'node:url';
 
 // Read the project's four declarative registries without running its DOM or simulations.
 // This is a source-inspection helper, not a sandbox for arbitrary downloaded JavaScript.
-function literal(source, name) {
+export function literal(source, name) {
   const start = new RegExp(`\\bconst\\s+${name}\\s*=`).exec(source);
   if (!start) throw new Error(`No se encontró ${name}; adapte el inspector a la arquitectura actual.`);
   let i = start.index + start[0].length;
@@ -30,16 +30,26 @@ function literal(source, name) {
 
 export async function readAnimationCatalog() {
   const source = await readFile(new URL('../assets/app.js', import.meta.url), 'utf8');
+  const extension = await readFile(new URL('../assets/extension-data.js', import.meta.url), 'utf8');
+  const scenes = await readFile(new URL('../assets/anatomy-scenes.js', import.meta.url), 'utf8');
+  const narration = await readFile(new URL('../assets/extension-audio.js', import.meta.url), 'utf8');
   const marker = name => Object.assign((...args) => marker(`${name}(${args.map(value => JSON.stringify(value)).join(',')})`), { catalogName: name });
   const bindings = Object.create(null);
-  const modulesLiteral = literal(source, 'MODS');
+  const modulesLiteral = literal(source, 'MODS')+'\n'+literal(extension,'EXTENSION_MODULES');
   for (const [, name] of modulesLiteral.matchAll(/\b(?:init|thumb)\s*:\s*([A-Za-z_$][\w$]*)/g)) {
-    if (!new RegExp(`(?:function\\s+|(?:const|let|var)\\s+)${name}\\b`).test(source)) throw new Error(`No se encontró la declaración de ${name}.`);
+    if (!new RegExp(`(?:function\\s+|(?:const|let|var)\\s+)${name}\\b`).test(source+'\n'+scenes)) throw new Error(`No se encontró la declaración de ${name}.`);
     bindings[name] = marker(name);
   }
   const context = createContext(bindings, { codeGeneration: { strings: false, wasm: false } });
   const declarations = ['HOME3', 'MODS', 'VIDEOS', 'AUDIO'].map(name => `const ${name}=${literal(source, name)};`).join('\n');
-  return runInContext(declarations + '\n({modules:MODS,videos:VIDEOS,audio:AUDIO})', context, { timeout: 500 });
+  const additions=['EXTENSION_SOURCES','EXTENSION_MODULES','EXTENSION_VIDEOS'].map(name=>`const ${name}=${literal(extension,name)};`).join('\n')+`\nconst EXTENSION_AUDIO=${literal(narration,'EXTENSION_AUDIO')};`;
+  return runInContext(declarations+'\n'+additions+'\nMODS.push(...EXTENSION_MODULES);Object.assign(VIDEOS,EXTENSION_VIDEOS);Object.assign(AUDIO,EXTENSION_AUDIO);\n({modules:MODS,videos:VIDEOS,audio:AUDIO,sources:EXTENSION_SOURCES})', context, { timeout: 500 });
+}
+
+export async function readCourseData(){
+  const source=await readFile(new URL('../assets/course.js',import.meta.url),'utf8'),extension=await readFile(new URL('../assets/extension-data.js',import.meta.url),'utf8');
+  const additions=['EXTENSION_UNITS','EXTENSION_LESSONS','EXTENSION_STRUCTURES'].map(name=>`const ${name}=${literal(extension,name)};`).join('\n');
+  return runInContext(source+'\n'+additions+'\nCOURSE.units=EXTENSION_UNITS;Object.assign(COURSE.lessons,EXTENSION_LESSONS);Object.assign(COURSE.structures,EXTENSION_STRUCTURES);COURSE',createContext({},{codeGeneration:{strings:false,wasm:false}}),{timeout:500});
 }
 
 export function validateAnimationCatalog({ modules, videos, audio }, baselineIds = []) {

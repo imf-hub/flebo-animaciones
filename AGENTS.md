@@ -8,6 +8,8 @@ Una animación nueva debe igualar las capacidades pertinentes de los mejores eje
 
 ## Contexto que debes leer
 
+Estado ampliado: 19 módulos, incluidos siete nuevos modelos 3D y sus narraciones. Consultar la [ficha de producción del lote](docs/animacion/entregas/siete-modulos-2026-11-06.md) y el [contraste documental médico](docs/animacion/REVISION_MEDICA_SIETE_MODULOS.md). Las fuentes y escenas nuevas están separadas en `assets/anatomy-scenes.js`, `assets/extension-data.js` y `assets/extension-audio.js`; el inventario original sigue protegido.
+
 La entrada principal para crear futuras animaciones, efectos, modelos o videos es [GUIA_PARA_FUTURAS_ANIMACIONES.md](GUIA_PARA_FUTURAS_ANIMACIONES.md). Leerla antes de ese trabajo: reúne qué reutilizar, qué skills consultar, cómo integrar, comprobar y conservar cada nueva entrega. Mantener también las capacidades de la experiencia actual, no solo el mínimo original.
 
 Para trabajo de animación, video, anatomía 3D, cámaras, partículas o modelado, carga [la skill del proyecto](skills/flebo-animaciones/SKILL.md). La documentación compartida es:

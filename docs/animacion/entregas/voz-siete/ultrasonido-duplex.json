@@ -1,0 +1,623 @@
+{
+  "duration": 48.40489795918367,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>El ultrasonido permite relacionar la anatomía de los vasos con información sobre el flujo de sangre.<break time=\"0.9s\"/>El transductor envía y recibe ondas; en el panel vemos una imagen generada como esquema, no un estudio real.<break time=\"0.9s\"/>En modo be reconocemos las estructuras y la luz de los vasos.<break time=\"0.9s\"/>La compresión modifica una vena permeable, pero un único segmento no basta para establecer ni descartar una trombosis.<break time=\"0.9s\"/>En Doppler color, rojo y azul representan dirección respecto al haz según el mapa utilizado; no significan simplemente arteria y vena.<break time=\"0.9s\"/>El registro espectral permite observar una señal de flujo a lo largo del tiempo.<break time=\"0.9s\"/>La interpretación clínica requiere un examen completo, técnica adecuada y el contexto de la persona.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "El",
+      "start": 0.299,
+      "end": 0.384
+    },
+    {
+      "word": "ultrasonido",
+      "start": 0.427,
+      "end": 1.0667
+    },
+    {
+      "word": "permite",
+      "start": 1.109,
+      "end": 1.365
+    },
+    {
+      "word": "relacionar",
+      "start": 1.493,
+      "end": 2.048
+    },
+    {
+      "word": "la",
+      "start": 2.091,
+      "end": 2.176
+    },
+    {
+      "word": "anatomía",
+      "start": 2.219,
+      "end": 2.773
+    },
+    {
+      "word": "de",
+      "start": 2.816,
+      "end": 2.859
+    },
+    {
+      "word": "los",
+      "start": 2.901,
+      "end": 2.9867
+    },
+    {
+      "word": "vasos",
+      "start": 3.072,
+      "end": 3.413
+    },
+    {
+      "word": "con",
+      "start": 3.541,
+      "end": 3.84
+    },
+    {
+      "word": "información",
+      "start": 3.883,
+      "end": 4.437
+    },
+    {
+      "word": "sobre",
+      "start": 4.48,
+      "end": 4.693
+    },
+    {
+      "word": "el",
+      "start": 4.736,
+      "end": 4.7787
+    },
+    {
+      "word": "flujo",
+      "start": 4.821,
+      "end": 5.077
+    },
+    {
+      "word": "de",
+      "start": 5.12,
+      "end": 5.248
+    },
+    {
+      "word": "sangre.",
+      "start": 5.248,
+      "end": 5.621
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 5.621,
+      "end": 6.521000000000001
+    },
+    {
+      "word": "El",
+      "start": 6.521000000000001,
+      "end": 6.691000000000001
+    },
+    {
+      "word": "transductor",
+      "start": 6.734000000000001,
+      "end": 7.118
+    },
+    {
+      "word": "envía",
+      "start": 7.331,
+      "end": 7.886
+    },
+    {
+      "word": "y",
+      "start": 7.972,
+      "end": 8.057
+    },
+    {
+      "word": "recibe",
+      "start": 8.1,
+      "end": 8.398
+    },
+    {
+      "word": "ondas;",
+      "start": 8.526,
+      "end": 9.017000000000001
+    },
+    {
+      "word": "en",
+      "start": 9.251000000000001,
+      "end": 9.721
+    },
+    {
+      "word": "el",
+      "start": 9.763,
+      "end": 9.806000000000001
+    },
+    {
+      "word": "panel",
+      "start": 9.849,
+      "end": 10.148
+    },
+    {
+      "word": "vemos",
+      "start": 10.190000000000001,
+      "end": 10.404
+    },
+    {
+      "word": "una",
+      "start": 10.446,
+      "end": 10.617
+    },
+    {
+      "word": "imagen",
+      "start": 10.66,
+      "end": 10.915000000000001
+    },
+    {
+      "word": "generada",
+      "start": 10.958,
+      "end": 11.299000000000001
+    },
+    {
+      "word": "como",
+      "start": 11.385,
+      "end": 11.555
+    },
+    {
+      "word": "esquema,",
+      "start": 11.598,
+      "end": 12.174000000000001
+    },
+    {
+      "word": "no",
+      "start": 12.409,
+      "end": 12.58
+    },
+    {
+      "word": "un",
+      "start": 12.622,
+      "end": 12.708
+    },
+    {
+      "word": "estudio",
+      "start": 12.75,
+      "end": 13.091000000000001
+    },
+    {
+      "word": "real.",
+      "start": 13.134,
+      "end": 13.322000000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 13.322000000000001,
+      "end": 14.222000000000001
+    },
+    {
+      "word": "En",
+      "start": 14.222000000000001,
+      "end": 14.435
+    },
+    {
+      "word": "modo",
+      "start": 14.520000000000001,
+      "end": 14.691
+    },
+    {
+      "word": "be",
+      "start": 14.776,
+      "end": 14.947000000000001
+    },
+    {
+      "word": "reconocemos",
+      "start": 15.118,
+      "end": 15.885
+    },
+    {
+      "word": "las",
+      "start": 15.928,
+      "end": 16.012999999999998
+    },
+    {
+      "word": "estructuras",
+      "start": 16.056,
+      "end": 16.695999999999998
+    },
+    {
+      "word": "y",
+      "start": 16.781,
+      "end": 16.909
+    },
+    {
+      "word": "la",
+      "start": 16.951999999999998,
+      "end": 17.037
+    },
+    {
+      "word": "luz",
+      "start": 17.08,
+      "end": 17.250999999999998
+    },
+    {
+      "word": "de",
+      "start": 17.336,
+      "end": 17.421
+    },
+    {
+      "word": "los",
+      "start": 17.464,
+      "end": 17.549
+    },
+    {
+      "word": "vasos.",
+      "start": 17.592,
+      "end": 17.965
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 17.965,
+      "end": 18.865000000000002
+    },
+    {
+      "word": "La",
+      "start": 18.865000000000002,
+      "end": 19.292
+    },
+    {
+      "word": "compresión",
+      "start": 19.334000000000003,
+      "end": 19.889000000000003
+    },
+    {
+      "word": "modifica",
+      "start": 19.974,
+      "end": 20.315
+    },
+    {
+      "word": "una",
+      "start": 20.443,
+      "end": 20.571
+    },
+    {
+      "word": "vena",
+      "start": 20.614,
+      "end": 20.827
+    },
+    {
+      "word": "permeable,",
+      "start": 20.87,
+      "end": 21.532
+    },
+    {
+      "word": "pero",
+      "start": 21.766000000000002,
+      "end": 21.979000000000003
+    },
+    {
+      "word": "un",
+      "start": 22.022000000000002,
+      "end": 22.107000000000003
+    },
+    {
+      "word": "único",
+      "start": 22.150000000000002,
+      "end": 22.449
+    },
+    {
+      "word": "segmento",
+      "start": 22.492,
+      "end": 22.961000000000002
+    },
+    {
+      "word": "no",
+      "start": 23.046000000000003,
+      "end": 23.302000000000003
+    },
+    {
+      "word": "basta",
+      "start": 23.345000000000002,
+      "end": 23.686000000000003
+    },
+    {
+      "word": "para",
+      "start": 23.729000000000003,
+      "end": 23.942
+    },
+    {
+      "word": "establecer",
+      "start": 23.985000000000003,
+      "end": 24.283
+    },
+    {
+      "word": "ni",
+      "start": 24.582,
+      "end": 24.753
+    },
+    {
+      "word": "descartar",
+      "start": 24.795,
+      "end": 25.307000000000002
+    },
+    {
+      "word": "una",
+      "start": 25.35,
+      "end": 25.478
+    },
+    {
+      "word": "trombosis.",
+      "start": 25.478,
+      "end": 26.095000000000002
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 26.095000000000002,
+      "end": 27.040000000000003
+    },
+    {
+      "word": "En",
+      "start": 27.040000000000003,
+      "end": 27.168000000000003
+    },
+    {
+      "word": "Doppler",
+      "start": 27.211000000000002,
+      "end": 27.51
+    },
+    {
+      "word": "color,",
+      "start": 27.595000000000002,
+      "end": 27.958000000000002
+    },
+    {
+      "word": "rojo",
+      "start": 28.192,
+      "end": 28.491000000000003
+    },
+    {
+      "word": "y",
+      "start": 28.533,
+      "end": 28.576
+    },
+    {
+      "word": "azul",
+      "start": 28.619000000000003,
+      "end": 28.917
+    },
+    {
+      "word": "representan",
+      "start": 29.088,
+      "end": 29.728
+    },
+    {
+      "word": "dirección",
+      "start": 29.856,
+      "end": 30.411
+    },
+    {
+      "word": "respecto",
+      "start": 30.454,
+      "end": 30.880000000000003
+    },
+    {
+      "word": "al",
+      "start": 30.923000000000002,
+      "end": 31.008000000000003
+    },
+    {
+      "word": "haz",
+      "start": 31.051000000000002,
+      "end": 31.179000000000002
+    },
+    {
+      "word": "según",
+      "start": 31.35,
+      "end": 31.691000000000003
+    },
+    {
+      "word": "el",
+      "start": 31.734,
+      "end": 31.776000000000003
+    },
+    {
+      "word": "mapa",
+      "start": 31.862000000000002,
+      "end": 32.075
+    },
+    {
+      "word": "utilizado;",
+      "start": 32.118,
+      "end": 32.949999999999996
+    },
+    {
+      "word": "no",
+      "start": 33.227,
+      "end": 33.397999999999996
+    },
+    {
+      "word": "significan",
+      "start": 33.44,
+      "end": 33.782
+    },
+    {
+      "word": "simplemente",
+      "start": 33.952,
+      "end": 34.379
+    },
+    {
+      "word": "arteria",
+      "start": 34.507,
+      "end": 34.933
+    },
+    {
+      "word": "y",
+      "start": 35.019,
+      "end": 35.061
+    },
+    {
+      "word": "vena.",
+      "start": 35.104,
+      "end": 35.384
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 35.384,
+      "end": 36.284000000000006
+    },
+    {
+      "word": "El",
+      "start": 36.284000000000006,
+      "end": 36.711000000000006
+    },
+    {
+      "word": "registro",
+      "start": 36.754000000000005,
+      "end": 37.18000000000001
+    },
+    {
+      "word": "espectral",
+      "start": 37.223000000000006,
+      "end": 37.607000000000006
+    },
+    {
+      "word": "permite",
+      "start": 37.778000000000006,
+      "end": 38.07600000000001
+    },
+    {
+      "word": "observar",
+      "start": 38.20400000000001,
+      "end": 38.58800000000001
+    },
+    {
+      "word": "una",
+      "start": 38.67400000000001,
+      "end": 38.88700000000001
+    },
+    {
+      "word": "señal",
+      "start": 38.93000000000001,
+      "end": 39.18600000000001
+    },
+    {
+      "word": "de",
+      "start": 39.27100000000001,
+      "end": 39.35600000000001
+    },
+    {
+      "word": "flujo",
+      "start": 39.39900000000001,
+      "end": 39.74000000000001
+    },
+    {
+      "word": "a",
+      "start": 39.82600000000001,
+      "end": 39.99600000000001
+    },
+    {
+      "word": "lo",
+      "start": 40.03900000000001,
+      "end": 40.08200000000001
+    },
+    {
+      "word": "largo",
+      "start": 40.12400000000001,
+      "end": 40.38000000000001
+    },
+    {
+      "word": "del",
+      "start": 40.42300000000001,
+      "end": 40.50800000000001
+    },
+    {
+      "word": "tiempo.",
+      "start": 40.59400000000001,
+      "end": 40.96500000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 40.96500000000001,
+      "end": 41.86500000000001
+    },
+    {
+      "word": "La",
+      "start": 41.86500000000001,
+      "end": 42.24900000000001
+    },
+    {
+      "word": "interpretación",
+      "start": 42.291000000000004,
+      "end": 42.88900000000001
+    },
+    {
+      "word": "clínica",
+      "start": 42.931000000000004,
+      "end": 43.230000000000004
+    },
+    {
+      "word": "requiere",
+      "start": 43.40100000000001,
+      "end": 43.913000000000004
+    },
+    {
+      "word": "un",
+      "start": 43.955000000000005,
+      "end": 43.998000000000005
+    },
+    {
+      "word": "examen",
+      "start": 44.083000000000006,
+      "end": 44.425000000000004
+    },
+    {
+      "word": "completo,",
+      "start": 44.467000000000006,
+      "end": 45.086000000000006
+    },
+    {
+      "word": "técnica",
+      "start": 45.278000000000006,
+      "end": 45.61900000000001
+    },
+    {
+      "word": "adecuada",
+      "start": 45.790000000000006,
+      "end": 46.13100000000001
+    },
+    {
+      "word": "y",
+      "start": 46.30200000000001,
+      "end": 46.601000000000006
+    },
+    {
+      "word": "el",
+      "start": 46.64300000000001,
+      "end": 46.68600000000001
+    },
+    {
+      "word": "contexto",
+      "start": 46.77100000000001,
+      "end": 47.24100000000001
+    },
+    {
+      "word": "de",
+      "start": 47.32600000000001,
+      "end": 47.45400000000001
+    },
+    {
+      "word": "la",
+      "start": 47.49700000000001,
+      "end": 47.53900000000001
+    },
+    {
+      "word": "persona.",
+      "start": 47.53900000000001,
+      "end": 48.17600000000001
+    },
+    {
+      "word": "<end>",
+      "start": 48.40489795918367,
+      "end": 48.40489795918367
+    }
+  ]
+}

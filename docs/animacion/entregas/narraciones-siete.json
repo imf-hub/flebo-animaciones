@@ -1,0 +1,384 @@
+[
+  {
+    "id": "viaje-venoso",
+    "provider": "HeyGen",
+    "voice_id": "84854979e66846989bc6c5855f53268f",
+    "voice_name": "Rocío - Calm & Trustworthy",
+    "requested_engine": "saved default",
+    "returned_engine": "orca",
+    "language": "es",
+    "speed": 1,
+    "duration_seconds": 43.36325,
+    "sha256": "2cdcee9e7ec4ec4dc11223f6f14453758e79dedf764f1907e8a0d454a245945d",
+    "timing": "Provider word timestamps; original pause groups and edited phrase segmentation matched without changing recorded words.",
+    "scenes": [
+      {
+        "text": "Vamos a seguir el regreso de la sangre desde el pie hasta el corazón, en una anatomía simplificada.",
+        "start": 0,
+        "end": 6.417
+      },
+      {
+        "text": "Las venas profundas recorren los planos situados por debajo de la fascia muscular.",
+        "start": 6.417,
+        "end": 11.244
+      },
+      {
+        "text": "Desde la pierna, el trayecto continúa por la vena poplítea y las venas del muslo.",
+        "start": 11.244,
+        "end": 16.768
+      },
+      {
+        "text": "La safena mayor pertenece al sistema superficial y se une a la vena femoral común cerca de la ingle.",
+        "start": 16.768,
+        "end": 23.486
+      },
+      {
+        "text": "La safena menor asciende por detrás de la pantorrilla; su terminación puede variar entre personas.",
+        "start": 23.486,
+        "end": 30.26
+      },
+      {
+        "text": "El retorno sigue por las venas ilíacas y la vena cava inferior hasta la aurícula derecha.",
+        "start": 30.26,
+        "end": 36.689
+      },
+      {
+        "text": "Los colores y las proporciones ayudan a reconocer los caminos; no son una medición del flujo de una persona.",
+        "start": 36.689,
+        "end": 43.36325
+      }
+    ],
+    "review": "Transcript/timestamp verification is not an auditory review; see delivery report for listening coverage."
+  },
+  {
+    "id": "venas-superficiales",
+    "provider": "HeyGen",
+    "voice_id": "84854979e66846989bc6c5855f53268f",
+    "voice_name": "Rocío - Calm & Trustworthy",
+    "requested_engine": "saved default",
+    "returned_engine": "orca",
+    "language": "es",
+    "speed": 1,
+    "duration_seconds": 39.105281,
+    "sha256": "f8cc156c9d37ab05e9457be9d4fff5424b02c7a2f4627bc001b775ceccb10bbd",
+    "timing": "Provider word timestamps; original pause groups and edited phrase segmentation matched without changing recorded words.",
+    "scenes": [
+      {
+        "text": "No todas las venas visibles tienen la misma forma ni ocupan el mismo plano de la piel.",
+        "start": 0,
+        "end": 5.721
+      },
+      {
+        "text": "Las telangiectasias, llamadas arañitas, son vasos pequeños visibles en la piel.",
+        "start": 5.721,
+        "end": 11.434
+      },
+      {
+        "text": "Las venas reticulares suelen dibujar una red algo mayor bajo la superficie.",
+        "start": 11.434,
+        "end": 16.259
+      },
+      {
+        "text": "Las várices son venas superficiales dilatadas que pueden sobresalir y hacerse tortuosas.",
+        "start": 16.259,
+        "end": 22.601
+      },
+      {
+        "text": "Al separar las capas puedes comparar su relación con la dermis y el tejido subcutáneo.",
+        "start": 22.601,
+        "end": 28.246
+      },
+      {
+        "text": "Son ejemplos distintos, no una transformación obligatoria de una arañita en una várice.",
+        "start": 28.246,
+        "end": 33.692
+      },
+      {
+        "text": "Su apariencia no permite determinar por sí sola el origen de un problema venoso.",
+        "start": 33.692,
+        "end": 39.105281
+      }
+    ],
+    "review": "Transcript/timestamp verification is not an auditory review; see delivery report for listening coverage."
+  },
+  {
+    "id": "compresion-medica",
+    "provider": "HeyGen",
+    "voice_id": "84854979e66846989bc6c5855f53268f",
+    "voice_name": "Rocío - Calm & Trustworthy",
+    "requested_engine": "saved default",
+    "returned_engine": "orca",
+    "language": "es",
+    "speed": 1,
+    "duration_seconds": 44.904469,
+    "sha256": "0b8c83ab0ef1f5c680f34a9101f8bc0ac72837b5cd62b59ecf20b275bae5e492",
+    "timing": "Provider word timestamps; original pause groups and edited phrase segmentation matched without changing recorded words.",
+    "scenes": [
+      {
+        "text": "Una media de compresión aplica presión externa sobre la pierna y da soporte a los tejidos.",
+        "start": 0,
+        "end": 5.858
+      },
+      {
+        "text": "La prenda graduada se representa con mayor soporte distal, sin indicar aquí una presión concreta.",
+        "start": 5.858,
+        "end": 11.851
+      },
+      {
+        "text": "Al caminar, la contracción muscular participa en el movimiento de la sangre hacia arriba.",
+        "start": 11.851,
+        "end": 17.171
+      },
+      {
+        "text": "La compresión puede ayudar al control de síntomas y edema, pero no reconstruye por sí sola una válvula dañada.",
+        "start": 17.171,
+        "end": 25.434
+      },
+      {
+        "text": "El efecto depende también del ajuste de la prenda y de las características de cada persona.",
+        "start": 25.434,
+        "end": 31.44
+      },
+      {
+        "text": "La circulación arterial y otras condiciones deben valorarse antes de indicar compresión.",
+        "start": 31.44,
+        "end": 37.694
+      },
+      {
+        "text": "Este modelo explica una relación mecánica; no sirve para elegir una talla, una presión o un tratamiento.",
+        "start": 37.694,
+        "end": 44.904469
+      }
+    ],
+    "review": "Transcript/timestamp verification is not an auditory review; see delivery report for listening coverage."
+  },
+  {
+    "id": "ultrasonido-duplex",
+    "provider": "HeyGen",
+    "voice_id": "84854979e66846989bc6c5855f53268f",
+    "voice_name": "Rocío - Calm & Trustworthy",
+    "requested_engine": "saved default",
+    "returned_engine": "orca",
+    "language": "es",
+    "speed": 1,
+    "duration_seconds": 48.404875,
+    "sha256": "5fe8adc0fcf2c83b03054e68313b1e930837d70c05cf6e6361e83e9944e77638",
+    "timing": "Provider word timestamps; original pause groups and edited phrase segmentation matched without changing recorded words.",
+    "scenes": [
+      {
+        "text": "El ultrasonido permite relacionar la anatomía de los vasos con información sobre el flujo de sangre.",
+        "start": 0,
+        "end": 6.521
+      },
+      {
+        "text": "El transductor envía y recibe ondas; en el panel vemos una imagen generada como esquema, no un estudio real.",
+        "start": 6.521,
+        "end": 14.222
+      },
+      {
+        "text": "En modo be reconocemos las estructuras y la luz de los vasos.",
+        "start": 14.222,
+        "end": 18.865
+      },
+      {
+        "text": "La compresión modifica una vena permeable, pero un único segmento no basta para establecer ni descartar una trombosis.",
+        "start": 18.865,
+        "end": 27.04
+      },
+      {
+        "text": "En Doppler color, rojo y azul representan dirección respecto al haz según el mapa utilizado; no significan simplemente arteria y vena.",
+        "start": 27.04,
+        "end": 36.284
+      },
+      {
+        "text": "El registro espectral permite observar una señal de flujo a lo largo del tiempo.",
+        "start": 36.284,
+        "end": 41.865
+      },
+      {
+        "text": "La interpretación clínica requiere un examen completo, técnica adecuada y el contexto de la persona.",
+        "start": 41.865,
+        "end": 48.404875
+      }
+    ],
+    "review": "Transcript/timestamp verification is not an auditory review; see delivery report for listening coverage."
+  },
+  {
+    "id": "edema-linfatico",
+    "provider": "HeyGen",
+    "voice_id": "84854979e66846989bc6c5855f53268f",
+    "voice_name": "Rocío - Calm & Trustworthy",
+    "requested_engine": "saved default",
+    "returned_engine": "orca",
+    "language": "es",
+    "speed": 1,
+    "duration_seconds": 41.195094,
+    "sha256": "ae9fa31659373e3dd759e7f20ea64b44740c49199dce977877f9bf2a44cceea0",
+    "timing": "Provider word timestamps; original pause groups and edited phrase segmentation matched without changing recorded words.",
+    "scenes": [
+      {
+        "text": "Entre las células existe un espacio con líquido llamado intersticio.",
+        "start": 0,
+        "end": 4.962
+      },
+      {
+        "text": "Parte del líquido de los pequeños vasos pasa hacia ese tejido mediante filtración.",
+        "start": 4.962,
+        "end": 10.099
+      },
+      {
+        "text": "Los vasos linfáticos recogen líquido y proteínas y contribuyen a su retorno hacia la circulación.",
+        "start": 10.099,
+        "end": 16.354
+      },
+      {
+        "text": "Si aumenta la carga de filtración, el sistema necesita transportar más líquido.",
+        "start": 16.354,
+        "end": 21.634
+      },
+      {
+        "text": "Si el transporte resulta insuficiente, el líquido puede acumularse y producir hinchazón.",
+        "start": 21.634,
+        "end": 27.5
+      },
+      {
+        "text": "En la mayoría de los tejidos, el equilibrio depende de forma importante del drenaje linfático.",
+        "start": 27.5,
+        "end": 33.629
+      },
+      {
+        "text": "No toda hinchazón tiene la misma causa: puede haber factores venosos, linfáticos y enfermedades de otros órganos.",
+        "start": 33.629,
+        "end": 41.195094
+      }
+    ],
+    "review": "Transcript/timestamp verification is not an auditory review; see delivery report for listening coverage."
+  },
+  {
+    "id": "clasificacion-ceap",
+    "provider": "HeyGen",
+    "voice_id": "84854979e66846989bc6c5855f53268f",
+    "voice_name": "Rocío - Calm & Trustworthy",
+    "requested_engine": "saved default",
+    "returned_engine": "orca",
+    "language": "es",
+    "speed": 1,
+    "duration_seconds": 42.553469,
+    "sha256": "dc6cfad74ab7e33bed3fec74a6d52602cbb02801f018ec69a124ee7f5548604b",
+    "timing": "Provider word timestamps; original pause groups and edited phrase segmentation matched without changing recorded words.",
+    "scenes": [
+      {
+        "text": "La clasificación clínica describe manifestaciones que se observan en una pierna; no predice su futuro.",
+        "start": 0,
+        "end": 6.814
+      },
+      {
+        "text": "Cero indica ausencia de signos visibles o palpables;",
+        "start": 6.814,
+        "end": 10.057
+      },
+      {
+        "text": "uno incluye arañitas y venas reticulares.",
+        "start": 10.057,
+        "end": 13.483
+      },
+      {
+        "text": "Dos corresponde a várices",
+        "start": 13.483,
+        "end": 15.062
+      },
+      {
+        "text": "y tres a edema.",
+        "start": 15.062,
+        "end": 17.05
+      },
+      {
+        "text": "Cuatro agrupa cambios de piel y tejido, con subcategorías para distintas manifestaciones.",
+        "start": 17.05,
+        "end": 23.691
+      },
+      {
+        "text": "Entre ellas se distinguen pigmentación o eczema,",
+        "start": 23.691,
+        "end": 27.019
+      },
+      {
+        "text": "cambios de fibrosis",
+        "start": 27.019,
+        "end": 28.086
+      },
+      {
+        "text": "y la corona de pequeños vasos alrededor del tobillo.",
+        "start": 28.086,
+        "end": 31.912
+      },
+      {
+        "text": "Cinco describe una úlcera cicatrizada;",
+        "start": 31.912,
+        "end": 34.898
+      },
+      {
+        "text": "seis, una úlcera activa.",
+        "start": 34.898,
+        "end": 37.556
+      },
+      {
+        "text": "Aquí puedes compararlas sin asumir que todas las personas pasarán de una categoría a otra.",
+        "start": 37.556,
+        "end": 42.553469
+      }
+    ],
+    "review": "Transcript/timestamp verification is not an auditory review; see delivery report for listening coverage."
+  },
+  {
+    "id": "ulcera-venosa",
+    "provider": "HeyGen",
+    "voice_id": "84854979e66846989bc6c5855f53268f",
+    "voice_name": "Rocío - Calm & Trustworthy",
+    "requested_engine": "saved default",
+    "returned_engine": "orca",
+    "language": "es",
+    "speed": 1,
+    "duration_seconds": 42.657938,
+    "sha256": "b119a0d8847d7182488e1b41ea5d96e882823e51e14f216c79e6da1afd59db97",
+    "timing": "Provider word timestamps; original pause groups and edited phrase segmentation matched without changing recorded words.",
+    "scenes": [
+      {
+        "text": "Una úlcera es una zona donde la piel ha perdido su continuidad.",
+        "start": 0,
+        "end": 4.616
+      },
+      {
+        "text": "En la enfermedad venosa, la presión elevada mantenida puede contribuir a cambios en la microcirculación.",
+        "start": 4.616,
+        "end": 10.979
+      },
+      {
+        "text": "La alteración de la barrera y la inflamación participan en el daño de los tejidos.",
+        "start": 10.979,
+        "end": 16.073
+      },
+      {
+        "text": "El corte permite relacionar epidermis, dermis, tejido subcutáneo y pequeños vasos.",
+        "start": 16.073,
+        "end": 22.113
+      },
+      {
+        "text": "No toda herida del tobillo es venosa: también hay causas arteriales, mixtas y otras.",
+        "start": 22.113,
+        "end": 28.38
+      },
+      {
+        "text": "La reparación incluye recuperar tejido y cubrir la superficie, pero su evolución depende de la causa y del manejo.",
+        "start": 28.38,
+        "end": 36.135
+      },
+      {
+        "text": "Este cierre es una comparación didáctica, sin un plazo de curación ni una indicación de tratamiento.",
+        "start": 36.135,
+        "end": 42.657938
+      }
+    ],
+    "review": "Transcript/timestamp verification is not an auditory review; see delivery report for listening coverage."
+  }
+]

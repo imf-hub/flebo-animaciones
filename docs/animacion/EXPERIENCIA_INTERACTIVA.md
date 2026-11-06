@@ -2,6 +2,8 @@
 
 Implementación del 6 de noviembre de 2026, posterior al análisis de la referencia original. Leer junto con `ARQUITECTURA.md`: ese documento conserva el inventario y las limitaciones de la versión inicial; este describe los cambios realizados.
 
+**Ampliación posterior del mismo día:** el catálogo tiene ahora 19 módulos, 57 pasos y 19 preguntas. Los siete modelos añadidos tienen 40 piezas seleccionables y narraciones nuevas con marcas de palabra del proveedor. Ver [producción y comprobaciones](entregas/siete-modulos-2026-11-06.md) y [revisión documental médica](REVISION_MEDICA_SIETE_MODULOS.md). Los apartados originales siguientes describen la primera evolución de doce módulos.
+
 ## Producto implementado
 
 La portada presenta un modelo 3D real, dos niveles de explicación y un recorrido de cuatro unidades. Se mantienen los 12 módulos, sus narraciones y sus esquemas originales. El orden ahora comienza por la estructura, sigue por la función, muestra alteraciones y termina conectando conceptos clínicos.

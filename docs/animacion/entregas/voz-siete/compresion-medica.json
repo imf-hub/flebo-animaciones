@@ -1,0 +1,593 @@
+{
+  "duration": 44.904489795918366,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Una media de compresión aplica presión externa sobre la pierna y da soporte a los tejidos.<break time=\"0.9s\"/>La prenda graduada se representa con mayor soporte distal, sin indicar aquí una presión concreta.<break time=\"0.9s\"/>Al caminar, la contracción muscular participa en el movimiento de la sangre hacia arriba.<break time=\"0.9s\"/>La compresión puede ayudar al control de síntomas y edema, pero no reconstruye por sí sola una válvula dañada.<break time=\"0.9s\"/>El efecto depende también del ajuste de la prenda y de las características de cada persona.<break time=\"0.9s\"/>La circulación arterial y otras condiciones deben valorarse antes de indicar compresión.<break time=\"0.9s\"/>Este modelo explica una relación mecánica; no sirve para elegir una talla, una presión o un tratamiento.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Una",
+      "start": 0.299,
+      "end": 0.512
+    },
+    {
+      "word": "media",
+      "start": 0.555,
+      "end": 0.6827
+    },
+    {
+      "word": "de",
+      "start": 0.811,
+      "end": 0.896
+    },
+    {
+      "word": "compresión",
+      "start": 0.939,
+      "end": 1.4507
+    },
+    {
+      "word": "aplica",
+      "start": 1.493,
+      "end": 1.877
+    },
+    {
+      "word": "presión",
+      "start": 1.92,
+      "end": 2.2187
+    },
+    {
+      "word": "externa",
+      "start": 2.261,
+      "end": 2.7307
+    },
+    {
+      "word": "sobre",
+      "start": 2.773,
+      "end": 2.9867
+    },
+    {
+      "word": "la",
+      "start": 3.029,
+      "end": 3.072
+    },
+    {
+      "word": "pierna",
+      "start": 3.115,
+      "end": 3.456
+    },
+    {
+      "word": "y",
+      "start": 3.541,
+      "end": 3.669
+    },
+    {
+      "word": "da",
+      "start": 3.712,
+      "end": 3.84
+    },
+    {
+      "word": "soporte",
+      "start": 3.883,
+      "end": 4.309
+    },
+    {
+      "word": "a",
+      "start": 4.352,
+      "end": 4.395
+    },
+    {
+      "word": "los",
+      "start": 4.437,
+      "end": 4.5227
+    },
+    {
+      "word": "tejidos.",
+      "start": 4.565,
+      "end": 4.958
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 4.958,
+      "end": 5.8580000000000005
+    },
+    {
+      "word": "La",
+      "start": 5.8580000000000005,
+      "end": 6.028000000000001
+    },
+    {
+      "word": "prenda",
+      "start": 6.071000000000001,
+      "end": 6.284000000000001
+    },
+    {
+      "word": "graduada",
+      "start": 6.370000000000001,
+      "end": 6.711000000000001
+    },
+    {
+      "word": "se",
+      "start": 6.839000000000001,
+      "end": 7.010000000000001
+    },
+    {
+      "word": "representa",
+      "start": 7.052000000000001,
+      "end": 7.394000000000001
+    },
+    {
+      "word": "con",
+      "start": 7.522000000000001,
+      "end": 7.650000000000001
+    },
+    {
+      "word": "mayor",
+      "start": 7.692000000000001,
+      "end": 7.9910000000000005
+    },
+    {
+      "word": "soporte",
+      "start": 8.034,
+      "end": 8.418000000000001
+    },
+    {
+      "word": "distal,",
+      "start": 8.503,
+      "end": 9.015
+    },
+    {
+      "word": "sin",
+      "start": 9.228,
+      "end": 9.356
+    },
+    {
+      "word": "indicar",
+      "start": 9.399000000000001,
+      "end": 9.74
+    },
+    {
+      "word": "aquí",
+      "start": 9.783,
+      "end": 9.996
+    },
+    {
+      "word": "una",
+      "start": 10.039,
+      "end": 10.167
+    },
+    {
+      "word": "presión",
+      "start": 10.21,
+      "end": 10.508000000000001
+    },
+    {
+      "word": "concreta.",
+      "start": 10.551,
+      "end": 10.951
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 10.951,
+      "end": 11.851
+    },
+    {
+      "word": "Al",
+      "start": 11.851,
+      "end": 12.235000000000001
+    },
+    {
+      "word": "caminar,",
+      "start": 12.278,
+      "end": 12.790000000000001
+    },
+    {
+      "word": "la",
+      "start": 12.96,
+      "end": 13.088000000000001
+    },
+    {
+      "word": "contracción",
+      "start": 13.131,
+      "end": 13.558
+    },
+    {
+      "word": "muscular",
+      "start": 13.6,
+      "end": 13.856
+    },
+    {
+      "word": "participa",
+      "start": 13.984,
+      "end": 14.496
+    },
+    {
+      "word": "en",
+      "start": 14.539,
+      "end": 14.582
+    },
+    {
+      "word": "el",
+      "start": 14.624,
+      "end": 14.667
+    },
+    {
+      "word": "movimiento",
+      "start": 14.71,
+      "end": 15.179
+    },
+    {
+      "word": "de",
+      "start": 15.222000000000001,
+      "end": 15.307
+    },
+    {
+      "word": "la",
+      "start": 15.35,
+      "end": 15.392000000000001
+    },
+    {
+      "word": "sangre",
+      "start": 15.435,
+      "end": 15.734
+    },
+    {
+      "word": "hacia",
+      "start": 15.776,
+      "end": 15.99
+    },
+    {
+      "word": "arriba.",
+      "start": 16.032,
+      "end": 16.271
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 16.271,
+      "end": 17.171
+    },
+    {
+      "word": "La",
+      "start": 17.171,
+      "end": 17.64
+    },
+    {
+      "word": "compresión",
+      "start": 17.683,
+      "end": 18.238
+    },
+    {
+      "word": "puede",
+      "start": 18.366,
+      "end": 18.878
+    },
+    {
+      "word": "ayudar",
+      "start": 18.92,
+      "end": 19.091
+    },
+    {
+      "word": "al",
+      "start": 19.134,
+      "end": 19.176000000000002
+    },
+    {
+      "word": "control",
+      "start": 19.262,
+      "end": 19.432000000000002
+    },
+    {
+      "word": "de",
+      "start": 19.646,
+      "end": 19.774
+    },
+    {
+      "word": "síntomas",
+      "start": 19.816000000000003,
+      "end": 20.328000000000003
+    },
+    {
+      "word": "y",
+      "start": 20.414,
+      "end": 20.542
+    },
+    {
+      "word": "edema,",
+      "start": 20.584000000000003,
+      "end": 21.096000000000004
+    },
+    {
+      "word": "pero",
+      "start": 21.352000000000004,
+      "end": 21.566000000000003
+    },
+    {
+      "word": "no",
+      "start": 21.608000000000004,
+      "end": 21.822000000000003
+    },
+    {
+      "word": "reconstruye",
+      "start": 21.864000000000004,
+      "end": 22.504000000000005
+    },
+    {
+      "word": "por",
+      "start": 22.547000000000004,
+      "end": 22.718000000000004
+    },
+    {
+      "word": "sí",
+      "start": 22.803000000000004,
+      "end": 22.931000000000004
+    },
+    {
+      "word": "sola",
+      "start": 22.974000000000004,
+      "end": 23.272000000000006
+    },
+    {
+      "word": "una",
+      "start": 23.4,
+      "end": 23.742000000000004
+    },
+    {
+      "word": "válvula",
+      "start": 23.784,
+      "end": 24.168
+    },
+    {
+      "word": "dañada.",
+      "start": 24.211000000000006,
+      "end": 24.534
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 24.534,
+      "end": 25.434
+    },
+    {
+      "word": "El",
+      "start": 25.434,
+      "end": 25.903
+    },
+    {
+      "word": "efecto",
+      "start": 25.945999999999998,
+      "end": 26.33
+    },
+    {
+      "word": "depende",
+      "start": 26.372,
+      "end": 26.756
+    },
+    {
+      "word": "también",
+      "start": 26.799,
+      "end": 27.14
+    },
+    {
+      "word": "del",
+      "start": 27.183,
+      "end": 27.311
+    },
+    {
+      "word": "ajuste",
+      "start": 27.354,
+      "end": 27.738
+    },
+    {
+      "word": "de",
+      "start": 27.78,
+      "end": 27.866
+    },
+    {
+      "word": "la",
+      "start": 27.908,
+      "end": 27.951
+    },
+    {
+      "word": "prenda",
+      "start": 27.994,
+      "end": 28.378
+    },
+    {
+      "word": "y",
+      "start": 28.419999999999998,
+      "end": 28.719
+    },
+    {
+      "word": "de",
+      "start": 28.762,
+      "end": 28.804
+    },
+    {
+      "word": "las",
+      "start": 28.847,
+      "end": 28.932
+    },
+    {
+      "word": "características",
+      "start": 28.974999999999998,
+      "end": 29.743
+    },
+    {
+      "word": "de",
+      "start": 29.785999999999998,
+      "end": 29.871
+    },
+    {
+      "word": "cada",
+      "start": 29.913999999999998,
+      "end": 29.999
+    },
+    {
+      "word": "persona.",
+      "start": 30.084,
+      "end": 30.54
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 30.54,
+      "end": 31.439999999999998
+    },
+    {
+      "word": "La",
+      "start": 31.439999999999998,
+      "end": 31.909
+    },
+    {
+      "word": "circulación",
+      "start": 31.951999999999998,
+      "end": 32.464
+    },
+    {
+      "word": "arterial",
+      "start": 32.506,
+      "end": 32.848
+    },
+    {
+      "word": "y",
+      "start": 33.018,
+      "end": 33.146
+    },
+    {
+      "word": "otras",
+      "start": 33.189,
+      "end": 33.445
+    },
+    {
+      "word": "condiciones",
+      "start": 33.488,
+      "end": 34.085
+    },
+    {
+      "word": "deben",
+      "start": 34.17,
+      "end": 34.554
+    },
+    {
+      "word": "valorarse",
+      "start": 34.64,
+      "end": 35.194
+    },
+    {
+      "word": "antes",
+      "start": 35.28,
+      "end": 35.749
+    },
+    {
+      "word": "de",
+      "start": 35.792,
+      "end": 35.877
+    },
+    {
+      "word": "indicar",
+      "start": 35.92,
+      "end": 36.176
+    },
+    {
+      "word": "compresión.",
+      "start": 36.261,
+      "end": 36.794000000000004
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 36.794000000000004,
+      "end": 37.694
+    },
+    {
+      "word": "Este",
+      "start": 37.694,
+      "end": 38.249
+    },
+    {
+      "word": "modelo",
+      "start": 38.291000000000004,
+      "end": 38.547000000000004
+    },
+    {
+      "word": "explica",
+      "start": 38.675000000000004,
+      "end": 39.059000000000005
+    },
+    {
+      "word": "una",
+      "start": 39.102000000000004,
+      "end": 39.230000000000004
+    },
+    {
+      "word": "relación",
+      "start": 39.273,
+      "end": 39.657000000000004
+    },
+    {
+      "word": "mecánica;",
+      "start": 39.699,
+      "end": 40.275
+    },
+    {
+      "word": "no",
+      "start": 40.467,
+      "end": 40.851
+    },
+    {
+      "word": "sirve",
+      "start": 40.894,
+      "end": 41.193000000000005
+    },
+    {
+      "word": "para",
+      "start": 41.235,
+      "end": 41.406
+    },
+    {
+      "word": "elegir",
+      "start": 41.449,
+      "end": 41.747
+    },
+    {
+      "word": "una",
+      "start": 41.79,
+      "end": 41.961
+    },
+    {
+      "word": "talla,",
+      "start": 42.003,
+      "end": 42.494
+    },
+    {
+      "word": "una",
+      "start": 42.601,
+      "end": 42.814
+    },
+    {
+      "word": "presión",
+      "start": 42.857,
+      "end": 43.369
+    },
+    {
+      "word": "o",
+      "start": 43.497,
+      "end": 43.625
+    },
+    {
+      "word": "un",
+      "start": 43.667,
+      "end": 43.753
+    },
+    {
+      "word": "tratamiento.",
+      "start": 43.795,
+      "end": 44.658
+    },
+    {
+      "word": "<end>",
+      "start": 44.904489795918366,
+      "end": 44.904489795918366
+    }
+  ]
+}

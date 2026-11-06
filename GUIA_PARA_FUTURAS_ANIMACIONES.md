@@ -52,6 +52,8 @@ Para una necesidad que estas guías no resuelvan, consulta el documento de herra
 
 ## 4. Reutilizar el código existente antes de construir otro motor
 
+La ampliación a 19 módulos añade siete escenas con el constructor común `FLEBO3D` en [assets/anatomy-scenes.js](assets/anatomy-scenes.js): recorrido venoso, vasos superficiales, compresión, dúplex, edema, CEAP y úlcera. Reutiliza sus superficies paramétricas, partículas ajustadas al lumen y controles de estados. Consulta la [ficha de producción](docs/animacion/entregas/siete-modulos-2026-11-06.md) y el [contraste médico](docs/animacion/REVISION_MEDICA_SIETE_MODULOS.md) antes de extenderlas.
+
 El proyecto es una web estática: HTML, CSS y JavaScript. Las estructuras se generan con código; no hay modelos GLB ni un exportador MP4 integrado.
 
 | Archivo o función | Qué conviene reutilizar |

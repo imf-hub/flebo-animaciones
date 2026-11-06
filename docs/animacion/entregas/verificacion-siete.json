@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-06",
+  "scope": "Technical/visual browser review and documentary medical contrast; no independent clinician approval.",
+  "catalogModules": 19,
+  "new3DModules": 7,
+  "newGuidedSteps": 21,
+  "newSelectableParts": 40,
+  "newQuestions": 7,
+  "desktopViewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "mobileViewport": {
+    "width": 390,
+    "height": 844,
+    "physicalDevice": false
+  },
+  "fullPlayback": [
+    {
+      "id": "#viaje-venoso",
+      "result": "completed",
+      "scenes": 7,
+      "duration": 43.36325
+    },
+    {
+      "id": "#venas-superficiales",
+      "result": "completed",
+      "scenes": 7,
+      "duration": 39.105281
+    },
+    {
+      "id": "#compresion-medica",
+      "result": "completed",
+      "scenes": 7,
+      "duration": 44.904469
+    },
+    {
+      "id": "#ultrasonido-duplex",
+      "result": "completed",
+      "scenes": 7,
+      "duration": 48.404875
+    },
+    {
+      "id": "#edema-linfatico",
+      "result": "completed",
+      "scenes": 7,
+      "duration": 41.195094
+    },
+    {
+      "id": "#clasificacion-ceap",
+      "result": "completed",
+      "scenes": 12,
+      "duration": 42.553469
+    },
+    {
+      "id": "#ulcera-venosa",
+      "result": "completed",
+      "scenes": 7,
+      "duration": 42.657938
+    }
+  ],
+  "mobile": [
+    {
+      "id": "#viaje-venoso",
+      "width": 390,
+      "scrollWidth": 390,
+      "rendered": true
+    },
+    {
+      "id": "#venas-superficiales",
+      "width": 390,
+      "scrollWidth": 390,
+      "rendered": true
+    },
+    {
+      "id": "#compresion-medica",
+      "width": 390,
+      "scrollWidth": 390,
+      "rendered": true
+    },
+    {
+      "id": "#ultrasonido-duplex",
+      "width": 390,
+      "scrollWidth": 390,
+      "rendered": true
+    },
+    {
+      "id": "#edema-linfatico",
+      "width": 390,
+      "scrollWidth": 390,
+      "rendered": true
+    },
+    {
+      "id": "#clasificacion-ceap",
+      "width": 390,
+      "scrollWidth": 390,
+      "rendered": true
+    },
+    {
+      "id": "#ulcera-venosa",
+      "width": 390,
+      "scrollWidth": 390,
+      "rendered": true
+    }
+  ],
+  "allModulesOpened": [
+    "#pared-3d",
+    "#valvula-sana",
+    "#valvula-incompetente",
+    "#bomba-muscular",
+    "#fascias",
+    "#compartimentos-3d",
+    "#union-safenofemoral",
+    "#progresion-varice",
+    "#microcirculacion",
+    "#escleroterapia",
+    "#trombosis-venosa-profunda",
+    "#sindrome-postrombotico",
+    "#viaje-venoso",
+    "#venas-superficiales",
+    "#compresion-medica",
+    "#ultrasonido-duplex",
+    "#edema-linfatico",
+    "#clasificacion-ceap",
+    "#ulcera-venosa"
+  ],
+  "ceapModifiers": [
+    "Componente clínico\nC2r,S\nHallazgo ilustrado\nVárices\nAlcance\nC únicamente; E, A y P requieren evaluación adicional",
+    "Componente clínico\nC4c,S\nHallazgo ilustrado\nCorona flebectásica\nAlcance\nC únicamente; E, A y P requieren evaluación adicional",
+    "Componente clínico\nC6r,S\nHallazgo ilustrado\nÚlcera activa\nAlcance\nC únicamente; E, A y P requieren evaluación adicional"
+  ],
+  "audioReviewLimit": "Full playback completed; provider transcript/word timestamps and file durations checked. No independent auditory/phonetic review.",
+  "performanceLimit": "One-second render counters observed; not percentile benchmarks or physical-phone guarantees."
+}
