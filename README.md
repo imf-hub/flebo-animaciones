@@ -6,6 +6,8 @@ El visor separa **Guía, Explorar y Lectura**. La reproducción tiene su propia 
 
 La portada incorpora vistas de pared, capas y válvula, capítulos visuales, duraciones reales de audio y continuación según el progreso. Diseño adaptado tras analizar siete plantillas de MotionSites desde el acceso autorizado del propietario: [referencias, decisiones y método reutilizable](docs/DISENO_MOTIONSITES.md).
 
+La [revisión integral de UX y rendimiento](docs/REVISION_UX_RENDIMIENTO.md) documenta las comprobaciones de los 22 temas, lectura por secciones, desplegables, rótulos adaptados, encuadres y muestras de fluidez.
+
 - Web pública: https://imf-hub.github.io/flebo-animaciones/
 - Repositorio: https://github.com/imf-hub/flebo-animaciones
 
@@ -55,6 +57,7 @@ El build añade versiones basadas en el contenido a los estilos y scripts de `in
 - `assets/extension-data.js`: lecciones, fuentes, fichas, guiones y recorrido ampliado.
 - `assets/extension-audio.js`: duraciones, marcas y versiones de las 22 narraciones activas.
 - `assets/course.js`: recorrido, objetivos por perfil, pasos, preguntas y fichas anatómicas.
+- `assets/reading.js`: títulos y estructura editorial de la lectura; conserva los párrafos clínicos originales.
 - `assets/experience.js`: aprendizaje, selección de estructuras, portada 3D y progreso local.
 - `assets/logos/`: logotipos originales del IMF.
 - `assets/vendor/`: Three.js 0.128.0 y OrbitControls, con su licencia MIT; se cargan al abrir un modelo 3D.

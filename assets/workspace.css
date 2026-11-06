@@ -90,6 +90,30 @@
 .v-text p{margin:0 0 20px}
 .v-text ul{padding-left:20px;margin:0 0 22px}
 .v-text li{margin-bottom:12px}
+.reading-content>#explanationSummary{font-size:12px;font-weight:500;color:#5b7682;margin-bottom:20px}
+.reading-section{padding:0 0 24px;margin:0 0 24px;border-bottom:1px solid #e4ecef}
+.reading-section:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.reading-section h4{font:500 19px/1.35 var(--f-display);color:#244756;letter-spacing:-.2px;text-transform:none;margin:0 0 13px;text-wrap:pretty}
+.reading-section:first-child{padding:20px;background:#f0f7f7;border:1px solid #d5e6e5;border-radius:8px}
+.reading-section:first-child h4{color:#215e65}
+.reading-body>p:last-child{margin-bottom:0}
+.reading-body .classification-list,.reading-body .definition-list{list-style:none;padding:0;margin:14px 0 0}
+.classification-list li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:baseline;padding:10px 0;margin:0;border-top:1px solid #d9e8e7;line-height:1.65;font-size:14px}
+.classification-list strong{display:block;color:#215e65;font-weight:600;white-space:nowrap}
+.definition-list li{font-size:14px;line-height:1.7;margin:0;padding:14px 0;border-top:1px solid #d9e8e7}
+.definition-list strong{display:block;color:#215e65;font-size:15px;margin-bottom:5px}
+.definition-list li:first-child{padding-top:0;border-top:0}
+.primary-controls,.secondary-controls-body{display:grid;gap:24px}
+.secondary-controls{border:1px solid #d8e4e9;border-radius:7px;background:#f8fafb;margin-top:0}
+.v-side .secondary-controls>summary{padding:14px 16px;color:#315563;min-height:48px}
+.secondary-controls-body{padding:6px 16px 20px}
+.model-reset{padding-top:0}
+.workspace-panel .model-reset .btn{width:100%;background:transparent;color:#315563;border-color:#cbdce3;font-weight:400}
+.structure-actions[hidden]{display:none}
+.workspace-panel .ctl-h:has(>input[type=checkbox]){display:flex;justify-content:space-between;align-items:center;min-height:44px;gap:16px;font-size:14px;line-height:1.5}
+.workspace-panel .ctl-h:has(>input[type=checkbox])>span{max-width:30ch}
+.workspace-panel .seg[role=group]{gap:7px}
+.model-status[open]{padding-bottom:8px}
 .v-text b{font-weight:500;color:#224756}
 .lesson-sources{margin-top:24px;border-top:1px solid var(--line)}
 .lesson-sources p,.lesson-sources li{font-size:13px;line-height:1.75;color:#57707d;margin-bottom:16px}
@@ -114,6 +138,12 @@
 .viewer.model-expanded .viewer-audience{visibility:hidden}
 .viewer .subs{bottom:32px}
 .viewer .stage-zoom button{width:44px;height:44px}
+.viewer .stage-zoom .cycle-labels{display:none}
+.compact-canvas .stage-zoom{flex-direction:row;right:12px;bottom:12px;gap:6px}
+.viewer .compact-canvas .cycle-labels{display:grid;width:auto;min-width:68px;padding-inline:10px;font:400 12px var(--f-body)}
+.viewer .canvas-caption{top:34px;left:0;right:0;max-width:none;padding:7px 14px 9px;background:#0d1e28f2;pointer-events:none}
+.viewer .canvas-caption strong{font:600 14px/1.4 var(--f-body);color:#e6edf3}
+.viewer .canvas-caption span{font:400 11px/1.5 var(--f-body);color:#aabfcb;max-width:none}
 .viewer .hint3d{font-size:11px;line-height:1.4;max-width:75%;bottom:12px}
 .viewer .wm{height:23px;right:16px;top:14px;max-width:30%}
 .viewer .sbtn,.workspace-tabs button{transition:background-color var(--ui-fast),color var(--ui-fast),border-color var(--ui-fast)}
@@ -128,3 +158,8 @@
 @media(max-width:760px){.viewer.model-expanded{grid-template-rows:62px minmax(0,1fr)}}
 @media(max-height:550px) and (max-width:760px) and (orientation:landscape){.viewer.model-expanded{grid-template-rows:54px minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce){.workspace-tabs button,.viewer .sbtn{transition:none}}
+@media(min-width:761px) and (max-width:900px) and (orientation:portrait){
+  .viewer:not(.video):not(.model-expanded){grid-template-areas:"header" "stage" "side";grid-template-columns:minmax(0,1fr);grid-template-rows:68px minmax(260px,46dvh) minmax(0,1fr)}
+  .v-side{border-left:0;border-top:1px solid var(--line)}
+  .lesson-heading{padding:16px 24px 12px}.workspace-panel{padding:20px 24px}.v-side h2{font-size:24px}
+}

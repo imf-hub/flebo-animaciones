@@ -1,4 +1,7 @@
 /* MotionSites adaptation: one learning task per surface, using our real scenes. */
+:root[data-theme="light"]{color-scheme:light}
+#heroMotion{margin-left:auto;flex-shrink:0;min-width:68px;min-height:44px;padding:8px 11px;font:400 12px var(--f-body);color:#d7e9ef;background:#ffffff0a;border:1px solid #577381;border-radius:6px}
+#heroMotion:hover{background:#294d5f}
 .site-header{height:82px;padding-inline:clamp(20px,4vw,70px);gap:30px;background:#fff;border-color:#e5ecef}
 .wordmark{font-size:23px;letter-spacing:-.8px}
 .header-logo{width:157px;margin-left:12px}

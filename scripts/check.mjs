@@ -1,6 +1,7 @@
 import { readFile, access } from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import { readAnimationCatalog, readCourseData, validateAnimationCatalog } from './animation-catalog.mjs';
+import { readAnimationCatalog, readCourseData, validateAnimationCatalog, literal } from './animation-catalog.mjs';
+import { runInNewContext } from 'node:vm';
 import { createHash } from 'node:crypto';
 const html = await readFile('index.html', 'utf8');
 const app = await readFile('assets/app.js', 'utf8');
@@ -11,6 +12,12 @@ for (const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
   if (!/^(https?:|data:)/.test(match[1])) await access(match[1].split('?')[0]);
 }
 const catalog = await readAnimationCatalog();
+const reading=runInNewContext('('+literal(await readFile('assets/reading.js','utf8'),'LESSON_READING')+')');
+for(const module of catalog.modules)for(const audience of ['paciente','medico']){
+  const paragraphs=[...module.text[audience].matchAll(/<(?:p|ul|ol)\b/g)].length;
+  assert.equal(reading[module.id]?.length,paragraphs,`Faltan secciones de lectura: ${module.id}, ${audience}`);
+  assert.ok(reading[module.id].every(title=>typeof title==='string'&&title.trim()),`Título vacío: ${module.id}`);
+}
 const baseline = JSON.parse(await readFile('docs/animacion/baseline.json', 'utf8'));
 const errors = validateAnimationCatalog(catalog, baseline.modules.map(m => m.id));
 assert.equal(errors.length, 0, errors.join('\n'));

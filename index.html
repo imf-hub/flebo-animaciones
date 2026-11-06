@@ -19,15 +19,16 @@
   <link rel="stylesheet" href="assets/styles.css?v=85268b6b7916">
   <link rel="stylesheet" href="assets/experience.css?v=0e96554635f0">
   <link rel="stylesheet" href="assets/anatomy-scenes.css?v=5c7ddd93a3df">
-  <link rel="stylesheet" href="assets/learning.css?v=94b0465b63ef">
-  <link rel="stylesheet" href="assets/workspace.css?v=eda42eb18931">
+  <link rel="stylesheet" href="assets/learning.css?v=40a9bf694fa6">
+  <link rel="stylesheet" href="assets/workspace.css?v=240727506480">
   <script src="assets/course.js?v=8875a7f2c071" defer></script>
+  <script src="assets/reading.js?v=d3a2af02527c" defer></script>
   <script src="assets/anatomy-scenes.js?v=0f8ac4475a2f" defer></script>
   <script src="assets/clinical-scenes.js?v=d66fd447a8f6" defer></script>
   <script src="assets/extension-data.js?v=a757d754816d" defer></script>
   <script src="assets/extension-audio.js?v=f7a69b343840" defer></script>
-  <script src="assets/app.js?v=5384d0f46366" defer></script>
-  <script src="assets/experience.js?v=0b4453ad4a70" defer></script>
+  <script src="assets/app.js?v=8f61d65cbe82" defer></script>
+  <script src="assets/experience.js?v=9b0bf0a0a6f1" defer></script>
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -53,7 +54,7 @@
         <ul class="hero-facts" aria-label="Contenido de la biblioteca"><li><strong id="factTopics">22</strong><span>temas visuales</span></li><li><strong id="factModels">13</strong><span>modelos 3D</span></li><li><strong>2</strong><span>formas de aprender</span></li></ul>
       </div>
       <div class="hero-lab">
-        <div class="lab-heading"><span class="live-dot" aria-hidden="true"></span><span>Una vena, de dentro hacia fuera</span><span class="lab-type">Interactivo</span></div>
+        <div class="lab-heading"><span class="live-dot" aria-hidden="true"></span><span>Una vena, de dentro hacia fuera</span><button id="heroMotion" type="button" aria-label="Pausar animación de portada" aria-pressed="true">Pausar</button></div>
         <div id="heroModel" class="hero-model" aria-label="Vista interactiva de las capas de una vena"><p class="hero-loading">Preparando el modelo…</p></div>
         <div class="hero-views" id="heroViews" role="group" aria-label="Cambiar la vista de la vena"><button id="heroWall" type="button" data-hero-view="wall" aria-pressed="true" disabled>Pared</button><button id="heroExplode" type="button" data-hero-view="layers" aria-pressed="false" disabled>Capas</button><button id="heroValve" type="button" data-hero-view="valve" aria-pressed="false" disabled>Válvula</button></div>
         <div class="hero-specimen-label"><div><strong id="heroModelTitle">Pared y válvula venosa</strong><small id="heroModelHint">Arrastra para girar. Elige una vista para mirar por dentro.</small></div><button id="heroOpen" type="button">Abrir modelo <span aria-hidden="true">↗</span></button></div>

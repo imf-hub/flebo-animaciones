@@ -5,17 +5,46 @@ document.querySelectorAll("img[data-logo]").forEach(i=>{i.src=LOGO[i.dataset.log
 const TAU=Math.PI*2, clamp=(v,a,b)=>Math.max(a,Math.min(b,v)), lerp=(a,b,t)=>a+(b-a)*t, smooth=t=>t*t*(3-2*t);
 const rnd=(a,b)=>a+Math.random()*(b-a);
 function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+// Opt-in, bounded measurements; no network, storage or patient data.
+function frameMonitor(canvas){
+  if(!new URLSearchParams(location.search).has('rendimiento'))return()=>{};
+  let previous=0,intervals=[],cpu=[];
+  const measure=(start,end)=>{const interval=previous?start-previous:0;previous=start;
+    if(!interval)return;
+    intervals.push(interval);cpu.push(end-start);if(intervals.length<120)return;
+    const sorted=[...intervals].sort((a,b)=>a-b),sum=a=>a.reduce((s,v)=>s+v,0);
+    canvas.dataset.frameStats=JSON.stringify({frames:intervals.length,fps:+(1000*intervals.length/sum(intervals)).toFixed(1),p95Ms:+sorted[Math.floor(sorted.length*.95)].toFixed(2),cpuMs:+(sum(cpu)/cpu.length).toFixed(2),over34Ms:intervals.filter(v=>v>34).length});
+    canvas.dataset.frameWindow='ready';intervals=[];cpu=[];
+  };measure.reset=()=>{previous=0;intervals=[];cpu=[]};return measure;
+}
 const STAGE='#0d1e28';
 const C={ink:'#e6edf3',dim:'#9fb0c0',line:'#2a3a47',blood:'#a32132',bloodS:'#5c0d16',reflux:'#e8963a',refluxS:'#8a4f12',
   lumen:'#2b0c13',endo:'#f1cdd2',endoN:'#c98390',intima:'#e1a6b0',media:'#a8443d',mediaD:'#7a2c28',advent:'#d4b07a',adventD:'#a8844c',
   valve:'#efdcc4',valveS:'#b99d7d',fascia:'#e9eef2',fat:'#dcb85e',fatL:'#efd486',skin:'#d9a58c',dermis:'#e8bcab',muscle:'#8c3434',muscleL:'#a64848',
   veinWall:'#6d7fbf',artery:'#c23a3a',nerve:'#e9d36b',ok:'#5cc29a'};
 const FONT='"IBM Plex Sans", system-ui, sans-serif', MONO='"IBM Plex Mono", ui-monospace, monospace';
+let canvasAnnotations=null;
+function collectCanvasLabel(ctx,x,y,tx,ty,text,side){const m=ctx.getTransform(),d=canvasAnnotations.dpr,point=(a,b)=>({x:(m.a*a+m.c*b+m.e)/d,y:(m.b*a+m.d*b+m.f)/d});canvasAnnotations.labels.push({anchor:point(x,y),target:point(tx,ty),text,side})}
+function paintCanvasAnnotations(ctx,frame,offset){
+  const {width:w,height:h,dpr,labels,heading,caption}=frame;ctx.save();ctx.setTransform(dpr,0,0,dpr,0,0);ctx.textAlign='left';ctx.textBaseline='top';
+  const occupied=[{x:w-244,y:h-64,w:244,h:64}];
+  if(heading){if(caption.firstChild.textContent!==heading.title)caption.firstChild.textContent=heading.title;if(caption.lastChild.textContent!==(heading.sub||''))caption.lastChild.textContent=heading.sub||'';caption.firstChild.style.color=heading.color||C.ink;ctx.font='600 14px '+FONT;const lines=canvasTextLines(ctx,heading.title,w-28);ctx.font='400 11px '+FONT;const subLines=heading.sub?canvasTextLines(ctx,heading.sub,w-28):[],bottom=42+lines.length*20+(subLines.length?subLines.length*16+8:0);occupied.push({x:0,y:0,w,h:bottom+8});
+  }
+  ctx.font='500 12px '+FONT;const available=labels.filter(label=>label.anchor.x>=0&&label.anchor.x<=w&&label.anchor.y>=0&&label.anchor.y<=h);let shown=0;
+  for(let i=0;i<available.length&&shown<3;i++){
+    const label=available[(i+offset)%available.length],lines=canvasTextLines(ctx,label.text,Math.min(168,w*.5)),bw=Math.max(...lines.map(line=>ctx.measureText(line).width))+16,bh=lines.length*16+12,a=label.anchor;
+    const positions=[[label.target.x,label.target.y-bh/2],[a.x+18,a.y-bh/2],[a.x-bw-18,a.y-bh/2],[a.x-bw/2,a.y-bh-24],[a.x-bw/2,a.y+24],[12,h-bh-72],[w-bw-12,100]];let chosen;
+    for(const [px,py] of positions){const x=clamp(px,8,w-bw-8),y=clamp(py,8,h-bh-8);if(!occupied.some(r=>x<r.x+r.w+6&&x+bw+6>r.x&&y<r.y+r.h+6&&y+bh+6>r.y)){chosen={x,y,w:bw,h:bh};break}}
+    if(!chosen)continue;occupied.push(chosen);shown++;const {x,y}=chosen;ctx.strokeStyle='#9db9c7';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(clamp(a.x,x,x+bw),clamp(a.y,y,y+bh));ctx.stroke();ctx.fillStyle='#102632ee';ctx.fillRect(x,y,bw,bh);ctx.strokeStyle='#577889';ctx.strokeRect(x,y,bw,bh);ctx.fillStyle=C.ink;lines.forEach((line,j)=>ctx.fillText(line,x+8,y+6+j*16));
+  }
+  ctx.restore();return labels.map(label=>label.text).join('. ');
+}
 
 function canvasViewBounds(ctx){const m=ctx.getTransform();return{left:-m.e/m.a,right:(ctx.canvas.width-m.e)/m.a,top:-m.f/m.d,bottom:(ctx.canvas.height-m.f)/m.d}}
 function canvasTextLines(ctx,text,width){const lines=[];let line='';for(const word of text.split(' ')){const candidate=line?line+' '+word:word;if(line&&ctx.measureText(candidate).width>width){lines.push(line);line=word}else line=candidate}if(line)lines.push(line);return lines}
 function clearCanvasZoom(ctx,bounds,x,y,w,h){const m=ctx.getTransform(),ratio=ctx.canvas.width/(ctx.canvas.clientWidth||ctx.canvas.width),rx=60*ratio/m.a,ry=130*ratio/m.d;return y+h>bounds.bottom-ry&&x+w>bounds.right-rx?Math.max(bounds.left+5,Math.min(x,bounds.right-rx-w)):x}
 function lbl(ctx,x,y,tx,ty,text,side){
+  if(canvasAnnotations){collectCanvasLabel(ctx,x,y,tx,ty,text,side);return}
   ctx.save();const bounds=canvasViewBounds(ctx);if(x<bounds.left||x>bounds.right||y<bounds.top||y>bounds.bottom){ctx.restore();return}
   ctx.font='500 14px '+FONT;ctx.textBaseline='middle';
   const lines=canvasTextLines(ctx,text,Math.min(420,(bounds.right-bounds.left)*.72)),w=Math.max(...lines.map(s=>ctx.measureText(s).width))+12,h=lines.length*17+7,right=side?side==='r':tx>=x;
@@ -26,12 +55,14 @@ function lbl(ctx,x,y,tx,ty,text,side){
   ctx.fillStyle=C.ink;ctx.textAlign='left';lines.forEach((line,i)=>ctx.fillText(line,bx+6,by+12+i*17));ctx.restore();
 }
 function banner(ctx,title,sub,color){
+  if(canvasAnnotations){canvasAnnotations.heading={title,sub,color};return}
   ctx.save();ctx.textBaseline='alphabetic';ctx.textAlign='left';
   ctx.fillStyle=color||C.ink;ctx.font='600 19px '+FONT;ctx.fillText(title,24,36);
   if(sub){ctx.fillStyle=C.dim;ctx.font='400 14px '+FONT;ctx.fillText(sub,24,58);}
   ctx.restore();
 }
 function pill(ctx,x,y,text,align,color){
+  if(canvasAnnotations){collectCanvasLabel(ctx,x,y,x,y,text,align==='right'?'l':'r');return}
   ctx.save();ctx.font='500 13px '+FONT;ctx.textBaseline='middle';const bounds=canvasViewBounds(ctx),lines=canvasTextLines(ctx,text,Math.min((bounds.right-bounds.left)-28,(bounds.right-bounds.left)*.8)),w=Math.max(...lines.map(s=>ctx.measureText(s).width))+12,h=lines.length*17+5;
   let bx=clamp(align==='right'?x-w:x,bounds.left+5,bounds.right-w-5);const by=clamp(y-h/2,bounds.top+5,bounds.bottom-h-5);bx=clearCanvasZoom(ctx,bounds,bx,by,w,h);ctx.fillStyle='rgba(15,23,30,.88)';ctx.fillRect(bx,by,w,h);
   ctx.fillStyle=color||C.dim;ctx.textAlign='left';lines.forEach((line,i)=>ctx.fillText(line,bx+6,by+11+i*17));ctx.restore();
@@ -841,8 +872,12 @@ function make3D(el){
   const tags=document.createElement('div');tags.className='model-labels';el.appendChild(tags);
   const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.classList.add('label-lines');el.appendChild(svg);
   const hint=document.createElement('div');hint.className='hint3d';hint.textContent='Arrastra para girar · pellizca para acercar · toca para reconocer';el.appendChild(hint);
-  const list=[],entries=[],parts=new Map();let selected=null,isolated=false,cameraTarget=null,restoreView=null,beforeSelect=null,lastRender=0,alive=true,frameCount=0,measureStart=performance.now();
-  const size=()=>{const w=el.clientWidth,h=el.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);canvas.style.width='100%';canvas.style.height='100%';cam.aspect=w/h;cam.updateProjectionMatrix();svg.setAttribute('viewBox',`0 0 ${w} ${h}`)};
+  const list=[],entries=[],parts=new Map(),labelSizes=new WeakMap();let selected=null,isolated=false,cameraTarget=null,restoreView=null,beforeSelect=null,lastRender=0,alive=true,frameCount=0,measureStart=performance.now(),viewWidth=1,viewHeight=1,obstacles=[];
+  // Read layout when it changes, rather than forcing layout for every label/frame.
+  function measureObstacles(){const bounds=el.getBoundingClientRect();obstacles=[...el.querySelectorAll('.scene-caption,.diagnostic-panel')].map(panel=>{const r=panel.getBoundingClientRect();return{x:r.left-bounds.left,y:r.top-bounds.top,w:r.width,h:r.height}})}
+  const labelObserver=new ResizeObserver(changes=>{let changedPanel=false;for(const entry of changes){if(entry.target.classList.contains('tag3d')){const size=entry.borderBoxSize?.[0];if(entry.contentRect.width>0)labelSizes.set(entry.target,{w:size?.inlineSize||entry.target.offsetWidth,h:size?.blockSize||entry.target.offsetHeight})}else changedPanel=true}if(changedPanel)measureObstacles()});
+  const panelObserver=new MutationObserver(changes=>{for(const change of changes)for(const node of change.addedNodes)if(node.nodeType===1&&node.matches('.scene-caption,.diagnostic-panel'))labelObserver.observe(node);measureObstacles()});panelObserver.observe(el,{childList:true});
+  const size=()=>{const w=el.clientWidth,h=el.clientHeight;if(!w||!h)return;viewWidth=w;viewHeight=h;renderer.setSize(w,h,false);canvas.style.width='100%';canvas.style.height='100%';cam.aspect=w/h;cam.updateProjectionMatrix();svg.setAttribute('viewBox',`0 0 ${w} ${h}`);measureObstacles()};
   const ro=new ResizeObserver(size);ro.observe(el);size();
   function register(mesh,id,name,manageOpacity=false){
     if(!parts.has(id))parts.set(id,{id,name:name||COURSE.structures[id]?.name||id});
@@ -857,7 +892,7 @@ function make3D(el){
   function inferPart(text){const s=text.toLowerCase();return /endotelio/.test(s)?'endotelio':/íntima/.test(s)?'intima':/media:|músculo liso/.test(s)?'media':/adventicia|colágeno/.test(s)?'adventicia':/valva|válvula/.test(s)?'valvas':/safena mayor/.test(s)?'safena':/comunicante/.test(s)?'comunicante':/perforante/.test(s)?'perforante':/fascia muscular/.test(s)?'fascia-muscular':/fascia safena|canal safeno/.test(s)?'fascia-safena':/epidermis|dermis|piel/.test(s)?'piel':/subcutáneo|tributaria|reticulares/.test(s)?'tejido':/vena profunda|vena femoral|n1/.test(s)?'profunda':/nervio safeno/.test(s)?'nervio':/arteria/.test(s)?'arteria':/músculo/.test(s)?'musculo':/vena superficial/.test(s)?'superficial':null}
   function tag(text,getPos,partId,isVisible){const id=partId||inferPart(text),d=document.createElement('div');d.className='tag3d';d.innerHTML='<i></i><span></span>';d.lastChild.textContent=text;d.title=text;
     if(id){d.tabIndex=0;d.setAttribute('role','button');d.setAttribute('aria-label','Reconocer '+text);d.onclick=()=>select(id);d.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(id)}}}
-    tags.appendChild(d);const line=document.createElementNS('http://www.w3.org/2000/svg','line');line.setAttribute('stroke','#93b7c7');line.setAttribute('stroke-opacity','.5');svg.appendChild(line);list.push({d,line,getPos,id,text,isVisible});return d;
+    tags.appendChild(d);labelObserver.observe(d);const line=document.createElementNS('http://www.w3.org/2000/svg','line');line.setAttribute('stroke','#93b7c7');line.setAttribute('stroke-opacity','.5');svg.appendChild(line);list.push({d,line,getPos,id,text,isVisible});return d;
   }
   const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2();let down=null;
   const onDown=e=>{down={x:e.clientX,y:e.clientY}};
@@ -869,19 +904,18 @@ function make3D(el){
   function render(S){if(!alive)return;const now=performance.now(),dt=Math.min(.05,(now-(lastRender||now))/1000);lastRender=now;
     if(cameraTarget&&ctrl.enabled){const alpha=1-Math.exp(-5*dt);cam.position.lerp(cameraTarget.p,alpha);ctrl.target.lerp(cameraTarget.t,alpha);if(cam.position.distanceTo(cameraTarget.p)<.005)cameraTarget=null}
     for(const entry of entries){const material=entry.mesh.material,active=selected===entry.id;if(material.emissive&&selected){material.emissive.copy(entry.emissive);if(active)material.emissive.setHex(0x153948)}if(entry.manageOpacity){const opacity=entry.opacity*factor(entry.id);material.opacity=opacity;material.transparent=opacity<1;material.depthWrite=opacity>.96}}
-    ctrl.update();renderer.render(scene,cam);frameCount++;if(now-measureStart>1000){canvas.dataset.fps=(frameCount*1000/(now-measureStart)).toFixed(1);canvas.dataset.drawCalls=renderer.info.render.calls;frameCount=0;measureStart=now}canvas.dataset.rendered='true';
-    const w=el.clientWidth,h=el.clientHeight,limit=w<520?(AUD==='medico'?4:2):(AUD==='medico'?7:4),occupied=[],hostBounds=el.getBoundingClientRect();let shown=0;
-    for(const panel of el.querySelectorAll('.scene-caption,.diagnostic-panel')){const r=panel.getBoundingClientRect();occupied.push({x:r.left-hostBounds.left,y:r.top-hostBounds.top,w:r.width,h:r.height})}
-    const ordered=[...list].sort((a,b)=>(b.id===selected?1:0)-(a.id===selected?1:0));
+    ctrl.update();renderer.render(scene,cam);frameCount++;if(now-measureStart>1000){canvas.dataset.fps=(frameCount*1000/(now-measureStart)).toFixed(1);canvas.dataset.drawCalls=renderer.info.render.calls;frameCount=0;measureStart=now}if(!canvas.dataset.rendered)canvas.dataset.rendered='true';
+    const w=viewWidth,h=viewHeight,limit=w<520?(AUD==='medico'?4:2):(AUD==='medico'?7:4),occupied=obstacles.slice();let shown=0;
+    const ordered=selected?[...list].sort((a,b)=>(b.id===selected?1:0)-(a.id===selected?1:0)):list;
     for(const t of ordered){t.getPos(world);v.copy(world).project(cam);const active=selected&&t.id===selected,visible=(!t.isVisible||t.isVisible())&&(S.labels||active)&&(!isolated||active)&&v.z<1&&v.z>-1&&Math.abs(v.x)<1.05&&Math.abs(v.y)<1.05&&shown<limit;
       t.d.hidden=!visible;t.line.style.display=visible?'':'none';if(!visible)continue;
-      t.d.classList.toggle('is-active',!!active);const px=(v.x+1)/2*w,py=(1-v.y)/2*h,bw=t.d.offsetWidth,bh=t.d.offsetHeight||28;
+      t.d.classList.toggle('is-active',!!active);const px=(v.x+1)/2*w,py=(1-v.y)/2*h,metrics=labelSizes.get(t.d),bw=metrics?.w||Math.min(w-24,t.text.length*7.5+32),bh=metrics?.h||28;
       const dx=px>w*.6?-bw-22:22,ys=[py-bh/2,py-bh-35,py+28,py-bh-70,py+65];let chosen=null;
       for(const yy of ys){const x=clamp(px+dx,12,Math.max(12,w-bw-12)),y=clamp(yy,48,Math.max(48,h-bh-38));const rect={x,y,w:bw,h:bh};if(!occupied.some(a=>x<a.x+a.w+7&&x+bw+7>a.x&&y<a.y+a.h+7&&y+bh+7>a.y)){chosen=rect;break}}
       if(!chosen){t.d.hidden=true;t.line.style.display='none';continue}occupied.push(chosen);shown++;t.d.style.transform=`translate(${chosen.x}px,${chosen.y}px)`;t.line.setAttribute('x1',px);t.line.setAttribute('y1',py);t.line.setAttribute('x2',chosen.x+(dx<0?bw:0));t.line.setAttribute('y2',chosen.y+bh/2);
     }
   }
-  function destroy(){alive=false;ro.disconnect();canvas.removeEventListener('pointerdown',onDown);canvas.removeEventListener('pointerup',onUp);ctrl.dispose();const geometries=new Set(),materials=new Set();scene.traverse(o=>{if(o.geometry)geometries.add(o.geometry);if(o.material)(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>materials.add(m))});geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());renderer.dispose();renderer.forceContextLoss?.();entries.length=0;parts.clear()}
+  function destroy(){alive=false;ro.disconnect();labelObserver.disconnect();panelObserver.disconnect();canvas.removeEventListener('pointerdown',onDown);canvas.removeEventListener('pointerup',onUp);ctrl.dispose();const geometries=new Set(),materials=new Set();scene.traverse(o=>{if(o.geometry)geometries.add(o.geometry);if(o.material)(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>materials.add(m))});geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());renderer.dispose();renderer.forceContextLoss?.();entries.length=0;parts.clear()}
   return{renderer,scene,cam,ctrl,tag,render,destroy,register,select,isolate,factor,moveTo,setBeforeSelect:fn=>{beforeSelect=fn},get parts(){return[...parts.values()]},get selected(){return selected},get isolated(){return isolated}};
 }
 
@@ -1019,7 +1053,7 @@ function tort3D(el,ui){
 /* ---------- 8 · Compartimentos, comunicantes y perforantes (3D, cara medial del muslo) ---------- */
 function compart3D(el,ui){
   const E=make3D(el),{scene,cam,ctrl}=E;let e=0,target=0,focus='all',inc=false,t=0,builtE=-1,builtInc=null;
-  const home=()=>{cam.position.set(6.6,5.6,9.4);ctrl.target.set(0,0.3,0);ctrl.update()};home();
+  const home=()=>{const fit=el.clientWidth<700?Math.max(1,1.7/cam.aspect):1;cam.position.set(6.6*fit,.3+5.3*fit,9.4*fit);ctrl.target.set(0,0.3,0);ctrl.update();E.moveTo(cam.position.toArray(),ctrl.target.toArray())};home();
   const separationControl=ui.slider('Separación de capas',0,1,0.01,target,v=>{target=v},v=>v<0.05?'Anatomía in situ':v<0.5?'Separación parcial':'Vista explosionada');
   ui.segmented('Resaltar',['Todo','Comunicantes','Perforantes','N3','N2','N1'],0,i=>{focus=['all','comm','perf','n3','n2','n1'][i]});
   ui.toggle('Insuficiencia venosa (reflujo y perforante incompetente)',false,v=>{inc=v});
@@ -1344,7 +1378,7 @@ function makeUI(root){
       return{set(v){inp.value=v;fn(+v);upd(+v)}}},
     toggle(label,val,fn){const id='ctl'+(++uid),d=document.createElement('label');d.className='ctl-h';d.style.alignItems='center';d.setAttribute('for',id);
       d.innerHTML=`<span></span><input type="checkbox" id="${id}" ${val?'checked':''}>`;d.firstChild.textContent=label;const input=d.querySelector('input');input.addEventListener('change',e=>fn(e.target.checked));root.appendChild(d);return{set(value){input.checked=!!value;fn(!!value)}}},
-    segmented(label,opts,idx,fn){const d=document.createElement('div');d.className='ctl';const h=document.createElement('div');h.className='ctl-h';h.textContent=label;const s=document.createElement('div');s.className='seg';s.setAttribute('role','group');
+    segmented(label,opts,idx,fn){const d=document.createElement('div');d.className='ctl';const h=document.createElement('div');h.className='ctl-h';h.textContent=label;const s=document.createElement('div');s.className='seg';s.setAttribute('role','group');s.setAttribute('aria-label',label);
       const bs=opts.map((o,i)=>{const b=document.createElement('button');b.type='button';b.textContent=o;b.setAttribute('aria-pressed',i===idx);b.onclick=()=>{bs.forEach((x,j)=>x.setAttribute('aria-pressed',j===i));fn(i)};s.appendChild(b);return b});
       d.append(h,s);root.appendChild(d);return{set(i){bs.forEach((x,j)=>x.setAttribute('aria-pressed',j===i))}}},
     buttons(list){const r=document.createElement('div');r.className='btnrow';const bs=list.map(([l,f],i)=>{const b=document.createElement('button');b.type='button';b.className='btn'+(i===0?' primary':'');b.textContent=l;b.onclick=f;r.appendChild(b);return b});root.appendChild(r);return bs},
@@ -1385,7 +1419,7 @@ function formatNarrationTime(id){const total=Math.round(AUDIO[id]?.dur||0);retur
 $('#search').addEventListener('input',applyFilter);
 function setAud(a){AUD=a;try{localStorage.setItem('flebo-animaciones-aud',a)}catch(e){}
   document.documentElement.dataset.audience=a;
-  document.querySelectorAll('[data-aud]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.aud===a));if(cur)$('#vText').innerHTML=MODS[cur.i].text[AUD];
+  document.querySelectorAll('[data-aud]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.aud===a));if(cur)renderLessonReading(cur.m,AUD,$('#vText'));
   document.querySelectorAll('.card').forEach(b=>{const m=MODS[+b.dataset.index],lesson=COURSE.lessons[m.id];b.querySelector('h3').textContent=a==='paciente'?lesson.patientTitle:m.title;b.querySelector('p').textContent=a==='paciente'?lesson.patient:m.blurb});
   if(window.learningUI)window.learningUI.audience(a);
 }
@@ -1404,25 +1438,28 @@ function load3D(){
   return threePromise;
 }
 async function openMod(i){
-  closeMod(true);const m=MODS[i],host=$('#stageHost');opener=opener||document.activeElement;
+  const openStarted=performance.now();closeMod(true);const m=MODS[i],host=$('#stageHost');opener=opener||document.activeElement;
+  $('#viewer').dataset.ready='loading';$('#vVideo').disabled=true;$('#vPlay').disabled=true;
   $('#viewer').hidden=false;document.body.style.overflow='hidden';$('#siteShell').inert=true;$('#structureDetail').hidden=true;
   state.playing=true;state.speed=matchMedia('(prefers-reduced-motion: reduce)').matches?0.5:1;state.labels=AUD==='medico';$('#viewer').classList.remove('paused');$('#vPlay').textContent='Pausar';$('#vPlay').setAttribute('aria-pressed',true);$('#vSpeed').value=state.speed;syncSpeedLabel();$('#vLabels').setAttribute('aria-pressed',state.labels);
-  $('.v-side').scrollTop=0;$('#vCat').textContent=m.cat+' · '+(m.kind==='3d'?'modelo 3D':'animación');$('#vTitle').textContent=m.title;$('#vText').innerHTML=m.text[AUD];
+  $('.v-side').scrollTop=0;$('#vCat').textContent=m.cat+' · '+(m.kind==='3d'?'modelo 3D':'animación');$('#vTitle').textContent=m.title;renderLessonReading(m,AUD,$('#vText'));
   const ctr=$('#vControls');ctr.innerHTML='';const ui=makeUI(ctr);
-  cur={i,m};
+  cur={i,m};document.dispatchEvent(new CustomEvent('flebo:loading',{detail:{id:m.id,index:i}}));
   if(m.kind==='2d'){const cv=document.createElement('canvas');cv.setAttribute('aria-label','Animación de '+m.title);host.appendChild(cv);const ctx=cv.getContext('2d');cur.cv=cv;cur.ctx=ctx;cur.sim=m.init({ctx},ui);cur.view={x:500,y:300,z:1};
-    const zoom=document.createElement('div');zoom.className='stage-zoom';zoom.innerHTML='<button type="button" aria-label="Acercar esquema">+</button><button type="button" aria-label="Alejar esquema">−</button><button type="button" aria-label="Restablecer encuadre">↺</button>';host.appendChild(zoom);
+    const zoom=document.createElement('div');zoom.className='stage-zoom';zoom.setAttribute('role','group');zoom.setAttribute('aria-label','Vista del esquema');zoom.innerHTML='<button type="button" aria-label="Acercar esquema">+</button><button type="button" aria-label="Alejar esquema">−</button><button type="button" aria-label="Restablecer encuadre">↺</button><button class="cycle-labels" type="button" aria-label="Ver otros rótulos del esquema">Rótulos</button>';host.appendChild(zoom);cur.labelOffset=0;
     zoom.children[0].onclick=()=>{if(cur?.view)cur.view.z=Math.min(3,cur.view.z+0.4)};zoom.children[1].onclick=()=>{if(cur?.view)cur.view.z=Math.max(1,cur.view.z-0.4)};zoom.children[2].onclick=()=>{if(cur?.view)cur.view={x:500,y:300,z:1}};
+    zoom.children[3].onclick=()=>{if(!cur?.view)return;cur.labelOffset+=3;state.labels=true;$('#vLabels').setAttribute('aria-pressed','true')};
+    const caption=document.createElement('div');caption.className='scene-caption canvas-caption';caption.innerHTML='<strong></strong><span></span>';caption.hidden=true;host.append(caption);cur.annotationCaption=caption;
     let drag=null;cv.onpointerdown=e=>{if(cur?.view?.z>1&&!vid){drag={x:e.clientX,y:e.clientY,cx:cur.view.x,cy:cur.view.y};cv.setPointerCapture(e.pointerId)}};cv.onpointermove=e=>{if(drag&&cur?.view){const scale=Math.min(host.clientWidth/1000,host.clientHeight/600)*cur.view.z;cur.view.x=clamp(drag.cx-(e.clientX-drag.x)/scale,100,900);cur.view.y=clamp(drag.cy-(e.clientY-drag.y)/scale,100,500)}};cv.onpointerup=cv.onpointercancel=()=>{drag=null};
   }
   else{
     const token=cur;host.innerHTML='<p class="stage-message" role="status">Cargando modelo 3D…</p>';
     try{await load3D();if(cur!==token)return false;host.innerHTML='';cur.sim=m.init(host,ui)}
-    catch(e){if(cur!==token)return false;host.innerHTML='<div class="stage-message"><p>No se pudo abrir el modelo 3D en este navegador.</p><button class="sbtn" type="button">Intentar de nuevo</button><p>Puede consultar la explicación o abrir una animación 2D.</p></div>';host.querySelector('button').onclick=()=>openMod(i);$('#vClose').focus();return false}
+    catch(e){if(cur!==token)return false;$('#viewer').dataset.ready='error';host.innerHTML='<div class="stage-message"><p>No se pudo abrir el modelo 3D en este navegador.</p><button class="sbtn" type="button">Intentar de nuevo</button><p>Puede consultar la explicación o abrir una animación 2D.</p></div>';host.querySelector('button').onclick=()=>openMod(i);$('#vClose').focus();return false}
   }
   {const wm=document.createElement('img');wm.className='wm';wm.src=LOGO.h_dark;wm.alt='Instituto Mexicano de Flebología';host.appendChild(wm)}
   try{history.replaceState(null,'','#'+m.id)}catch(e){}
-  lastTs=0;raf=requestAnimationFrame(loop);$('#vClose').focus();document.dispatchEvent(new CustomEvent('flebo:open',{detail:{id:m.id,index:i}}));return true;
+  cur.measure=frameMonitor(cur.cv||host.querySelector('canvas'));$('#viewer').dataset.ready='true';$('#viewer').dataset.openMs=(performance.now()-openStarted).toFixed(1);$('#vVideo').disabled=false;$('#vPlay').disabled=false;lastTs=0;raf=requestAnimationFrame(loop);$('#vClose').focus();document.dispatchEvent(new CustomEvent('flebo:open',{detail:{id:m.id,index:i}}));return true;
 }
 function closeMod(keep){
   stopVideo();cancelAnimationFrame(raf);if(cur&&cur.sim&&cur.sim.destroy)cur.sim.destroy();cur=null;$('#stageHost').innerHTML='';
@@ -1430,11 +1467,12 @@ function closeMod(keep){
 }
 function loop(ts){
   if(!cur||document.hidden)return;if(lastTs&&ts-lastTs<1000/60-1){raf=requestAnimationFrame(loop);return}const dt=lastTs?Math.min(0.05,(ts-lastTs)/1000):0;lastTs=ts;const sdt=state.playing?dt*state.speed*(vid?vid.simulationSpeed||1:1):0;
-  if(cur.m.kind==='2d'){const cv=cur.cv,host=cv.parentElement,dpr=Math.min(devicePixelRatio||1,2),w=host.clientWidth,h=host.clientHeight;
+  const frameStart=performance.now();if(cur.m.kind==='2d'){const cv=cur.cv,host=cv.parentElement,dpr=Math.min(devicePixelRatio||1,2),w=host.clientWidth,h=host.clientHeight;
     if(cv.width!==Math.round(w*dpr)||cv.height!==Math.round(h*dpr)){cv.width=Math.round(w*dpr);cv.height=Math.round(h*dpr)}
-    const ctx=cur.ctx;ctx.setTransform(1,0,0,1,0,0);ctx.fillStyle=STAGE;ctx.fillRect(0,0,cv.width,cv.height);fit(ctx,w,h,dpr);if(vid){vTick(dt);vCam2D(ctx,state.playing?dt:0)}else if(cur.view){cur.cameraView=cur.cameraView||{x:500,y:300,z:1};const alpha=1-Math.exp(-7*dt);for(const k of ['x','y','z'])cur.cameraView[k]+=(cur.view[k]-cur.cameraView[k])*alpha;ctx.translate(500,300);ctx.scale(cur.cameraView.z,cur.cameraView.z);ctx.translate(-cur.cameraView.x,-cur.cameraView.y)}cur.sim.draw(sdt,state);if(vid)vOverlay2D(ctx,state.playing?dt:0)}
+    const compact=w<850&&!vid;host.classList.toggle('compact-canvas',compact);cur.annotationCaption.hidden=!compact;canvasAnnotations=compact?{width:w,height:h,dpr,labels:[],heading:null,caption:cur.annotationCaption}:null;
+    const ctx=cur.ctx;ctx.setTransform(1,0,0,1,0,0);ctx.fillStyle=STAGE;ctx.fillRect(0,0,cv.width,cv.height);fit(ctx,w,h,dpr);if(vid){vTick(dt);vCam2D(ctx,state.playing?dt:0)}else if(cur.view){cur.cameraView=cur.cameraView||{x:500,y:300,z:1};const alpha=1-Math.exp(-7*dt);for(const k of ['x','y','z'])cur.cameraView[k]+=(cur.view[k]-cur.cameraView[k])*alpha;ctx.translate(500,300);ctx.scale(cur.cameraView.z,cur.cameraView.z);ctx.translate(-cur.cameraView.x,-cur.cameraView.y)}cur.sim.draw(sdt,state);if(canvasAnnotations){const description=paintCanvasAnnotations(ctx,canvasAnnotations,cur.labelOffset);if(cv.getAttribute('aria-description')!==description)cv.setAttribute('aria-description',description)}canvasAnnotations=null;if(vid)vOverlay2D(ctx,state.playing?dt:0)}
   else{if(vid){vTick(dt);vCam3D(state.playing?dt:0)}cur.sim.frame(sdt,state);if(vid)vPts3D()}
-  raf=requestAnimationFrame(loop);
+  cur.measure(frameStart,performance.now());raf=requestAnimationFrame(loop);
 }
 $('#vClose').onclick=()=>closeMod(false);
 $('#vPlay').onclick=e=>{state.playing=!state.playing;$('#viewer').classList.toggle('paused',!state.playing);if(vid&&vid.audio){if(state.playing)playNarration(vid);else vid.audio.pause()}if(HAS_TTS&&vid){try{state.playing?speechSynthesis.resume():speechSynthesis.pause()}catch(err){}}e.currentTarget.textContent=state.playing?'Pausar':'Reanudar';e.currentTarget.setAttribute('aria-pressed',state.playing)};
@@ -3739,7 +3777,7 @@ function nextScene(tok){if(vid!==tok)return;tok.si++;
 $('#vVideo').onclick=()=>{if(vid)stopVideo();else startVideo(false)};
 $('#playAll').onclick=()=>{openMod(0).then(ok=>{if(ok)startVideo(true)})};
 document.addEventListener('visibilitychange',()=>{
-  if(document.hidden){cancelAnimationFrame(raf);if(vid&&vid.audio)vid.audio.pause();if(HAS_TTS&&vid)speechSynthesis.pause()}
+  if(document.hidden){cancelAnimationFrame(raf);cur?.measure?.reset?.();if(vid&&vid.audio)vid.audio.pause();if(HAS_TTS&&vid)speechSynthesis.pause()}
   else if(cur&&cur.sim){lastTs=0;raf=requestAnimationFrame(loop);if(state.playing&&vid&&vid.audio)playNarration(vid);if(HAS_TTS&&vid&&state.playing)speechSynthesis.resume()}
 });
 document.addEventListener('keydown',e=>{

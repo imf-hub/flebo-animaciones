@@ -42,6 +42,8 @@ Para mejoras de diseño y movimiento, usar también [MotionSites: acceso, análi
 
 ## Validación y entrega
 
+Antes de modificar lectura, carga o rendimiento, consultar [la revisión integral vigente](docs/REVISION_UX_RENDIMIENTO.md). Mantener `LESSON_READING` para ambos perfiles, controles originales dentro de los grupos, rótulos adaptados a la mesa estrecha y eliminación de la vista previa antes de construir otra escena. Conservar el texto clínico fuente al cambiar su presentación.
+
 Ejecuta `npm run check` y `npm run build` para cambios de código. `npm run inspect:animations` describe el catálogo y revisa su coordinación de datos; no certifica calidad visual ni precisión médica.
 
 Para cambios de animación, revisa el movimiento a velocidad normal, controles, narración, subtítulos, reapertura del módulo y el caso móvil. Registra equipo/viewport, puntos comprobados, comparación con la referencia y límites de la revisión. Unas capturas no prueban la fluidez de una secuencia completa.

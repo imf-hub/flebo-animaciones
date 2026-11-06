@@ -1,5 +1,7 @@
 # Interfaz del visor: separación de tareas
 
+La [revisión integral más reciente](REVISION_UX_RENDIMIENTO.md) añade lectura por secciones, ajustes secundarios desplegables, rótulos 2D adaptados, pausa de portada y correcciones de carga/rendimiento. Conservar esas mejoras junto con las reglas de este documento.
+
 La evolución de la portada y biblioteca, con las referencias de MotionSites consultadas desde el acceso del propietario, está documentada en [Diseño MotionSites](DISENO_MOTIONSITES.md). Mantener estas decisiones junto con la separación del visor descrita aquí.
 
 6 de noviembre de 2026. Sustituye la composición del panel lateral descrita en los primeros apartados de `animacion/EXPERIENCIA_INTERACTIVA.md`.

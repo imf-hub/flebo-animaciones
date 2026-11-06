@@ -1,7 +1,7 @@
 /* Learning experience: audience, guided observation, structure selection and local progress. */
 (()=>{
   const order=COURSE.units.flatMap(unit=>unit.ids),storageKey='flebo-learning-progress-v2';
-  let completed=new Set(),selectedPart=null,isolated=false,toastTimer=0,preview=null,previewRaf=0,previewToken=0,heroVisible=false,heroMode='wall';
+  let completed=new Set(),selectedPart=null,isolated=false,toastTimer=0,preview=null,previewRaf=0,previewToken=0,heroVisible=false,heroMode='wall',heroPlaying=!matchMedia('(prefers-reduced-motion: reduce)').matches;
   try{const saved=JSON.parse(localStorage.getItem(storageKey)||'[]');if(Array.isArray(saved))completed=new Set(saved.filter(id=>order.includes(id)))}catch{}
   const element=id=>document.getElementById(id);
   let activePanel='guide',mountedLesson=null,activeStep=-1,answered=-1,panelMotion=null;
@@ -62,18 +62,29 @@
     const patient=AUD==='paciente';element('vControls').querySelectorAll('.ctl').forEach(control=>{const label=control.querySelector('label')?.textContent||'';control.hidden=patient&&/concentración|aguja|volumen/i.test(label)});
     element('modelStatus').querySelectorAll('.readouts>div').forEach(row=>{row.hidden=patient&&/riesgo|recomendado|parámetro del ejemplo|volumen|concentración|polidocanol|aguja|resultado|escenario|evento/i.test(row.firstChild.textContent)});
   }
-  function mountLesson(){if(!cur||!cur.sim)return;const m=cur.m,lesson=COURSE.lessons[m.id],unit=COURSE.units.find(u=>u.ids.includes(m.id));if(!lesson)return;
+  function organizeControls(){
+    const root=element('vControls');if(root.querySelector('.primary-controls'))return;
+    const controls=[...root.children].filter(node=>node.matches('.ctl,.ctl-h,.btnrow'));
+    const reset=controls.filter(node=>node.matches('.btnrow')&&/Restablecer|Reiniciar/.test(node.textContent));
+    const remaining=controls.filter(node=>!reset.includes(node));
+    const primary=document.createElement('div');primary.className='primary-controls';
+    remaining.slice(0,2).forEach(node=>primary.append(node));root.append(primary);
+    if(remaining.length>2){const more=document.createElement('details');more.className='secondary-controls';const summary=document.createElement('summary');summary.textContent='Más ajustes del modelo';const body=document.createElement('div');body.className='secondary-controls-body';remaining.slice(2).forEach(node=>body.append(node));more.append(summary,body);root.append(more)}
+    reset.forEach(node=>{node.classList.add('model-reset');root.append(node)});
+  }
+  function mountLesson(){if(!cur)return;const m=cur.m,lesson=COURSE.lessons[m.id],unit=COURSE.units.find(u=>u.ids.includes(m.id));if(!lesson)return;
     const changed=mountedLesson!==m.id;if(changed){mountedLesson=m.id;activeStep=-1;answered=-1;element('modelStatus').replaceChildren();element('lessonSources').open=false;element('viewer').querySelector('.knowledge-check').open=false;showPanel('guide')}
     element('viewer').dataset.audience=AUD;element('vTitle').textContent=AUD==='paciente'?lesson.patientTitle:m.title;element('vCat').textContent=unit.title;element('viewerCounter').textContent='Tema '+(order.indexOf(m.id)+1)+' de '+order.length+' · '+(m.kind==='3d'?'Modelo 3D interactivo':'Esquema animado');
     element('learningObjective').textContent=AUD==='medico'?lesson.medObjective:lesson.objective;element('explanationSummary').textContent=AUD==='medico'?'Anatomía y mecanismo':'Entender el mecanismo';
     element('lessonSources').hidden=!m.sources;element('lessonScope').textContent=m.scope||'';element('lessonSourceList').replaceChildren();for(const sourceId of m.sources||[]){const source=EXTENSION_SOURCES[sourceId];const item=document.createElement('li'),link=document.createElement('a');link.textContent=source.title;link.href=source.url;link.target='_blank';link.rel='noopener';item.append(link);element('lessonSourceList').append(item)}
-    element('observationSteps').replaceChildren();lesson.steps.forEach((title,i)=>{const button=document.createElement('button');button.type='button';button.className='observation-step';button.innerHTML='<span></span><div></div>';button.firstChild.textContent=i+1;button.lastChild.textContent=title;button.setAttribute('aria-pressed',activeStep===i);button.onclick=()=>runStep(i);element('observationSteps').appendChild(button)});
+    element('observationSteps').replaceChildren();lesson.steps.forEach((title,i)=>{const button=document.createElement('button');button.type='button';button.className='observation-step';button.disabled=!cur.sim;button.innerHTML='<span></span><div></div>';button.firstChild.textContent=i+1;button.lastChild.textContent=title;button.setAttribute('aria-pressed',activeStep===i);button.onclick=()=>runStep(i);element('observationSteps').appendChild(button)});
     element('stepHint').textContent=activeStep>=0?'Paso '+(activeStep+1)+' de '+lesson.steps.length+' activo.':'Selecciona un paso para cambiar el modelo.';
     element('quizQuestion').textContent=lesson.question;element('quizOptions').replaceChildren();element('quizFeedback').textContent='';
     lesson.answers.forEach((answer,i)=>{const button=document.createElement('button');button.type='button';button.textContent=answer;button.setAttribute('aria-pressed',answered===i);if(answered===i){button.className=i===lesson.correct?'correct':'incorrect';element('quizFeedback').textContent=(i===lesson.correct?'Así es. ':'Vuelve a observar. ')+lesson.why}button.onclick=()=>{answered=i;element('quizOptions').querySelectorAll('button').forEach(b=>{b.className='';b.setAttribute('aria-pressed','false')});button.className=i===lesson.correct?'correct':'incorrect';button.setAttribute('aria-pressed','true');element('quizFeedback').textContent=(i===lesson.correct?'Así es. ':'Vuelve a observar. ')+lesson.why};element('quizOptions').appendChild(button)});
-    element('structurePicker').hidden=!(m.kind==='3d'&&cur.sim.parts?.length);element('structureSelect').replaceChildren(new Option('Elige en la lista o toca el modelo',''));
-    for(const part of cur.sim.parts||[])element('structureSelect').appendChild(new Option(part.name,part.id));element('structureSelect').value=selectedPart||'';element('showAllParts').disabled=!selectedPart;element('readStructure').hidden=!selectedPart;
-    for(const status of element('vControls').querySelectorAll(':scope > .readouts,:scope > .legend'))element('modelStatus').appendChild(status);element('modelStatusDetails').hidden=!element('modelStatus').children.length;
+    element('structurePicker').hidden=!(m.kind==='3d'&&cur.sim?.parts?.length);element('structureSelect').replaceChildren(new Option('Elige en la lista o toca el modelo',''));
+    for(const part of cur.sim?.parts||[])element('structureSelect').appendChild(new Option(part.name,part.id));element('structureSelect').value=selectedPart||'';element('showAllParts').disabled=!selectedPart;element('readStructure').hidden=!selectedPart;
+    for(const status of element('vControls').querySelectorAll(':scope > .readouts,:scope > .legend'))element('modelStatus').appendChild(status);element('modelStatusDetails').hidden=!element('modelStatus').children.length;if(cur.sim)organizeControls();element('structurePicker').querySelector('.structure-actions').hidden=!selectedPart;
+    element('completeLesson').disabled=!cur.sim;
     element('completeLesson').onclick=()=>{if(!cur)return;const id=cur.m.id;if(completed.has(id))completed.delete(id);else completed.add(id);saveProgress();toast(completed.has(id)?'Tema marcado como explorado.':'Tema pendiente de explorar.')};
     technicalControls();updateProgress();
   }
@@ -91,18 +102,18 @@
   function runStep(i){if(!cur)return;stopVideo();state.playing=true;element('viewer').classList.remove('paused');element('vPlay').textContent='Pausar';element('vPlay').setAttribute('aria-pressed',true);const lesson=COURSE.lessons[cur.m.id];
     for(const action of lesson.actions[i]||[]){if(action[0]==='anim')vAct(['sl',action[1],action[2]]);else vAct(action)}
     if(cur.view){const camera=cameras2d[cur.m.id]?.[i]||[500,300,1];cur.view={x:camera[0],y:camera[1],z:camera[2]}}
-    if(cur.m.id==='compartimentos-3d'){const positions=[[7,6,11],[6.5,4.5,9],[7,3.4,9]],targets=[[0,1.1,0],[.5,1.3,.8],[1.8,.2,.3]];cur.sim.moveCamera?.(positions[i],targets[i])}
+    if(cur.m.id==='compartimentos-3d'){const positions=[[7,6,11],[6.5,4.5,9],[7,3.4,9]],targets=[[0,1.1,0],[.5,1.3,.8],[1.8,.2,.3]],fit=element('stageHost').clientWidth<700?Math.max(1,1.7/cur.sim.cam.aspect):1,target=targets[i],position=positions[i].map((v,j)=>target[j]+(v-target[j])*fit);cur.sim.moveCamera?.(position,target)}
     if(cur.m.id==='progresion-varice')cur.sim.moveCamera?.([7,2,12],[.3,0,-.6]);
     activeStep=i;showPanel('guide');element('observationSteps').querySelectorAll('button').forEach((button,index)=>button.setAttribute('aria-pressed',i===index));element('stepHint').textContent='Paso '+(i+1)+' de '+lesson.steps.length+' activo: '+lesson.steps[i]+'.';
   }
   const isolateButton=document.createElement('button');isolateButton.type='button';isolateButton.className='text-button isolate-button';isolateButton.textContent='Aislar';isolateButton.id='isolateSelection';isolateButton.setAttribute('aria-pressed','false');isolateButton.disabled=true;element('structurePicker').querySelector('.structure-actions').prepend(isolateButton);
   isolateButton.onclick=()=>{if(!cur)return;isolated=!isolated;cur.sim.isolatePart?.(isolated);isolateButton.setAttribute('aria-pressed',isolated);isolateButton.textContent=isolated?'Ver en contexto':'Aislar'};
-  function clearSelection(){selectedPart=null;isolated=false;cur?.sim?.isolatePart?.(false);cur?.sim?.selectPart?.(null);element('structureSelect').value='';element('structureDetail').hidden=true;element('readStructure').hidden=true;element('showAllParts').disabled=true;isolateButton.disabled=true;isolateButton.setAttribute('aria-pressed','false');isolateButton.textContent='Aislar'}
+  function clearSelection(){selectedPart=null;isolated=false;cur?.sim?.isolatePart?.(false);cur?.sim?.selectPart?.(null);element('structureSelect').value='';element('structureDetail').hidden=true;element('readStructure').hidden=true;element('showAllParts').disabled=true;element('structurePicker').querySelector('.structure-actions').hidden=true;isolateButton.disabled=true;isolateButton.setAttribute('aria-pressed','false');isolateButton.textContent='Aislar'}
   element('clearSelection').onclick=clearSelection;element('showAllParts').onclick=clearSelection;
   element('structureSelect').onchange=event=>{if(event.target.value)cur?.sim?.selectPart?.(event.target.value);else clearSelection()};
   element('readStructure').onclick=event=>{showPanel('reading',{animate:event.detail>0});element('panel-reading').focus({preventScroll:true})};
   document.addEventListener('flebo:part',event=>{const id=event.detail.id;if(!cur){if(id&&COURSE.structures[id]){element('heroModelTitle').textContent=COURSE.structures[id].name;element('heroModelHint').textContent='Abre el modelo para explorar esta estructura en detalle.'}return}
-    if(!element('stageHost').contains(event.target))return;selectedPart=id;isolateButton.disabled=!id;element('structureSelect').value=id||'';element('showAllParts').disabled=!id;element('readStructure').hidden=!id;if(id&&!vid&&activePanel!=='reading')showPanel('explore');
+    if(!element('stageHost').contains(event.target))return;selectedPart=id;isolateButton.disabled=!id;element('structureSelect').value=id||'';element('showAllParts').disabled=!id;element('readStructure').hidden=!id;element('structurePicker').querySelector('.structure-actions').hidden=!id;if(id&&!vid&&activePanel!=='reading')showPanel('explore');
     const data=COURSE.structures[id];element('structureDetail').hidden=!data;if(data){element('structureDetail').querySelector('h3').textContent=data.name;element('structureDetail').querySelector('p').textContent=data[AUD==='paciente'?'patient':'medico']}
   });
   function navigate(delta){if(!cur)return;const index=order.indexOf(cur.m.id),id=order[(index+delta+order.length)%order.length];openMod(MODS.findIndex(m=>m.id===id))}
@@ -111,15 +122,18 @@
   const heroViews={wall:{explode:0,p:[-2.3,2.1,8.8],t:[0,0,0],title:'Pared y válvula venosa',hint:'Arrastra para girar. Elige una vista para mirar por dentro.'},layers:{explode:.85,p:[-4.1,6.8,17.7],t:[0,4,0],title:'Las capas de la pared',hint:'Separación didáctica para reconocer cada componente.'},valve:{explode:0,p:[-.35,1.25,4.5],t:[.95,0,0],title:'La válvula en movimiento',hint:'Un acercamiento a las valvas y al paso de los eritrocitos.'}};
   function setHeroView(mode){if(!heroViews[mode])return;heroMode=mode;const view=heroViews[mode];element('heroModel').dataset.view=mode;element('heroViews').querySelectorAll('button').forEach(button=>button.setAttribute('aria-pressed',button.dataset.heroView===mode));if(preview){preview.sim.setExplode?.(view.explode);preview.sim.selectPart?.(mode==='valve'?'valvas':null);preview.sim.moveCamera?.(view.p,view.t);if(reduced()){preview.sim.cam.position.set(...view.p);preview.sim.ctrl.target.set(...view.t);preview.sim.ctrl.update();preview.sim.frame(.8,{labels:false,playing:true});preview.sim.frame(0,{labels:false,playing:false})}}element('heroModelTitle').textContent=view.title;element('heroModelHint').textContent=view.hint}
   element('heroViews').querySelectorAll('button').forEach(button=>button.onclick=()=>setHeroView(button.dataset.heroView));
+  function syncHeroMotion(){const button=element('heroMotion');button.textContent=heroPlaying?'Pausar':'Reanudar';button.setAttribute('aria-label',(heroPlaying?'Pausar':'Reanudar')+' animación de portada');button.setAttribute('aria-pressed',heroPlaying)}
+  element('heroMotion').onclick=()=>{heroPlaying=!heroPlaying;syncHeroMotion()};syncHeroMotion();
   function destroyPreview(){previewToken++;cancelAnimationFrame(previewRaf);if(preview){preview.sim.destroy();preview=null}element('heroModel').replaceChildren();element('heroViews').querySelectorAll('button').forEach(button=>button.disabled=true)}
   async function startPreview(){if(preview||!heroVisible||cur||document.hidden)return;const token=++previewToken,host=element('heroModel');host.innerHTML='<p class="hero-loading">Preparando el modelo…</p>';
     try{await load3D();if(token!==previewToken||cur||!heroVisible)return;host.replaceChildren();const sim=wall3D(host,STUB);preview={sim,last:0};sim.ctrl.minDistance=4;sim.ctrl.maxDistance=24;sim.ctrl.update();element('heroViews').querySelectorAll('button').forEach(button=>button.disabled=false);setHeroView(heroMode);
-      function tick(time){if(!preview||!heroVisible||cur||document.hidden)return;const dt=preview.last?Math.min(.05,(time-preview.last)/1000):0;preview.last=time;preview.sim.frame(reduced()?0:dt,{labels:false,playing:!reduced(),speed:1});previewRaf=requestAnimationFrame(tick)}
+      function tick(time){if(!preview||!heroVisible||cur||document.hidden)return;const dt=preview.last?Math.min(.05,(time-preview.last)/1000):0;preview.last=time;preview.sim.frame(heroPlaying?dt:0,{labels:false,playing:heroPlaying,speed:1});previewRaf=requestAnimationFrame(tick)}
       preview.tick=tick;previewRaf=requestAnimationFrame(tick);
     }catch{if(token===previewToken){host.innerHTML='<p class="hero-loading">Explora las animaciones para conocer el sistema venoso.</p>'}}
   }
   const heroObserver=new IntersectionObserver(entries=>{heroVisible=entries[0].isIntersecting;if(heroVisible){if(preview){preview.last=0;cancelAnimationFrame(previewRaf);previewRaf=requestAnimationFrame(preview.tick)}else startPreview()}else cancelAnimationFrame(previewRaf)},{threshold:.05});heroObserver.observe(element('heroModel'));
-  document.addEventListener('flebo:open',()=>{destroyPreview();element('playbackSettings').open=false;mountedLesson=null;selectedPart=null;isolated=false;isolateButton.disabled=true;isolateButton.setAttribute('aria-pressed','false');isolateButton.textContent='Aislar';mountLesson()});
+  document.addEventListener('flebo:loading',()=>{destroyPreview();element('playbackSettings').open=false;mountedLesson=null;selectedPart=null;isolated=false;isolateButton.disabled=true;isolateButton.setAttribute('aria-pressed','false');isolateButton.textContent='Aislar';mountLesson()});
+  document.addEventListener('flebo:open',mountLesson);
   document.addEventListener('flebo:close',()=>{panelMotion?.cancel();mountedLesson=null;selectedPart=null;element('structureDetail').hidden=true;if(preview&&heroVisible){preview.last=0;previewRaf=requestAnimationFrame(preview.tick)}else startPreview()});
   document.addEventListener('visibilitychange',()=>{cancelAnimationFrame(previewRaf);if(!document.hidden&&heroVisible&&!cur){if(preview){preview.last=0;previewRaf=requestAnimationFrame(preview.tick)}else startPreview()}});
   window.learningUI={audience,refresh:mountLesson};audience(AUD);syncFilters();updateProgress();if(cur?.sim)mountLesson();

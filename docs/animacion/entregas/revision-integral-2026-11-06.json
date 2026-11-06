@@ -1,0 +1,1929 @@
+{
+  "date": "2026-11-06",
+  "browser": "Codex in-app Chromium on Windows",
+  "viewports": {
+    "desktop": [
+      1280,
+      800
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "additional": [
+      [
+        320,
+        568
+      ],
+      [
+        740,
+        390
+      ],
+      [
+        768,
+        1024
+      ]
+    ]
+  },
+  "method": "120 processed frames per module, about two seconds, no CPU or network throttle. CPU is JavaScript-side work, not GPU time or Core Web Vitals.",
+  "baseline": [
+    {
+      "i": 0,
+      "calls": "16",
+      "stats": {
+        "cpuMs": 1.58,
+        "fps": 59.7,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.1
+      },
+      "title": "Retorno venoso: del pie a la aurícula derecha"
+    },
+    {
+      "i": 1,
+      "calls": "12",
+      "stats": {
+        "cpuMs": 1.51,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.3
+      },
+      "title": "Pared venosa y válvula en 3D"
+    },
+    {
+      "i": 2,
+      "stats": {
+        "cpuMs": 0.72,
+        "fps": 60,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "title": "Fascias y compartimento safeno"
+    },
+    {
+      "i": 3,
+      "calls": "94",
+      "stats": {
+        "cpuMs": 2.79,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.1
+      },
+      "title": "Compartimentos, comunicantes y perforantes"
+    },
+    {
+      "i": 4,
+      "calls": "14",
+      "stats": {
+        "cpuMs": 0.94,
+        "fps": 59.9,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.2
+      },
+      "title": "Telangiectasias, reticulares y várices en 3D"
+    },
+    {
+      "i": 5,
+      "stats": {
+        "cpuMs": 1.51,
+        "fps": 60,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17
+      },
+      "title": "Válvula venosa sana"
+    },
+    {
+      "i": 6,
+      "stats": {
+        "cpuMs": 0.96,
+        "fps": 60,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "title": "Bomba muscular de la pantorrilla"
+    },
+    {
+      "i": 7,
+      "stats": {
+        "cpuMs": 0.88,
+        "fps": 60,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.3
+      },
+      "title": "Unión safeno‑femoral y Valsalva"
+    },
+    {
+      "i": 8,
+      "calls": "37",
+      "stats": {
+        "cpuMs": 1.64,
+        "fps": 59.6,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 18.2
+      },
+      "title": "Compresión médica y bomba muscular"
+    },
+    {
+      "i": 9,
+      "stats": {
+        "cpuMs": 1.35,
+        "fps": 60,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.2
+      },
+      "title": "Válvula incompetente y reflujo"
+    },
+    {
+      "i": 10,
+      "calls": "14",
+      "stats": {
+        "cpuMs": 1.19,
+        "fps": 59.6,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 17
+      },
+      "title": "Dilatación y tortuosidad: comparación en 3D"
+    },
+    {
+      "i": 11,
+      "stats": {
+        "cpuMs": 0.73,
+        "fps": 59.3,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 16.9
+      },
+      "title": "Microcirculación e hipertensión venosa"
+    },
+    {
+      "i": 12,
+      "calls": "36",
+      "stats": {
+        "cpuMs": 1.62,
+        "fps": 60.4,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.1
+      },
+      "title": "Filtración, intersticio y drenaje linfático"
+    },
+    {
+      "i": 13,
+      "calls": "17",
+      "stats": {
+        "cpuMs": 0.99,
+        "fps": 59.4,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 16.9
+      },
+      "title": "CEAP 2020: manifestaciones clínicas en 3D"
+    },
+    {
+      "i": 14,
+      "calls": "37",
+      "stats": {
+        "cpuMs": 0.68,
+        "fps": 59.6,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 17.2
+      },
+      "title": "Úlcera venosa: tejido, lesión y reparación"
+    },
+    {
+      "i": 15,
+      "calls": "7",
+      "stats": {
+        "cpuMs": 1.02,
+        "fps": 58.8,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 17.1
+      },
+      "title": "Ultrasonido dúplex: anatomía, compresión y flujo"
+    },
+    {
+      "i": 16,
+      "stats": {
+        "cpuMs": 1.36,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.8
+      },
+      "title": "Escleroterapia: cómo se cierra una vena"
+    },
+    {
+      "i": 17,
+      "stats": {
+        "cpuMs": 2.18,
+        "fps": 59.5,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "title": "Trombosis venosa profunda"
+    },
+    {
+      "i": 18,
+      "stats": {
+        "cpuMs": 0.96,
+        "fps": 60,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "title": "Síndrome postrombótico"
+    },
+    {
+      "i": 19,
+      "calls": "8",
+      "stats": {
+        "cpuMs": 1.27,
+        "fps": 60.3,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17
+      },
+      "title": "Ablación endovenosa térmica en 3D"
+    },
+    {
+      "i": 20,
+      "calls": "7",
+      "stats": {
+        "cpuMs": 0.81,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 18.1
+      },
+      "title": "Trombosis venosa superficial en 3D"
+    },
+    {
+      "i": 21,
+      "calls": "12",
+      "stats": {
+        "cpuMs": 0.62,
+        "fps": 60.1,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17
+      },
+      "title": "Compresión y obstrucción ilíaca en 3D"
+    }
+  ],
+  "desktop": [
+    {
+      "i": 0,
+      "id": "viaje-venoso",
+      "stats": {
+        "cpuMs": 0.92,
+        "fps": 59.7,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.2
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 1,
+      "id": "pared-3d",
+      "stats": {
+        "cpuMs": 0.79,
+        "fps": 59.4,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 17
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "moreOpen": true,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 2,
+      "id": "fascias",
+      "stats": {
+        "cpuMs": 0.62,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 3,
+      "id": "compartimentos-3d",
+      "stats": {
+        "cpuMs": 1.45,
+        "fps": 59.9,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "moreOpen": true,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 4,
+      "id": "venas-superficiales",
+      "stats": {
+        "cpuMs": 0.7,
+        "fps": 59.9,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.2
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 5,
+      "id": "valvula-sana",
+      "stats": {
+        "cpuMs": 1.41,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 482
+      }
+    },
+    {
+      "i": 6,
+      "id": "bomba-muscular",
+      "stats": {
+        "cpuMs": 1.08,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 7,
+      "id": "union-safenofemoral",
+      "stats": {
+        "cpuMs": 1.12,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 8,
+      "id": "compresion-medica",
+      "stats": {
+        "cpuMs": 1.22,
+        "fps": 59.3,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 17
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "moreOpen": true,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 9,
+      "id": "valvula-incompetente",
+      "stats": {
+        "cpuMs": 1.41,
+        "fps": 60.5,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 10,
+      "id": "progresion-varice",
+      "stats": {
+        "cpuMs": 0.79,
+        "fps": 59.2,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 16.9
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 11,
+      "id": "microcirculacion",
+      "stats": {
+        "cpuMs": 0.69,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 12,
+      "id": "edema-linfatico",
+      "stats": {
+        "cpuMs": 2.01,
+        "fps": 59.9,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.2
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "moreOpen": true,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 13,
+      "id": "clasificacion-ceap",
+      "stats": {
+        "cpuMs": 1.26,
+        "fps": 59.8,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.2
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "moreOpen": true,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 419
+      }
+    },
+    {
+      "i": 14,
+      "id": "ulcera-venosa",
+      "stats": {
+        "cpuMs": 1.35,
+        "fps": 59.7,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 17.3
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "moreOpen": true,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 15,
+      "id": "ultrasonido-duplex",
+      "stats": {
+        "cpuMs": 0.82,
+        "fps": 59.9,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.1
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 2,
+      "moreOpen": true,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 419
+      }
+    },
+    {
+      "i": 16,
+      "id": "escleroterapia",
+      "stats": {
+        "cpuMs": 1.36,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.8
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 3,
+      "moreOpen": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 17,
+      "id": "trombosis-venosa-profunda",
+      "stats": {
+        "cpuMs": 2.35,
+        "fps": 60.3,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 3,
+      "moreOpen": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 482
+      }
+    },
+    {
+      "i": 18,
+      "id": "sindrome-postrombotico",
+      "stats": {
+        "cpuMs": 1.23,
+        "fps": 60,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 3,
+      "moreOpen": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 482
+      }
+    },
+    {
+      "i": 19,
+      "id": "ablacion-endovenosa",
+      "stats": {
+        "cpuMs": 0.86,
+        "fps": 59.9,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 3,
+      "moreOpen": true,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 20,
+      "id": "trombosis-venosa-superficial",
+      "stats": {
+        "cpuMs": 0.91,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.6
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 3,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    },
+    {
+      "i": 21,
+      "id": "obstruccion-iliaca",
+      "stats": {
+        "cpuMs": 1.15,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.5
+      },
+      "steps": 3,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "readingSections": 3,
+      "moreOpen": true,
+      "isolate": true,
+      "structureReading": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 451
+      }
+    }
+  ],
+  "mobile": [
+    {
+      "i": 0,
+      "id": "viaje-venoso",
+      "stats": {
+        "cpuMs": 1.04,
+        "fps": 60.1,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 211
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.177416
+      },
+      "subtitle": "Vamos a seguir el regreso de la sangre desde el pie hasta el corazón, en una anatomía simplificada."
+    },
+    {
+      "i": 1,
+      "id": "pared-3d",
+      "stats": {
+        "cpuMs": 1.7,
+        "fps": 59.6,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 17.2
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 237
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.182058
+      },
+      "subtitle": "Este modelo muestra una vena y sus capas, con proporciones ampliadas para aprender."
+    },
+    {
+      "i": 2,
+      "id": "fascias",
+      "stats": {
+        "cpuMs": 0.6,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 237
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.17559
+      },
+      "subtitle": "Observe un corte transversal simplificado de la pierna."
+    },
+    {
+      "i": 3,
+      "id": "compartimentos-3d",
+      "stats": {
+        "cpuMs": 2.78,
+        "fps": 60.1,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 211
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.202428
+      },
+      "subtitle": "Este bloque anatómico relaciona tejidos y venas del miembro inferior."
+    },
+    {
+      "i": 4,
+      "id": "venas-superficiales",
+      "stats": {
+        "cpuMs": 1.03,
+        "fps": 60.1,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 211
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.201646
+      },
+      "subtitle": "No todas las venas visibles tienen la misma forma ni ocupan el mismo plano de la piel."
+    },
+    {
+      "i": 5,
+      "id": "valvula-sana",
+      "stats": {
+        "cpuMs": 1.18,
+        "fps": 60,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 237
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.191513
+      },
+      "subtitle": "Observe una vena de la pierna en un corte longitudinal ampliado."
+    },
+    {
+      "i": 6,
+      "id": "bomba-muscular",
+      "stats": {
+        "cpuMs": 0.87,
+        "fps": 59.5,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 23.5
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 237
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.197221
+      },
+      "subtitle": "La pantorrilla participa en el retorno venoso mediante su actividad muscular."
+    },
+    {
+      "i": 7,
+      "id": "union-safenofemoral",
+      "stats": {
+        "cpuMs": 0.87,
+        "fps": 60,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.7
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 237
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.202198
+      },
+      "subtitle": "Este esquema sitúa la unión venosa cerca de la ingle."
+    },
+    {
+      "i": 8,
+      "id": "compresion-medica",
+      "stats": {
+        "cpuMs": 2.8,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.1
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 211
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.200557
+      },
+      "subtitle": "Una media de compresión aplica presión externa sobre la pierna y da soporte a los tejidos."
+    },
+    {
+      "i": 9,
+      "id": "valvula-incompetente",
+      "stats": {
+        "cpuMs": 1.41,
+        "fps": 60.1,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 237
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.173357
+      },
+      "subtitle": "Comience comparando unas valvas que se aproximan durante el cierre."
+    },
+    {
+      "i": 10,
+      "id": "progresion-varice",
+      "stats": {
+        "cpuMs": 0.77,
+        "fps": 60,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 211
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.1887
+      },
+      "subtitle": "Este modelo compara distintas formas de una vena superficial."
+    },
+    {
+      "i": 11,
+      "id": "microcirculacion",
+      "stats": {
+        "cpuMs": 0.83,
+        "fps": 60,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 211
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.192489
+      },
+      "subtitle": "Esta es una representación ampliada de los vasos pequeños de la piel."
+    },
+    {
+      "i": 12,
+      "id": "edema-linfatico",
+      "stats": {
+        "cpuMs": 1.52,
+        "fps": 59.9,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.1
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 211
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.190833
+      },
+      "subtitle": "Entre las células existe un espacio con líquido llamado intersticio."
+    },
+    {
+      "i": 13,
+      "id": "clasificacion-ceap",
+      "stats": {
+        "cpuMs": 1.48,
+        "fps": 59.8,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.1
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 211
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.194503
+      },
+      "subtitle": "La clasificación clínica describe manifestaciones que se observan en una pierna; no predice su futuro."
+    },
+    {
+      "i": 14,
+      "id": "ulcera-venosa",
+      "stats": {
+        "cpuMs": 0.69,
+        "fps": 59.5,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 16.9
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 211
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.194503
+      },
+      "subtitle": "Una úlcera es una zona donde la piel ha perdido su continuidad."
+    },
+    {
+      "i": 15,
+      "id": "ultrasonido-duplex",
+      "stats": {
+        "cpuMs": 1.31,
+        "fps": 60.2,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.1
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 211
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.194526
+      },
+      "subtitle": "El ultrasonido permite relacionar la anatomía de los vasos con información sobre el flujo de sangre."
+    },
+    {
+      "i": 16,
+      "id": "escleroterapia",
+      "stats": {
+        "cpuMs": 1.09,
+        "fps": 60.1,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.4
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 211
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.188894
+      },
+      "subtitle": "La escleroterapia busca cerrar una vena seleccionada mediante un medicamento esclerosante."
+    },
+    {
+      "i": 17,
+      "id": "trombosis-venosa-profunda",
+      "stats": {
+        "cpuMs": 1.86,
+        "fps": 59.2,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 16.9
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 237
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.190362
+      },
+      "subtitle": "Una trombosis venosa profunda es un coágulo dentro de una vena profunda."
+    },
+    {
+      "i": 18,
+      "id": "sindrome-postrombotico",
+      "stats": {
+        "cpuMs": 0.94,
+        "fps": 60.1,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 16.9
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 237
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.209406
+      },
+      "subtitle": "El síndrome postrombótico puede aparecer después de una trombosis, pero no ocurre en todas las personas."
+    },
+    {
+      "i": 19,
+      "id": "ablacion-endovenosa",
+      "stats": {
+        "cpuMs": 1.3,
+        "fps": 60.3,
+        "frames": 120,
+        "over34Ms": 1,
+        "p95Ms": 17.4
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 237
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.183757
+      },
+      "subtitle": "La ablación térmica busca cerrar un segmento superficial seleccionado, conservando el drenaje profundo."
+    },
+    {
+      "i": 20,
+      "id": "trombosis-venosa-superficial",
+      "stats": {
+        "cpuMs": 1.08,
+        "fps": 59.7,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.2
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 237
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.253744
+      },
+      "subtitle": "Una trombosis venosa superficial es un coágulo dentro de una vena superficial."
+    },
+    {
+      "i": 21,
+      "id": "obstruccion-iliaca",
+      "stats": {
+        "cpuMs": 1.13,
+        "fps": 59.6,
+        "frames": 120,
+        "over34Ms": 0,
+        "p95Ms": 17.1
+      },
+      "reading": true,
+      "explore": true,
+      "guide": true,
+      "layout": {
+        "overflow": false,
+        "panelHeight": 211
+      },
+      "audio": {
+        "error": null,
+        "paused": false,
+        "ready": 4,
+        "time": 0.204396
+      },
+      "subtitle": "Las venas ilíacas conducen la sangre de la pelvis hacia la vena cava inferior."
+    }
+  ],
+  "additional": [
+    {
+      "size": {
+        "width": 320,
+        "height": 568
+      },
+      "i": 2,
+      "panel": "guide",
+      "bodyHeight": 130,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 568
+      },
+      "i": 2,
+      "panel": "explore",
+      "bodyHeight": 130,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 568
+      },
+      "i": 2,
+      "panel": "reading",
+      "bodyHeight": 130,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 568
+      },
+      "i": 3,
+      "panel": "guide",
+      "bodyHeight": 106,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 568
+      },
+      "i": 3,
+      "panel": "explore",
+      "bodyHeight": 106,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 568
+      },
+      "i": 3,
+      "panel": "reading",
+      "bodyHeight": 106,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 568
+      },
+      "i": 21,
+      "panel": "guide",
+      "bodyHeight": 106,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 568
+      },
+      "i": 21,
+      "panel": "explore",
+      "bodyHeight": 106,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 568
+      },
+      "i": 21,
+      "panel": "reading",
+      "bodyHeight": 106,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 390
+      },
+      "i": 2,
+      "panel": "guide",
+      "bodyHeight": 114,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 390
+      },
+      "i": 2,
+      "panel": "explore",
+      "bodyHeight": 114,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 390
+      },
+      "i": 2,
+      "panel": "reading",
+      "bodyHeight": 114,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 390
+      },
+      "i": 3,
+      "panel": "guide",
+      "bodyHeight": 114,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 390
+      },
+      "i": 3,
+      "panel": "explore",
+      "bodyHeight": 114,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 390
+      },
+      "i": 3,
+      "panel": "reading",
+      "bodyHeight": 114,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 390
+      },
+      "i": 21,
+      "panel": "guide",
+      "bodyHeight": 114,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 390
+      },
+      "i": 21,
+      "panel": "explore",
+      "bodyHeight": 114,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 740,
+        "height": 390
+      },
+      "i": 21,
+      "panel": "reading",
+      "bodyHeight": 114,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "i": 2,
+      "panel": "guide",
+      "bodyHeight": 678,
+      "overflow": false,
+      "scrollable": false
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "i": 2,
+      "panel": "explore",
+      "bodyHeight": 678,
+      "overflow": false,
+      "scrollable": false
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "i": 2,
+      "panel": "reading",
+      "bodyHeight": 678,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "i": 3,
+      "panel": "guide",
+      "bodyHeight": 678,
+      "overflow": false,
+      "scrollable": false
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "i": 3,
+      "panel": "explore",
+      "bodyHeight": 678,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "i": 3,
+      "panel": "reading",
+      "bodyHeight": 678,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "i": 21,
+      "panel": "guide",
+      "bodyHeight": 678,
+      "overflow": false,
+      "scrollable": false
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "i": 21,
+      "panel": "explore",
+      "bodyHeight": 678,
+      "overflow": false,
+      "scrollable": true
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "i": 21,
+      "panel": "reading",
+      "bodyHeight": 678,
+      "overflow": false,
+      "scrollable": true
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "minFPS": 58.8,
+      "maxFPS": 60.4,
+      "maxP95Ms": 18.2,
+      "meanCpuMs": 1.24
+    },
+    "desktop": {
+      "minFPS": 59.2,
+      "maxFPS": 60.5,
+      "maxP95Ms": 17.6,
+      "meanCpuMs": 1.16
+    },
+    "mobile": {
+      "minFPS": 59.2,
+      "maxFPS": 60.3,
+      "maxP95Ms": 23.5,
+      "meanCpuMs": 1.29
+    }
+  },
+  "limits": [
+    "Not physical phone hardware",
+    "Only two complete narrations repeated; all 22 starts checked",
+    "Not independent clinical validation",
+    "Reduced motion reviewed in code; OS preference unchanged"
+  ],
+  "completeNarrations": [
+    {
+      "result": "completed",
+      "id": "valvula-sana",
+      "scenes": "10",
+      "duration": "49.789375"
+    },
+    {
+      "duration": "43.25875",
+      "id": "obstruccion-iliaca",
+      "result": "completed",
+      "scenes": "7"
+    }
+  ],
+  "additionalPostFix": {
+    "tabletPortraitStageWidth": 768,
+    "tabletPortraitPanelHeight": 255,
+    "heroPauseResume": true,
+    "keyboardTabsAndSettingsEscape": true
+  },
+  "finalFunctional": [
+    {
+      "i": 0,
+      "id": "viaje-venoso",
+      "openMs": 57.9,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "isolate": true,
+      "ready": true
+    },
+    {
+      "i": 1,
+      "id": "pared-3d",
+      "openMs": 19.8,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "isolate": true,
+      "ready": true
+    },
+    {
+      "i": 2,
+      "id": "fascias",
+      "openMs": 5,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "ready": true
+    },
+    {
+      "i": 3,
+      "id": "compartimentos-3d",
+      "openMs": 68,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 3,
+      "isolate": true,
+      "ready": true
+    },
+    {
+      "i": 4,
+      "id": "venas-superficiales",
+      "openMs": 19.2,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "isolate": true,
+      "ready": true
+    },
+    {
+      "i": 5,
+      "id": "valvula-sana",
+      "openMs": 4.7,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "ready": true
+    },
+    {
+      "i": 6,
+      "id": "bomba-muscular",
+      "openMs": 4.5,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "ready": true
+    },
+    {
+      "i": 7,
+      "id": "union-safenofemoral",
+      "openMs": 5.1,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "ready": true
+    },
+    {
+      "i": 8,
+      "id": "compresion-medica",
+      "openMs": 80.4,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 3,
+      "isolate": true,
+      "ready": true
+    },
+    {
+      "i": 9,
+      "id": "valvula-incompetente",
+      "openMs": 4.6,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "ready": true
+    },
+    {
+      "i": 10,
+      "id": "progresion-varice",
+      "openMs": 20.3,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "isolate": true,
+      "ready": true
+    },
+    {
+      "i": 11,
+      "id": "microcirculacion",
+      "openMs": 4.9,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "ready": true
+    },
+    {
+      "i": 12,
+      "id": "edema-linfatico",
+      "openMs": 31.3,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "isolate": true,
+      "ready": true
+    },
+    {
+      "i": 13,
+      "id": "clasificacion-ceap",
+      "openMs": 30.9,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "isolate": true,
+      "ready": true
+    },
+    {
+      "i": 14,
+      "id": "ulcera-venosa",
+      "openMs": 27.3,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "isolate": true,
+      "ready": true
+    },
+    {
+      "i": 15,
+      "id": "ultrasonido-duplex",
+      "openMs": 62.6,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "isolate": true,
+      "ready": true
+    },
+    {
+      "i": 16,
+      "id": "escleroterapia",
+      "openMs": 4.9,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "ready": true
+    },
+    {
+      "i": 17,
+      "id": "trombosis-venosa-profunda",
+      "openMs": 4.5,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "ready": true
+    },
+    {
+      "i": 18,
+      "id": "sindrome-postrombotico",
+      "openMs": 4.5,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "ready": true
+    },
+    {
+      "i": 19,
+      "id": "ablacion-endovenosa",
+      "openMs": 16.3,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "isolate": true,
+      "ready": true
+    },
+    {
+      "i": 20,
+      "id": "trombosis-venosa-superficial",
+      "openMs": 17.1,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "isolate": true,
+      "ready": true
+    },
+    {
+      "i": 21,
+      "id": "obstruccion-iliaca",
+      "openMs": 16.2,
+      "steps": true,
+      "quiz": true,
+      "medico": true,
+      "paciente": true,
+      "sources": 2,
+      "isolate": true,
+      "ready": true
+    }
+  ],
+  "finalChecks": {
+    "modules": 22,
+    "steps": 66,
+    "quizzes": 22,
+    "readingProfiles": 44,
+    "isolations": 13,
+    "consoleWarningsOrErrors": 0,
+    "allPassed": true
+  }
+}
