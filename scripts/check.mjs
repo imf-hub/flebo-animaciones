@@ -1,5 +1,6 @@
 import { readFile, access } from 'node:fs/promises';
 import assert from 'node:assert/strict';
+import { readAnimationCatalog, validateAnimationCatalog } from './animation-catalog.mjs';
 const html = await readFile('index.html', 'utf8');
 const app = await readFile('assets/app.js', 'utf8');
 assert.match(html, /<html lang="es"/);
@@ -8,11 +9,14 @@ assert.doesNotMatch(html, /Atlas Venoso|Ocho láminas|https:\/\/(?:fonts\.google
 for (const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
   if (!/^(https?:|data:)/.test(match[1])) await access(match[1]);
 }
-const ids = [...app.matchAll(/\{id:'([^']+)',cat:/g)].map(m => m[1]);
-assert.equal(ids.length, 12);
+const catalog = await readAnimationCatalog();
+const baseline = JSON.parse(await readFile('docs/animacion/baseline.json', 'utf8'));
+const errors = validateAnimationCatalog(catalog, baseline.modules.map(m => m.id));
+assert.equal(errors.length, 0, errors.join('\n'));
+const ids = catalog.modules.map(m => m.id);
 for (const id of ids) {
   await access(`audio/${id}.mp3`);
-  assert.ok(app.includes(`'${id}':[`), `Falta guion de ${id}`);
+  assert.ok((await readFile(`audio/${id}.mp3`)).length > 0, `Audio vacío: ${id}`);
 }
 for (const file of ['assets/vendor/three.min.js', 'assets/vendor/OrbitControls.js', 'assets/vendor/three-LICENSE.txt']) await access(file);
-console.log('Validado: 12 módulos, 12 narraciones, guiones, dependencias locales y enlaces.');
+console.log(`Validado: ${ids.length} módulos, narraciones, guiones, tiempos, dependencias locales y enlaces.`);

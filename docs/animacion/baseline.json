@@ -1,0 +1,128 @@
+{
+  "name": "Flebo Animaciones",
+  "reference_date": "2026-11-06",
+  "reference_commit": "2f643c9afdd8f1a21fae21cb2c4f32be233f243d",
+  "minimum_quality": true,
+  "scope": "Referencia visual y funcional, no validación médica; no reducir esta referencia para aceptar regresiones.",
+  "three_version": "0.128.0",
+  "modules": [
+    {
+      "id": "pared-3d",
+      "title": "Pared venosa y válvula en 3D",
+      "kind": "3d",
+      "initializer": "wall3D",
+      "thumbnail": "thumbWall",
+      "scenes": 10,
+      "duration_seconds": 70.8
+    },
+    {
+      "id": "valvula-sana",
+      "title": "Válvula venosa sana",
+      "kind": "2d",
+      "initializer": "valveSim(0)",
+      "thumbnail": "renderThumb",
+      "scenes": 10,
+      "duration_seconds": 59.76
+    },
+    {
+      "id": "valvula-incompetente",
+      "title": "Válvula incompetente y reflujo",
+      "kind": "2d",
+      "initializer": "valveSim(0.85)",
+      "thumbnail": "renderThumb",
+      "scenes": 8,
+      "duration_seconds": 53.28
+    },
+    {
+      "id": "bomba-muscular",
+      "title": "Bomba muscular de la pantorrilla",
+      "kind": "2d",
+      "initializer": "calfPump",
+      "thumbnail": "renderThumb",
+      "scenes": 11,
+      "duration_seconds": 66.312
+    },
+    {
+      "id": "fascias",
+      "title": "Fascias y compartimento safeno",
+      "kind": "2d",
+      "initializer": "fasciaSim",
+      "thumbnail": "renderThumb",
+      "scenes": 10,
+      "duration_seconds": 59.016
+    },
+    {
+      "id": "compartimentos-3d",
+      "title": "Compartimentos, comunicantes y perforantes",
+      "kind": "3d",
+      "initializer": "compart3D",
+      "thumbnail": "thumbComp",
+      "scenes": 11,
+      "duration_seconds": 66.264
+    },
+    {
+      "id": "union-safenofemoral",
+      "title": "Unión safeno‑femoral y Valsalva",
+      "kind": "2d",
+      "initializer": "sfjSim",
+      "thumbnail": "renderThumb",
+      "scenes": 10,
+      "duration_seconds": 59.52
+    },
+    {
+      "id": "progresion-varice",
+      "title": "De vena sana a várice en 3D",
+      "kind": "3d",
+      "initializer": "tort3D",
+      "thumbnail": "thumbTort",
+      "scenes": 8,
+      "duration_seconds": 53.424
+    },
+    {
+      "id": "microcirculacion",
+      "title": "Microcirculación e hipertensión venosa",
+      "kind": "2d",
+      "initializer": "microSim",
+      "thumbnail": "renderThumb",
+      "scenes": 10,
+      "duration_seconds": 64.656
+    },
+    {
+      "id": "escleroterapia",
+      "title": "Escleroterapia: cómo se cierra una vena",
+      "kind": "2d",
+      "initializer": "scleroSim",
+      "thumbnail": "renderThumb",
+      "scenes": 15,
+      "duration_seconds": 83.016
+    },
+    {
+      "id": "trombosis-venosa-profunda",
+      "title": "Trombosis venosa profunda",
+      "kind": "2d",
+      "initializer": "dvtSim",
+      "thumbnail": "renderThumb",
+      "scenes": 11,
+      "duration_seconds": 75.72
+    },
+    {
+      "id": "sindrome-postrombotico",
+      "title": "Síndrome postrombótico",
+      "kind": "2d",
+      "initializer": "ptsSim",
+      "thumbnail": "renderThumb",
+      "scenes": 10,
+      "duration_seconds": 60.096
+    }
+  ],
+  "visual_references": [
+    {
+      "path": "referencia/galeria-original.png",
+      "description": "Captura de la galería pública de la referencia."
+    },
+    {
+      "path": "referencia/pared-venosa-original.png",
+      "description": "Captura del modelo de pared venosa; demuestra composición, no fluidez ni precisión clínica."
+    }
+  ]
+}
