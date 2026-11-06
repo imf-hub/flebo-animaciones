@@ -3,8 +3,9 @@
 Este texto puede usarse como brief. Los campos entre corchetes se completan para cada pieza; la referencia y los criterios ya están definidos en el repositorio.
 
 ```text
-Trabaja en Flebo Animaciones. Lee AGENTS.md y skills/flebo-animaciones/SKILL.md,
-y las referencias de arquitectura, calidad y producción pertinentes.
+Trabaja en Flebo Animaciones. Lee GUIA_PARA_FUTURAS_ANIMACIONES.md,
+AGENTS.md y skills/flebo-animaciones/SKILL.md, y las referencias pertinentes.
+Abre los SKILL.md locales necesarios y reutiliza los componentes ya desarrollados.
 
 Quiero: [crear / mejorar] [mecanismo o módulo].
 La idea que debe comprenderse es: [relación o proceso en una frase].

@@ -11,6 +11,8 @@ Esta skill vive en el repositorio. Se usa leyendo este archivo desde `AGENTS.md`
 
 ## Escoger el camino
 
+La guía operativa completa para conservar y reutilizar lo desarrollado es [GUIA_PARA_FUTURAS_ANIMACIONES.md](../../GUIA_PARA_FUTURAS_ANIMACIONES.md). Consultarla al iniciar una nueva pieza; enlaza las skills locales y explica qué componentes del motor reutilizar y cómo dejar una ficha de entrega.
+
 Antes de modificar la web actual, leer [la evolución interactiva](../../docs/animacion/EXPERIENCIA_INTERACTIVA.md). Describe el recorrido, perfiles, pasos, fichas y las APIs para seleccionar, aislar y separar modelos. Para profundizar en cada área, usar las [siete guías instaladas](../external/README.md) según la tarea. La capa didáctica es parte de la calidad: toda estructura debe ayudar a comprender una relación o un mecanismo.
 
 - **Extender la web actual:** lee [arquitectura](../../docs/animacion/ARQUITECTURA.md) y [contratos de integración](../../docs/animacion/PRODUCCION.md). Inspecciona el inicializador del módulo más parecido. Sigue la versión real de Three.js.

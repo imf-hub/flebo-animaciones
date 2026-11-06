@@ -7,6 +7,8 @@ Web educativa del Instituto Mexicano de Flebología: 12 módulos de animación 2
 
 ## Crear animaciones de este nivel o mejores
 
+**Manual principal para Claude, Codex y otros LLM:** [GUIA_PARA_FUTURAS_ANIMACIONES.md](GUIA_PARA_FUTURAS_ANIMACIONES.md). Reúne las instrucciones, skills instaladas, código reutilizable, efectos, modelos interactivos, video y comprobaciones para continuar sin depender de este chat.
+
 Por instrucción del propietario, las animaciones originales son el mínimo de calidad. El objetivo es mejorar movimiento, anatomía, estructuras 3D y claridad de la explicación.
 
 Para cualquier LLM, empezar por [AGENTS.md](AGENTS.md). Hay entradas equivalentes para Claude y Gemini, y una [skill propia del proyecto](skills/flebo-animaciones/SKILL.md).
