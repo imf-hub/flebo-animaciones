@@ -1,5 +1,7 @@
 # Producir e integrar animaciones y videos
 
+Para extender la web de aprendizaje, completar también el contrato de `COURSE` y las piezas semánticas descritos en [Experiencia interactiva](EXPERIENCIA_INTERACTIVA.md). El catálogo visual y el recorrido deben seguir siendo coherentes.
+
 ## Elegir la representación
 
 | Necesidad | Ruta aconsejada |

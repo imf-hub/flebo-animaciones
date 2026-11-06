@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "start": "node scripts/serve.mjs",
-    "check": "node --check assets/app.js && node scripts/check.mjs",
+    "check": "node --check assets/app.js && node --check assets/course.js && node --check assets/experience.js && node scripts/check.mjs",
     "build": "node scripts/build.mjs",
     "inspect:animations": "node scripts/animation-catalog.mjs"
   }

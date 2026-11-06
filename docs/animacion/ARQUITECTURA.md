@@ -2,6 +2,8 @@
 
 Análisis del código de la referencia `2f643c9afdd8f1a21fae21cb2c4f32be233f243d`, publicado el 6 de noviembre de 2026. Los identificadores de funciones permiten localizar el código aunque cambien los números de línea.
 
+**Lectura de la versión actual:** este documento conserva el análisis de origen. La evolución de la portada, recorrido y modelos se describe en [Experiencia interactiva](EXPERIENCIA_INTERACTIVA.md), incluidos selección, aislamiento, separación, reutilización de geometría y rótulos con colisiones.
+
 Las capturas se conservan dentro del repositorio para que otro agente pueda reconocer la referencia sin depender de archivos locales privados. Muestran composición y detalle; no prueban el movimiento ni certifican la anatomía.
 
 ![Galería original de Flebo Animaciones](referencia/galeria-original.png)

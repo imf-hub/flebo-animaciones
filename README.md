@@ -1,6 +1,6 @@
 # Flebo Animaciones
 
-Web educativa del Instituto Mexicano de Flebología: 12 módulos de animación 2D/3D, explicación para pacientes y médicos, narraciones grabadas, subtítulos y reproducción continua.
+Web educativa del Instituto Mexicano de Flebología: 12 módulos de animación 2D/3D organizados en cuatro unidades, perfiles paciente/médico, 36 pasos de observación, preguntas de repaso, narraciones y progreso local. Los modelos 3D permiten seleccionar estructuras, aislarlas y separar capas.
 
 - Web pública: https://imf-hub.github.io/flebo-animaciones/
 - Repositorio: https://github.com/imf-hub/flebo-animaciones
@@ -12,12 +12,13 @@ Por instrucción del propietario, las animaciones originales son el mínimo de c
 Para cualquier LLM, empezar por [AGENTS.md](AGENTS.md). Hay entradas equivalentes para Claude y Gemini, y una [skill propia del proyecto](skills/flebo-animaciones/SKILL.md).
 
 - [Arquitectura e inventario de los 12 módulos](docs/animacion/ARQUITECTURA.md).
+- [Experiencia interactiva implementada y contratos actuales](docs/animacion/EXPERIENCIA_INTERACTIVA.md).
 - [Estándar de calidad y mejoras prioritarias](docs/animacion/CALIDAD.md).
 - [Cómo producir e integrar animaciones y videos](docs/animacion/PRODUCCION.md).
 - [Skills y herramientas investigadas, con compatibilidad](docs/animacion/SKILLS_Y_HERRAMIENTAS.md).
 - [Plantilla para un nuevo encargo](docs/animacion/PLANTILLA_ENCARGO.md).
 
-Esta documentación no implica que las mejoras propuestas ya se hayan implementado ni que el contenido heredado haya pasado una revisión médica integral.
+La guía de experiencia distingue las mejoras implementadas de las pendientes. Las animaciones originales siguen conservadas como referencia; el contenido heredado no ha pasado una revisión médica integral.
 
 ## Trabajar en el proyecto
 
@@ -35,8 +36,10 @@ Abrir http://127.0.0.1:4173. Después de cambiar archivos, volver a ejecutar `np
 ## Archivos
 
 - `index.html`: estructura, identidad y metadatos.
-- `assets/styles.css`: diseño adaptable.
+- `assets/styles.css` y `assets/experience.css`: estilos heredados y diseño adaptable actual.
 - `assets/app.js`: simulaciones, textos, guiones y reproductor.
+- `assets/course.js`: recorrido, objetivos por perfil, pasos, preguntas y fichas anatómicas.
+- `assets/experience.js`: aprendizaje, selección de estructuras, portada 3D y progreso local.
 - `assets/logos/`: logotipos originales del IMF.
 - `assets/vendor/`: Three.js 0.128.0 y OrbitControls, con su licencia MIT; se cargan al abrir un modelo 3D.
 - `assets/fonts/`: tipografías locales con sus licencias.
@@ -44,6 +47,7 @@ Abrir http://127.0.0.1:4173. Después de cambiar archivos, volver a ejecutar `np
 - `scripts/`: verificación, exportación y servidor local.
 - `docs/animacion/`: arquitectura, mínimo de calidad, producción, herramientas y referencia conservada.
 - `skills/flebo-animaciones/`: instrucciones reutilizables para agentes.
+- `skills/external/`: siete guías de diseño y Three.js, con revisión de origen y licencias.
 - `examples/animacion/`: núcleo de muestreo temporal reproducible; no es un módulo visual terminado.
 
 El material entregado se conserva localmente en `material-original/` y `original-extraido/`, fuera de Git y de la exportación pública. El nombre heredado del archivo de origen no es el nombre de la web.

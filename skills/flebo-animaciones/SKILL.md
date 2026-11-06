@@ -11,6 +11,8 @@ Esta skill vive en el repositorio. Se usa leyendo este archivo desde `AGENTS.md`
 
 ## Escoger el camino
 
+Antes de modificar la web actual, leer [la evolución interactiva](../../docs/animacion/EXPERIENCIA_INTERACTIVA.md). Describe el recorrido, perfiles, pasos, fichas y las APIs para seleccionar, aislar y separar modelos. Para profundizar en cada área, usar las [siete guías instaladas](../external/README.md) según la tarea. La capa didáctica es parte de la calidad: toda estructura debe ayudar a comprender una relación o un mecanismo.
+
 - **Extender la web actual:** lee [arquitectura](../../docs/animacion/ARQUITECTURA.md) y [contratos de integración](../../docs/animacion/PRODUCCION.md). Inspecciona el inicializador del módulo más parecido. Sigue la versión real de Three.js.
 - **Mejorar movimiento o 3D:** usa [criterios y prioridades](../../docs/animacion/CALIDAD.md). Revisa capas, continuidad de malla, deformación, trayectoria, cámara y etiquetas como un sistema.
 - **Hacer un video exportable:** consulta la ruta de tiempo absoluto y render de [producción](../../docs/animacion/PRODUCCION.md). Reutiliza el modelo conceptual, no dependas de grabar la interfaz o de temporizadores del navegador.

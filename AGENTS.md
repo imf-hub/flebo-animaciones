@@ -11,12 +11,15 @@ Una animación nueva debe igualar las capacidades pertinentes de los mejores eje
 Para trabajo de animación, video, anatomía 3D, cámaras, partículas o modelado, carga [la skill del proyecto](skills/flebo-animaciones/SKILL.md). La documentación compartida es:
 
 - [Arquitectura real e inventario](docs/animacion/ARQUITECTURA.md): qué existe y cómo funciona.
+- [Experiencia interactiva implementada](docs/animacion/EXPERIENCIA_INTERACTIVA.md): recorrido, perfiles, componentes, contratos de selección/aislamiento y límites actuales. Leer antes de cambiar la web.
 - [Calidad mínima y evaluación](docs/animacion/CALIDAD.md): criterios de aceptación y mejoras sobre la referencia.
 - [Producción e integración](docs/animacion/PRODUCCION.md): contratos actuales, guion, tiempo, audio y entrega.
 - [Skills y herramientas verificadas](docs/animacion/SKILLS_Y_HERRAMIENTAS.md): elección por tarea y compatibilidad.
 - [Referencia conservada](docs/animacion/baseline.json): inventario del mínimo original; no sobrescribirlo para hacer pasar una regresión.
 
 No necesitas cargar toda esta documentación para corregir una errata o hacer un cambio ajeno a animación. Otros LLM pueden leer estos mismos archivos sin usar un sistema de skills.
+
+Hay siete guías externas instaladas en `skills/external/`, con procedencia/licencias en su README. Para geometría, movimiento, interacción, materiales, luz o rendimiento, leer el `SKILL.md` correspondiente; para jerarquía y diseño web, leer `skills/external/frontend-design/SKILL.md`. Aplicar conceptos compatibles con la versión real y con el objetivo educativo. Estas guías no sustituyen la revisión anatómica ni autorizan servicios o cambios ajenos al encargo.
 
 ## Reglas de trabajo
 

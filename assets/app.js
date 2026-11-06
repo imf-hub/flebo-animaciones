@@ -5,7 +5,7 @@ document.querySelectorAll("img[data-logo]").forEach(i=>{i.src=LOGO[i.dataset.log
 const TAU=Math.PI*2, clamp=(v,a,b)=>Math.max(a,Math.min(b,v)), lerp=(a,b,t)=>a+(b-a)*t, smooth=t=>t*t*(3-2*t);
 const rnd=(a,b)=>a+Math.random()*(b-a);
 function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
-const STAGE='#0f171e';
+const STAGE='#0d1e28';
 const C={ink:'#e6edf3',dim:'#9fb0c0',line:'#2a3a47',blood:'#a32132',bloodS:'#5c0d16',reflux:'#e8963a',refluxS:'#8a4f12',
   lumen:'#2b0c13',endo:'#f1cdd2',endoN:'#c98390',intima:'#e1a6b0',media:'#a8443d',mediaD:'#7a2c28',advent:'#d4b07a',adventD:'#a8844c',
   valve:'#efdcc4',valveS:'#b99d7d',fascia:'#e9eef2',fat:'#dcb85e',fatL:'#efd486',skin:'#d9a58c',dermis:'#e8bcab',muscle:'#8c3434',muscleL:'#a64848',
@@ -452,7 +452,7 @@ function scleroSim(api,ui){
   const stepSeg=ui.segmented('Paso',['1 Vena','2 Punción','3 Inyección','4 Endotelio','5 Compresión','6 Fibrosis'],0,i=>{step=i;p=0;seq=false});
   ui.buttons([['Reproducir secuencia completa',()=>{restart()}],['Siguiente paso →',()=>{if(step<5){step++;p=0;seq=false;stepSeg&&stepSeg.set(step)}}]]);
   ui.legend([['#f4f7fa','Espuma (microburbujas de gas)'],['#50c8be','Moléculas de polidocanol activas'],['#7d8790','Polidocanol inactivado por proteínas'],['#e1463c','Inflamación y necrosis por exceso'],[C.endo,'Endotelio'],['#e8d27a','Colágeno subendotelial expuesto'],['#8f6fd0','Plaquetas y fibrina'],['#b08c6a','Fibroblastos / cordón fibroso'],['#7a4a25','Hemosiderina']]);
-  const roN=ui.readout('Aguja'),roR=ui.readout('Recomendado (guía europea)'),roV=ui.readout('Volumen'),roM=ui.readout('Polidocanol en 1 mL'),roE=ui.readout('Concentración efectiva en la pared'),roO=ui.readout('Resultado previsto');
+  const roN=ui.readout('Aguja del ejemplo'),roR=ui.readout('Parámetro del ejemplo'),roV=ui.readout('Volumen ilustrativo'),roM=ui.readout('Polidocanol en 1 mL'),roE=ui.readout('Concentración ilustrativa en pared'),roO=ui.readout('Respuesta del esquema');
   const hash=i=>{const s=Math.sin(i*12.9898)*43758.5453;return s-Math.floor(s)};
   const bubbles=[];for(let i=0;i<260;i++)bubbles.push({u:hash(i+1),f:hash(i+300)*2-1,r:0.5+hash(i+600)});
   const fib=[];for(let i=0;i<40;i++)fib.push([hash(i+900),hash(i+950)*2-1,hash(i+990),hash(i+1030)*2-1]);
@@ -646,7 +646,7 @@ function dvtSim(api,ui){
   ui.toggle('Anticoagulación',false,v=>{antic=v});
   ui.buttons([['Simular desprendimiento (embolia)',()=>{forceEmb=true}],['Reiniciar',()=>{g=0.02;days=0;emb=null;embN=0;embT=-9}]]);
   ui.legend([[C.blood,'Eritrocitos'],['#e89a5a','Endotelio activado (P‑selectina, factor tisular)'],['#f5f5f5','Neutrófilos y monocitos'],['#8f6fd0','Plaquetas'],['#5a0d14','Trombo rojo: fibrina y eritrocitos'],['#5cc29a','Plasmina (fibrinólisis)']]);
-  const roD=ui.readout('Tiempo simulado'),roR=ui.readout('Riesgo trombótico (Virchow)'),roT=ui.readout('Trombo'),roE=ui.readout('Riesgo de embolia');
+  const roD=ui.readout('Tiempo de animación'),roR=ui.readout('Escenario ilustrativo'),roT=ui.readout('Trombo del esquema'),roE=ui.readout('Evento representado');
   const y0=215,R=58,xv=430;
   const Rx=x=>R+((x>xv-4&&x<xv+120)?14*Math.sin(Math.PI*(x-xv+4)/124):0);
   const hash=i=>{const s=Math.sin(i*12.9898)*43758.5453;return s-Math.floor(s)};
@@ -748,7 +748,7 @@ function dvtSim(api,ui){
       if(g>0.6&&!emb){lbl(ctx,xE-10,y0-Rx(xE)+th(xE-10),Math.min(960,xE+10),y0+R+20,'Cola flotante','l')}
       if(nL>0)lbl(ctx,xv+24,y0-Rx(xv+24)+9,250,y0-R-24,'Neutrófilos y NETs','l');
     }
-    roD.set('día '+Math.floor(days));roR.set(Math.round(risk*100)+' % · '+lvl(risk));roT.set(Math.round(g*100)+' % de su tamaño máximo');roE.set(antic?'reducido':g>0.6?'alto':g>0.25?'moderado':'bajo');
+    roD.set(t.toFixed(0)+' s de animación');roR.set(lvl(risk)+' · sin escala clínica');roT.set(Math.round(g*100)+' % del esquema');roE.set(emb?'desprendimiento representado':embN?'evento previo representado':'sin evento representado');
   }};
 }
 
@@ -848,26 +848,71 @@ function ptsSim(api,ui){
 
 /* ---------- 3D comunes ---------- */
 function make3D(el){
-  const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setClearColor(0x0f171e);
-  el.appendChild(renderer.domElement);const scene=new THREE.Scene();const cam=new THREE.PerspectiveCamera(38,1,0.1,100);
-  const ctrl=new THREE.OrbitControls(cam,renderer.domElement);ctrl.enableDamping=true;
-  scene.add(new THREE.HemisphereLight(0xdfe8ff,0x3a1515,0.8));const d1=new THREE.DirectionalLight(0xffffff,0.9);d1.position.set(3,5,6);scene.add(d1);const d2=new THREE.DirectionalLight(0x9fb8ff,0.4);d2.position.set(-5,-2,-4);scene.add(d2);
-  const tags=document.createElement('div');el.appendChild(tags);const hint=document.createElement('div');hint.className='hint3d';hint.textContent='Arrastre para rotar · rueda o pellizco para acercar';el.appendChild(hint);
-  const size=()=>{const w=el.clientWidth,h=el.clientHeight;renderer.setSize(w,h,false);renderer.domElement.style.width='100%';renderer.domElement.style.height='100%';cam.aspect=w/Math.max(1,h);cam.updateProjectionMatrix()};
+  const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});renderer.setPixelRatio(Math.min(devicePixelRatio||1,innerWidth<700?1.6:2));renderer.setClearColor(0x0d1e28,0);renderer.outputEncoding=THREE.LinearEncoding;renderer.toneMapping=THREE.NoToneMapping;
+  const canvas=renderer.domElement;canvas.setAttribute('aria-label','Modelo anatómico 3D. Arrastra para girar o selecciona una estructura.');el.appendChild(canvas);
+  const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(38,1,0.1,120),ctrl=new THREE.OrbitControls(cam,canvas);ctrl.enableDamping=true;ctrl.dampingFactor=.075;ctrl.minDistance=2.8;ctrl.maxDistance=24;ctrl.enablePan=true;
+  scene.add(new THREE.HemisphereLight(0xe8f5ff,0x291a21,.8));const key=new THREE.DirectionalLight(0xffeedf,1.0);key.position.set(-3,5,7);scene.add(key);const rim=new THREE.DirectionalLight(0x90bfd4,.6);rim.position.set(5,1,-4);scene.add(rim);
+  const tags=document.createElement('div');tags.className='model-labels';el.appendChild(tags);
+  const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.classList.add('label-lines');el.appendChild(svg);
+  const hint=document.createElement('div');hint.className='hint3d';hint.textContent='Arrastra para girar · pellizca para acercar · toca para reconocer';el.appendChild(hint);
+  const list=[],entries=[],parts=new Map();let selected=null,isolated=false,cameraTarget=null,restoreView=null,lastRender=0,alive=true,frameCount=0,measureStart=performance.now();
+  const size=()=>{const w=el.clientWidth,h=el.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);canvas.style.width='100%';canvas.style.height='100%';cam.aspect=w/h;cam.updateProjectionMatrix();svg.setAttribute('viewBox',`0 0 ${w} ${h}`)};
   const ro=new ResizeObserver(size);ro.observe(el);size();
-  const list=[];
-  function tag(text,getPos){const d=document.createElement('div');d.className='tag3d';d.innerHTML='<i></i><span></span>';d.lastChild.textContent=text;tags.appendChild(d);list.push({d,getPos});return d}
-  const v=new THREE.Vector3();
-  function render(S){ctrl.update();renderer.render(scene,cam);const w=el.clientWidth,h=el.clientHeight;
-    for(const t of list){t.getPos(v);v.project(cam);const ok=S.labels&&v.z<1&&Math.abs(v.x)<1.05&&Math.abs(v.y)<1.05;t.d.hidden=!ok;if(ok)t.d.style.transform=`translate(${(v.x+1)/2*w-3.5}px,${(1-v.y)/2*h-9}px)`}}
-  function destroy(){ro.disconnect();ctrl.dispose();scene.traverse(o=>{if(o.geometry)o.geometry.dispose();if(o.material)(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>m.dispose())});renderer.dispose();renderer.forceContextLoss&&renderer.forceContextLoss()}
-  return{renderer,scene,cam,ctrl,tag,render,destroy};
+  function register(mesh,id,name,manageOpacity=false){
+    if(!parts.has(id))parts.set(id,{id,name:name||COURSE.structures[id]?.name||id});
+    mesh.traverse(o=>{if(!o.isMesh)return;o.userData.partId=id;if(!entries.some(x=>x.mesh===o))entries.push({mesh:o,id,opacity:o.material.opacity,emissive:o.material.emissive?.clone(),manageOpacity})});return mesh;
+  }
+  function select(id){selected=parts.has(id)?id:null;for(const entry of entries)if(entry.mesh.material.emissive)entry.mesh.material.emissive.copy(entry.emissive);if(isolated&&selected)fitSelection();el.dispatchEvent(new CustomEvent('flebo:part',{bubbles:true,detail:{id:selected,parts:[...parts.values()]}}));}
+  function fitSelection(){scene.updateMatrixWorld(true);const box=new THREE.Box3();for(const entry of entries)if(entry.id===selected)box.union(new THREE.Box3().setFromObject(entry.mesh));if(box.isEmpty())return;const center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3()),distance=(Math.max(size.y,size.x/Math.max(.5,cam.aspect))/(2*Math.tan(cam.fov*Math.PI/360))+size.z*.5)*1.25,direction=cam.position.clone().sub(ctrl.target).normalize();moveTo(center.clone().addScaledVector(direction,Math.max(3.5,distance)).toArray(),center.toArray())}
+  function isolate(value){if(value&&!isolated){restoreView={p:cam.position.toArray(),t:ctrl.target.toArray()}}isolated=!!value;if(isolated&&selected)fitSelection();else if(restoreView){moveTo(restoreView.p,restoreView.t);restoreView=null}}
+  function factor(id){return isolated&&selected&&id!==selected?0.12:1}
+  function moveTo(position,target){cameraTarget={p:new THREE.Vector3(...position),t:new THREE.Vector3(...target)}}
+  ctrl.addEventListener('start',()=>{cameraTarget=null});
+  function inferPart(text){const s=text.toLowerCase();return /endotelio/.test(s)?'endotelio':/íntima/.test(s)?'intima':/media:|músculo liso/.test(s)?'media':/adventicia|colágeno/.test(s)?'adventicia':/valva|válvula/.test(s)?'valvas':/safena mayor/.test(s)?'safena':/comunicante/.test(s)?'comunicante':/perforante/.test(s)?'perforante':/fascia muscular/.test(s)?'fascia-muscular':/fascia safena|canal safeno/.test(s)?'fascia-safena':/epidermis|dermis|piel/.test(s)?'piel':/subcutáneo|tributaria|reticulares/.test(s)?'tejido':/vena profunda|vena femoral|n1/.test(s)?'profunda':/nervio safeno/.test(s)?'nervio':/arteria/.test(s)?'arteria':/músculo/.test(s)?'musculo':/vena superficial/.test(s)?'superficial':null}
+  function tag(text,getPos,partId){const id=partId||inferPart(text),d=document.createElement('div');d.className='tag3d';d.innerHTML='<i></i><span></span>';d.lastChild.textContent=text;d.title=text;
+    if(id){d.tabIndex=0;d.setAttribute('role','button');d.setAttribute('aria-label','Reconocer '+text);d.onclick=()=>select(id);d.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(id)}}}
+    tags.appendChild(d);const line=document.createElementNS('http://www.w3.org/2000/svg','line');line.setAttribute('stroke','#93b7c7');line.setAttribute('stroke-opacity','.5');svg.appendChild(line);list.push({d,line,getPos,id,text});return d;
+  }
+  const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2();let down=null;
+  const onDown=e=>{down={x:e.clientX,y:e.clientY}};
+  const onUp=e=>{if(!down||Math.hypot(e.clientX-down.x,e.clientY-down.y)>6){down=null;return}down=null;const rect=canvas.getBoundingClientRect();pointer.set((e.clientX-rect.left)/rect.width*2-1,-(e.clientY-rect.top)/rect.height*2+1);raycaster.setFromCamera(pointer,cam);
+    const visible=entries.filter(x=>{let o=x.mesh;while(o){if(!o.visible)return false;o=o.parent}return x.mesh.material.opacity>.04}).map(x=>x.mesh);
+    const hit=raycaster.intersectObjects(visible,false)[0];if(hit)select(hit.object.userData.partId);
+  };canvas.addEventListener('pointerdown',onDown);canvas.addEventListener('pointerup',onUp);
+  const v=new THREE.Vector3(),world=new THREE.Vector3();
+  function render(S){if(!alive)return;const now=performance.now(),dt=Math.min(.05,(now-(lastRender||now))/1000);lastRender=now;
+    if(cameraTarget&&ctrl.enabled){const alpha=1-Math.exp(-5*dt);cam.position.lerp(cameraTarget.p,alpha);ctrl.target.lerp(cameraTarget.t,alpha);if(cam.position.distanceTo(cameraTarget.p)<.005)cameraTarget=null}
+    for(const entry of entries){const material=entry.mesh.material,active=selected===entry.id;if(material.emissive&&selected){material.emissive.copy(entry.emissive);if(active)material.emissive.setHex(0x153948)}if(entry.manageOpacity){const opacity=entry.opacity*factor(entry.id);material.opacity=opacity;material.transparent=opacity<1;material.depthWrite=opacity>.96}}
+    ctrl.update();renderer.render(scene,cam);frameCount++;if(now-measureStart>1000){canvas.dataset.fps=(frameCount*1000/(now-measureStart)).toFixed(1);canvas.dataset.drawCalls=renderer.info.render.calls;frameCount=0;measureStart=now}canvas.dataset.rendered='true';
+    const w=el.clientWidth,h=el.clientHeight,limit=w<520?(AUD==='medico'?4:2):(AUD==='medico'?7:4),occupied=[];let shown=0;
+    const ordered=[...list].sort((a,b)=>(b.id===selected?1:0)-(a.id===selected?1:0));
+    for(const t of ordered){t.getPos(world);v.copy(world).project(cam);const active=selected&&t.id===selected,visible=(S.labels||active)&&(!isolated||active)&&v.z<1&&v.z>-1&&Math.abs(v.x)<1.05&&Math.abs(v.y)<1.05&&shown<limit;
+      t.d.hidden=!visible;t.line.style.display=visible?'':'none';if(!visible)continue;
+      t.d.classList.toggle('is-active',!!active);const px=(v.x+1)/2*w,py=(1-v.y)/2*h,bw=t.d.offsetWidth,bh=t.d.offsetHeight||28;
+      const dx=px>w*.6?-bw-22:22,ys=[py-bh/2,py-bh-35,py+28,py-bh-70,py+65];let chosen=null;
+      for(const yy of ys){const x=clamp(px+dx,12,Math.max(12,w-bw-12)),y=clamp(yy,48,Math.max(48,h-bh-38));const rect={x,y,w:bw,h:bh};if(!occupied.some(a=>x<a.x+a.w+7&&x+bw+7>a.x&&y<a.y+a.h+7&&y+bh+7>a.y)){chosen=rect;break}}
+      if(!chosen){t.d.hidden=true;t.line.style.display='none';continue}occupied.push(chosen);shown++;t.d.style.transform=`translate(${chosen.x}px,${chosen.y}px)`;t.line.setAttribute('x1',px);t.line.setAttribute('y1',py);t.line.setAttribute('x2',chosen.x+(dx<0?bw:0));t.line.setAttribute('y2',chosen.y+bh/2);
+    }
+  }
+  function destroy(){alive=false;ro.disconnect();canvas.removeEventListener('pointerdown',onDown);canvas.removeEventListener('pointerup',onUp);ctrl.dispose();const geometries=new Set(),materials=new Set();scene.traverse(o=>{if(o.geometry)geometries.add(o.geometry);if(o.material)(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>materials.add(m))});geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());renderer.dispose();renderer.forceContextLoss?.();entries.length=0;parts.clear()}
+  return{renderer,scene,cam,ctrl,tag,render,destroy,register,select,isolate,factor,moveTo,get parts(){return[...parts.values()]},get selected(){return selected},get isolated(){return isolated}};
+}
+
+function rbcGeometry(radius=.06){const profile=[];for(let side=1;side>=-1;side-=2){for(let k=0;k<=12;k++){const r=side===1?k/12:1-k/12;profile.push(new THREE.Vector2(Math.max(.001,r),side*Math.sqrt(Math.max(0,1-r*r))*(.1035+1.0015*r*r-.5615*r**4)))}}const geometry=new THREE.LatheGeometry(profile,16);geometry.scale(radius,radius,radius);return geometry}
+
+function updateTubeMesh(mesh,curve,segments,radialSegments,radius,material,parent){
+  const geometry=mesh?mesh.geometry:new THREE.TubeGeometry(curve,segments,1,radialSegments,false),frames=curve.computeFrenetFrames(segments,false),positions=geometry.attributes.position,center=new THREE.Vector3();
+  for(let i=0;i<=segments;i++){curve.getPointAt(i/segments,center);const n=frames.normals[i],b=frames.binormals[i],r=typeof radius==='function'?radius(i/segments):radius;
+    for(let j=0;j<=radialSegments;j++){const angle=j/radialSegments*TAU,cs=-Math.cos(angle),sn=Math.sin(angle),index=i*(radialSegments+1)+j;positions.setXYZ(index,center.x+r*(cs*n.x+sn*b.x),center.y+r*(cs*n.y+sn*b.y),center.z+r*(cs*n.z+sn*b.z))}}
+  positions.needsUpdate=true;geometry.computeVertexNormals();geometry.computeBoundingSphere();if(geometry.boundingBox)geometry.computeBoundingBox();geometry.normals=frames.normals;geometry.binormals=frames.binormals;
+  if(!mesh){mesh=new THREE.Mesh(geometry,material);parent.add(mesh)}return mesh;
 }
 
 /* ---------- 6 · Pared venosa y válvula en 3D ---------- */
 function wall3D(el,ui){
-  const E=make3D(el),{scene,cam,ctrl}=E;let inc=false,showBlood=true,t=0,c=0;
-  const home=()=>{cam.position.set(-1.6,2.3,6.2);ctrl.target.set(-0.3,0,0);ctrl.update()};home();
+  const E=make3D(el),{scene,cam,ctrl}=E;let inc=false,showBlood=true,t=0,c=0,separation=0,targetSeparation=0;
+  const home=()=>{cam.position.set(-2.0,2.5,8.4);ctrl.target.set(0,.15,0);ctrl.update()};home();
+  const explode=ui.slider('Separación de capas',0,1,.01,0,v=>{targetSeparation=v;E.moveTo([-2-v*2.5,2.5+v*5,8.4+v*11],[0,.15+v*4.5,0])},v=>v<.05?'Capas unidas':v<.65?'Separación parcial':'Capas separadas');
   ui.toggle('Válvula incompetente',false,v=>{inc=v});ui.toggle('Mostrar eritrocitos',true,v=>{showBlood=v;rb.visible=v});ui.buttons([['Restablecer vista',home]]);
   ui.legend([[C.endo,'Endotelio'],[C.intima,'Íntima / lámina elástica interna'],[C.media,'Media (músculo liso)'],[C.advent,'Adventicia (colágeno)'],[C.valve,'Valvas']]);
   const roF=ui.readout('Fase');
@@ -875,29 +920,33 @@ function wall3D(el,ui){
   function shell(rin,rout,x0,x1,color,rough){const s=new THREE.Shape();s.absarc(0,0,rout,a0,a1,false);s.absarc(0,0,rin,a1,a0,true);
     const g=new THREE.ExtrudeGeometry(s,{depth:x1-x0,bevelEnabled:false,curveSegments:80});g.rotateY(Math.PI/2);g.translate(x0,0,0);
     const m=new THREE.Mesh(g,new THREE.MeshStandardMaterial({color,roughness:rough,metalness:0,side:THREE.DoubleSide}));scene.add(m);return m}
-  shell(1.0,1.035,-3.2,3.2,0xf2d3d7,0.3);shell(1.035,1.08,-2.7,3.2,0xe1a6b0,0.5);shell(1.08,1.3,-2.1,3.2,0xa8443d,0.7);shell(1.3,1.62,-1.4,3.2,0xd4b07a,0.95);
+  const layers=[shell(1,1.035,-3.2,3.2,0xeabdc8,.45),shell(1.035,1.08,-2.7,3.2,0xcd8d9f,.6),shell(1.08,1.3,-2.1,3.2,0xa24443,.72),shell(1.3,1.62,-1.4,3.2,0xc59f72,.9)];
+  ['endotelio','intima','media','adventicia'].forEach((id,i)=>E.register(layers[i],id,COURSE.structures[id].name,true));
   const wp=(x,r,deg)=>{const f=deg*Math.PI/180;return new THREE.Vector3(x,Math.sin(f)*r,-Math.cos(f)*r)};
-  const tube=(pts,r,col)=>{const m=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),80,r,8,false),new THREE.MeshStandardMaterial({color:col,roughness:.5}));scene.add(m);return m};
+  const tube=(pts,r,col)=>{const m=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),80,r,8,false),new THREE.MeshStandardMaterial({color:col,roughness:.5}));layers[3].add(m);E.register(m,'adventicia',COURSE.structures.adventicia.name,true);return m};
   const vv=(off,col)=>{const p=[];for(let k=0;k<=9;k++)p.push(wp(-1.3+k*0.5,1.64,300+55*Math.sin(k*0.8+off)));return tube(p,0.028,col)};
   vv(0,0xc23a3a);vv(1.7,0x5468b0);const nv=[];for(let k=0;k<=9;k++)nv.push(wp(-1.3+k*0.5,1.645,250+20*Math.sin(k*0.6)));tube(nv,0.02,0xe9d36b);
+  {const points=[];for(let row=0;row<24;row++){const angle=(208+row*8.8)*Math.PI/180;for(let x=-1.35;x<3.12;x+=.32){const a=wp(x,1.626,angle*180/Math.PI),b=wp(x+.25,1.627,(angle+.035*Math.sin(x*4+row))*180/Math.PI);points.push(a.x,a.y,a.z,b.x,b.y,b.z)}}const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(points,3));layers[3].add(new THREE.LineSegments(g,new THREE.LineBasicMaterial({color:0xf3d6a9,transparent:true,opacity:.25})));}
+  {const cells=new THREE.InstancedMesh(new THREE.SphereGeometry(1,8,6),new THREE.MeshStandardMaterial({color:0x9d647d,roughness:.7}),96),dummy=new THREE.Object3D();for(let i=0;i<96;i++){const x=-3+(i%16)*.38,angle=208+Math.floor(i/16)*36;dummy.position.copy(wp(x,.995,angle));dummy.scale.set(.055,.018,.028);dummy.rotation.x=angle*Math.PI/180;dummy.updateMatrix();cells.setMatrixAt(i,dummy.matrix)}layers[0].add(cells);E.register(cells,'endotelio','Endotelio',true)}
   // valvas
   const xb=0.55,L=0.95,R=0.975,thc=70*Math.PI/180,nu=26,nv2=14;const cusps=[];
   for(let i=0;i<2;i++){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array((nu+1)*(nv2+1)*3),3));
     const idx=[];for(let a=0;a<nu;a++)for(let b=0;b<nv2;b++){const p=a*(nv2+1)+b,q=p+nv2+1;idx.push(p,q,p+1,q,q+1,p+1)}g.setIndex(idx);
-    const m=new THREE.Mesh(g,new THREE.MeshStandardMaterial({color:0xefdcc4,roughness:.45,side:THREE.DoubleSide}));scene.add(m);cusps.push({g,i})}
+    const m=new THREE.Mesh(g,new THREE.MeshStandardMaterial({color:0xe7c7a7,roughness:.6,side:THREE.DoubleSide}));scene.add(m);E.register(m,'valvas','Valvas',true);cusps.push({g,i})}
   function updCusps(cc){for(const {g,i} of cusps){const pa=g.attributes.position.array;let n=0;const dc=Math.cos(thc),ds=Math.sin(thc);
     for(let a=0;a<=nu;a++){const u=a/nu,th=thc+(i+u)*Math.PI,wy=R*Math.cos(th),wz=R*Math.sin(th),dot=wy*dc+wz*ds,py=dot*dc,pz=dot*ds,ty=lerp(wy,py,cc),tz=lerp(wz,pz,cc);
       for(let b=0;b<=nv2;b++){const v=b/nv2,k=v*v*(1.6-0.6*v);pa[n++]=xb+L*v*(1-0.22*cc*Math.sin(Math.PI*u));pa[n++]=lerp(wy,ty,k);pa[n++]=lerp(wz,tz,k)}}
     g.attributes.position.needsUpdate=true;g.computeVertexNormals()}}
   // eritrocitos
-  const N=200,rb=new THREE.InstancedMesh(new THREE.SphereGeometry(0.055,12,8),new THREE.MeshStandardMaterial({color:0xffffff,roughness:.5}),N);scene.add(rb);
-  const parts=[];for(let k=0;k<N;k++){const a=Math.random()*TAU,r=Math.sqrt(Math.random())*0.8;parts.push({x:rnd(-3.2,3.2),a,r,ph:Math.random()*TAU})}
-  const M=new THREE.Matrix4(),Q=new THREE.Quaternion(),Sv=new THREE.Vector3(1,0.38,1),Pv=new THREE.Vector3(),col=new THREE.Color(),eu=new THREE.Euler();
-  E.tag('Endotelio',v=>v.copy(wp(-3.0,1.02,200)));E.tag('Íntima (subendotelio y lámina elástica interna)',v=>v.copy(wp(-2.45,1.06,200)));
-  E.tag('Media: músculo liso',v=>v.copy(wp(-1.8,1.19,200)));E.tag('Adventicia: colágeno',v=>v.copy(wp(-0.9,1.62,215)));
-  E.tag('Vasa vasorum',v=>v.copy(wp(1.2,1.66,300+55*Math.sin(5*0.8))));E.tag('Nervio (nervi vasorum)',v=>v.copy(wp(2.2,1.65,250)));
+  const N=200,rb=new THREE.InstancedMesh(rbcGeometry(.065),new THREE.MeshStandardMaterial({color:0xffffff,roughness:.53}),N);scene.add(rb);
+  const random=mulberry(601),parts=[];for(let k=0;k<N;k++){const a=random()*TAU,r=Math.sqrt(random())*.8;parts.push({x:lerp(-3.2,3.2,random()),a,r,ph:random()*TAU})}
+  const M=new THREE.Matrix4(),Q=new THREE.Quaternion(),Sv=new THREE.Vector3(1,1,1),Pv=new THREE.Vector3(),col=new THREE.Color(),eu=new THREE.Euler();
+  E.tag('Endotelio',v=>v.copy(wp(-3.0,1.02,200)).add(layers[0].position));E.tag('Íntima',v=>v.copy(wp(-2.45,1.06,200)).add(layers[1].position));
+  E.tag('Media · músculo liso',v=>v.copy(wp(-1.8,1.19,200)).add(layers[2].position),'media');E.tag('Adventicia',v=>v.copy(wp(-0.9,1.62,215)).add(layers[3].position),'adventicia');
+  E.tag('Vasa vasorum',v=>v.copy(wp(1.2,1.66,300+55*Math.sin(5*0.8))).add(layers[3].position),'adventicia');E.tag('Nervio de la pared',v=>v.copy(wp(2.2,1.65,250)).add(layers[3].position),'adventicia');
   E.tag('Valva (cúspide)',v=>v.set(xb+0.55,0.2,0.62));E.tag('Luz venosa',v=>v.set(-3.25,-0.3,0.3));
   return{frame(dt,S){
+    separation+=(targetSeparation-separation)*(1-Math.exp(-5*dt));[0,2.6,5.8,9.4].forEach((offset,i)=>{layers[i].position.y=offset*separation;layers[i].position.z=-i*.12*separation});
     t+=dt;const T=3.2,p=(t%T)/T,incv=inc?0.85:0,rd=0.06+incv*0.3;let U;if(p<0.38)U=Math.sin(Math.PI*p/0.38);else if(p<0.38+rd)U=-(0.3+incv*0.4)*Math.sin(Math.PI*(p-0.38)/rd);else U=0.08;
     const tgt=U<0?(inc?0.6:1):0.02;c+=(tgt-c)*Math.min(1,dt*(U<0?12:5));updCusps(c);
     roF.set(U>0.15?'Flujo anterógrado: valvas abiertas':U<0?(inc?'Reflujo por falta de coaptación':'Cierre valvular'):'Reposo');
@@ -909,44 +958,43 @@ function wall3D(el,ui){
       Pv.set(q.x,Math.cos(q.a)*q.r,Math.sin(q.a)*q.r);eu.set(q.ph,0.3,q.ph*0.7);Q.setFromEuler(eu);M.compose(Pv,Q,Sv);rb.setMatrixAt(k,M);
       col.set(u<-0.02?0xe8963a:0x9a1a28);rb.setColorAt(k,col)}
     rb.instanceMatrix.needsUpdate=true;if(rb.instanceColor)rb.instanceColor.needsUpdate=true;
-    E.render(S)},destroy:E.destroy,cam,ctrl};
+    E.render(S)},destroy:E.destroy,cam,ctrl,selectPart:E.select,isolatePart:E.isolate,moveCamera:E.moveTo,setExplode:v=>explode.set(v),get parts(){return E.parts}};
 }
 
 /* ---------- 7 · De vena sana a várice (3D) ---------- */
 function tort3D(el,ui){
   const E=make3D(el),{scene,cam,ctrl}=E;let deg=0.15,auto=false,dirA=1,t=0,built=-1,skinOn=false;
-  const home=()=>{cam.position.set(5.5,1.2,8.5);ctrl.target.set(0.3,0,-0.6);ctrl.update()};home();
+  const home=()=>{cam.position.set(7,1.8,12);ctrl.target.set(.3,0,-.6);ctrl.update()};home();
   const sl=ui.slider('Progresión de la enfermedad',0,1,0.01,deg,v=>{deg=v},v=>v<0.12?'Vena sana':v<0.3?'Reticular (< 3 mm)':v<0.7?'Várice (C2, ≥ 3 mm)':'Várice con dilataciones saculares');
   const ab=ui.buttons([['Animar progresión',()=>{auto=!auto;ab[0].textContent=auto?'Detener animación':'Animar progresión'}],['Restablecer vista',home]]);
   ui.toggle('Mostrar piel',false,v=>{skinOn=v;skin.visible=v});
   ui.legend([['#5b6fbf','Vena superficial (tributaria)'],['#2f3d78','Vena profunda'],['#5cc29a','Válvula competente'],[C.reflux,'Válvula incompetente / reflujo']]);
   const roD=ui.readout('Diámetro ilustrativo'),roT=ui.readout('Índice de tortuosidad'),roV=ui.readout('Válvulas incompetentes');
   const fas=new THREE.Mesh(new THREE.PlaneGeometry(7,9.4),new THREE.MeshStandardMaterial({color:0xe9eef2,transparent:true,opacity:.13,side:THREE.DoubleSide,depthWrite:false}));fas.position.set(0.6,0,-1.5);scene.add(fas);
+  E.register(fas,'fascia-muscular','Fascia muscular',true);
   const fe=new THREE.LineSegments(new THREE.EdgesGeometry(fas.geometry),new THREE.LineBasicMaterial({color:0xe9eef2,transparent:true,opacity:.5}));fe.position.copy(fas.position);scene.add(fe);
   const skin=new THREE.Mesh(new THREE.PlaneGeometry(7,9.4),new THREE.MeshStandardMaterial({color:0xd9a58c,transparent:true,opacity:.28,side:THREE.DoubleSide,depthWrite:false}));skin.position.set(0.6,0,1.9);skin.visible=false;scene.add(skin);
   const deepC=new THREE.LineCurve3(new THREE.Vector3(2.2,-4.6,-2.6),new THREE.Vector3(2.2,4.6,-2.6));
-  scene.add(new THREE.Mesh(new THREE.TubeGeometry(deepC,20,0.36,24,false),new THREE.MeshStandardMaterial({color:0x2f3d78,roughness:.45,transparent:true,opacity:.75})));
+  const deepMesh=new THREE.Mesh(new THREE.TubeGeometry(deepC,20,.36,24,false),new THREE.MeshStandardMaterial({color:0x2f3d78,roughness:.45,transparent:true,opacity:.75}));scene.add(deepMesh);E.register(deepMesh,'profunda','Vena profunda',true);
   scene.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.LineCurve3(new THREE.Vector3(2.85,-4.6,-2.6),new THREE.Vector3(2.85,4.6,-2.6)),20,0.2,16,false),new THREE.MeshStandardMaterial({color:0xc23a3a,roughness:.4})));
   const vMat=new THREE.MeshPhysicalMaterial({color:0x5b6fbf,roughness:.35,transparent:true,opacity:.42,side:THREE.DoubleSide,depthWrite:false,clearcoat:.5});
   let sup=null,perf=null,curve=null,cen=[],nor=[],bin=[],rad=[];const TS=320,valves=[],vS=[0.1,0.26,0.42,0.58,0.74,0.9];
   const ringG=new THREE.TorusGeometry(1,0.07,10,40);
-  vS.forEach(()=>{const m=new THREE.Mesh(ringG,new THREE.MeshStandardMaterial({color:0x5cc29a,roughness:.4}));scene.add(m);valves.push(m)});
+  vS.forEach(()=>{const m=new THREE.Mesh(ringG,new THREE.MeshStandardMaterial({color:0x5cc29a,roughness:.4}));scene.add(m);E.register(m,'valvas','Válvulas',true);valves.push(m)});
   const pMat=new THREE.MeshStandardMaterial({color:0x5468b0,roughness:.4});
   const rFn=(s,d)=>0.16*(1+d*1.3*(0.5+0.5*Math.sin(s*29)**2)+d*d*1.6*(Math.exp(-(((s-0.33)/0.035)**2))+Math.exp(-(((s-0.66)/0.04)**2))));
   const failed=d=>vS.map((s,i)=>d>0.28+0.09*(5-i));
   function build(d){
     const pts=[];for(let i=0;i<=48;i++){const y=-4.5+9*i/48;pts.push(new THREE.Vector3(d*(0.95*Math.sin(y*2.2)+0.3*Math.sin(y*5.1+1)),y,0.4+d*0.75*Math.cos(y*1.8+0.5)))}
-    curve=new THREE.CatmullRomCurve3(pts);const g=new THREE.TubeGeometry(curve,TS,1,28,false);const pa=g.attributes.position;
+    curve=new THREE.CatmullRomCurve3(pts);sup=updateTubeMesh(sup,curve,TS,28,s=>rFn(s,d),vMat,scene);const g=sup.geometry;
     cen=[];nor=g.normals;bin=g.binormals;rad=[];for(let i=0;i<=TS;i++){cen.push(curve.getPointAt(i/TS));rad.push(rFn(i/TS,d))}
-    for(let i=0;i<=TS;i++)for(let j=0;j<=28;j++){const k=i*29+j,c0=cen[i];pa.setXYZ(k,c0.x+(pa.getX(k)-c0.x)*rad[i],c0.y+(pa.getY(k)-c0.y)*rad[i],c0.z+(pa.getZ(k)-c0.z)*rad[i])}
-    g.computeVertexNormals();if(sup){scene.remove(sup);sup.geometry.dispose()}sup=new THREE.Mesh(g,vMat);scene.add(sup);
+    E.register(sup,'superficial','Vena superficial',true);
     const f=failed(d);vS.forEach((s,i)=>{const ii=Math.round(s*TS),m=valves[i],c0=cen[ii],tg=curve.getTangentAt(s);m.position.copy(c0);m.quaternion.setFromUnitVectors(new THREE.Vector3(0,0,1),tg);m.scale.setScalar(rad[ii]*0.92);m.material.color.set(f[i]?0xe8963a:0x5cc29a)});
-    const a=cen[Math.round(0.4*TS)];if(perf){scene.remove(perf);perf.geometry.dispose()}
-    perf=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([a.clone(),new THREE.Vector3((a.x+2.2)/2,a.y-0.3,-1.5),new THREE.Vector3(2.2,a.y-0.6,-2.6)]),40,0.07+d*0.07,10,false),pMat);scene.add(perf);
+    const a=cen[Math.round(0.4*TS)];perf=updateTubeMesh(perf,new THREE.CatmullRomCurve3([a.clone(),new THREE.Vector3((a.x+2.2)/2,a.y-.3,-1.5),new THREE.Vector3(2.2,a.y-.6,-2.6)]),40,10,.07+d*.07,pMat,scene);E.register(perf,'perforante','Vena perforante',true);
     pMat.color.set(d>0.62?0xe8963a:0x5468b0);
     let len=curve.getLength();roD.set((2+d*9).toFixed(1)+' mm');roT.set((len/9).toFixed(2));roV.set(f.filter(Boolean).length+' de '+vS.length);built=d}
-  const N=260,ib=new THREE.InstancedMesh(new THREE.SphereGeometry(0.05,10,8),new THREE.MeshStandardMaterial({color:0xffffff,roughness:.5}),N);scene.add(ib);
-  const ps=[];for(let k=0;k<N;k++)ps.push({s:Math.random(),a:Math.random()*TAU,r:Math.sqrt(Math.random())*0.6});
+  const N=260,ib=new THREE.InstancedMesh(rbcGeometry(.055),new THREE.MeshStandardMaterial({color:0xffffff,roughness:.5}),N);scene.add(ib);
+  const rand=mulberry(712),ps=[];for(let k=0;k<N;k++)ps.push({s:rand(),a:rand()*TAU,r:Math.sqrt(rand())*.6});
   const ND=70,idp=new THREE.InstancedMesh(new THREE.SphereGeometry(0.06,10,8),new THREE.MeshStandardMaterial({color:0x9a1a28,roughness:.5}),ND);scene.add(idp);
   const dps=[];for(let k=0;k<ND;k++)dps.push({y:rnd(-4.6,4.6),a:Math.random()*TAU,r:Math.random()*0.25});
   const M=new THREE.Matrix4(),P=new THREE.Vector3(),Q=new THREE.Quaternion(),Sc=new THREE.Vector3(1,1,1),col=new THREE.Color();
@@ -967,14 +1015,14 @@ function tort3D(el,ui){
       Sc.setScalar(0.7+deg*0.6);M.compose(P,Q,Sc);ib.setMatrixAt(k,M);col.set(v<-0.01?0xe8963a:0x9a1a28);ib.setColorAt(k,col)}
     ib.instanceMatrix.needsUpdate=true;if(ib.instanceColor)ib.instanceColor.needsUpdate=true;
     Sc.setScalar(1);for(let k=0;k<ND;k++){const q=dps[k];q.y+=dt*0.7;if(q.y>4.6)q.y=-4.6;P.set(2.2+Math.cos(q.a)*q.r,q.y,-2.6+Math.sin(q.a)*q.r);M.compose(P,Q,Sc);idp.setMatrixAt(k,M)}idp.instanceMatrix.needsUpdate=true;
-    E.render(S)},destroy:E.destroy,cam,ctrl};
+    E.render(S)},destroy:E.destroy,cam,ctrl,selectPart:E.select,isolatePart:E.isolate,moveCamera:E.moveTo,get parts(){return E.parts}};
 }
 
 /* ---------- 8 · Compartimentos, comunicantes y perforantes (3D, cara medial del muslo) ---------- */
 function compart3D(el,ui){
   const E=make3D(el),{scene,cam,ctrl}=E;let e=0,target=0,focus='all',inc=false,t=0,builtE=-1,builtInc=null;
   const home=()=>{cam.position.set(6.6,5.6,9.4);ctrl.target.set(0,0.3,0);ctrl.update()};home();
-  ui.slider('Separación de capas',0,1,0.01,target,v=>{target=v},v=>v<0.05?'Anatomía in situ':v<0.5?'Separación parcial':'Vista explosionada');
+  const separationControl=ui.slider('Separación de capas',0,1,0.01,target,v=>{target=v},v=>v<0.05?'Anatomía in situ':v<0.5?'Separación parcial':'Vista explosionada');
   ui.segmented('Resaltar',['Todo','Comunicantes','Perforantes','N3','N2','N1'],0,i=>{focus=['all','comm','perf','n3','n2','n1'][i]});
   ui.toggle('Insuficiencia venosa (reflujo y perforante incompetente)',false,v=>{inc=v});
   ui.buttons([['Restablecer vista',home]]);
@@ -987,7 +1035,7 @@ function compart3D(el,ui){
   const groups={};for(const k of ['n1','mf','n2','sf','n3','skin']){groups[k]=new THREE.Group();scene.add(groups[k])}
   const offs=()=>({n1:0,mf:0.5*e,n2:1.0*e,sf:1.4*e,n3:1.9*e,skin:2.5*e});
   const tracked=[];
-  const add=(g,m,comp,kind)=>{m.userData={op:m.material.opacity,comp,kind};groups[g].add(m);tracked.push(m);return m};
+  const add=(g,m,comp,kind)=>{const partId=g==='skin'?'piel':g==='n3'?'tejido':g==='mf'?'fascia-muscular':g==='sf'?'fascia-safena':g==='n1'?'musculo':kind==='nerve'?'nervio':null;m.userData={op:m.material.opacity,comp,kind,partId};groups[g].add(m);tracked.push(m);if(partId)E.register(m,partId,COURSE.structures[partId].name);return m};
   const rand=mulberry(23);
   // N1: músculo con fibras
   add('n1',new THREE.Mesh(new THREE.BoxGeometry(L,2.2,W),mat(0x9c3c3c,0.4)),1,'tissue').position.y=-1.12;
@@ -1028,30 +1076,28 @@ function compart3D(el,ui){
       V.push({n:nm,kind:'tel',comp:3,r:inc?.04:.03,col:tel,sp:.25,pts:[['skin',cx,2.14,cz],['skin',cx,1.97,cz],['n3',cx,1.8,cz]]})});
     return V;
   }
-  let vessels=[],vMeshes=[],ligs=null;const byName={};
+  let vessels=[],vMeshes=[],ligs=null;const byName={},vesselCache=new Map();
   const W3=p=>{const o=offs();return new THREE.Vector3(p[1],p[2]+o[p[0]],p[3])};
   const Z=new THREE.Vector3(0,0,1),Y=new THREE.Vector3(0,1,0);
   function build(){
-    vMeshes.forEach(m=>{scene.remove(m);m.geometry.dispose();m.material.dispose();const i=tracked.indexOf(m);if(i>=0)tracked.splice(i,1)});vMeshes=[];
     vessels=defs();
     for(const v of vessels){
       const pts=v.pts.map(W3),curve=pts.length===2?new THREE.LineCurve3(pts[0],pts[1]):new THREE.CatmullRomCurve3(pts,false,'centripetal');
-      v.len=curve.getLength();v.S=curve.getSpacedPoints(100);v.N=[];v.B=[];v.T=[];
-      for(let i=0;i<=100;i++){const tg=curve.getTangentAt(i/100);const up=Math.abs(tg.y)<0.9?Y:new THREE.Vector3(1,0,0);const n=new THREE.Vector3().crossVectors(tg,up).normalize();v.T.push(tg);v.N.push(n);v.B.push(new THREE.Vector3().crossVectors(tg,n))}
-      const m=new THREE.Mesh(new THREE.TubeGeometry(curve,Math.max(10,Math.round(v.len*14)),v.r,v.r<0.05?8:18,false),mat(v.col,v.kind==='art'?1:0.92,{roughness:.35}));
-      m.userData={op:m.material.opacity,comp:v.comp,kind:v.kind};scene.add(m);tracked.push(m);vMeshes.push(m);byName[v.n]=v;
+      v.len=curve.getLength();v.S=curve.getSpacedPoints(100);const frames=curve.computeFrenetFrames(100,false);v.N=frames.normals;v.B=frames.binormals;v.T=frames.tangents;
+      v.partId=v.kind==='perf'?'perforante':v.kind==='comm'?'comunicante':v.kind==='deep'?'profunda':v.kind==='art'?'arteria':v.n==='gsv'?'safena':'superficial';
+      let cached=vesselCache.get(v.n);
+      if(!cached){cached={segments:Math.max(16,Math.min(128,Math.round(v.len*14))),radial:v.r<.05?8:18};cached.mesh=updateTubeMesh(null,curve,cached.segments,cached.radial,v.r,mat(v.col,v.kind==='art'?1:.92,{roughness:.4}),scene);vesselCache.set(v.n,cached);tracked.push(cached.mesh);vMeshes.push(cached.mesh)}
+      else updateTubeMesh(cached.mesh,curve,cached.segments,cached.radial,v.r,null,scene);
+      const m=cached.mesh;m.userData={op:v.kind==='art'?1:.92,comp:v.comp,kind:v.kind,partId:v.partId};E.register(m,v.partId,COURSE.structures[v.partId]?.name||v.partId);byName[v.n]=v;
       if(v.valve!=null){const i=Math.round(v.valve*100),bad=inc&&(v.kind==='perf'||v.c1);
-        const ring=new THREE.Mesh(new THREE.TorusGeometry(v.r*1.02,v.r*0.28,8,24),mat(bad?0xe8963a:0xefdcc4,1,{roughness:.4}));ring.position.copy(v.S[i]);ring.quaternion.setFromUnitVectors(Z,v.T[i]);
-        ring.userData={op:1,comp:v.comp,kind:v.kind};scene.add(ring);tracked.push(ring);vMeshes.push(ring);
-        for(const sgn of [1,-1]){const lf=new THREE.Mesh(new THREE.CircleGeometry(v.r*0.98,16,0,Math.PI),mat(bad?0xe8963a:0xefdcc4,0.9,{roughness:.4}));
-          lf.position.copy(v.S[i]);const q=new THREE.Quaternion().setFromUnitVectors(Z,v.T[i]);lf.quaternion.copy(q);lf.rotateZ(sgn>0?0:Math.PI);lf.rotateX(bad?-0.25:-0.9);
-          lf.userData={op:0.9,comp:v.comp,kind:v.kind};scene.add(lf);tracked.push(lf);vMeshes.push(lf)}}
+        if(!cached.ring){cached.ring=new THREE.Mesh(new THREE.TorusGeometry(1.02,.28,8,24),mat(0xefdcc4,1,{roughness:.4}));scene.add(cached.ring);tracked.push(cached.ring);cached.leaves=[1,-1].map(()=>{const lf=new THREE.Mesh(new THREE.CircleGeometry(.98,16,0,Math.PI),mat(0xefdcc4,.9,{roughness:.4}));scene.add(lf);tracked.push(lf);return lf})}
+        const ring=cached.ring;ring.position.copy(v.S[i]);ring.scale.setScalar(v.r);ring.quaternion.setFromUnitVectors(Z,v.T[i]);ring.material.color.setHex(bad?0xe8963a:0xefdcc4);ring.userData={op:1,comp:v.comp,kind:v.kind,partId:'valvas'};E.register(ring,'valvas','Válvulas');
+        cached.leaves.forEach((lf,li)=>{lf.position.copy(v.S[i]);lf.scale.setScalar(v.r);lf.quaternion.setFromUnitVectors(Z,v.T[i]);lf.rotateZ(li===0?0:Math.PI);lf.rotateX(bad?-.25:-.9);lf.material.color.setHex(bad?0xe8963a:0xefdcc4);lf.userData={op:.9,comp:v.comp,kind:v.kind,partId:'valvas'};E.register(lf,'valvas','Valvas')})}
     }
     // ligamentos safenos: tractos fibrosos entre la safena y la fascia safena
     const o=offs(),lp=[];for(let x=-3.6;x<=3.61;x+=0.6)for(const d of [35,65,115,145]){const th=d*Math.PI/180,r=inc?.36:.28;lp.push(x,.42+o.n2+r*Math.sin(th),.8+r*Math.cos(th));const zb=.8+0.66*Math.cos(th);lp.push(x+0.05,sfY(zb)+o.sf,zb)}
-    if(ligs){scene.remove(ligs);ligs.geometry.dispose();tracked.splice(tracked.indexOf(ligs),1)}
-    const lg=new THREE.BufferGeometry();lg.setAttribute('position',new THREE.Float32BufferAttribute(lp,3));ligs=new THREE.LineSegments(lg,new THREE.LineBasicMaterial({color:0xf2f4f6,transparent:true,opacity:.75}));
-    ligs.userData={op:.75,comp:2,kind:'fascia'};scene.add(ligs);tracked.push(ligs);
+    if(!ligs){const lg=new THREE.BufferGeometry();lg.setAttribute('position',new THREE.Float32BufferAttribute(lp,3));ligs=new THREE.LineSegments(lg,new THREE.LineBasicMaterial({color:0xf2f4f6,transparent:true,opacity:.75}));ligs.userData={op:.75,comp:2,kind:'fascia',partId:'fascia-safena'};scene.add(ligs);tracked.push(ligs)}
+    else{ligs.geometry.attributes.position.array.set(lp);ligs.geometry.attributes.position.needsUpdate=true;ligs.geometry.computeBoundingSphere()}
     builtE=e;builtInc=inc;
   }
   build();
@@ -1080,17 +1126,17 @@ function compart3D(el,ui){
   tv('Vena femoral','fv',0.04,0.32);tv('Arteria femoral','fa',0.96,0.2);tv('Vena muscular','mv',0.1);ts('Músculo',(v)=>v.set(-2.2,-2.0,2.95));
   ts('N3 · superficial',(v,o)=>v.set(4.35,1.3+o.n3,2.9));ts('N2 · safeno',(v,o)=>v.set(4.35,0.4+o.n2,2.9));ts('N1 · profundo',(v)=>v.set(4.35,-1.0,2.9));
   return{frame(dt,S){
-    t+=dt;e+=(target-e)*Math.min(1,dt*2.2);
+    t+=dt;e+=(target-e)*(1-Math.exp(-3.6*dt));
     const o=offs();for(const k in groups)groups[k].position.y=o[k];
     if(Math.abs(e-builtE)>0.004||inc!==builtInc){const keep=vessels.map(v=>v.n);build();if(vessels.map(v=>v.n).join()!==keep.join()){/* cambia el número de ramas: reasignar */parts.forEach(p=>{if(p.vi>=vessels.length)p.vi=p.vi%vessels.length})}}
     const ph=(t%3)/3,sys=ph<0.5;
-    for(const m of tracked){const k=m.userData.kind,f=fFor(m.userData.comp,k),want=m.userData.op*f;m.material.opacity+=(want-m.material.opacity)*Math.min(1,dt*6+0.02);m.material.depthWrite=m.material.opacity>0.95;
+    for(const m of tracked){const k=m.userData.kind,f=E.isolated&&E.selected===m.userData.partId?1:fFor(m.userData.comp,k),want=m.userData.op*f*E.factor(m.userData.partId);m.material.opacity+=(want-m.material.opacity)*Math.min(1,dt*6+0.02);m.material.depthWrite=m.material.opacity>0.95;
       if(m.material.emissive)m.material.emissive.setHex(focus==='comm'&&k==='comm'?0x1f8a5f:focus==='perf'&&k==='perf'?0x5a2fa0:0x000000)}
     const st=vessels.map(v=>{let dir=1,refl=false,sp=v.sp;
       if(v.kind==='perf'){if(inc&&sys){dir=-1;refl=true;sp=0.9}else sp=sys?0.15:0.9}
       if(inc&&v.refl&&!sys){dir=-1;refl=true}
       if(inc&&v.c1&&!sys){dir=-1;refl=true}
-      return{d:dir*sp/v.len,refl,vis:fFor(v.comp,v.kind)>0.25?1:0}});
+      return{d:dir*sp/v.len,refl,vis:(E.isolated&&E.selected===v.partId?1:fFor(v.comp,v.kind))*E.factor(v.partId)>0.25?1:0}});
     for(let k=0;k<parts.length;k++){const p=parts[k],v=vessels[p.vi],s0=st[p.vi];p.s+=s0.d*dt*p.sp;if(p.s>1)p.s-=1;if(p.s<0)p.s+=1;p.ph+=dt*1.5;
       const fi=p.s*100,i=Math.min(99,Math.floor(fi)),f=fi-i,a=v.S[i],b=v.S[i+1],n=v.N[i],bb=v.B[i],rr=v.r*p.rr;
       P.set(lerp(a.x,b.x,f)+(n.x*Math.cos(p.a)+bb.x*Math.sin(p.a))*rr,lerp(a.y,b.y,f)+(n.y*Math.cos(p.a)+bb.y*Math.sin(p.a))*rr,lerp(a.z,b.z,f)+(n.z*Math.cos(p.a)+bb.z*Math.sin(p.a))*rr);
@@ -1100,7 +1146,7 @@ function compart3D(el,ui){
     roC.set(inc&&!sys?'safena → accesoria (reflujo)':'accesoria → safena mayor (normal)');
     roP.set(inc&&sys?'profunda → superficial (incompetente)':sys?'cerrada durante la contracción':'superficial → profunda (normal)');
     roF.set(sys?'Sístole muscular':'Diástole muscular');
-    E.render(S)},destroy:E.destroy,cam,ctrl};
+    E.render(S)},destroy:E.destroy,cam,ctrl,selectPart:E.select,isolatePart:E.isolate,moveCamera:E.moveTo,setExplode:v=>separationControl.set(v),get parts(){return E.parts}};
 }
 
 /* miniaturas para las láminas 3D */
@@ -1189,6 +1235,7 @@ const MODS=[
 /* ---------- interfaz ---------- */
 let AUD='paciente';try{const a=localStorage.getItem('flebo-animaciones-aud');if(a==='paciente'||a==='medico')AUD=a}catch(e){}
 let FILTER='Todos';
+let UNIT_FILTER='all',CATALOG_VIEW='guided';
 const $=s=>document.querySelector(s);let uid=0;
 function makeUI(root){
   const ui={
@@ -1221,22 +1268,30 @@ function buildGallery(){
   const cats=['Todos',...new Set(MODS.map(m=>m.cat))],chips=$('#chips');
   cats.forEach(c=>{const b=document.createElement('button');b.type='button';b.className='chip';b.textContent=c;b.setAttribute('aria-pressed',c===FILTER);b.onclick=()=>{FILTER=c;[...chips.children].forEach(x=>x.setAttribute('aria-pressed',x.textContent===c));applyFilter()};chips.appendChild(b)});
   const grid=$('#grid');
-  MODS.forEach((m,i)=>{const b=document.createElement('button');b.type='button';b.className='card';b.dataset.cat=m.cat;b.dataset.index=i;b.dataset.search=(m.title+' '+m.blurb+' '+m.cat).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  COURSE.units.forEach((unit,unitIndex)=>{
+   const heading=document.createElement('div');heading.className='unit-heading';heading.dataset.unit=unit.id;heading.innerHTML='<h3></h3><p></p>';heading.querySelector('h3').textContent=(unitIndex+1)+'. '+unit.title;heading.querySelector('p').textContent=unit.description;grid.appendChild(heading);
+   unit.ids.forEach(id=>{const i=MODS.findIndex(m=>m.id===id),m=MODS[i];if(!m)return;const b=document.createElement('button');b.type='button';b.className='card';b.dataset.cat=m.cat;b.dataset.unit=unit.id;b.dataset.index=i;b.dataset.search=(m.title+' '+m.blurb+' '+m.cat+' '+COURSE.lessons[m.id].patientTitle+' '+COURSE.lessons[m.id].patient).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
     b.innerHTML=`<canvas class="thumb" aria-hidden="true"></canvas><div class="card-body"><div class="card-meta"><span class="eyebrow"></span><span class="kind">${m.kind==='3d'?'3D interactivo':'Animación 2D'}</span></div><h3></h3><p></p><span class="go">Abrir animación →</span></div>`;
     b.querySelector('.eyebrow').textContent=m.cat;b.querySelector('h3').textContent=m.title;b.querySelector('p').textContent=m.blurb;b.onclick=()=>openMod(i);grid.appendChild(b);
     thumbObserver.observe(b)});
+  });
 }
 function applyFilter(){
   const q=$('#search').value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();let count=0;
-  document.querySelectorAll('.card').forEach(c=>{c.hidden=!((FILTER==='Todos'||c.dataset.cat===FILTER)&&(!q||c.dataset.search.includes(q)));if(!c.hidden)count++});
+  document.querySelectorAll('.card').forEach(c=>{c.hidden=!((FILTER==='Todos'||c.dataset.cat===FILTER)&&(UNIT_FILTER==='all'||c.dataset.unit===UNIT_FILTER)&&(!q||c.dataset.search.includes(q)));if(!c.hidden)count++});
+  document.querySelectorAll('.unit-heading').forEach(h=>{h.hidden=CATALOG_VIEW==='all'||![...document.querySelectorAll('.card')].some(c=>!c.hidden&&c.dataset.unit===h.dataset.unit)});
   $('#resultCount').textContent=count+' de '+MODS.length+' animaciones';$('#emptyState').hidden=count!==0;
 }
 $('#search').addEventListener('input',applyFilter);
 function setAud(a){AUD=a;try{localStorage.setItem('flebo-animaciones-aud',a)}catch(e){}
-  document.querySelectorAll('[data-aud]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.aud===a));if(cur)$('#vText').innerHTML=MODS[cur.i].text[AUD]}
+  document.documentElement.dataset.audience=a;
+  document.querySelectorAll('[data-aud]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.aud===a));if(cur)$('#vText').innerHTML=MODS[cur.i].text[AUD];
+  document.querySelectorAll('.card').forEach(b=>{const m=MODS[+b.dataset.index],lesson=COURSE.lessons[m.id];b.querySelector('h3').textContent=a==='paciente'?lesson.patientTitle:m.title;b.querySelector('p').textContent=a==='paciente'?lesson.patient:m.blurb});
+  if(window.learningUI)window.learningUI.audience(a);
+}
 document.querySelectorAll('[data-aud]').forEach(b=>b.addEventListener('click',()=>setAud(b.dataset.aud)));
 
-const state={playing:true,speed:1,labels:true};
+const state={playing:true,speed:1,labels:AUD==='medico'};
 if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)state.speed=0.5;
 let cur=null,raf=0,lastTs=0,opener=null;
 let threePromise=null;
@@ -1250,11 +1305,16 @@ function load3D(){
 }
 async function openMod(i){
   closeMod(true);const m=MODS[i],host=$('#stageHost');opener=opener||document.activeElement;
-  $('#viewer').hidden=false;document.body.style.overflow='hidden';$('.wrap').inert=true;
-  $('#vCat').textContent=m.cat+' · '+(m.kind==='3d'?'modelo 3D':'animación');$('#vTitle').textContent=m.title;$('#vText').innerHTML=m.text[AUD];
+  $('#viewer').hidden=false;document.body.style.overflow='hidden';$('#siteShell').inert=true;$('#structureDetail').hidden=true;
+  state.playing=true;state.speed=matchMedia('(prefers-reduced-motion: reduce)').matches?0.5:1;state.labels=AUD==='medico';$('#viewer').classList.remove('paused');$('#vPlay').textContent='Pausa';$('#vPlay').setAttribute('aria-pressed',true);$('#vSpeed').value=state.speed;$('#vLabels').setAttribute('aria-pressed',state.labels);
+  $('.v-side').scrollTop=0;$('#vCat').textContent=m.cat+' · '+(m.kind==='3d'?'modelo 3D':'animación');$('#vTitle').textContent=m.title;$('#vText').innerHTML=m.text[AUD];
   const ctr=$('#vControls');ctr.innerHTML='';const ui=makeUI(ctr);
   cur={i,m};
-  if(m.kind==='2d'){const cv=document.createElement('canvas');host.appendChild(cv);const ctx=cv.getContext('2d');cur.cv=cv;cur.ctx=ctx;cur.sim=m.init({ctx},ui)}
+  if(m.kind==='2d'){const cv=document.createElement('canvas');cv.setAttribute('aria-label','Animación de '+m.title);host.appendChild(cv);const ctx=cv.getContext('2d');cur.cv=cv;cur.ctx=ctx;cur.sim=m.init({ctx},ui);cur.view={x:500,y:300,z:1};
+    const zoom=document.createElement('div');zoom.className='stage-zoom';zoom.innerHTML='<button type="button" aria-label="Acercar esquema">+</button><button type="button" aria-label="Alejar esquema">−</button><button type="button" aria-label="Restablecer encuadre">↺</button>';host.appendChild(zoom);
+    zoom.children[0].onclick=()=>{if(cur?.view)cur.view.z=Math.min(3,cur.view.z+0.4)};zoom.children[1].onclick=()=>{if(cur?.view)cur.view.z=Math.max(1,cur.view.z-0.4)};zoom.children[2].onclick=()=>{if(cur?.view)cur.view={x:500,y:300,z:1}};
+    let drag=null;cv.onpointerdown=e=>{if(cur?.view?.z>1&&!vid){drag={x:e.clientX,y:e.clientY,cx:cur.view.x,cy:cur.view.y};cv.setPointerCapture(e.pointerId)}};cv.onpointermove=e=>{if(drag&&cur?.view){const scale=Math.min(host.clientWidth/1000,host.clientHeight/600)*cur.view.z;cur.view.x=clamp(drag.cx-(e.clientX-drag.x)/scale,100,900);cur.view.y=clamp(drag.cy-(e.clientY-drag.y)/scale,100,500)}};cv.onpointerup=cv.onpointercancel=()=>{drag=null};
+  }
   else{
     const token=cur;host.innerHTML='<p class="stage-message" role="status">Cargando modelo 3D…</p>';
     try{await load3D();if(cur!==token)return false;host.innerHTML='';cur.sim=m.init(host,ui)}
@@ -1262,22 +1322,22 @@ async function openMod(i){
   }
   {const wm=document.createElement('img');wm.className='wm';wm.src=LOGO.h_dark;wm.alt='Instituto Mexicano de Flebología';host.appendChild(wm)}
   try{history.replaceState(null,'','#'+m.id)}catch(e){}
-  lastTs=0;raf=requestAnimationFrame(loop);$('#vClose').focus();return true;
+  lastTs=0;raf=requestAnimationFrame(loop);$('#vClose').focus();document.dispatchEvent(new CustomEvent('flebo:open',{detail:{id:m.id,index:i}}));return true;
 }
 function closeMod(keep){
   stopVideo();cancelAnimationFrame(raf);if(cur&&cur.sim&&cur.sim.destroy)cur.sim.destroy();cur=null;$('#stageHost').innerHTML='';
-  if(!keep){$('#viewer').hidden=true;document.body.style.overflow='';$('.wrap').inert=false;try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}if(opener&&opener.focus)opener.focus();opener=null;if(document.fullscreenElement)document.exitFullscreen().catch(()=>{})}
+  if(!keep){$('#viewer').hidden=true;document.body.style.overflow='';$('#siteShell').inert=false;try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}if(opener&&opener.focus)opener.focus();opener=null;if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});document.dispatchEvent(new Event('flebo:close'))}
 }
 function loop(ts){
-  if(!cur||document.hidden)return;if(lastTs&&ts-lastTs<1000/60-1){raf=requestAnimationFrame(loop);return}const dt=lastTs?Math.min(0.05,(ts-lastTs)/1000):0;lastTs=ts;const sdt=state.playing?dt*state.speed:0;
+  if(!cur||document.hidden)return;if(lastTs&&ts-lastTs<1000/60-1){raf=requestAnimationFrame(loop);return}const dt=lastTs?Math.min(0.05,(ts-lastTs)/1000):0;lastTs=ts;const sdt=state.playing?dt*state.speed*(vid?vid.simulationSpeed||1:1):0;
   if(cur.m.kind==='2d'){const cv=cur.cv,host=cv.parentElement,dpr=Math.min(devicePixelRatio||1,2),w=host.clientWidth,h=host.clientHeight;
     if(cv.width!==Math.round(w*dpr)||cv.height!==Math.round(h*dpr)){cv.width=Math.round(w*dpr);cv.height=Math.round(h*dpr)}
-    const ctx=cur.ctx;ctx.setTransform(1,0,0,1,0,0);ctx.fillStyle=STAGE;ctx.fillRect(0,0,cv.width,cv.height);fit(ctx,w,h,dpr);if(vid){vTick(dt);vCam2D(ctx,dt)}cur.sim.draw(sdt,state);if(vid)vOverlay2D(ctx,dt)}
-  else{if(vid){vTick(dt);vCam3D(dt)}cur.sim.frame(sdt,state);if(vid)vPts3D()}
+    const ctx=cur.ctx;ctx.setTransform(1,0,0,1,0,0);ctx.fillStyle=STAGE;ctx.fillRect(0,0,cv.width,cv.height);fit(ctx,w,h,dpr);if(vid){vTick(dt);vCam2D(ctx,state.playing?dt:0)}else if(cur.view){cur.cameraView=cur.cameraView||{x:500,y:300,z:1};const alpha=1-Math.exp(-7*dt);for(const k of ['x','y','z'])cur.cameraView[k]+=(cur.view[k]-cur.cameraView[k])*alpha;ctx.translate(500,300);ctx.scale(cur.cameraView.z,cur.cameraView.z);ctx.translate(-cur.cameraView.x,-cur.cameraView.y)}cur.sim.draw(sdt,state);if(vid)vOverlay2D(ctx,state.playing?dt:0)}
+  else{if(vid){vTick(dt);vCam3D(state.playing?dt:0)}cur.sim.frame(sdt,state);if(vid)vPts3D()}
   raf=requestAnimationFrame(loop);
 }
 $('#vClose').onclick=()=>closeMod(false);
-$('#vPlay').onclick=e=>{state.playing=!state.playing;if(vid&&vid.audio){if(state.playing)playNarration(vid);else vid.audio.pause()}if(HAS_TTS&&vid){try{state.playing?speechSynthesis.resume():speechSynthesis.pause()}catch(err){}}e.currentTarget.textContent=state.playing?'Pausa':'Reproducir';e.currentTarget.setAttribute('aria-pressed',state.playing)};
+$('#vPlay').onclick=e=>{state.playing=!state.playing;$('#viewer').classList.toggle('paused',!state.playing);if(vid&&vid.audio){if(state.playing)playNarration(vid);else vid.audio.pause()}if(HAS_TTS&&vid){try{state.playing?speechSynthesis.resume():speechSynthesis.pause()}catch(err){}}e.currentTarget.textContent=state.playing?'Pausa':'Reproducir';e.currentTarget.setAttribute('aria-pressed',state.playing)};
 $('#vSpeed').oninput=e=>{state.speed=+e.target.value;if(vid&&vid.audio)vid.audio.playbackRate=state.speed};$('#vSpeed').value=state.speed;
 $('#vLabels').onclick=e=>{state.labels=!state.labels;e.currentTarget.setAttribute('aria-pressed',state.labels)};
 $('#vFull').onclick=()=>{const v=$('#viewer');if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});else if(v.requestFullscreen)v.requestFullscreen().catch(()=>{})};
@@ -1437,11 +1497,11 @@ function vAct(a){const root=$('#vControls'),[k,l,v,d]=a;
   else if(k==='sl'){const i=vSlider(l);if(i){i.value=v;i.dispatchEvent(new Event('input'))}}
   else if(k==='anim'){const i=vSlider(l);if(i&&vid)vid.tw.push({i,from:+i.value,to:v,dur:d,t:0})}
   else if(k==='tg'){const c=[...root.querySelectorAll('label.ctl-h')].find(c=>c.firstChild.textContent.startsWith(l));const i=c&&c.querySelector('input');if(i&&i.checked!==v){i.checked=v;i.dispatchEvent(new Event('change'))}}}
-function vTick(dt){if(!vid)return;vAudioTick();for(const w of vid.tw){if(w.t>=w.dur)continue;w.t=Math.min(w.dur,w.t+dt*(state.playing?1:0));w.i.value=lerp(w.from,w.to,smooth(w.t/w.dur));w.i.dispatchEvent(new Event('input'))}vid.tw=vid.tw.filter(w=>w.t<w.dur)}
+function vTick(dt){if(!vid)return;vid.elapsed=(vid.elapsed||0)+(state.playing?dt*state.speed:0);vAudioTick();for(const w of vid.tw){if(w.t>=w.dur)continue;w.t=Math.min(w.dur,w.t+dt*state.speed*(state.playing?1:0));w.i.value=lerp(w.from,w.to,smooth(w.t/w.dur));w.i.dispatchEvent(new Event('input'))}vid.tw=vid.tw.filter(w=>w.t<w.dur)}
 function vCam2D(ctx,dt){const k=Math.min(1,dt*2.2);VC.x+=(VCT.x-VC.x)*k;VC.y+=(VCT.y-VC.y)*k;VC.z+=(VCT.z-VC.z)*k;ctx.translate(500,300);ctx.scale(VC.z,VC.z);ctx.translate(-VC.x,-VC.y)}
 function vOverlay2D(ctx,dt){vSpotA+=((vSpot?1:0)-vSpotA)*Math.min(1,dt*3);const z=VC.z;
   if(vSpotA>0.01&&vSpotLast){const [x,y,rx,ry]=vSpotLast;ctx.save();ctx.fillStyle=`rgba(4,8,12,${0.62*vSpotA})`;ctx.beginPath();ctx.rect(-3000,-3000,7000,7000);ctx.ellipse(x,y,rx,ry,0,0,TAU);ctx.fill('evenodd');ctx.restore()}
-  const tt=performance.now()/1000,right=VC.x+500/z;
+  const tt=vid?vid.elapsed||0:0,right=VC.x+500/z;
   for(const [x,y,txt] of vPts){ctx.save();ctx.strokeStyle='#ffd166';ctx.lineWidth=3/z;ctx.beginPath();ctx.arc(x,y,(15+4*Math.sin(tt*5))/z,0,TAU);ctx.stroke();
     if(txt){ctx.font=`600 ${18/z}px ${FONT}`;const w=ctx.measureText(txt).width;let px=x+24/z;if(px+w+10/z>right)px=x-24/z-w;const py=y-26/z;
       ctx.fillStyle='rgba(8,12,16,.9)';ctx.fillRect(px-7/z,py-15/z,w+14/z,28/z);ctx.fillStyle='#ffd166';ctx.textBaseline='middle';ctx.textAlign='left';ctx.fillText(txt,px,py+1/z)}
@@ -1453,14 +1513,14 @@ function vSetPts(pts){vPts=pts||[];if(!vid)return;vid.ptEls.forEach(e=>e.d.remov
   if(cur&&cur.m.kind==='3d'){const host=$('#stageHost');for(const p of vPts){const d=document.createElement('div');d.className='vpt';d.innerHTML='<i></i><span></span>';d.lastChild.textContent=p[3];host.appendChild(d);vid.ptEls.push({d,p})}}}
 function showSub(t){const s=$('#vSubs');s.textContent=t;s.hidden=!t}
 function updBar(){if(vid)$('#vProg').firstChild.style.width=Math.min(100,vid.spoken/vid.total*100)+'%'}
-function setVideoBtn(){const b=$('#vVideo');b.textContent=vid?'■ Detener video':'▶ Video para el paciente';b.setAttribute('aria-pressed',!!vid)}
+function setVideoBtn(){const b=$('#vVideo');b.textContent=vid?'■ Volver a explorar':'▶ Explicación narrada';b.setAttribute('aria-pressed',!!vid)}
 function card(title,sub,ms){const c=$('#vCard');c.querySelector('h3').textContent=title;c.querySelector('p').textContent=sub;c.hidden=false;c.classList.remove('out');clearTimeout(card.t);card.t=setTimeout(()=>{c.classList.add('out');card.hide=setTimeout(()=>{c.hidden=true},500)},ms)}
 function stopVideo(){clearTimeout(card.t);clearTimeout(card.hide);$('#vCard').hidden=true;$('#vAudio').hidden=true;const was=vid;if(was){clearTimeout(was.timer);was.ptEls.forEach(e=>e.d.remove());state.labels=was.prevLabels;$('#vLabels').setAttribute('aria-pressed',state.labels);
     if(was.audio){try{was.audio.onended=was.audio.onerror=null;was.audio.pause();was.audio.removeAttribute('src');was.audio.load();was.audio.remove()}catch(e){}}}
-  vid=null;if(HAS_TTS)try{speechSynthesis.cancel()}catch(e){}showSub('');$('#vProg').hidden=true;$('#viewer').classList.remove('video');
+  vid=null;if(cur?.sim?.ctrl)cur.sim.ctrl.enabled=true;if(HAS_TTS)try{speechSynthesis.cancel()}catch(e){}showSub('');$('#vProg').hidden=true;$('#viewer').classList.remove('video');
   VCT.x=VC.x=500;VCT.y=VC.y=300;VCT.z=VC.z=1;vSpot=vSpotLast=null;vSpotA=0;vPts=[];setVideoBtn()}
-function startVideo(playlist){if(!cur||!cur.sim)return;const m=MODS[cur.i],sc=VIDEOS[m.id];if(!sc)return;stopVideo();setAud('paciente');
-  state.playing=true;state.speed=1;$('#vSpeed').value=1;$('#vPlay').textContent='Pausa';$('#vPlay').setAttribute('aria-pressed',true);
+function startVideo(playlist){if(!cur||!cur.sim)return;const m=MODS[cur.i],sc=VIDEOS[m.id];if(!sc)return;stopVideo();if(cur.sim.ctrl)cur.sim.ctrl.enabled=false;$('#structureDetail').hidden=true;
+  cur.sim.isolatePart?.(false);cur.sim.selectPart?.(null);cur.sim.setExplode?.(0);state.playing=true;state.speed=1;$('#viewer').classList.remove('paused');$('#vSpeed').value=1;$('#vPlay').textContent='Pausa';$('#vPlay').setAttribute('aria-pressed',true);
   const total=sc.reduce((n,c)=>n+c.s.split(/\s+/).length,0);
   vid={id:m.id,sc,si:-1,playlist,total,spoken:0,timer:0,tw:[],ptEls:[],c3p:null,c3t:null,prevLabels:state.labels,audio:null,started:false,ci:-1,sk:-1};
   state.labels=false;$('#vLabels').setAttribute('aria-pressed',false);$('#viewer').classList.add('video');$('#vProg').hidden=false;updBar();setVideoBtn();
@@ -1475,7 +1535,7 @@ function playNarration(tok){
   if(vid!==tok||!tok.audio)return;
   tok.audio.play().then(()=>{if(vid===tok){tok.started=true;$('#vAudio').hidden=true}}).catch(()=>{if(vid===tok)$('#vAudio').hidden=false});
 }
-$('#vAudio').onclick=()=>{if(vid){state.playing=true;$('#vPlay').textContent='Pausa';$('#vPlay').setAttribute('aria-pressed','true');playNarration(vid)}};
+$('#vAudio').onclick=()=>{if(vid){state.playing=true;$('#viewer').classList.remove('paused');$('#vPlay').textContent='Pausa';$('#vPlay').setAttribute('aria-pressed','true');playNarration(vid)}};
 /* sincronía con el audio grabado: la toma y el subtítulo se eligen por el tiempo de reproducción */
 function vAudioTick(){const tok=vid;if(!tok||!tok.audio||!tok.started)return;const a=tok.audio;
   if(!state.playing&&!a.paused)a.pause();
@@ -1487,9 +1547,9 @@ function vAudioTick(){const tok=vid;if(!tok||!tok.audio||!tok.started)return;con
 function applyCue(tok,i){const cue=tok.sc[i];(i>0&&cue.a?cue.a:[]).forEach(a=>{try{vAct(a)}catch(e){console.error(e)}});
   if(cue.c){if(Array.isArray(cue.c)){VCT.x=cue.c[0];VCT.y=cue.c[1];VCT.z=cue.c[2]}else if(window.THREE){tok.c3p=new THREE.Vector3(...cue.c.p);tok.c3t=new THREE.Vector3(...cue.c.t)}}
   if(cue.sp){vSpot=vSpotLast=cue.sp}else if(cue.c)vSpot=null;
-  vSetPts(cue.pt);if(cue.v){state.speed=cue.v;$('#vSpeed').value=cue.v}}
-function endVideo(tok){const pl=tok.playlist,i=cur?cur.i:-1;showSub('');
-  if(pl&&i>=0&&i<MODS.length-1){card('Siguiente: '+MODS[i+1].title,'',1500);tok.timer=setTimeout(()=>{if(vid!==tok)return;stopVideo();openMod(i+1).then(ok=>{if(ok)startVideo(true)})},1600)}
+  vSetPts(cue.pt);if(cue.v)tok.simulationSpeed=cue.v}
+function endVideo(tok){const pl=tok.playlist,i=cur?cur.i:-1,sequence=Array.isArray(pl)?pl:MODS.map((m,index)=>index),position=sequence.indexOf(i),next=sequence[position+1];showSub('');
+  if(pl&&position>=0&&next!==undefined){card('Siguiente: '+MODS[next].title,'',1500);tok.timer=setTimeout(()=>{if(vid!==tok)return;stopVideo();openMod(next).then(ok=>{if(ok)startVideo(sequence)})},1600)}
   else{card('Fin','Pregunte a su médico cualquier duda',2600);tok.timer=setTimeout(()=>{if(vid===tok)stopVideo()},2800)}}
 /* respaldo sin audio grabado: voz del navegador o solo subtítulos */
 function nextScene(tok){if(vid!==tok)return;tok.si++;

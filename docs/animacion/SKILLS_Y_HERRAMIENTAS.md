@@ -1,6 +1,8 @@
 # Skills y herramientas para mejorar
 
-Investigación consultada el **6 de noviembre de 2026**. «Skill» significa instrucciones para un agente; no añade por sí misma geometría, un renderizador ni una garantía de calidad. Este proyecto incorpora una [skill propia](../../skills/flebo-animaciones/SKILL.md), dirigida desde `AGENTS.md`, `CLAUDE.md` y `GEMINI.md`. Las opciones externas siguientes se consultaron como recursos de trabajo; no están instaladas globalmente ni son dependencias de la web.
+Investigación consultada el **6 de noviembre de 2026**. «Skill» significa instrucciones para un agente; no añade por sí misma geometría, un renderizador ni una garantía de calidad. Este proyecto incorpora una [skill propia](../../skills/flebo-animaciones/SKILL.md), dirigida desde `AGENTS.md`, `CLAUDE.md` y `GEMINI.md`.
+
+**Instalación realizada tras esta investigación:** siete guías en [skills/external](../../skills/external/README.md): geometría, animación, interacción, materiales, iluminación y rendimiento de CloudAI-X, más diseño frontend de Anthropic. Revisiones y licencias se conservan allí. Se aplicaron a la [experiencia interactiva implementada](EXPERIENCIA_INTERACTIVA.md). No son dependencias de ejecución ni una instalación global; Remotion, Blender y las demás rutas de la tabla siguen siendo opciones para encargos futuros.
 
 ## Selección por necesidad
 
@@ -10,6 +12,8 @@ Investigación consultada el **6 de noviembre de 2026**. «Skill» significa ins
 | Exportar video por fotogramas | Skills oficiales de Remotion: `remotion-best-practices`, `remotion-markup`, `remotion-render` | Proyecto de video separado; reutilizar el modelo conceptual y una función de tiempo. Consultar la guía del motor y sus condiciones de uso antes de incorporar el pipeline. |
 | Subtítulos de video | `remotion-captions`; en el entorno actual, `heygen:captions` | Coordinar texto con audio final, mantener legibilidad y comprobar sincronía. No estimar todos los tiempos por número de palabras. |
 | Mejorar deformaciones y mezcla de estados | `threejs-animation` de CloudAI-X | Referencia comunitaria para animación procedural, clips, morph y rig. Adaptar los conceptos a la versión elegida. |
+| Seleccionar, aislar y explorar piezas | `threejs-interaction`, instalada | Raycasting, distinción entre arrastre y selección, controles táctiles y fichas semánticas. |
+| Ordenar la experiencia de aprendizaje | `frontend-design` de Anthropic, instalada | Jerarquía, tipografía, composición adaptable e interacciones con propósito. |
 | Mejorar superficies, materiales y profundidad | `threejs-geometry`, `threejs-materials`, `threejs-lighting`, del mismo paquete | Refinar forma antes de añadir efectos; controlar malla, normales, rugosidad y luz. |
 | Mantener fluidez al aumentar detalle | `threejs-performance` y `threejs-asset-pipeline` | Perfilar, instanciar, evitar trabajo innecesario y preparar activos por niveles. Comprobar la compatibilidad de cada ejemplo. |
 | Crear anatomía elaborada fuera del navegador | Blender y su exportador glTF/GLB | Preparar activos editables, transformaciones, materiales y animaciones. Revisar el modelo exportado en el motor de destino. |
@@ -21,6 +25,8 @@ Las skills oficiales de Remotion son mantenidas por el propio proyecto y están 
 El paquete de CloudAI-X es **comunitario**, no una skill oficial del equipo de Three.js. La revisión consultada declara Three.js r186 y contiene guías de animación, geometría, iluminación, materiales, rendimiento y activos. Revisión fijada: [repositorio y contenido](https://github.com/CloudAI-X/threejs-skills/tree/0e181866f095b5f06d005133876e926515390d95/skills). No se infiere que esas guías validen anatomía médica.
 
 El [exportador glTF de Blender](https://github.com/KhronosGroup/glTF-Blender-IO) y [glTF Transform](https://gltf-transform.dev/) cubren la ruta de intercambio y preparación de modelos. No sustituyen la autoría ni la revisión de la anatomía.
+
+También se revisaron [drei](https://github.com/pmndrs/drei) y sus controles de presentación: es una colección para React Three Fiber. La implementación actual resuelve la interacción con el motor existente; incorporar React/drei solo para estos controles no se justificó. Si una escena futura exige ese ecosistema, plantearlo como cambio explícito y probar sus costes y compatibilidad.
 
 ## Compatibilidad que debe resolverse antes de implementar
 
@@ -53,4 +59,4 @@ El catálogo oficial de `openai/skills` consultado no incluía una skill especí
 - CloudAI-X Three.js skills: `0e181866f095b5f06d005133876e926515390d95`; se revisaron el catálogo y las guías de animación/rendimiento. [Animación](https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/skills/threejs-animation/SKILL.md), [rendimiento](https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/skills/threejs-performance/SKILL.md).
 - Skills de motion graphics, subtítulos y edición: capacidades del entorno del propietario al elaborar esta guía. Otro agente debe comprobar si están disponibles en su instalación; la documentación principal y el estándar local no dependen de ellas.
 
-La selección es una recomendación de integración basada en esas fuentes y en el código inspeccionado. No se ejecutaron benchmarks comparativos entre motores ni se probó un pipeline de exportación nuevo durante este análisis.
+La tabla incluye rutas de producción y no promete que todas estén incorporadas. La instalación y su aplicación real se describen en los enlaces de apertura. No se ejecutaron benchmarks comparativos entre motores ni se probó un pipeline de exportación de video nuevo.

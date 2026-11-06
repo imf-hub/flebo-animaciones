@@ -51,6 +51,8 @@ No compensar un fallo grave de anatomía, sincronía o legibilidad con una ilumi
 
 ## Prioridades específicas encontradas en el código actual
 
+La tabla siguiente registra los hallazgos de la referencia original. La evolución posterior implementa colisiones/prioridades de rótulos 3D, reutilización de tubos y un visor adaptable con zoom 2D. Ver [estado implementado y pendientes](EXPERIENCIA_INTERACTIVA.md). La oclusión completa de rótulos, composición específica de cada esquema 2D, IDs de acciones y cronología determinista siguen pendientes.
+
 | Prioridad | Mejora propuesta | Razón y aceptación |
 | --- | --- | --- |
 | P1 | Separar reloj de audio, estado reproducible y dibujo | Hoy conviven `currentTime`, integración `dt`, temporizadores y `performance.now()`. Poder reproducir el mismo estado desde un tiempo arbitrario y congelar las capas temporales pertinentes al pausar. |
@@ -62,7 +64,7 @@ No compensar un fallo grave de anatomía, sincronía o legibilidad con una ilumi
 | P3 | Modelos GLB y animación de rig/morph cuando lo justifiquen | Permiten anatomía y deformaciones elaboradas fuera del navegador. Incorporar pipeline, licencias y niveles de detalle; no imponer descarga pesada a toda la galería. |
 | P3 | Exportación de video determinista | Actualmente el modo video es una reproducción web. Producir el mismo plano a cualquier fotograma y un archivo final sin interfaz de navegador. |
 
-Estas mejoras son trabajo futuro, no cambios incluidos en este análisis.
+Esta tabla es el plan de la referencia inicial; no usarla como inventario del estado actual sin consultar la evolución enlazada.
 
 ## Cómo registrar la evaluación
 
