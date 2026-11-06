@@ -1,0 +1,12 @@
+{
+  "name": "flebo-animaciones",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Animaciones y videos educativos del Instituto Mexicano de Flebología",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "check": "node --check assets/app.js && node scripts/check.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

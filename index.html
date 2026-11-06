@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#23467f">
+  <meta name="description" content="Flebo Animaciones: 12 animaciones interactivas y videos narrados sobre las venas, las válvulas y la enfermedad venosa. Instituto Mexicano de Flebología.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Flebo Animaciones | Instituto Mexicano de Flebología</title>
+  <link rel="canonical" href="https://imf-hub.github.io/flebo-animaciones/">
+  <meta property="og:title" content="Flebo Animaciones">
+  <meta property="og:description" content="Explore 12 animaciones, modelos 3D y videos educativos del Instituto Mexicano de Flebología.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:url" content="https://imf-hub.github.io/flebo-animaciones/">
+  <meta property="og:image" content="https://imf-hub.github.io/flebo-animaciones/assets/logos/h_light.png">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<noscript><p>Active JavaScript para explorar las animaciones interactivas de Flebo Animaciones.</p></noscript>
+<main class="wrap" id="contenido">
+  <div class="brand"><img class="lg-l" data-logo="h_light" src="assets/logos/h_light.png" alt="Instituto Mexicano de Flebología"><img class="lg-d" data-logo="h_dark" src="assets/logos/h_dark.png" alt="Instituto Mexicano de Flebología"></div>
+  <div class="eyebrow">Instituto Mexicano de Flebología · material didáctico institucional</div>
+  <h1>Flebo Animaciones</h1>
+  <p class="subtitle">Cómo funciona una vena y por qué aparecen las várices</p>
+  <p class="intro">Doce animaciones del sistema venoso de miembros inferiores, con modelos 3D y videos narrados para pacientes. Explore las capas de la pared, las válvulas, la bomba muscular, las fascias, la unión safenofemoral, las várices, la microcirculación, la escleroterapia y la trombosis. Elija el nivel de explicación y abra cualquier animación.</p>
+
+  <div class="toolbar">
+    <div class="chips" id="chips" role="group" aria-label="Filtrar por tema"></div>
+    <button class="playall" id="playAll" type="button">▶ Ver todos los videos para pacientes</button>
+    <div class="aud">Explicación para
+      <div class="seg" id="audSeg" role="group" aria-label="Nivel de explicación">
+        <button type="button" id="audPac" data-aud="paciente">Paciente</button>
+        <button type="button" id="audMed" data-aud="medico">Médico</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="searchbar"><label for="search">Buscar animación <input id="search" type="search" placeholder="Válvulas, trombosis, fascias…" autocomplete="off"></label><output id="resultCount" aria-live="polite"></output></div>
+  <div class="grid" id="grid" aria-label="Galería de animaciones"></div>
+  <p class="empty" id="emptyState" hidden>No hay animaciones para esta búsqueda. Pruebe otro término o seleccione Todos.</p>
+
+  <p class="foot">Esquemas didácticos: las proporciones, velocidades y presiones están simplificadas y no están a escala. Los criterios diagnósticos citados (tiempos de reflujo, presión venosa ambulatoria, CEAP) son orientativos y no sustituyen la valoración clínica ni el estudio dúplex.</p>
+  <div class="foot-brand"><img class="lg-l" data-logo="seal_light" src="assets/logos/seal_light.png" alt=""><img class="lg-d" data-logo="seal_dark" src="assets/logos/seal_dark.png" alt=""><span>© Instituto Mexicano de Flebología. Creación institucional para la educación de pacientes y la docencia médica.</span></div>
+</main>
+
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-labelledby="vTitle" hidden>
+  <section class="v-stage">
+    <div class="v-bar">
+      <button class="sbtn" id="vClose" type="button">← Galería</button>
+      <span class="sp"></span>
+      <button class="sbtn" id="vVideo" type="button" aria-pressed="false">▶ Video para el paciente</button>
+      <button class="sbtn" id="vAudio" type="button" hidden>Activar narración</button>
+      <button class="sbtn" id="vPlay" type="button" aria-pressed="true">Pausa</button>
+      <label for="vSpeed">Velocidad <input type="range" id="vSpeed" min="0.25" max="1.5" step="0.05" value="1"></label>
+      <button class="sbtn" id="vLabels" type="button" aria-pressed="true">Etiquetas</button>
+      <button class="sbtn" id="vFull" type="button">Pantalla completa</button>
+    </div>
+    <div class="stage-host" id="stageHost"></div>
+    <div class="subs" id="vSubs" aria-live="polite" hidden></div>
+    <div class="vprog" id="vProg" hidden><i></i></div>
+    <div class="vcard" id="vCard" hidden><img class="vseal" data-logo="seal_dark" src="assets/logos/seal_dark.png" alt="Instituto Mexicano de Flebología"><h3></h3><p></p></div>
+  </section>
+  <aside class="v-side">
+    <div>
+      <div class="eyebrow" id="vCat"></div>
+      <h2 id="vTitle"></h2>
+    </div>
+    <div class="seg" id="vAud" role="group" aria-label="Nivel de explicación">
+      <button type="button" id="vAudPac" data-aud="paciente">Paciente</button>
+      <button type="button" id="vAudMed" data-aud="medico">Médico</button>
+    </div>
+    <div class="v-text" id="vText"></div>
+    <h4>Controles</h4>
+    <div class="controls" id="vControls"></div>
+    <div class="navrow">
+      <button class="btn" id="vPrev" type="button">← Anterior</button>
+      <button class="btn" id="vNext" type="button">Siguiente →</button>
+    </div>
+  </aside>
+</div>
+
+
+</body>
+</html>
