@@ -57,6 +57,8 @@ Estas mejoras no convierten las trayectorias ilustrativas en CFD ni crean un mod
 
 La portada mantiene una sola vista previa activa y deja de animarla fuera de pantalla. Al abrir un módulo, destruye la vista previa y libera su contexto. Al cerrar, puede recrearla si vuelve a ser visible. El visor libera geometrías/materiales/controles y observadores al salir. Audio y bibliotecas 3D siguen siendo diferidos.
 
+El build coloca hashes de contenido en las URLs de estilos y scripts, también en el HTML de la raíz que publica GitHub Pages. La comprobación pública detectó y corrigió una mezcla de HTML nuevo con JavaScript anterior guardado en caché. Siempre guardar el `index.html` generado junto con los cambios.
+
 Se limita el DPR, el bucle se pausa al ocultar la pestaña y se respeta la preferencia de movimiento reducido. La pausa del mecanismo permite seguir usando la cámara manual. La narración conserva pausa y velocidad de audio; sus acciones automáticas no reemplazan la velocidad elegida por el usuario.
 
 Hay foco visible, etiquetas seleccionables con teclado, lista alternativa de piezas, diálogo nativo de perfil y contenido exterior inerte al abrir el visor. En móvil, escena y explicación ocupan zonas separadas; el panel de lectura se desplaza por sí mismo.

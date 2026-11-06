@@ -8,7 +8,7 @@ assert.match(html, /<html lang="es"/);
 assert.match(html, /<title>Flebo Animaciones/);
 assert.doesNotMatch(html, /Atlas Venoso|Ocho láminas|https:\/\/(?:fonts\.googleapis|cdnjs|cdn\.jsdelivr)/);
 for (const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
-  if (!/^(https?:|data:)/.test(match[1])) await access(match[1]);
+  if (!/^(https?:|data:)/.test(match[1])) await access(match[1].split('?')[0]);
 }
 const catalog = await readAnimationCatalog();
 const baseline = JSON.parse(await readFile('docs/animacion/baseline.json', 'utf8'));

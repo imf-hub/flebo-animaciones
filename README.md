@@ -33,6 +33,8 @@ npm run dev
 
 Abrir http://127.0.0.1:4173. Después de cambiar archivos, volver a ejecutar `npm run build` y recargar.
 
+El build añade versiones basadas en el contenido a los estilos y scripts de `index.html`, tanto en la raíz como en `dist/`. Guardar ese HTML actualizado al publicar: evita combinar una interfaz nueva con archivos antiguos de la caché.
+
 ## Archivos
 
 - `index.html`: estructura, identidad y metadatos.
