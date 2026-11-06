@@ -19,14 +19,15 @@
   <link rel="stylesheet" href="assets/styles.css?v=85268b6b7916">
   <link rel="stylesheet" href="assets/experience.css?v=0e96554635f0">
   <link rel="stylesheet" href="assets/anatomy-scenes.css?v=5c7ddd93a3df">
+  <link rel="stylesheet" href="assets/learning.css?v=94b0465b63ef">
   <link rel="stylesheet" href="assets/workspace.css?v=eda42eb18931">
   <script src="assets/course.js?v=8875a7f2c071" defer></script>
   <script src="assets/anatomy-scenes.js?v=0f8ac4475a2f" defer></script>
   <script src="assets/clinical-scenes.js?v=d66fd447a8f6" defer></script>
   <script src="assets/extension-data.js?v=a757d754816d" defer></script>
   <script src="assets/extension-audio.js?v=f7a69b343840" defer></script>
-  <script src="assets/app.js?v=8431f5d8f76c" defer></script>
-  <script src="assets/experience.js?v=d4f657fbd753" defer></script>
+  <script src="assets/app.js?v=5384d0f46366" defer></script>
+  <script src="assets/experience.js?v=0b4453ad4a70" defer></script>
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -49,22 +50,24 @@
         </div>
         <div class="hero-actions"><button class="primary-action" id="startCourse" type="button">Comenzar a explorar <span aria-hidden="true">↗</span></button><a href="#biblioteca">Ver todos los temas</a></div>
         <p class="hero-note">Sin registro. Tú eliges el nivel de explicación.</p>
+        <ul class="hero-facts" aria-label="Contenido de la biblioteca"><li><strong id="factTopics">22</strong><span>temas visuales</span></li><li><strong id="factModels">13</strong><span>modelos 3D</span></li><li><strong>2</strong><span>formas de aprender</span></li></ul>
       </div>
       <div class="hero-lab">
-        <div class="lab-heading"><span class="live-dot" aria-hidden="true"></span><span>Una vena, de dentro hacia fuera</span><span class="lab-type">Modelo 3D</span></div>
+        <div class="lab-heading"><span class="live-dot" aria-hidden="true"></span><span>Una vena, de dentro hacia fuera</span><span class="lab-type">Interactivo</span></div>
         <div id="heroModel" class="hero-model" aria-label="Vista interactiva de las capas de una vena"><p class="hero-loading">Preparando el modelo…</p></div>
-        <div class="hero-specimen-label"><span>01</span><div>Pared y válvula venosa<small>Arrastra para girar. Toca una estructura para reconocerla.</small></div></div>
-        <div class="lab-actions"><button id="heroExplode" type="button" aria-pressed="false">Separar capas <span aria-hidden="true">↕</span></button><button id="heroOpen" type="button">Explorar el modelo <span aria-hidden="true">↗</span></button></div>
+        <div class="hero-views" id="heroViews" role="group" aria-label="Cambiar la vista de la vena"><button id="heroWall" type="button" data-hero-view="wall" aria-pressed="true" disabled>Pared</button><button id="heroExplode" type="button" data-hero-view="layers" aria-pressed="false" disabled>Capas</button><button id="heroValve" type="button" data-hero-view="valve" aria-pressed="false" disabled>Válvula</button></div>
+        <div class="hero-specimen-label"><div><strong id="heroModelTitle">Pared y válvula venosa</strong><small id="heroModelHint">Arrastra para girar. Elige una vista para mirar por dentro.</small></div><button id="heroOpen" type="button">Abrir modelo <span aria-hidden="true">↗</span></button></div>
       </div>
     </section>
     <section class="course-strip" id="recorrido" aria-labelledby="courseTitle">
-      <div class="content-width course-inner"><div><p class="section-kicker">Un camino para empezar</p><h2 id="courseTitle">Primero la estructura. Después, el movimiento.</h2></div><p id="courseDescription">Avanza de lo básico a lo que sucede cuando el sistema cambia.</p></div>
+      <div class="content-width course-inner"><div><p class="section-kicker">Aprende por capítulos</p><h2 id="courseTitle">Primero la estructura. Después, el movimiento.</h2></div><p id="courseDescription">Avanza de lo básico a lo que sucede cuando el sistema cambia.</p><div class="chapter-navigation" role="group" aria-label="Recorrer los capítulos"><button id="unitBack" type="button" aria-label="Ver capítulo anterior">←</button><button id="unitForward" type="button" aria-label="Ver capítulo siguiente">→</button></div></div>
       <div id="unitNav" class="content-width unit-nav" aria-label="Unidades de aprendizaje"></div>
     </section>
     <section class="content-width library-section" id="biblioteca" aria-labelledby="libraryTitle">
-      <div class="library-heading"><div><p class="section-kicker" id="libraryKicker">Tu laboratorio visual</p><h2 id="libraryTitle">Explora. Comprende. Conecta.</h2></div><div class="progress-summary"><span id="progressText">0 de 19 temas explorados</span><progress id="courseProgress" value="0" max="22" aria-label="Temas marcados como explorados"></progress><small>El progreso se guarda en este navegador.</small></div></div>
+      <button id="resumeLesson" class="resume-lesson" type="button" hidden><span class="resume-art"><canvas aria-hidden="true"></canvas></span><span class="resume-copy"><small id="resumeKicker">Tu siguiente tema</small><strong id="resumeTitle"></strong><span id="resumeTime"></span></span><span class="resume-action">Continuar <span aria-hidden="true">↗</span></span></button>
+      <div class="library-heading"><div><p class="section-kicker" id="libraryKicker">Tu laboratorio visual</p><h2 id="libraryTitle">Explora. Comprende. Conecta.</h2></div><div class="progress-summary"><span id="progressText">0 de 22 temas explorados</span><progress id="courseProgress" value="0" max="22" aria-label="Temas marcados como explorados"></progress><small>El progreso se guarda en este navegador.</small></div></div>
       <div class="library-tools"><div class="library-view" role="group" aria-label="Orden de la biblioteca"><button id="guidedView" type="button" aria-pressed="true">Por recorrido</button><button id="allView" type="button" aria-pressed="false">Todos los temas</button></div><label class="search-label" for="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar una estructura o un tema" aria-label="Buscar una estructura o un tema" autocomplete="off"></label></div>
-      <div class="filter-row"><div class="chips" id="chips" role="group" aria-label="Filtrar por tema"></div><output id="resultCount" aria-live="polite"></output></div>
+      <div class="filter-row"><details id="catalogFilters" class="catalog-filters"><summary><span id="filterSummary">Filtrar por tema</span><span aria-hidden="true">⌄</span></summary><div class="chips" id="chips" role="group" aria-label="Filtrar por tema"></div></details><button id="resetCatalog" type="button" class="text-button" hidden>Limpiar filtros</button><output id="resultCount" aria-live="polite"></output></div>
       <div class="grid" id="grid" aria-label="Galería de animaciones"></div>
       <div class="empty" id="emptyState" hidden><h3>No encontramos ese tema</h3><p>Prueba con «válvula», «capas» o «trombosis».</p><button id="clearFilters" class="text-button" type="button">Limpiar búsqueda y filtros</button></div>
       <div class="playlist-callout"><div><span class="play-orbit" aria-hidden="true">▶</span><div><h3>También puedes dejarte guiar</h3><p>Una explicación narrada recorre cada mecanismo con acercamientos y subtítulos.</p></div></div><button class="secondary-action" id="playAll" type="button">Ver el recorrido narrado</button></div>

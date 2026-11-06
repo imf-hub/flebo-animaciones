@@ -1,0 +1,207 @@
+{
+  "date": "2026-11-06",
+  "browser": "Edge",
+  "viewports": [
+    [
+      1280,
+      900
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      568
+    ]
+  ],
+  "templatesReviewed": 7,
+  "primary": "Bite-Sized Courses",
+  "heroReference": "KnowSugar",
+  "moduleSmoke": [
+    {
+      "i": 0,
+      "title": "Del pie al corazón",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 1,
+      "title": "Una vena, por dentro",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 2,
+      "title": "Las capas que rodean las venas",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 3,
+      "title": "Conexiones bajo la piel",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 4,
+      "title": "Arañitas, reticulares y várices",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 5,
+      "title": "Una compuerta que abre y cierra",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 6,
+      "title": "Caminar pone en marcha la bomba",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 7,
+      "title": "Donde se encuentran las venas",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 8,
+      "title": "Qué hace una media de compresión",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 9,
+      "title": "Cuando parte de la sangre regresa",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 10,
+      "title": "Cómo cambia la forma de una vena",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 11,
+      "title": "Lo que ocurre en los vasos pequeños",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 12,
+      "title": "Líquido entre las células",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 13,
+      "title": "Un lenguaje para describir lo que vemos",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 14,
+      "title": "Cuando la piel pierde su continuidad",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 15,
+      "title": "Una mirada con ultrasonido",
+      "canvases": 2,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 16,
+      "title": "Cómo se representa el cierre de una vena",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 17,
+      "title": "Un coágulo en una vena profunda",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 18,
+      "title": "Los cambios que pueden quedar después",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 19,
+      "title": "Cómo se cierra un segmento seleccionado",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 20,
+      "title": "Un coágulo en una vena superficial",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    },
+    {
+      "i": 21,
+      "title": "Cuando el drenaje se estrecha en la pelvis",
+      "canvases": 1,
+      "tabs": 3,
+      "visible": true
+    }
+  ],
+  "chapterCounts": [
+    5,
+    4,
+    6,
+    7
+  ],
+  "new3DCount": 10,
+  "checks": [
+    "three hero presets",
+    "valve opens selected in viewer",
+    "chapter arrows and native horizontal scroll",
+    "accented search and zero results",
+    "category filtering and reset",
+    "Escape closes category list",
+    "real progress reload and resume",
+    "profile changes resume title",
+    "structure selection and isolation",
+    "reading panel",
+    "wall narration playing at 10.46 seconds"
+  ],
+  "consoleErrorsObserved": 0,
+  "limits": [
+    "Browser emulation, not physical phone",
+    "No independent clinical validation",
+    "Some source template video previews unsupported; source prompt/code reviewed"
+  ]
+}

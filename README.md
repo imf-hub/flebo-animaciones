@@ -4,6 +4,8 @@ Web educativa del Instituto Mexicano de Flebología: 22 módulos (13 en 3D y 9 e
 
 El visor separa **Guía, Explorar y Lectura**. La reproducción tiene su propia barra, el perfil permanece en la cabecera y las estructuras se eligen desde el modelo o un selector. [Diseño, fuentes UX/UI y reglas para mantenerlo](docs/UX_UI_VISOR.md).
 
+La portada incorpora vistas de pared, capas y válvula, capítulos visuales, duraciones reales de audio y continuación según el progreso. Diseño adaptado tras analizar siete plantillas de MotionSites desde el acceso autorizado del propietario: [referencias, decisiones y método reutilizable](docs/DISENO_MOTIONSITES.md).
+
 - Web pública: https://imf-hub.github.io/flebo-animaciones/
 - Repositorio: https://github.com/imf-hub/flebo-animaciones
 
@@ -46,6 +48,7 @@ El build añade versiones basadas en el contenido a los estilos y scripts de `in
 
 - `index.html`: estructura, identidad y metadatos.
 - `assets/styles.css` y `assets/experience.css`: estilos heredados y diseño adaptable actual.
+- `assets/learning.css`: portada, capítulos y biblioteca; `assets/workspace.css`: visor con controles y lectura separados.
 - `assets/app.js`: simulaciones, textos, guiones y reproductor.
 - `assets/anatomy-scenes.js` y `assets/anatomy-scenes.css`: siete escenas y el constructor reutilizable `FLEBO3D`.
 - `assets/clinical-scenes.js`: ablación, TVS y obstrucción ilíaca con relaciones espaciales editables.

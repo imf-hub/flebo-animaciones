@@ -1370,6 +1370,7 @@ function buildGallery(){
    const heading=document.createElement('div');heading.className='unit-heading';heading.dataset.unit=unit.id;heading.innerHTML='<h3></h3><p></p>';heading.querySelector('h3').textContent=(unitIndex+1)+'. '+unit.title;heading.querySelector('p').textContent=unit.description;grid.appendChild(heading);
    unit.ids.forEach(id=>{const i=MODS.findIndex(m=>m.id===id),m=MODS[i];if(!m)return;const b=document.createElement('button');b.type='button';b.className='card';b.dataset.cat=m.cat;b.dataset.unit=unit.id;b.dataset.index=i;b.dataset.search=(m.title+' '+m.blurb+' '+m.cat+' '+COURSE.lessons[m.id].patientTitle+' '+COURSE.lessons[m.id].patient).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
     b.innerHTML=`<canvas class="thumb" aria-hidden="true"></canvas><div class="card-body"><div class="card-meta"><span class="eyebrow"></span><span class="kind">${m.kind==='3d'?'3D interactivo':'Animación 2D'}</span></div><h3></h3><p></p><span class="go">Abrir animación →</span></div>`;
+    const duration=document.createElement('span');duration.className='audio-length';duration.textContent='Audio '+formatNarrationTime(m.id);b.append(duration);
     b.dataset.new=m.new3d?'true':'false';if(m.new3d){b.querySelector('.kind').textContent='Nuevo · 3D';b.querySelector('.kind').classList.add('new-kind')}b.querySelector('.eyebrow').textContent=m.cat;b.querySelector('h3').textContent=m.title;b.querySelector('p').textContent=m.blurb;b.onclick=()=>openMod(i);grid.appendChild(b);
     thumbObserver.observe(b)});
   });
@@ -1378,8 +1379,9 @@ function applyFilter(){
   const q=$('#search').value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();let count=0;
   document.querySelectorAll('.card').forEach(c=>{c.hidden=!((FILTER==='Todos'||c.dataset.cat===FILTER||(FILTER==='Nuevos 3D'&&c.dataset.new==='true'))&&(UNIT_FILTER==='all'||c.dataset.unit===UNIT_FILTER)&&(!q||c.dataset.search.includes(q)));if(!c.hidden)count++});
   document.querySelectorAll('.unit-heading').forEach(h=>{h.hidden=CATALOG_VIEW==='all'||![...document.querySelectorAll('.card')].some(c=>!c.hidden&&c.dataset.unit===h.dataset.unit)});
-  $('#resultCount').textContent=count+' de '+MODS.length+' animaciones';$('#emptyState').hidden=count!==0;
+  $('#resultCount').textContent=count+' de '+MODS.length+' animaciones';$('#emptyState').hidden=count!==0;$('#filterSummary').textContent=FILTER==='Todos'?'Filtrar por tema':FILTER;$('#resetCatalog').hidden=!q&&FILTER==='Todos'&&UNIT_FILTER==='all';
 }
+function formatNarrationTime(id){const total=Math.round(AUDIO[id]?.dur||0);return Math.floor(total/60)+':'+String(total%60).padStart(2,'0')}
 $('#search').addEventListener('input',applyFilter);
 function setAud(a){AUD=a;try{localStorage.setItem('flebo-animaciones-aud',a)}catch(e){}
   document.documentElement.dataset.audience=a;

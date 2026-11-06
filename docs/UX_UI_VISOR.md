@@ -1,5 +1,7 @@
 # Interfaz del visor: separación de tareas
 
+La evolución de la portada y biblioteca, con las referencias de MotionSites consultadas desde el acceso del propietario, está documentada en [Diseño MotionSites](DISENO_MOTIONSITES.md). Mantener estas decisiones junto con la separación del visor descrita aquí.
+
 6 de noviembre de 2026. Sustituye la composición del panel lateral descrita en los primeros apartados de `animacion/EXPERIENCIA_INTERACTIVA.md`.
 
 ## Problema observado

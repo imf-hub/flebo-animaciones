@@ -21,6 +21,7 @@ Mantén el nombre **Flebo Animaciones**, los logotipos originales y la identidad
 | [Skill propia de Flebo Animaciones](skills/flebo-animaciones/SKILL.md) | Método de producción, selección de referencias y calidad mínima. |
 | [Experiencia interactiva actual](docs/animacion/EXPERIENCIA_INTERACTIVA.md) | Qué se implementó, contratos de interacción, aprendizaje y límites reales. |
 | [UX/UI vigente del visor](docs/UX_UI_VISOR.md) | Separación de Guía, Explorar y Lectura, reproducción, selección de perfil y navegación con teclado. |
+| [MotionSites: análisis y adaptación](docs/DISENO_MOTIONSITES.md) | Acceso por Imperio Agéntico, siete referencias comparadas y método para reutilizar prompts sin perder calidad educativa. |
 | [Arquitectura original](docs/animacion/ARQUITECTURA.md) | Cómo se construyeron los modelos y mecanismos originales. Es un análisis histórico: contrastar con la evolución actual. |
 | [Criterios de calidad](docs/animacion/CALIDAD.md) | Evaluación anatómica, visual, temporal, didáctica y de rendimiento. |
 | [Producción e integración](docs/animacion/PRODUCCION.md) | Contratos, controles, guiones, marcas de audio y ruta de exportación. |
