@@ -4,6 +4,21 @@
   let completed=new Set(),selectedPart=null,isolated=false,toastTimer=0,preview=null,previewRaf=0,previewToken=0,heroVisible=false;
   try{const saved=JSON.parse(localStorage.getItem(storageKey)||'[]');if(Array.isArray(saved))completed=new Set(saved.filter(id=>order.includes(id)))}catch{}
   const element=id=>document.getElementById(id);
+  let activePanel='guide',mountedLesson=null,activeStep=-1,answered=-1,panelMotion=null;
+  const panels=['guide','explore','reading'];
+  function showPanel(name,{focus=false,animate=false}={}){
+    if(!panels.includes(name))return;
+    const changed=activePanel!==name;activePanel=name;
+    panelMotion?.cancel();panelMotion=null;
+    for(const key of panels){const selected=key===name,tab=element('tab-'+key);tab.setAttribute('aria-selected',selected);tab.tabIndex=selected?0:-1;element('panel-'+key).hidden=!selected}
+    element('viewer').dataset.panel=name;
+    if(changed)element('viewer').querySelector('.panel-body').scrollTop=0;
+    if(focus)element('tab-'+name).focus();
+    if(changed&&animate&&!reduced())panelMotion=element('panel-'+name).animate([{opacity:.4,transform:'translateY(4px)'},{opacity:1,transform:'translateY(0)'}],{duration:180,easing:'cubic-bezier(.23,1,.32,1)'});
+  }
+  panels.forEach((name,index)=>{const tab=element('tab-'+name);tab.onclick=event=>showPanel(name,{animate:event.detail>0});tab.onkeydown=event=>{let next;if(event.key==='ArrowRight')next=(index+1)%panels.length;else if(event.key==='ArrowLeft')next=(index+panels.length-1)%panels.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=panels.length-1;else return;event.preventDefault();showPanel(panels[next],{focus:true})}});
+  document.addEventListener('pointerdown',event=>{if(!element('playbackSettings').contains(event.target))element('playbackSettings').open=false});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&element('playbackSettings').open){event.preventDefault();event.stopImmediatePropagation();element('playbackSettings').open=false;element('playbackSettings').querySelector('summary').focus()}},true);
   const toast=text=>{element('toast').textContent=text;element('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{element('toast').hidden=true},2600)};
   function saveProgress(){try{localStorage.setItem(storageKey,JSON.stringify([...completed]))}catch{}updateProgress()}
   function updateProgress(){element('progressText').textContent=completed.size+' de '+order.length+' temas explorados';element('courseProgress').max=order.length;element('courseProgress').value=completed.size;
@@ -34,20 +49,22 @@
   }
   function technicalControls(){
     const patient=AUD==='paciente';element('vControls').querySelectorAll('.ctl').forEach(control=>{const label=control.querySelector('label')?.textContent||'';control.hidden=patient&&/concentración|aguja|volumen/i.test(label)});
-    element('vControls').querySelectorAll('.readouts>div').forEach(row=>{row.hidden=patient&&/riesgo|recomendado|parámetro del ejemplo|volumen|concentración|polidocanol|aguja|resultado|escenario|evento/i.test(row.firstChild.textContent)});
+    element('modelStatus').querySelectorAll('.readouts>div').forEach(row=>{row.hidden=patient&&/riesgo|recomendado|parámetro del ejemplo|volumen|concentración|polidocanol|aguja|resultado|escenario|evento/i.test(row.firstChild.textContent)});
   }
   function mountLesson(){if(!cur||!cur.sim)return;const m=cur.m,lesson=COURSE.lessons[m.id],unit=COURSE.units.find(u=>u.ids.includes(m.id));if(!lesson)return;
+    const changed=mountedLesson!==m.id;if(changed){mountedLesson=m.id;activeStep=-1;answered=-1;element('modelStatus').replaceChildren();element('lessonSources').open=false;element('viewer').querySelector('.knowledge-check').open=false;showPanel('guide')}
     element('viewer').dataset.audience=AUD;element('vTitle').textContent=AUD==='paciente'?lesson.patientTitle:m.title;element('vCat').textContent=unit.title;element('viewerCounter').textContent='Tema '+(order.indexOf(m.id)+1)+' de '+order.length+' · '+(m.kind==='3d'?'Modelo 3D interactivo':'Esquema animado');
     element('learningObjective').textContent=AUD==='medico'?lesson.medObjective:lesson.objective;element('explanationSummary').textContent=AUD==='medico'?'Anatomía y mecanismo':'Entender el mecanismo';
     element('lessonSources').hidden=!m.sources;element('lessonScope').textContent=m.scope||'';element('lessonSourceList').replaceChildren();for(const sourceId of m.sources||[]){const source=EXTENSION_SOURCES[sourceId];const item=document.createElement('li'),link=document.createElement('a');link.textContent=source.title;link.href=source.url;link.target='_blank';link.rel='noopener';item.append(link);element('lessonSourceList').append(item)}
-    element('observationSteps').replaceChildren();lesson.steps.forEach((title,i)=>{const button=document.createElement('button');button.type='button';button.className='observation-step';button.innerHTML='<span></span><div></div>';button.firstChild.textContent=i+1;button.lastChild.textContent=title;button.setAttribute('aria-pressed','false');button.onclick=()=>runStep(i);element('observationSteps').appendChild(button)});
-    element('stepHint').textContent=m.kind==='3d'?'Prueba un paso o elige una estructura del modelo.':'Prueba un paso. Usa + para acercarte y arrastra el esquema ampliado.';
+    element('observationSteps').replaceChildren();lesson.steps.forEach((title,i)=>{const button=document.createElement('button');button.type='button';button.className='observation-step';button.innerHTML='<span></span><div></div>';button.firstChild.textContent=i+1;button.lastChild.textContent=title;button.setAttribute('aria-pressed',activeStep===i);button.onclick=()=>runStep(i);element('observationSteps').appendChild(button)});
+    element('stepHint').textContent=activeStep>=0?'Paso '+(activeStep+1)+' de '+lesson.steps.length+' activo.':'Selecciona un paso para cambiar el modelo.';
     element('quizQuestion').textContent=lesson.question;element('quizOptions').replaceChildren();element('quizFeedback').textContent='';
-    lesson.answers.forEach((answer,i)=>{const button=document.createElement('button');button.type='button';button.textContent=answer;button.onclick=()=>{element('quizOptions').querySelectorAll('button').forEach(b=>{b.className='';b.setAttribute('aria-pressed','false')});button.className=i===lesson.correct?'correct':'incorrect';button.setAttribute('aria-pressed','true');element('quizFeedback').textContent=(i===lesson.correct?'Así es. ':'Vuelve a observar. ')+lesson.why};element('quizOptions').appendChild(button)});
-    element('structurePicker').hidden=!(m.kind==='3d'&&cur.sim.parts?.length);element('structureParts').replaceChildren();
-    if(cur.sim.parts)for(const part of cur.sim.parts){const button=document.createElement('button');button.type='button';button.dataset.part=part.id;button.textContent=part.name;button.setAttribute('aria-pressed',part.id===selectedPart);button.onclick=()=>cur?.sim?.selectPart?.(part.id);element('structureParts').appendChild(button)}
+    lesson.answers.forEach((answer,i)=>{const button=document.createElement('button');button.type='button';button.textContent=answer;button.setAttribute('aria-pressed',answered===i);if(answered===i){button.className=i===lesson.correct?'correct':'incorrect';element('quizFeedback').textContent=(i===lesson.correct?'Así es. ':'Vuelve a observar. ')+lesson.why}button.onclick=()=>{answered=i;element('quizOptions').querySelectorAll('button').forEach(b=>{b.className='';b.setAttribute('aria-pressed','false')});button.className=i===lesson.correct?'correct':'incorrect';button.setAttribute('aria-pressed','true');element('quizFeedback').textContent=(i===lesson.correct?'Así es. ':'Vuelve a observar. ')+lesson.why};element('quizOptions').appendChild(button)});
+    element('structurePicker').hidden=!(m.kind==='3d'&&cur.sim.parts?.length);element('structureSelect').replaceChildren(new Option('Elige en la lista o toca el modelo',''));
+    for(const part of cur.sim.parts||[])element('structureSelect').appendChild(new Option(part.name,part.id));element('structureSelect').value=selectedPart||'';element('showAllParts').disabled=!selectedPart;element('readStructure').hidden=!selectedPart;
+    for(const status of element('vControls').querySelectorAll(':scope > .readouts,:scope > .legend'))element('modelStatus').appendChild(status);element('modelStatusDetails').hidden=!element('modelStatus').children.length;
     element('completeLesson').onclick=()=>{if(!cur)return;const id=cur.m.id;if(completed.has(id))completed.delete(id);else completed.add(id);saveProgress();toast(completed.has(id)?'Tema marcado como explorado.':'Tema pendiente de explorar.')};
-    element('viewer').querySelector('.controls-details').open=AUD==='medico';technicalControls();updateProgress();
+    technicalControls();updateProgress();
   }
   const cameras2d={
     'valvula-sana':[[500,300,1],[545,262,1.8],[500,300,1.1]],
@@ -60,19 +77,21 @@
     'trombosis-venosa-profunda':[[500,300,1],[600,215,1.6],[500,300,1]],
     'sindrome-postrombotico':[[500,300,1],[500,240,1.45],[500,300,1]]
   };
-  function runStep(i){if(!cur)return;stopVideo();state.playing=true;element('viewer').classList.remove('paused');element('vPlay').textContent='Pausa';element('vPlay').setAttribute('aria-pressed',true);const lesson=COURSE.lessons[cur.m.id];
+  function runStep(i){if(!cur)return;stopVideo();state.playing=true;element('viewer').classList.remove('paused');element('vPlay').textContent='Pausar';element('vPlay').setAttribute('aria-pressed',true);const lesson=COURSE.lessons[cur.m.id];
     for(const action of lesson.actions[i]||[]){if(action[0]==='anim')vAct(['sl',action[1],action[2]]);else vAct(action)}
     if(cur.view){const camera=cameras2d[cur.m.id]?.[i]||[500,300,1];cur.view={x:camera[0],y:camera[1],z:camera[2]}}
     if(cur.m.id==='compartimentos-3d'){const positions=[[7,6,11],[6.5,4.5,9],[7,3.4,9]],targets=[[0,1.1,0],[.5,1.3,.8],[1.8,.2,.3]];cur.sim.moveCamera?.(positions[i],targets[i])}
     if(cur.m.id==='progresion-varice')cur.sim.moveCamera?.([7,2,12],[.3,0,-.6]);
-    element('observationSteps').querySelectorAll('button').forEach((button,index)=>button.setAttribute('aria-pressed',i===index));element('stepHint').textContent=lesson.steps[i]+'. '+(AUD==='medico'?lesson.medObjective:lesson.objective);
+    activeStep=i;showPanel('guide');element('observationSteps').querySelectorAll('button').forEach((button,index)=>button.setAttribute('aria-pressed',i===index));element('stepHint').textContent='Paso '+(i+1)+' de '+lesson.steps.length+' activo: '+lesson.steps[i]+'.';
   }
-  const isolateButton=document.createElement('button');isolateButton.type='button';isolateButton.className='text-button isolate-button';isolateButton.textContent='Aislar selección';isolateButton.id='isolateSelection';isolateButton.setAttribute('aria-pressed','false');isolateButton.disabled=true;element('structurePicker').appendChild(isolateButton);
-  isolateButton.onclick=()=>{if(!cur)return;isolated=!isolated;cur.sim.isolatePart?.(isolated);isolateButton.setAttribute('aria-pressed',isolated);isolateButton.textContent=isolated?'Ver en contexto':'Aislar selección'};
-  function clearSelection(){selectedPart=null;isolated=false;cur?.sim?.isolatePart?.(false);cur?.sim?.selectPart?.(null);element('structureDetail').hidden=true;isolateButton.disabled=true;isolateButton.setAttribute('aria-pressed','false');isolateButton.textContent='Aislar selección'}
+  const isolateButton=document.createElement('button');isolateButton.type='button';isolateButton.className='text-button isolate-button';isolateButton.textContent='Aislar';isolateButton.id='isolateSelection';isolateButton.setAttribute('aria-pressed','false');isolateButton.disabled=true;element('structurePicker').querySelector('.structure-actions').prepend(isolateButton);
+  isolateButton.onclick=()=>{if(!cur)return;isolated=!isolated;cur.sim.isolatePart?.(isolated);isolateButton.setAttribute('aria-pressed',isolated);isolateButton.textContent=isolated?'Ver en contexto':'Aislar'};
+  function clearSelection(){selectedPart=null;isolated=false;cur?.sim?.isolatePart?.(false);cur?.sim?.selectPart?.(null);element('structureSelect').value='';element('structureDetail').hidden=true;element('readStructure').hidden=true;element('showAllParts').disabled=true;isolateButton.disabled=true;isolateButton.setAttribute('aria-pressed','false');isolateButton.textContent='Aislar'}
   element('clearSelection').onclick=clearSelection;element('showAllParts').onclick=clearSelection;
+  element('structureSelect').onchange=event=>{if(event.target.value)cur?.sim?.selectPart?.(event.target.value);else clearSelection()};
+  element('readStructure').onclick=event=>{showPanel('reading',{animate:event.detail>0});element('panel-reading').focus({preventScroll:true})};
   document.addEventListener('flebo:part',event=>{const id=event.detail.id;if(!cur){if(id&&COURSE.structures[id])toast(COURSE.structures[id].name+': '+COURSE.structures[id][AUD==='paciente'?'patient':'medico']);return}
-    if(!element('stageHost').contains(event.target))return;selectedPart=id;isolateButton.disabled=!id;element('structureParts').querySelectorAll('button').forEach(button=>button.setAttribute('aria-pressed',button.dataset.part===id));
+    if(!element('stageHost').contains(event.target))return;selectedPart=id;isolateButton.disabled=!id;element('structureSelect').value=id||'';element('showAllParts').disabled=!id;element('readStructure').hidden=!id;if(id&&!vid&&activePanel!=='reading')showPanel('explore');
     const data=COURSE.structures[id];element('structureDetail').hidden=!data;if(data){element('structureDetail').querySelector('h3').textContent=data.name;element('structureDetail').querySelector('p').textContent=data[AUD==='paciente'?'patient':'medico']}
   });
   function navigate(delta){if(!cur)return;const index=order.indexOf(cur.m.id),id=order[(index+delta+order.length)%order.length];openMod(MODS.findIndex(m=>m.id===id))}
@@ -87,8 +106,8 @@
   }
   const heroObserver=new IntersectionObserver(entries=>{heroVisible=entries[0].isIntersecting;if(heroVisible){if(preview){preview.last=0;cancelAnimationFrame(previewRaf);previewRaf=requestAnimationFrame(preview.tick)}else startPreview()}else cancelAnimationFrame(previewRaf)},{threshold:.05});heroObserver.observe(element('heroModel'));
   element('heroExplode').onclick=()=>{if(!preview)return;const value=element('heroExplode').getAttribute('aria-pressed')!=='true';element('heroExplode').setAttribute('aria-pressed',value);preview.sim.setExplode?.(value ? .9 : 0);if(reduced()){preview.sim.frame(.8,{labels:false,playing:true});preview.sim.frame(0,{labels:false,playing:false})}};
-  document.addEventListener('flebo:open',()=>{destroyPreview();selectedPart=null;isolated=false;isolateButton.disabled=true;isolateButton.setAttribute('aria-pressed','false');isolateButton.textContent='Aislar selección';mountLesson()});
-  document.addEventListener('flebo:close',()=>{selectedPart=null;element('structureDetail').hidden=true;if(preview&&heroVisible){preview.last=0;previewRaf=requestAnimationFrame(preview.tick)}else startPreview()});
+  document.addEventListener('flebo:open',()=>{destroyPreview();element('playbackSettings').open=false;mountedLesson=null;selectedPart=null;isolated=false;isolateButton.disabled=true;isolateButton.setAttribute('aria-pressed','false');isolateButton.textContent='Aislar';mountLesson()});
+  document.addEventListener('flebo:close',()=>{panelMotion?.cancel();mountedLesson=null;selectedPart=null;element('structureDetail').hidden=true;if(preview&&heroVisible){preview.last=0;previewRaf=requestAnimationFrame(preview.tick)}else startPreview()});
   document.addEventListener('visibilitychange',()=>{cancelAnimationFrame(previewRaf);if(!document.hidden&&heroVisible&&!cur){if(preview){preview.last=0;previewRaf=requestAnimationFrame(preview.tick)}else startPreview()}});
   window.learningUI={audience,refresh:mountLesson};audience(AUD);syncFilters();updateProgress();if(cur?.sim)mountLesson();
 })();

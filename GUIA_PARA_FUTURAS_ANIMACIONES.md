@@ -20,6 +20,7 @@ Mantén el nombre **Flebo Animaciones**, los logotipos originales y la identidad
 | [CLAUDE.md](CLAUDE.md) | Entrada de contexto para Claude. |
 | [Skill propia de Flebo Animaciones](skills/flebo-animaciones/SKILL.md) | Método de producción, selección de referencias y calidad mínima. |
 | [Experiencia interactiva actual](docs/animacion/EXPERIENCIA_INTERACTIVA.md) | Qué se implementó, contratos de interacción, aprendizaje y límites reales. |
+| [UX/UI vigente del visor](docs/UX_UI_VISOR.md) | Separación de Guía, Explorar y Lectura, reproducción, selección de perfil y navegación con teclado. |
 | [Arquitectura original](docs/animacion/ARQUITECTURA.md) | Cómo se construyeron los modelos y mecanismos originales. Es un análisis histórico: contrastar con la evolución actual. |
 | [Criterios de calidad](docs/animacion/CALIDAD.md) | Evaluación anatómica, visual, temporal, didáctica y de rendimiento. |
 | [Producción e integración](docs/animacion/PRODUCCION.md) | Contratos, controles, guiones, marcas de audio y ruta de exportación. |
@@ -43,6 +44,7 @@ Las capturas de [la carpeta de referencia](docs/animacion/referencia/) permiten 
 | Iluminación, volumen y separación de planos | [threejs-lighting](skills/external/threejs-lighting/SKILL.md) |
 | Fluidez, instancias, buffers, medición y limpieza de recursos | [threejs-performance](skills/external/threejs-performance/SKILL.md) |
 | Jerarquía web, tipografía, composición, UX y transiciones | [frontend-design](skills/external/frontend-design/SKILL.md) |
+| Foco, pestañas, controles claros, movimiento reducido y auditoría de interfaz | [web-design-guidelines](skills/external/web-design-guidelines/SKILL.md), con revisión fijada y procedencia en su carpeta |
 
 Procedencia y licencias: [skills/external/README.md](skills/external/README.md). Las seis guías 3D proceden de [CloudAI-X/threejs-skills, revisión fijada](https://github.com/CloudAI-X/threejs-skills/tree/0e181866f095b5f06d005133876e926515390d95/skills). La guía de diseño procede de [anthropics/skills, revisión fijada](https://github.com/anthropics/skills/tree/ca45fc496a3436251f191354091d557da31c15b5/skills/frontend-design).
 

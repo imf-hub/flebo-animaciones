@@ -1,5 +1,7 @@
 # Skills y herramientas para mejorar
 
+**Ampliación de interfaz:** ahora hay ocho guías en el proyecto. Se añadió [web-design-guidelines de Vercel](../../skills/external/web-design-guidelines/PROVENANCE.md), con copia revisada de sus reglas y licencia. También se instaló en el directorio personal de Codex. Consultar [UX/UI del visor](../UX_UI_VISOR.md) para la composición vigente y sus decisiones de movimiento/acceso. El inventario inicial siguiente se conserva como referencia histórica.
+
 Investigación consultada el **6 de noviembre de 2026**. «Skill» significa instrucciones para un agente; no añade por sí misma geometría, un renderizador ni una garantía de calidad. Este proyecto incorpora una [skill propia](../../skills/flebo-animaciones/SKILL.md), dirigida desde `AGENTS.md`, `CLAUDE.md` y `GEMINI.md`.
 
 **Instalación realizada tras esta investigación:** siete guías en [skills/external](../../skills/external/README.md): geometría, animación, interacción, materiales, iluminación y rendimiento de CloudAI-X, más diseño frontend de Anthropic. Revisiones y licencias se conservan allí. Se aplicaron a la [experiencia interactiva implementada](EXPERIENCIA_INTERACTIVA.md). No son dependencias de ejecución ni una instalación global; Remotion, Blender y las demás rutas de la tabla siguen siendo opciones para encargos futuros.

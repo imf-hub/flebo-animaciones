@@ -19,13 +19,14 @@
   <link rel="stylesheet" href="assets/styles.css?v=85268b6b7916">
   <link rel="stylesheet" href="assets/experience.css?v=0e96554635f0">
   <link rel="stylesheet" href="assets/anatomy-scenes.css?v=5c7ddd93a3df">
+  <link rel="stylesheet" href="assets/workspace.css?v=eda42eb18931">
   <script src="assets/course.js?v=8875a7f2c071" defer></script>
   <script src="assets/anatomy-scenes.js?v=0f8ac4475a2f" defer></script>
   <script src="assets/clinical-scenes.js?v=d66fd447a8f6" defer></script>
   <script src="assets/extension-data.js?v=a757d754816d" defer></script>
   <script src="assets/extension-audio.js?v=f7a69b343840" defer></script>
-  <script src="assets/app.js?v=1a510f15e6fd" defer></script>
-  <script src="assets/experience.js?v=06b523ebc4c9" defer></script>
+  <script src="assets/app.js?v=8431f5d8f76c" defer></script>
+  <script src="assets/experience.js?v=d4f657fbd753" defer></script>
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -74,44 +75,51 @@
 </div>
 
 <div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-labelledby="vTitle" hidden>
-  <section class="v-stage">
-    <div class="v-bar">
-      <button class="sbtn" id="vClose" type="button">← Explorar temas</button>
-      <span class="sp"></span>
-      <button class="sbtn" id="vVideo" type="button" aria-pressed="false">▶ Explicación narrada</button>
-      <button class="sbtn" id="vAudio" type="button" hidden>Activar narración</button>
-      <button class="sbtn" id="vPlay" type="button" aria-pressed="true">Pausa</button>
-      <label for="vSpeed">Velocidad <input type="range" id="vSpeed" min="0.25" max="1.5" step="0.05" value="1"></label>
-      <button class="sbtn" id="vLabels" type="button" aria-pressed="true">Etiquetas</button>
-      <button class="sbtn" id="vFull" type="button">Pantalla completa</button>
+  <header class="viewer-header">
+    <button id="vClose" type="button" class="workspace-back">← Temas</button>
+    <div class="viewer-location"><span id="vCat"></span><span id="viewerCounter"></span></div>
+    <div class="viewer-audience"><span id="audienceLabel">Explicación</span><div class="seg" id="vAud" role="group" aria-labelledby="audienceLabel"><button type="button" id="vAudPac" data-aud="paciente">Paciente</button><button type="button" id="vAudMed" data-aud="medico">Médico</button></div></div>
+    <button class="workspace-expand" id="vFull" type="button" aria-label="Ampliar modelo" aria-pressed="false">Ampliar</button>
+  </header>
+  <section class="v-stage" aria-label="Modelo y reproducción">
+    <div class="scene-viewport">
+      <div class="stage-host" id="stageHost"></div>
+      <div class="subs" id="vSubs" aria-live="polite" hidden></div>
+      <div class="vprog" id="vProg" hidden><i></i></div>
+      <div class="vcard" id="vCard" hidden><img class="vseal" data-logo="seal_dark" src="assets/logos/seal_dark.png" alt="Instituto Mexicano de Flebología"><h3></h3><p></p></div>
     </div>
-    <div class="stage-host" id="stageHost"></div>
-    <div class="structure-detail" id="structureDetail" hidden><button id="clearSelection" type="button" aria-label="Cerrar información de la estructura">×</button><span>Estructura seleccionada</span><h3></h3><p></p></div>
-    <div class="subs" id="vSubs" aria-live="polite" hidden></div>
-    <div class="vprog" id="vProg" hidden><i></i></div>
-    <div class="vcard" id="vCard" hidden><img class="vseal" data-logo="seal_dark" src="assets/logos/seal_dark.png" alt="Instituto Mexicano de Flebología"><h3></h3><p></p></div>
+    <div class="v-bar" role="group" aria-label="Reproducción">
+      <button class="sbtn" id="vVideo" type="button" aria-pressed="false">Escuchar explicación</button>
+      <button class="sbtn" id="vAudio" type="button" hidden>Activar audio</button>
+      <button class="sbtn" id="vPlay" type="button" aria-pressed="true">Pausar</button>
+      <details class="playback-settings" id="playbackSettings"><summary>Ajustes</summary><div class="playback-popover"><div class="ctl"><div class="ctl-h"><label for="vSpeed">Velocidad</label><output id="vSpeedValue" for="vSpeed">1×</output></div><input type="range" id="vSpeed" min="0.25" max="1.5" step="0.05" value="1"></div><button class="sbtn" id="vLabels" type="button" aria-pressed="true">Mostrar etiquetas</button></div></details>
+    </div>
   </section>
-  <aside class="v-side">
-    <div>
-      <div class="eyebrow" id="vCat"></div><p class="viewer-counter" id="viewerCounter"></p>
-      <h2 id="vTitle"></h2>
+  <aside class="v-side" aria-label="Aprendizaje y exploración">
+    <div class="lesson-heading"><h2 id="vTitle"></h2></div>
+    <div class="workspace-tabs" role="tablist" aria-label="Contenido del tema">
+      <button id="tab-guide" type="button" role="tab" aria-selected="true" aria-controls="panel-guide" tabindex="0" data-panel="guide">Guía</button>
+      <button id="tab-explore" type="button" role="tab" aria-selected="false" aria-controls="panel-explore" tabindex="-1" data-panel="explore">Explorar</button>
+      <button id="tab-reading" type="button" role="tab" aria-selected="false" aria-controls="panel-reading" tabindex="-1" data-panel="reading">Lectura</button>
     </div>
-    <div class="seg" id="vAud" role="group" aria-label="Nivel de explicación">
-      <button type="button" id="vAudPac" data-aud="paciente">Paciente</button>
-      <button type="button" id="vAudMed" data-aud="medico">Médico</button>
+    <div class="panel-body">
+      <section id="panel-guide" class="workspace-panel" role="tabpanel" aria-labelledby="tab-guide" tabindex="0">
+        <p class="learning-objective" id="learningObjective"></p>
+        <section class="guided-observation"><h3>Recorre el modelo</h3><div id="observationSteps"></div><p id="stepHint" class="visually-hidden" aria-live="polite"></p></section>
+        <details class="knowledge-check"><summary>Comprueba lo que aprendiste</summary><div class="quiz-content"><p id="quizQuestion"></p><div id="quizOptions"></div><p id="quizFeedback" aria-live="polite"></p></div></details>
+      </section>
+      <section id="panel-explore" class="workspace-panel" role="tabpanel" aria-labelledby="tab-explore" tabindex="0" hidden>
+        <section id="structurePicker" hidden><label for="structureSelect">Selecciona una estructura</label><div id="structureParts"><select id="structureSelect"><option value="">Elige en la lista o toca el modelo</option></select></div><div class="structure-actions"><button class="text-button" id="showAllParts" type="button" disabled>Ver conjunto</button></div><button class="text-button" id="readStructure" type="button" hidden>Leer sobre esta estructura</button></section>
+        <section class="parameter-controls"><h3>Ajustes del modelo</h3><div class="controls" id="vControls"></div><p class="sim-note">Valores didácticos, no mediciones clínicas.</p></section>
+        <details class="model-status" id="modelStatusDetails" hidden><summary>Estado del modelo</summary><div id="modelStatus"></div></details>
+      </section>
+      <section id="panel-reading" class="workspace-panel" role="tabpanel" aria-labelledby="tab-reading" tabindex="0" hidden>
+        <section class="structure-detail" id="structureDetail" hidden><span>Estructura seleccionada</span><h3></h3><p></p><button id="clearSelection" type="button" class="text-button">Quitar selección</button></section>
+        <section class="reading-content"><h3 id="explanationSummary">Entender el mecanismo</h3><div class="v-text" id="vText"></div></section>
+        <details id="lessonSources" class="lesson-sources" hidden><summary>Fuentes y alcance</summary><p id="lessonScope"></p><ul id="lessonSourceList"></ul></details>
+      </section>
     </div>
-    <p class="learning-objective" id="learningObjective"></p>
-    <section class="guided-observation"><h3>Observa paso a paso</h3><div id="observationSteps"></div><p id="stepHint" aria-live="polite"></p></section>
-    <section id="structurePicker" hidden><h3>Reconoce las estructuras</h3><div class="structure-parts" id="structureParts"></div><button class="text-button" id="showAllParts" type="button">Mostrar el conjunto</button></section>
-    <details class="explanation-details" open><summary id="explanationSummary">Entender el mecanismo</summary><div class="v-text" id="vText"></div></details>
-    <details class="controls-details" open><summary>Ajustar la animación</summary><p class="sim-note">Parámetros didácticos. No describen un caso clínico.</p><div class="controls" id="vControls"></div></details>
-    <details id="lessonSources" class="lesson-sources" hidden><summary>Fuentes y alcance de este tema</summary><p id="lessonScope"></p><ul id="lessonSourceList"></ul></details>
-    <section class="knowledge-check"><h3>Una idea para recordar</h3><p id="quizQuestion"></p><div id="quizOptions"></div><p id="quizFeedback" aria-live="polite"></p></section>
-    <button class="complete-lesson" id="completeLesson" type="button" aria-pressed="false">Marcar como explorado <span aria-hidden="true">✓</span></button>
-    <div class="navrow">
-      <button class="btn" id="vPrev" type="button">← Anterior</button>
-      <button class="btn" id="vNext" type="button">Siguiente →</button>
-    </div>
+    <footer class="lesson-footer"><button class="complete-lesson" id="completeLesson" type="button" aria-pressed="false">Marcar como explorado <span aria-hidden="true">✓</span></button><div class="navrow"><button class="btn" id="vPrev" type="button">← Anterior</button><button class="btn" id="vNext" type="button">Siguiente →</button></div></footer>
   </aside>
 </div>
 <dialog id="audienceDialog" class="audience-dialog" aria-labelledby="audienceTitle"><button class="dialog-close" id="closeAudience" type="button" aria-label="Cerrar selección de perfil">×</button><p class="section-kicker">Tu forma de aprender</p><h2 id="audienceTitle">¿Cómo quieres explorar?</h2><p>Puedes cambiar de nivel en cualquier momento.</p><div class="dialog-roles"><button type="button" data-aud="paciente"><strong>Soy paciente</strong><span>Lenguaje sencillo, conceptos esenciales y una guía visual.</span></button><button type="button" data-aud="medico"><strong>Soy médico</strong><span>Anatomía, nomenclatura, mecanismos y controles en detalle.</span></button></div></dialog>

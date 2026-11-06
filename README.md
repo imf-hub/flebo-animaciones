@@ -2,6 +2,8 @@
 
 Web educativa del Instituto Mexicano de Flebología: 22 módulos (13 en 3D y 9 esquemas 2D) organizados en cuatro unidades, perfiles paciente/médico, 66 pasos de observación, 22 preguntas de repaso, narraciones y progreso local. Los modelos 3D permiten seleccionar estructuras, aislarlas y separar capas cuando corresponde al tema.
 
+El visor separa **Guía, Explorar y Lectura**. La reproducción tiene su propia barra, el perfil permanece en la cabecera y las estructuras se eligen desde el modelo o un selector. [Diseño, fuentes UX/UI y reglas para mantenerlo](docs/UX_UI_VISOR.md).
+
 - Web pública: https://imf-hub.github.io/flebo-animaciones/
 - Repositorio: https://github.com/imf-hub/flebo-animaciones
 
@@ -58,7 +60,8 @@ El build añade versiones basadas en el contenido a los estilos y scripts de `in
 - `scripts/`: verificación, exportación y servidor local.
 - `docs/animacion/`: arquitectura, mínimo de calidad, producción, herramientas y referencia conservada.
 - `skills/flebo-animaciones/`: instrucciones reutilizables para agentes.
-- `skills/external/`: siete guías de diseño y Three.js, con revisión de origen y licencias.
+- `assets/workspace.css`: composición vigente del visor, tareas separadas y adaptación a móvil.
+- `skills/external/`: ocho guías de diseño y Three.js, con revisión de origen y licencias.
 - `examples/animacion/`: núcleo de muestreo temporal reproducible; no es un módulo visual terminado.
 
 El material entregado se conserva localmente en `material-original/` y `original-extraido/`, fuera de Git y de la exportación pública. El nombre heredado del archivo de origen no es el nombre de la web.

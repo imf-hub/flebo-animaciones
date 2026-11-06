@@ -1,0 +1,1619 @@
+{
+  "date": "2026-11-06",
+  "base_commit": "32b41439e8984c4c4ac9004f0f64386a7be03ebc",
+  "files_sha256": {
+    "index.html": "f8d1f3105d1c6943e487fc6bd0ffd9e6457211d11ee2ea8f50e673ce4eb47acb",
+    "assets/app.js": "8431f5d8f76cfc8dad3db3a58bec62c3b519ef29c15e4d39a1b7d242c2b8f06e",
+    "assets/experience.js": "d4f657fbd7539a8d70310ea47db925147f2f45c65dadba2237c1ba9cf32c3209",
+    "assets/workspace.css": "eda42eb1893180cccda2f14ac33f683d69d101737404247338bdf914f7f04273"
+  },
+  "scope": "Revisión funcional, visual y adaptable del visor; no estudio con usuarios ni auditoría WCAG completa.",
+  "desktop": {
+    "viewport": [
+      1280,
+      800
+    ],
+    "modules": [
+      {
+        "index": 0,
+        "id": "pared-3d",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 5,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 1,
+        "id": "valvula-sana",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 0,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 2,
+        "id": "valvula-incompetente",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 0,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 3,
+        "id": "bomba-muscular",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 0,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 4,
+        "id": "fascias",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 0,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 5,
+        "id": "compartimentos-3d",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 13,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 6,
+        "id": "union-safenofemoral",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 0,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 7,
+        "id": "progresion-varice",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 5,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 8,
+        "id": "microcirculacion",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 0,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 9,
+        "id": "escleroterapia",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 0,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 10,
+        "id": "trombosis-venosa-profunda",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 0,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 11,
+        "id": "sindrome-postrombotico",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 0,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 12,
+        "id": "viaje-venoso",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 9,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 13,
+        "id": "venas-superficiales",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 6,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 14,
+        "id": "compresion-medica",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 6,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 15,
+        "id": "ultrasonido-duplex",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 4,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 16,
+        "id": "edema-linfatico",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 4,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 17,
+        "id": "clasificacion-ceap",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 5,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 18,
+        "id": "ulcera-venosa",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 6,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 19,
+        "id": "ablacion-endovenosa",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 8,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 20,
+        "id": "trombosis-venosa-superficial",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 7,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      },
+      {
+        "index": 21,
+        "id": "obstruccion-iliaca",
+        "initial": {
+          "canvas": true,
+          "panel": "guide",
+          "rendered": "true",
+          "visiblePanels": 1
+        },
+        "steps": "true",
+        "quiz": true,
+        "separate": true,
+        "parts": 8,
+        "isolated": "true",
+        "structureDescription": true,
+        "reading": true,
+        "patient": "paciente",
+        "doctor": "medico",
+        "preservedPanel": "reading",
+        "paused": "viewer paused",
+        "resumed": "true"
+      }
+    ]
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "modules": [
+      {
+        "index": 0,
+        "id": "pared-3d",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "id": "valvula-sana",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "guide",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "explore",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "reading",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "id": "valvula-incompetente",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "guide",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "explore",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "reading",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "id": "bomba-muscular",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "guide",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "explore",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "reading",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "id": "fascias",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "guide",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "explore",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "reading",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "id": "compartimentos-3d",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "id": "union-safenofemoral",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "guide",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "explore",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "reading",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "id": "progresion-varice",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "id": "microcirculacion",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "guide",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "explore",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "reading",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 9,
+        "id": "escleroterapia",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "guide",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "explore",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "reading",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "id": "trombosis-venosa-profunda",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "guide",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "explore",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "reading",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "id": "sindrome-postrombotico",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "guide",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "explore",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "reading",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "id": "viaje-venoso",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 13,
+        "id": "venas-superficiales",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 14,
+        "id": "compresion-medica",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 15,
+        "id": "ultrasonido-duplex",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 16,
+        "id": "edema-linfatico",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 17,
+        "id": "clasificacion-ceap",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 18,
+        "id": "ulcera-venosa",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 19,
+        "id": "ablacion-endovenosa",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 20,
+        "id": "trombosis-venosa-superficial",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 237,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      },
+      {
+        "index": 21,
+        "id": "obstruccion-iliaca",
+        "panels": [
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "guide",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "explore",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          },
+          {
+            "canvas": true,
+            "contentWidth": 375,
+            "documentWidth": 390,
+            "height": 211,
+            "panel": "reading",
+            "rendered": "true",
+            "scrollWidth": 375,
+            "viewerWidth": 390,
+            "viewport": 390
+          }
+        ]
+      }
+    ]
+  },
+  "breakpoints": [
+    {
+      "bodyHeight": 106,
+      "bodyWidth": 305,
+      "canvas": true,
+      "navVisible": true,
+      "panel": "guide",
+      "scrollWidth": 305,
+      "viewerWidth": 320,
+      "viewport": [
+        320,
+        568
+      ]
+    },
+    {
+      "bodyHeight": 106,
+      "bodyWidth": 305,
+      "canvas": true,
+      "navVisible": true,
+      "panel": "explore",
+      "scrollWidth": 305,
+      "viewerWidth": 320,
+      "viewport": [
+        320,
+        568
+      ]
+    },
+    {
+      "bodyHeight": 106,
+      "bodyWidth": 305,
+      "canvas": true,
+      "navVisible": true,
+      "panel": "reading",
+      "scrollWidth": 305,
+      "viewerWidth": 320,
+      "viewport": [
+        320,
+        568
+      ]
+    },
+    {
+      "bodyHeight": 114,
+      "bodyWidth": 295,
+      "canvas": true,
+      "navVisible": true,
+      "panel": "guide",
+      "scrollWidth": 295,
+      "viewerWidth": 740,
+      "viewport": [
+        740,
+        390
+      ]
+    },
+    {
+      "bodyHeight": 114,
+      "bodyWidth": 295,
+      "canvas": true,
+      "navVisible": true,
+      "panel": "explore",
+      "scrollWidth": 295,
+      "viewerWidth": 740,
+      "viewport": [
+        740,
+        390
+      ]
+    },
+    {
+      "bodyHeight": 114,
+      "bodyWidth": 295,
+      "canvas": true,
+      "navVisible": true,
+      "panel": "reading",
+      "scrollWidth": 295,
+      "viewerWidth": 740,
+      "viewport": [
+        740,
+        390
+      ]
+    },
+    {
+      "bodyHeight": 678,
+      "bodyWidth": 324,
+      "canvas": true,
+      "navVisible": true,
+      "panel": "guide",
+      "scrollWidth": 324,
+      "viewerWidth": 768,
+      "viewport": [
+        768,
+        1024
+      ]
+    },
+    {
+      "bodyHeight": 678,
+      "bodyWidth": 324,
+      "canvas": true,
+      "navVisible": true,
+      "panel": "explore",
+      "scrollWidth": 324,
+      "viewerWidth": 768,
+      "viewport": [
+        768,
+        1024
+      ]
+    },
+    {
+      "bodyHeight": 678,
+      "bodyWidth": 324,
+      "canvas": true,
+      "navVisible": true,
+      "panel": "reading",
+      "scrollWidth": 324,
+      "viewerWidth": 768,
+      "viewport": [
+        768,
+        1024
+      ]
+    },
+    {
+      "bodyHeight": 211,
+      "bodyWidth": 375,
+      "canvas": true,
+      "navVisible": true,
+      "panel": "guide",
+      "scrollWidth": 375,
+      "viewerWidth": 390,
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "bodyHeight": 211,
+      "bodyWidth": 375,
+      "canvas": true,
+      "navVisible": true,
+      "panel": "explore",
+      "scrollWidth": 375,
+      "viewerWidth": 390,
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "bodyHeight": 211,
+      "bodyWidth": 375,
+      "canvas": true,
+      "navVisible": true,
+      "panel": "reading",
+      "scrollWidth": 375,
+      "viewerWidth": 390,
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  ],
+  "keyboard": {
+    "tabs": [
+      {
+        "focused": "tab-guide",
+        "panel": "guide"
+      },
+      {
+        "focused": "tab-explore",
+        "panel": "explore"
+      },
+      {
+        "focused": "tab-reading",
+        "panel": "reading"
+      },
+      {
+        "focused": "tab-guide",
+        "panel": "guide"
+      },
+      {
+        "focused": "tab-reading",
+        "panel": "reading"
+      }
+    ],
+    "focus_trap": [
+      "vNext",
+      "vClose"
+    ],
+    "popover_escape": {
+      "focused": "SUMMARY",
+      "open": false,
+      "viewerVisible": true
+    }
+  },
+  "selection_reset": {
+    "descriptionHidden": true,
+    "isolateDisabled": true,
+    "selected": ""
+  },
+  "canvas_stability": [
+    {
+      "canvas": {
+        "bottom": 731,
+        "height": 663,
+        "left": 0,
+        "right": 908.8125,
+        "top": 68,
+        "width": 908.8125,
+        "x": 0,
+        "y": 68
+      },
+      "panel": "guide"
+    },
+    {
+      "canvas": {
+        "bottom": 731,
+        "height": 663,
+        "left": 0,
+        "right": 908.8125,
+        "top": 68,
+        "width": 908.8125,
+        "x": 0,
+        "y": 68
+      },
+      "panel": "explore"
+    },
+    {
+      "canvas": {
+        "bottom": 731,
+        "height": 663,
+        "left": 0,
+        "right": 908.8125,
+        "top": 68,
+        "width": 908.8125,
+        "x": 0,
+        "y": 68
+      },
+      "panel": "reading"
+    }
+  ],
+  "expansion": {
+    "expanded": {
+      "expanded": true,
+      "sidebarVisible": false,
+      "viewport": 1280,
+      "width": 1280
+    },
+    "restored": {
+      "expanded": false,
+      "focused": "vFull",
+      "visible": true
+    }
+  },
+  "audio": {
+    "complete_3d": {
+      "canvas": {
+        "drawCalls": "16",
+        "fps": "59.6",
+        "motionTime": "107.71",
+        "rendered": "true",
+        "scene": "iliac"
+      },
+      "duration": "43.25875",
+      "result": "completed",
+      "scenes": "7"
+    },
+    "complete_2d": {
+      "duration": "49.789375",
+      "result": "completed",
+      "scenes": "10"
+    },
+    "rate": {
+      "label": "1.05×",
+      "rate": 1.05
+    },
+    "pause": true,
+    "mobile_subtitles": {
+      "aboveTransport": true,
+      "inside": true,
+      "playing": true,
+      "subtitle": "Observe una vena de la pierna en un corte longitudinal ampliado."
+    }
+  },
+  "progress": {
+    "marked": "true",
+    "preserved": "true",
+    "next_title": "Retorno venoso: del pie a la aurícula derecha"
+  },
+  "rapid_switching": {
+    "active": "guide",
+    "canvas": {
+      "drawCalls": "12",
+      "fps": "60.0",
+      "motionTime": "2.77",
+      "rendered": "true",
+      "scene": "iliac"
+    },
+    "duplicateIds": [],
+    "visiblePanels": 1
+  },
+  "console": [],
+  "limits": [
+    "No teléfono físico",
+    "No pruebas con usuarios",
+    "Movimiento reducido revisado en código; no se cambió la preferencia del sistema",
+    "Pantalla completa nativa no admitida por este navegador; ampliación dentro de la web comprobada"
+  ]
+}

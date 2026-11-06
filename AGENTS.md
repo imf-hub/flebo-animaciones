@@ -23,7 +23,7 @@ Para trabajo de animación, video, anatomía 3D, cámaras, partículas o modelad
 
 No necesitas cargar toda esta documentación para corregir una errata o hacer un cambio ajeno a animación. Otros LLM pueden leer estos mismos archivos sin usar un sistema de skills.
 
-Hay siete guías externas instaladas en `skills/external/`, con procedencia/licencias en su README. Para geometría, movimiento, interacción, materiales, luz o rendimiento, leer el `SKILL.md` correspondiente; para jerarquía y diseño web, leer `skills/external/frontend-design/SKILL.md`. Aplicar conceptos compatibles con la versión real y con el objetivo educativo. Estas guías no sustituyen la revisión anatómica ni autorizan servicios o cambios ajenos al encargo.
+Hay ocho guías externas instaladas en `skills/external/`, con procedencia/licencias en su README. Para geometría, movimiento, interacción, materiales, luz o rendimiento, leer el `SKILL.md` correspondiente; para jerarquía y diseño web, leer `skills/external/frontend-design/SKILL.md` y `skills/external/web-design-guidelines/SKILL.md`. Antes de modificar el visor, leer [UX/UI vigente](docs/UX_UI_VISOR.md): mantener separadas Guía, Explorar y Lectura, la reproducción y la selección de perfil. Aplicar conceptos compatibles con la versión real y con el objetivo educativo. Estas guías no sustituyen la revisión anatómica ni autorizan servicios o cambios ajenos al encargo.
 
 ## Reglas de trabajo
 

@@ -1,5 +1,7 @@
 # Experiencia de aprendizaje y modelos interactivos
 
+**Interfaz vigente:** el visor se reorganizó en Guía, Explorar y Lectura, con reproducción y perfil separados. El selector nativo de estructuras reemplaza los chips; la ficha anatómica se consulta en Lectura. Los datos de estado se mueven a un desplegable independiente. Ver [UX/UI del visor](../UX_UI_VISOR.md). Las capturas y descripciones anteriores siguientes conservan el estado histórico.
+
 **Estado vigente tras el cierre:** 22 módulos, 13 modelos 3D, 9 esquemas 2D, 66 pasos y 22 preguntas. Se añadieron ablación, TVS y obstrucción ilíaca y se corrigieron textos, mecanismos y las doce narraciones originales. Ver [entrega de cierre](entregas/cierre-temas-2026-11-06.md) y [revisión completa](REVISION_MEDICA_CATALOGO_COMPLETO.md). Los apartados fechados anteriores conservan el registro histórico.
 
 Implementación del 6 de noviembre de 2026, posterior al análisis de la referencia original. Leer junto con `ARQUITECTURA.md`: ese documento conserva el inventario y las limitaciones de la versión inicial; este describe los cambios realizados.
