@@ -1,0 +1,523 @@
+{
+  "duration": 40.46367346938776,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Una trombosis venosa superficial es un coágulo dentro de una vena superficial.<break time=\"0.9s\"/>Puede acompañarse de dolor e inflamación local, sin que la piel muestre toda su extensión.<break time=\"0.9s\"/>La safena se conecta con el sistema profundo, por eso importa localizar el extremo del trombo.<break time=\"0.9s\"/>Compare un trombo que se aproxima a esa unión; la relación anatómica modifica la evaluación.<break time=\"0.9s\"/>También puede coexistir una trombosis profunda, como en este escenario independiente.<break time=\"0.9s\"/>El estudio dúplex ayuda a definir extensión y coexistencia; el manejo depende del caso.<break time=\"0.9s\"/>Ante falta de aire, dolor torácico o desmayo se necesita atención urgente.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Una",
+      "start": 0.299,
+      "end": 0.469
+    },
+    {
+      "word": "trombosis",
+      "start": 0.512,
+      "end": 0.981
+    },
+    {
+      "word": "venosa",
+      "start": 1.024,
+      "end": 1.365
+    },
+    {
+      "word": "superficial",
+      "start": 1.408,
+      "end": 2.005
+    },
+    {
+      "word": "es",
+      "start": 2.133,
+      "end": 2.517
+    },
+    {
+      "word": "un",
+      "start": 2.56,
+      "end": 2.645
+    },
+    {
+      "word": "coágulo",
+      "start": 2.688,
+      "end": 3.2
+    },
+    {
+      "word": "dentro",
+      "start": 3.243,
+      "end": 3.541
+    },
+    {
+      "word": "de",
+      "start": 3.584,
+      "end": 3.669
+    },
+    {
+      "word": "una",
+      "start": 3.712,
+      "end": 3.797
+    },
+    {
+      "word": "vena",
+      "start": 3.84,
+      "end": 4.0107
+    },
+    {
+      "word": "superficial.",
+      "start": 4.053,
+      "end": 4.646
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 4.646,
+      "end": 5.546
+    },
+    {
+      "word": "Puede",
+      "start": 5.546,
+      "end": 5.759
+    },
+    {
+      "word": "acompañarse",
+      "start": 5.8020000000000005,
+      "end": 6.357
+    },
+    {
+      "word": "de",
+      "start": 6.442,
+      "end": 6.527
+    },
+    {
+      "word": "dolor",
+      "start": 6.57,
+      "end": 6.8260000000000005
+    },
+    {
+      "word": "e",
+      "start": 6.954000000000001,
+      "end": 7.039000000000001
+    },
+    {
+      "word": "inflamación",
+      "start": 7.082,
+      "end": 7.594
+    },
+    {
+      "word": "local,",
+      "start": 7.6370000000000005,
+      "end": 7.978000000000001
+    },
+    {
+      "word": "sin",
+      "start": 8.234,
+      "end": 8.362
+    },
+    {
+      "word": "que",
+      "start": 8.405,
+      "end": 8.49
+    },
+    {
+      "word": "la",
+      "start": 8.533,
+      "end": 8.618
+    },
+    {
+      "word": "piel",
+      "start": 8.661,
+      "end": 8.789
+    },
+    {
+      "word": "muestre",
+      "start": 8.874,
+      "end": 9.173
+    },
+    {
+      "word": "toda",
+      "start": 9.258000000000001,
+      "end": 9.599
+    },
+    {
+      "word": "su",
+      "start": 9.642,
+      "end": 9.727
+    },
+    {
+      "word": "extensión.",
+      "start": 9.77,
+      "end": 10.295
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 10.295,
+      "end": 11.195
+    },
+    {
+      "word": "La",
+      "start": 11.195,
+      "end": 11.579
+    },
+    {
+      "word": "safena",
+      "start": 11.621,
+      "end": 11.963
+    },
+    {
+      "word": "se",
+      "start": 12.005,
+      "end": 12.133000000000001
+    },
+    {
+      "word": "conecta",
+      "start": 12.176,
+      "end": 12.475
+    },
+    {
+      "word": "con",
+      "start": 12.517,
+      "end": 12.646
+    },
+    {
+      "word": "el",
+      "start": 12.688,
+      "end": 12.731
+    },
+    {
+      "word": "sistema",
+      "start": 12.774000000000001,
+      "end": 13.115
+    },
+    {
+      "word": "profundo,",
+      "start": 13.158,
+      "end": 13.84
+    },
+    {
+      "word": "por",
+      "start": 14.053,
+      "end": 14.181000000000001
+    },
+    {
+      "word": "eso",
+      "start": 14.224,
+      "end": 14.352
+    },
+    {
+      "word": "importa",
+      "start": 14.395,
+      "end": 14.779
+    },
+    {
+      "word": "localizar",
+      "start": 14.864,
+      "end": 15.334
+    },
+    {
+      "word": "el",
+      "start": 15.376,
+      "end": 15.419
+    },
+    {
+      "word": "extremo",
+      "start": 15.504,
+      "end": 15.845
+    },
+    {
+      "word": "del",
+      "start": 15.973,
+      "end": 16.058999999999997
+    },
+    {
+      "word": "trombo.",
+      "start": 16.101,
+      "end": 16.523
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 16.523,
+      "end": 17.244999999999997
+    },
+    {
+      "word": "Compare",
+      "start": 17.244999999999997,
+      "end": 17.756999999999998
+    },
+    {
+      "word": "un",
+      "start": 17.842,
+      "end": 17.927999999999997
+    },
+    {
+      "word": "trombo",
+      "start": 17.97,
+      "end": 18.311999999999998
+    },
+    {
+      "word": "que",
+      "start": 18.354,
+      "end": 18.439999999999998
+    },
+    {
+      "word": "se",
+      "start": 18.482,
+      "end": 18.61
+    },
+    {
+      "word": "aproxima",
+      "start": 18.653,
+      "end": 19.08
+    },
+    {
+      "word": "a",
+      "start": 19.165,
+      "end": 19.208
+    },
+    {
+      "word": "esa",
+      "start": 19.25,
+      "end": 19.377999999999997
+    },
+    {
+      "word": "unión;",
+      "start": 19.421,
+      "end": 19.889999999999997
+    },
+    {
+      "word": "la",
+      "start": 20.061,
+      "end": 20.273999999999997
+    },
+    {
+      "word": "relación",
+      "start": 20.316999999999997,
+      "end": 20.700999999999997
+    },
+    {
+      "word": "anatómica",
+      "start": 20.785999999999998,
+      "end": 21.298
+    },
+    {
+      "word": "modifica",
+      "start": 21.468999999999998,
+      "end": 21.980999999999998
+    },
+    {
+      "word": "la",
+      "start": 22.151999999999997,
+      "end": 22.194
+    },
+    {
+      "word": "evaluación.",
+      "start": 22.237,
+      "end": 22.799999999999997
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 22.799999999999997,
+      "end": 23.639999999999997
+    },
+    {
+      "word": "También",
+      "start": 23.639999999999997,
+      "end": 24.108999999999998
+    },
+    {
+      "word": "puede",
+      "start": 24.151999999999997,
+      "end": 24.322
+    },
+    {
+      "word": "coexistir",
+      "start": 24.365,
+      "end": 24.834
+    },
+    {
+      "word": "una",
+      "start": 24.877,
+      "end": 25.005
+    },
+    {
+      "word": "trombosis",
+      "start": 25.048,
+      "end": 25.517
+    },
+    {
+      "word": "profunda,",
+      "start": 25.56,
+      "end": 26.241999999999997
+    },
+    {
+      "word": "como",
+      "start": 26.369999999999997,
+      "end": 26.540999999999997
+    },
+    {
+      "word": "en",
+      "start": 26.584,
+      "end": 26.625999999999998
+    },
+    {
+      "word": "este",
+      "start": 26.668999999999997,
+      "end": 26.881999999999998
+    },
+    {
+      "word": "escenario",
+      "start": 26.924999999999997,
+      "end": 27.308999999999997
+    },
+    {
+      "word": "independiente.",
+      "start": 27.351999999999997,
+      "end": 27.944999999999997
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 27.944999999999997,
+      "end": 28.845
+    },
+    {
+      "word": "El",
+      "start": 28.845,
+      "end": 29.186999999999998
+    },
+    {
+      "word": "estudio",
+      "start": 29.229,
+      "end": 29.528
+    },
+    {
+      "word": "dúplex",
+      "start": 29.570999999999998,
+      "end": 29.912
+    },
+    {
+      "word": "ayuda",
+      "start": 30.04,
+      "end": 30.467
+    },
+    {
+      "word": "a",
+      "start": 30.508999999999997,
+      "end": 30.552
+    },
+    {
+      "word": "definir",
+      "start": 30.595,
+      "end": 30.851
+    },
+    {
+      "word": "extensión",
+      "start": 30.892999999999997,
+      "end": 31.491
+    },
+    {
+      "word": "y",
+      "start": 31.575999999999997,
+      "end": 31.703999999999997
+    },
+    {
+      "word": "coexistencia;",
+      "start": 31.746999999999996,
+      "end": 32.642999999999994
+    },
+    {
+      "word": "el",
+      "start": 32.812999999999995,
+      "end": 32.855999999999995
+    },
+    {
+      "word": "manejo",
+      "start": 32.940999999999995,
+      "end": 33.282999999999994
+    },
+    {
+      "word": "depende",
+      "start": 33.367999999999995,
+      "end": 33.879999999999995
+    },
+    {
+      "word": "del",
+      "start": 33.922999999999995,
+      "end": 34.007999999999996
+    },
+    {
+      "word": "caso.",
+      "start": 34.092999999999996,
+      "end": 34.440999999999995
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 34.440999999999995,
+      "end": 35.268
+    },
+    {
+      "word": "Ante",
+      "start": 35.268,
+      "end": 35.524
+    },
+    {
+      "word": "falta",
+      "start": 35.567,
+      "end": 35.78
+    },
+    {
+      "word": "de",
+      "start": 35.823,
+      "end": 35.951
+    },
+    {
+      "word": "aire,",
+      "start": 35.992999999999995,
+      "end": 36.355999999999995
+    },
+    {
+      "word": "dolor",
+      "start": 36.591,
+      "end": 36.888999999999996
+    },
+    {
+      "word": "torácico",
+      "start": 36.975,
+      "end": 37.528999999999996
+    },
+    {
+      "word": "o",
+      "start": 37.571999999999996,
+      "end": 37.657
+    },
+    {
+      "word": "desmayo",
+      "start": 37.699999999999996,
+      "end": 38.169
+    },
+    {
+      "word": "se",
+      "start": 38.297,
+      "end": 38.681
+    },
+    {
+      "word": "necesita",
+      "start": 38.724,
+      "end": 39.150999999999996
+    },
+    {
+      "word": "atención",
+      "start": 39.193,
+      "end": 39.535
+    },
+    {
+      "word": "urgente.",
+      "start": 39.577,
+      "end": 40.220884353741496
+    },
+    {
+      "word": "<end>",
+      "start": 40.46367346938776,
+      "end": 40.46367346938776
+    }
+  ]
+}

@@ -1,0 +1,478 @@
+{
+  "duration": 40.777142857142856,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Este modelo compara distintas formas de una vena superficial.<break time=\"0.9s\"/>Los elementos valvulares y el flujo están ampliados para reconocerlos.<break time=\"0.9s\"/>El control aumenta la dilatación como una transformación didáctica.<break time=\"0.9s\"/>También modifica la longitud y la tortuosidad de la geometría.<break time=\"0.9s\"/>Se representa una posible coaptación incompleta y flujo retrógrado.<break time=\"0.9s\"/>Las várices se definen como venas subcutáneas dilatadas de al menos tres milímetros en bipedestación.<break time=\"0.9s\"/>La fascia y la vena profunda permiten reconocer el contexto anatómico.<break time=\"0.9s\"/>La comparación no predice progresión ni decide tratamiento; cada caso requiere valoración.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Este",
+      "start": 0.299,
+      "end": 0.512
+    },
+    {
+      "word": "modelo",
+      "start": 0.555,
+      "end": 0.8107
+    },
+    {
+      "word": "compara",
+      "start": 0.896,
+      "end": 1.3227
+    },
+    {
+      "word": "distintas",
+      "start": 1.365,
+      "end": 2.005
+    },
+    {
+      "word": "formas",
+      "start": 2.091,
+      "end": 2.389
+    },
+    {
+      "word": "de",
+      "start": 2.432,
+      "end": 2.56
+    },
+    {
+      "word": "una",
+      "start": 2.603,
+      "end": 2.688
+    },
+    {
+      "word": "vena",
+      "start": 2.731,
+      "end": 2.944
+    },
+    {
+      "word": "superficial.",
+      "start": 2.987,
+      "end": 3.622
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 3.622,
+      "end": 4.522
+    },
+    {
+      "word": "Los",
+      "start": 4.522,
+      "end": 4.6930000000000005
+    },
+    {
+      "word": "elementos",
+      "start": 4.735,
+      "end": 5.162
+    },
+    {
+      "word": "valvulares",
+      "start": 5.205,
+      "end": 5.759
+    },
+    {
+      "word": "y",
+      "start": 5.845000000000001,
+      "end": 5.8870000000000005
+    },
+    {
+      "word": "el",
+      "start": 5.930000000000001,
+      "end": 5.973
+    },
+    {
+      "word": "flujo",
+      "start": 6.015000000000001,
+      "end": 6.357
+    },
+    {
+      "word": "están",
+      "start": 6.485,
+      "end": 6.783
+    },
+    {
+      "word": "ampliados",
+      "start": 6.8260000000000005,
+      "end": 7.423
+    },
+    {
+      "word": "para",
+      "start": 7.466,
+      "end": 7.6370000000000005
+    },
+    {
+      "word": "reconocerlos.",
+      "start": 7.679,
+      "end": 8.417
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 8.417,
+      "end": 9.317
+    },
+    {
+      "word": "El",
+      "start": 9.317,
+      "end": 9.701
+    },
+    {
+      "word": "control",
+      "start": 9.786000000000001,
+      "end": 9.957
+    },
+    {
+      "word": "aumenta",
+      "start": 10.256,
+      "end": 10.767000000000001
+    },
+    {
+      "word": "la",
+      "start": 10.81,
+      "end": 10.895000000000001
+    },
+    {
+      "word": "dilatación",
+      "start": 10.938,
+      "end": 11.536000000000001
+    },
+    {
+      "word": "como",
+      "start": 11.621,
+      "end": 11.792
+    },
+    {
+      "word": "una",
+      "start": 11.877,
+      "end": 12.005
+    },
+    {
+      "word": "transformación",
+      "start": 12.048,
+      "end": 12.73
+    },
+    {
+      "word": "didáctica.",
+      "start": 12.773000000000001,
+      "end": 13.182
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 13.182,
+      "end": 14.082
+    },
+    {
+      "word": "También",
+      "start": 14.082,
+      "end": 14.423
+    },
+    {
+      "word": "modifica",
+      "start": 14.466000000000001,
+      "end": 14.807
+    },
+    {
+      "word": "la",
+      "start": 14.935,
+      "end": 14.978000000000002
+    },
+    {
+      "word": "longitud",
+      "start": 15.020000000000001,
+      "end": 15.49
+    },
+    {
+      "word": "y",
+      "start": 15.618,
+      "end": 15.703000000000001
+    },
+    {
+      "word": "la",
+      "start": 15.746,
+      "end": 15.874
+    },
+    {
+      "word": "tortuosidad",
+      "start": 15.917000000000002,
+      "end": 16.557000000000002
+    },
+    {
+      "word": "de",
+      "start": 16.642000000000003,
+      "end": 16.684
+    },
+    {
+      "word": "la",
+      "start": 16.727,
+      "end": 16.770000000000003
+    },
+    {
+      "word": "geometría.",
+      "start": 16.812,
+      "end": 17.37
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 17.37,
+      "end": 18.16
+    },
+    {
+      "word": "Se",
+      "start": 18.16,
+      "end": 18.459
+    },
+    {
+      "word": "representa",
+      "start": 18.501,
+      "end": 18.885
+    },
+    {
+      "word": "una",
+      "start": 19.013,
+      "end": 19.184
+    },
+    {
+      "word": "posible",
+      "start": 19.227,
+      "end": 19.611
+    },
+    {
+      "word": "coaptación",
+      "start": 19.739,
+      "end": 20.293
+    },
+    {
+      "word": "incompleta",
+      "start": 20.336000000000002,
+      "end": 20.848000000000003
+    },
+    {
+      "word": "y",
+      "start": 21.061,
+      "end": 21.275000000000002
+    },
+    {
+      "word": "flujo",
+      "start": 21.317,
+      "end": 21.659000000000002
+    },
+    {
+      "word": "retrógrado.",
+      "start": 21.701,
+      "end": 22.307000000000002
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 22.307000000000002,
+      "end": 23.207
+    },
+    {
+      "word": "Las",
+      "start": 23.207,
+      "end": 23.378
+    },
+    {
+      "word": "várices",
+      "start": 23.42,
+      "end": 23.676000000000002
+    },
+    {
+      "word": "se",
+      "start": 23.804000000000002,
+      "end": 23.932000000000002
+    },
+    {
+      "word": "definen",
+      "start": 23.975,
+      "end": 24.231
+    },
+    {
+      "word": "como",
+      "start": 24.359,
+      "end": 24.53
+    },
+    {
+      "word": "venas",
+      "start": 24.615000000000002,
+      "end": 24.871000000000002
+    },
+    {
+      "word": "subcutáneas",
+      "start": 24.914,
+      "end": 25.639
+    },
+    {
+      "word": "dilatadas",
+      "start": 25.938000000000002,
+      "end": 26.706
+    },
+    {
+      "word": "de",
+      "start": 26.748,
+      "end": 26.834
+    },
+    {
+      "word": "al",
+      "start": 26.876,
+      "end": 26.919
+    },
+    {
+      "word": "menos",
+      "start": 26.962,
+      "end": 27.175
+    },
+    {
+      "word": "tres",
+      "start": 27.26,
+      "end": 27.516000000000002
+    },
+    {
+      "word": "milímetros",
+      "start": 27.602,
+      "end": 28.156000000000002
+    },
+    {
+      "word": "en",
+      "start": 28.242,
+      "end": 28.284000000000002
+    },
+    {
+      "word": "bipedestación.",
+      "start": 28.327,
+      "end": 29.123
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 29.123,
+      "end": 30.023000000000003
+    },
+    {
+      "word": "La",
+      "start": 30.023000000000003,
+      "end": 30.365000000000002
+    },
+    {
+      "word": "fascia",
+      "start": 30.407000000000004,
+      "end": 30.834000000000003
+    },
+    {
+      "word": "y",
+      "start": 30.877000000000002,
+      "end": 30.962000000000003
+    },
+    {
+      "word": "la",
+      "start": 31.005000000000003,
+      "end": 31.047000000000004
+    },
+    {
+      "word": "vena",
+      "start": 31.090000000000003,
+      "end": 31.261000000000003
+    },
+    {
+      "word": "profunda",
+      "start": 31.303000000000004,
+      "end": 31.815
+    },
+    {
+      "word": "permiten",
+      "start": 31.858000000000004,
+      "end": 32.54
+    },
+    {
+      "word": "reconocer",
+      "start": 32.583,
+      "end": 33.052
+    },
+    {
+      "word": "el",
+      "start": 33.095,
+      "end": 33.18
+    },
+    {
+      "word": "contexto",
+      "start": 33.223,
+      "end": 33.735
+    },
+    {
+      "word": "anatómico.",
+      "start": 33.778,
+      "end": 34.371
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 34.371,
+      "end": 35.271
+    },
+    {
+      "word": "La",
+      "start": 35.271,
+      "end": 35.399
+    },
+    {
+      "word": "comparación",
+      "start": 35.440999999999995,
+      "end": 35.995999999999995
+    },
+    {
+      "word": "no",
+      "start": 36.038999999999994,
+      "end": 36.166999999999994
+    },
+    {
+      "word": "predice",
+      "start": 36.208999999999996,
+      "end": 36.464999999999996
+    },
+    {
+      "word": "progresión",
+      "start": 36.592999999999996,
+      "end": 37.147999999999996
+    },
+    {
+      "word": "ni",
+      "start": 37.275999999999996,
+      "end": 37.489
+    },
+    {
+      "word": "decide",
+      "start": 37.532,
+      "end": 37.788
+    },
+    {
+      "word": "tratamiento;",
+      "start": 37.873,
+      "end": 38.62
+    },
+    {
+      "word": "cada",
+      "start": 38.769,
+      "end": 38.94
+    },
+    {
+      "word": "caso",
+      "start": 39.068,
+      "end": 39.324
+    },
+    {
+      "word": "requiere",
+      "start": 39.409,
+      "end": 39.793
+    },
+    {
+      "word": "valoración.",
+      "start": 39.836,
+      "end": 40.541999999999994
+    },
+    {
+      "word": "<end>",
+      "start": 40.777142857142856,
+      "end": 40.777142857142856
+    }
+  ]
+}

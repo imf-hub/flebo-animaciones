@@ -1,0 +1,573 @@
+{
+  "duration": 43.25877551020408,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Las venas ilíacas conducen la sangre de la pelvis hacia la vena cava inferior.<break time=\"0.9s\"/>En el patrón clásico, la arteria ilíaca común derecha cruza por delante de la vena ilíaca común izquierda.<break time=\"0.9s\"/>La referencia lumbar queda por detrás; separar las piezas permite comprender la relación.<break time=\"0.9s\"/>Una compresión anatómica puede existir sin síntomas y no equivale por sí sola a un síndrome.<break time=\"0.9s\"/>Otra situación es la secuela de una trombosis, con bandas o cambios dentro de la vena.<break time=\"0.9s\"/>Pueden participar vías colaterales, pero el dibujo no calcula cuánto drenan ni la gravedad.<break time=\"0.9s\"/>El diagnóstico y la indicación de tratamiento integran síntomas, otras causas y estudios apropiados.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Las",
+      "start": 0.299,
+      "end": 0.469
+    },
+    {
+      "word": "venas",
+      "start": 0.512,
+      "end": 0.725
+    },
+    {
+      "word": "ilíacas",
+      "start": 0.811,
+      "end": 1.28
+    },
+    {
+      "word": "conducen",
+      "start": 1.365,
+      "end": 1.835
+    },
+    {
+      "word": "la",
+      "start": 1.877,
+      "end": 1.9627
+    },
+    {
+      "word": "sangre",
+      "start": 2.005,
+      "end": 2.389
+    },
+    {
+      "word": "de",
+      "start": 2.432,
+      "end": 2.517
+    },
+    {
+      "word": "la",
+      "start": 2.56,
+      "end": 2.6027
+    },
+    {
+      "word": "pelvis",
+      "start": 2.645,
+      "end": 2.9867
+    },
+    {
+      "word": "hacia",
+      "start": 3.029,
+      "end": 3.3707
+    },
+    {
+      "word": "la",
+      "start": 3.413,
+      "end": 3.4987
+    },
+    {
+      "word": "vena",
+      "start": 3.541,
+      "end": 3.712
+    },
+    {
+      "word": "cava",
+      "start": 3.755,
+      "end": 3.968
+    },
+    {
+      "word": "inferior.",
+      "start": 4.011,
+      "end": 4.454
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 4.454,
+      "end": 5.354
+    },
+    {
+      "word": "En",
+      "start": 5.354,
+      "end": 5.482
+    },
+    {
+      "word": "el",
+      "start": 5.525,
+      "end": 5.567
+    },
+    {
+      "word": "patrón",
+      "start": 5.61,
+      "end": 5.909
+    },
+    {
+      "word": "clásico,",
+      "start": 5.9510000000000005,
+      "end": 6.549
+    },
+    {
+      "word": "la",
+      "start": 6.7620000000000005,
+      "end": 6.933
+    },
+    {
+      "word": "arteria",
+      "start": 6.9750000000000005,
+      "end": 7.359
+    },
+    {
+      "word": "ilíaca",
+      "start": 7.445,
+      "end": 7.871
+    },
+    {
+      "word": "común",
+      "start": 7.914,
+      "end": 8.17
+    },
+    {
+      "word": "derecha",
+      "start": 8.213,
+      "end": 8.554
+    },
+    {
+      "word": "cruza",
+      "start": 8.682,
+      "end": 9.237
+    },
+    {
+      "word": "por",
+      "start": 9.322000000000001,
+      "end": 9.45
+    },
+    {
+      "word": "delante",
+      "start": 9.493,
+      "end": 9.791
+    },
+    {
+      "word": "de",
+      "start": 9.962,
+      "end": 10.047
+    },
+    {
+      "word": "la",
+      "start": 10.09,
+      "end": 10.133000000000001
+    },
+    {
+      "word": "vena",
+      "start": 10.175,
+      "end": 10.389
+    },
+    {
+      "word": "ilíaca",
+      "start": 10.431000000000001,
+      "end": 10.858
+    },
+    {
+      "word": "común",
+      "start": 10.901,
+      "end": 11.199
+    },
+    {
+      "word": "izquierda.",
+      "start": 11.242,
+      "end": 11.719
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 11.719,
+      "end": 12.619
+    },
+    {
+      "word": "La",
+      "start": 12.619,
+      "end": 13.003
+    },
+    {
+      "word": "referencia",
+      "start": 13.046,
+      "end": 13.472999999999999
+    },
+    {
+      "word": "lumbar",
+      "start": 13.514999999999999,
+      "end": 13.856
+    },
+    {
+      "word": "queda",
+      "start": 13.942,
+      "end": 14.197999999999999
+    },
+    {
+      "word": "por",
+      "start": 14.24,
+      "end": 14.325999999999999
+    },
+    {
+      "word": "detrás;",
+      "start": 14.411,
+      "end": 14.881
+    },
+    {
+      "word": "separar",
+      "start": 15.051,
+      "end": 15.562999999999999
+    },
+    {
+      "word": "las",
+      "start": 15.648,
+      "end": 15.734
+    },
+    {
+      "word": "piezas",
+      "start": 15.818999999999999,
+      "end": 16.16
+    },
+    {
+      "word": "permite",
+      "start": 16.246,
+      "end": 16.543999999999997
+    },
+    {
+      "word": "comprender",
+      "start": 16.63,
+      "end": 17.141999999999996
+    },
+    {
+      "word": "la",
+      "start": 17.226999999999997,
+      "end": 17.311999999999998
+    },
+    {
+      "word": "relación.",
+      "start": 17.311999999999998,
+      "end": 17.823999999999998
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 17.823999999999998,
+      "end": 18.587999999999997
+    },
+    {
+      "word": "Una",
+      "start": 18.587999999999997,
+      "end": 18.971999999999998
+    },
+    {
+      "word": "compresión",
+      "start": 19.014999999999997,
+      "end": 19.483999999999998
+    },
+    {
+      "word": "anatómica",
+      "start": 19.526999999999997,
+      "end": 19.996
+    },
+    {
+      "word": "puede",
+      "start": 20.038999999999998,
+      "end": 20.294999999999998
+    },
+    {
+      "word": "existir",
+      "start": 20.336999999999996,
+      "end": 20.679
+    },
+    {
+      "word": "sin",
+      "start": 20.764,
+      "end": 20.891999999999996
+    },
+    {
+      "word": "síntomas",
+      "start": 20.935,
+      "end": 21.488999999999997
+    },
+    {
+      "word": "y",
+      "start": 21.575,
+      "end": 21.744999999999997
+    },
+    {
+      "word": "no",
+      "start": 21.787999999999997,
+      "end": 21.872999999999998
+    },
+    {
+      "word": "equivale",
+      "start": 21.915999999999997,
+      "end": 22.342999999999996
+    },
+    {
+      "word": "por",
+      "start": 22.384999999999998,
+      "end": 22.512999999999998
+    },
+    {
+      "word": "sí",
+      "start": 22.555999999999997,
+      "end": 22.683999999999997
+    },
+    {
+      "word": "sola",
+      "start": 22.726999999999997,
+      "end": 22.982999999999997
+    },
+    {
+      "word": "a",
+      "start": 23.067999999999998,
+      "end": 23.195999999999998
+    },
+    {
+      "word": "un",
+      "start": 23.238999999999997,
+      "end": 23.281
+    },
+    {
+      "word": "síndrome.",
+      "start": 23.323999999999998,
+      "end": 23.816999999999997
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 23.816999999999997,
+      "end": 24.717
+    },
+    {
+      "word": "Otra",
+      "start": 24.717,
+      "end": 25.272
+    },
+    {
+      "word": "situación",
+      "start": 25.314999999999998,
+      "end": 25.741
+    },
+    {
+      "word": "es",
+      "start": 25.784,
+      "end": 25.869
+    },
+    {
+      "word": "la",
+      "start": 25.912,
+      "end": 25.955
+    },
+    {
+      "word": "secuela",
+      "start": 25.997,
+      "end": 26.467
+    },
+    {
+      "word": "de",
+      "start": 26.508999999999997,
+      "end": 26.552
+    },
+    {
+      "word": "una",
+      "start": 26.595,
+      "end": 26.723
+    },
+    {
+      "word": "trombosis,",
+      "start": 26.764999999999997,
+      "end": 27.426
+    },
+    {
+      "word": "con",
+      "start": 27.618,
+      "end": 27.746
+    },
+    {
+      "word": "bandas",
+      "start": 27.788999999999998,
+      "end": 28.215999999999998
+    },
+    {
+      "word": "o",
+      "start": 28.343999999999998,
+      "end": 28.429
+    },
+    {
+      "word": "cambios",
+      "start": 28.471999999999998,
+      "end": 28.855999999999998
+    },
+    {
+      "word": "dentro",
+      "start": 28.898,
+      "end": 29.154999999999998
+    },
+    {
+      "word": "de",
+      "start": 29.197,
+      "end": 29.282999999999998
+    },
+    {
+      "word": "la",
+      "start": 29.325,
+      "end": 29.368
+    },
+    {
+      "word": "vena.",
+      "start": 29.410999999999998,
+      "end": 29.665999999999997
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 29.665999999999997,
+      "end": 30.430999999999997
+    },
+    {
+      "word": "Pueden",
+      "start": 30.430999999999997,
+      "end": 30.814999999999998
+    },
+    {
+      "word": "participar",
+      "start": 30.857999999999997,
+      "end": 31.326999999999998
+    },
+    {
+      "word": "vías",
+      "start": 31.369999999999997,
+      "end": 31.583
+    },
+    {
+      "word": "colaterales,",
+      "start": 31.625999999999998,
+      "end": 32.415
+    },
+    {
+      "word": "pero",
+      "start": 32.65,
+      "end": 32.863
+    },
+    {
+      "word": "el",
+      "start": 32.906,
+      "end": 32.94799999999999
+    },
+    {
+      "word": "dibujo",
+      "start": 32.991,
+      "end": 33.28999999999999
+    },
+    {
+      "word": "no",
+      "start": 33.331999999999994,
+      "end": 33.50299999999999
+    },
+    {
+      "word": "calcula",
+      "start": 33.54599999999999,
+      "end": 33.971999999999994
+    },
+    {
+      "word": "cuánto",
+      "start": 34.05799999999999,
+      "end": 34.44199999999999
+    },
+    {
+      "word": "drenan",
+      "start": 34.483999999999995,
+      "end": 34.82599999999999
+    },
+    {
+      "word": "ni",
+      "start": 34.995999999999995,
+      "end": 35.166999999999994
+    },
+    {
+      "word": "la",
+      "start": 35.209999999999994,
+      "end": 35.294999999999995
+    },
+    {
+      "word": "gravedad.",
+      "start": 35.337999999999994,
+      "end": 35.797999999999995
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 35.797999999999995,
+      "end": 36.698
+    },
+    {
+      "word": "El",
+      "start": 36.698,
+      "end": 37.124
+    },
+    {
+      "word": "diagnóstico",
+      "start": 37.167,
+      "end": 37.679
+    },
+    {
+      "word": "y",
+      "start": 37.722,
+      "end": 37.764
+    },
+    {
+      "word": "la",
+      "start": 37.807,
+      "end": 37.892
+    },
+    {
+      "word": "indicación",
+      "start": 37.935,
+      "end": 38.319
+    },
+    {
+      "word": "de",
+      "start": 38.362,
+      "end": 38.447
+    },
+    {
+      "word": "tratamiento",
+      "start": 38.489000000000004,
+      "end": 39.001000000000005
+    },
+    {
+      "word": "integran",
+      "start": 39.087,
+      "end": 39.599000000000004
+    },
+    {
+      "word": "síntomas,",
+      "start": 39.684000000000005,
+      "end": 40.367000000000004
+    },
+    {
+      "word": "otras",
+      "start": 40.537000000000006,
+      "end": 40.836000000000006
+    },
+    {
+      "word": "causas",
+      "start": 40.92100000000001,
+      "end": 41.305
+    },
+    {
+      "word": "y",
+      "start": 41.476000000000006,
+      "end": 41.647000000000006
+    },
+    {
+      "word": "estudios",
+      "start": 41.689,
+      "end": 42.116
+    },
+    {
+      "word": "apropiados.",
+      "start": 42.159000000000006,
+      "end": 43.009
+    },
+    {
+      "word": "<end>",
+      "start": 43.25877551020408,
+      "end": 43.25877551020408
+    }
+  ]
+}

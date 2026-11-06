@@ -1,43 +1,650 @@
 /* Educational navigation data, independent of the simulation engine. */
 const COURSE={
-  units:[
-    {id:'estructura',title:'Conoce las estructuras',description:'Capas, válvulas y conexiones.',ids:['pared-3d','fascias','compartimentos-3d']},
-    {id:'movimiento',title:'Sigue el movimiento',description:'El viaje de la sangre hacia el corazón.',ids:['valvula-sana','bomba-muscular','union-safenofemoral']},
-    {id:'cambios',title:'Entiende qué cambia',description:'Reflujo, dilatación y tejidos.',ids:['valvula-incompetente','progresion-varice','microcirculacion']},
-    {id:'clinica',title:'Conecta los conceptos',description:'Tratamiento, trombosis y sus secuelas.',ids:['escleroterapia','trombosis-venosa-profunda','sindrome-postrombotico']}
+  "units": [
+    {
+      "id": "estructura",
+      "title": "Conoce las estructuras",
+      "description": "Capas, válvulas y conexiones.",
+      "ids": [
+        "pared-3d",
+        "fascias",
+        "compartimentos-3d"
+      ]
+    },
+    {
+      "id": "movimiento",
+      "title": "Sigue el movimiento",
+      "description": "El viaje de la sangre hacia el corazón.",
+      "ids": [
+        "valvula-sana",
+        "bomba-muscular",
+        "union-safenofemoral"
+      ]
+    },
+    {
+      "id": "cambios",
+      "title": "Entiende qué cambia",
+      "description": "Reflujo, dilatación y tejidos.",
+      "ids": [
+        "valvula-incompetente",
+        "progresion-varice",
+        "microcirculacion"
+      ]
+    },
+    {
+      "id": "clinica",
+      "title": "Conecta los conceptos",
+      "description": "Tratamiento, trombosis y sus secuelas.",
+      "ids": [
+        "escleroterapia",
+        "trombosis-venosa-profunda",
+        "sindrome-postrombotico"
+      ]
+    }
   ],
-  lessons:{
-    'pared-3d':{patientTitle:'Una vena, por dentro',patient:'Separa sus capas y descubre las compuertas que orientan el flujo.',objective:'Reconocer la pared, la luz y las dos valvas.',medObjective:'Relacionar las túnicas de la pared con la coaptación valvular.',steps:['Reconoce el conjunto','Separa las capas','Compara el cierre'],actions:[[['sl','Separación de capas',0],['tg','Válvula incompetente',false]],[['sl','Separación de capas',0.85]],[['sl','Separación de capas',0],['tg','Válvula incompetente',true]]],question:'¿Qué hacen las válvulas venosas?',answers:['Favorecen que la sangre avance en una dirección','Producen la sangre que circula'],correct:0,why:'Sus valvas ayudan a limitar el regreso de la sangre. Observa cómo se aproximan al cerrarse.'},
-    'fascias':{patientTitle:'Las capas que rodean las venas',patient:'Localiza la safena entre las membranas que forman su compartimento.',objective:'Ubicar la safena respecto de la piel y el músculo.',medObjective:'Identificar el compartimento safeno y distinguirlo del tejido extrafascial.',steps:['Ubica las capas','Encuentra la safena','Compara los estados'],actions:[[['seg','Estado',0]],[['seg','Estado',0]],[['seg','Estado',1]]],question:'¿La vena safena y las venas profundas ocupan el mismo compartimento?',answers:['Sí, son la misma estructura','No, se sitúan en compartimentos diferentes'],correct:1,why:'La safena pertenece al sistema superficial; las venas profundas se encuentran bajo la fascia muscular.'},
-    'compartimentos-3d':{patientTitle:'Conexiones bajo la piel',patient:'Desmonta el modelo por capas y sigue las venas que las conectan.',objective:'Distinguir venas superficiales, profundas y sus conexiones.',medObjective:'Distinguir comunicantes y perforantes por su relación con la fascia muscular.',steps:['Separa el modelo','Sigue una comunicante','Sigue una perforante'],actions:[[['sl','Separación de capas',0.8],['seg','Resaltar',0]],[['seg','Resaltar',1]],[['seg','Resaltar',2]]],question:'¿Qué distingue a una vena perforante?',answers:['Atraviesa la fascia muscular','Es una arteria pequeña'],correct:0,why:'La perforante conecta el sistema superficial con el profundo atravesando la fascia muscular.'},
-    'valvula-sana':{patientTitle:'Una compuerta que abre y cierra',patient:'Sigue la sangre y mira cómo responden las valvas.',objective:'Relacionar la apertura y el cierre con el sentido del flujo.',medObjective:'Observar el ciclo valvular y su representación Doppler ilustrativa.',steps:['Sigue el flujo','Observa el cierre','Compara con el reflujo'],actions:[[['btn','Válvula sana']],[['sl','Grado de incompetencia valvular',0]],[['btn','Válvula incompetente']]],question:'¿Hacia dónde se dirige el retorno venoso de la pierna?',answers:['Siempre hacia el pie','Hacia el corazón'],correct:1,why:'El retorno venoso lleva la sangre hacia el corazón. Las válvulas y la actividad muscular contribuyen a ese recorrido.'},
-    'bomba-muscular':{patientTitle:'Caminar pone en marcha la bomba',patient:'Mira cómo la pantorrilla comprime las venas al moverse.',objective:'Comprender cómo participa el músculo en el retorno venoso.',medObjective:'Relacionar contracción, relajación y competencia del sistema venoso.',steps:['Pon el músculo en marcha','Observa el reposo','Compara las válvulas'],actions:[[['btn','Caminar'],['seg','Estado venoso',0]],[['btn','Detenerse']],[['btn','Caminar'],['seg','Estado venoso',1]]],question:'¿Qué estructura participa en la bomba de la pantorrilla?',answers:['El músculo al contraerse','El pelo de la piel'],correct:0,why:'La contracción muscular comprime las venas y contribuye al desplazamiento de la sangre.'},
-    'union-safenofemoral':{patientTitle:'Donde se encuentran las venas',patient:'Explora la unión de la safena con el sistema profundo.',objective:'Reconocer una conexión entre el sistema superficial y el profundo.',medObjective:'Localizar la unión safenofemoral y sus válvulas en el esquema.',steps:['Ubica la unión','Observa el estado competente','Compara la incompetencia'],actions:[[['seg','Estado de la unión',0]],[['seg','Estado de la unión',0]],[['seg','Estado de la unión',1]]],question:'¿Qué sistemas se conectan en esta unión?',answers:['El nervioso y el digestivo','El venoso superficial y el profundo'],correct:1,why:'La safena mayor se une a la vena femoral común, que pertenece al sistema profundo.'},
-    'valvula-incompetente':{patientTitle:'Cuando parte de la sangre regresa',patient:'Compara una válvula que cierra con otra que deja un espacio.',objective:'Reconocer qué significa reflujo en el modelo.',medObjective:'Relacionar el defecto de coaptación con flujo retrógrado ilustrativo.',steps:['Comienza con una válvula sana','Aumenta la separación','Sigue el flujo retrógrado'],actions:[[['btn','Válvula sana']],[['sl','Grado de incompetencia valvular',0.5]],[['sl','Grado de incompetencia valvular',0.9]]],question:'¿Qué significa reflujo venoso?',answers:['Flujo que regresa en sentido contrario al esperado','Sangre que desaparece'],correct:0,why:'Es flujo retrógrado. En este esquema se distingue con el color naranja.'},
-    'progresion-varice':{patientTitle:'Cómo cambia la forma de una vena',patient:'Transforma una vena recta en una estructura dilatada y tortuosa.',objective:'Reconocer cambios de forma sin confundirlos con una escala de tiempo real.',medObjective:'Explorar dilatación y tortuosidad con un parámetro morfológico ilustrativo.',steps:['Observa la forma inicial','Aumenta la deformación','Compara el conjunto'],actions:[[['sl','Progresión de la enfermedad',0.05]],[['sl','Progresión de la enfermedad',0.8]],[['sl','Progresión de la enfermedad',0.35]]],question:'¿Este control predice cómo cambiará una vena de una persona?',answers:['Sí, calcula su evolución clínica','No, muestra una transformación didáctica'],correct:1,why:'El control permite comparar formas. No es un pronóstico ni una línea de tiempo de un paciente.'},
-    'microcirculacion':{patientTitle:'Lo que ocurre en los vasos pequeños',patient:'Acércate al intercambio entre los capilares y los tejidos.',objective:'Relacionar los vasos pequeños con el tejido que los rodea.',medObjective:'Explorar de forma conceptual la relación entre presión venosa e intercambio tisular.',steps:['Ubica el capilar','Observa el intercambio','Relaciona vaso y tejido'],actions:[[],[],[]],question:'¿Qué muestra esta escala de observación?',answers:['Vasos pequeños y el tejido que los rodea','Todo el sistema venoso a tamaño real'],correct:0,why:'Es una vista ampliada y simplificada de la microcirculación y del tejido cercano.'},
-    'escleroterapia':{patientTitle:'Cómo se representa el cierre de una vena',patient:'Recorre una secuencia didáctica del procedimiento y sus etapas.',objective:'Reconocer las etapas generales sin utilizar el modelo como guía de tratamiento.',medObjective:'Explorar la secuencia conceptual y distinguirla de una prescripción clínica.',steps:['Reconoce la vena','Observa la inyección','Sigue la secuencia'],actions:[[['seg','Paso',0]],[['seg','Paso',2]],[['btn','Reproducir secuencia completa']]],question:'¿La simulación indica qué dosis necesita una persona?',answers:['Sí, sustituye la valoración','No, es una representación educativa'],correct:1,why:'La selección de un tratamiento y sus parámetros requiere valoración profesional. El modelo no prescribe.'},
-    'trombosis-venosa-profunda':{patientTitle:'Un coágulo en una vena profunda',patient:'Observa el lugar, el crecimiento ilustrativo y el sentido de propagación.',objective:'Entender qué nombra una trombosis venosa profunda.',medObjective:'Explorar el mecanismo conceptual sin interpretar los valores como un riesgo calculado.',steps:['Ubica la vena','Reconoce el trombo','Vuelve al comienzo'],actions:[[['btn','Reiniciar']],[],[['btn','Reiniciar']]],question:'¿Qué significa trombosis venosa profunda?',answers:['Un coágulo en una vena profunda','Una lesión del hueso'],correct:0,why:'La trombosis venosa profunda se refiere a la formación de un coágulo en una vena profunda.'},
-    'sindrome-postrombotico':{patientTitle:'Los cambios que pueden quedar después',patient:'Explora las secuelas que una trombosis puede dejar en la vena.',objective:'Reconocer que la estructura puede cambiar después de una trombosis.',medObjective:'Observar organización, recanalización y secuelas valvulares de forma ilustrativa.',steps:['Reconoce la estructura','Observa los cambios','Conecta los conceptos'],actions:[[],[],[]],question:'¿El síndrome postrombótico puede aparecer después de una trombosis?',answers:['No tiene relación con las venas','Sí, puede ser una secuela'],correct:1,why:'Puede aparecer tras una trombosis venosa profunda. La representación no predice si ocurrirá en una persona.'}
+  "lessons": {
+    "pared-3d": {
+      "patientTitle": "Una vena, por dentro",
+      "patient": "Separa sus capas y descubre las compuertas que orientan el flujo.",
+      "objective": "Reconocer la pared, la luz y las dos valvas.",
+      "medObjective": "Relacionar las túnicas de la pared con la coaptación valvular.",
+      "steps": [
+        "Reconoce el conjunto",
+        "Separa las capas",
+        "Compara el cierre"
+      ],
+      "actions": [
+        [
+          [
+            "sl",
+            "Separación de capas",
+            0
+          ],
+          [
+            "tg",
+            "Válvula incompetente",
+            false
+          ]
+        ],
+        [
+          [
+            "sl",
+            "Separación de capas",
+            0.85
+          ]
+        ],
+        [
+          [
+            "sl",
+            "Separación de capas",
+            0
+          ],
+          [
+            "tg",
+            "Válvula incompetente",
+            true
+          ]
+        ]
+      ],
+      "question": "¿Qué hacen las válvulas venosas?",
+      "answers": [
+        "Favorecen que la sangre avance en una dirección",
+        "Producen la sangre que circula"
+      ],
+      "correct": 0,
+      "why": "Sus valvas ayudan a limitar el regreso de la sangre. Observa cómo se aproximan al cerrarse."
+    },
+    "fascias": {
+      "patientTitle": "Las capas que rodean las venas",
+      "patient": "Localiza la safena entre las membranas que forman su compartimento.",
+      "objective": "Ubicar la safena respecto de la piel y el músculo.",
+      "medObjective": "Identificar el compartimento safeno y distinguirlo del tejido extrafascial.",
+      "steps": [
+        "Ubica las capas",
+        "Encuentra la safena",
+        "Compara los estados"
+      ],
+      "actions": [
+        [
+          [
+            "seg",
+            "Estado",
+            0
+          ]
+        ],
+        [
+          [
+            "seg",
+            "Estado",
+            0
+          ]
+        ],
+        [
+          [
+            "seg",
+            "Estado",
+            1
+          ]
+        ]
+      ],
+      "question": "¿La vena safena y las venas profundas ocupan el mismo compartimento?",
+      "answers": [
+        "Sí, son la misma estructura",
+        "No, se sitúan en compartimentos diferentes"
+      ],
+      "correct": 1,
+      "why": "La safena pertenece al sistema superficial; las venas profundas se encuentran bajo la fascia muscular."
+    },
+    "compartimentos-3d": {
+      "patientTitle": "Conexiones bajo la piel",
+      "patient": "Desmonta el modelo por capas y sigue las venas que las conectan.",
+      "objective": "Distinguir venas superficiales, profundas y sus conexiones.",
+      "medObjective": "Distinguir comunicantes y perforantes por su relación con la fascia muscular.",
+      "steps": [
+        "Separa el modelo",
+        "Sigue una comunicante",
+        "Sigue una perforante"
+      ],
+      "actions": [
+        [
+          [
+            "sl",
+            "Separación de capas",
+            0.8
+          ],
+          [
+            "seg",
+            "Resaltar",
+            0
+          ]
+        ],
+        [
+          [
+            "seg",
+            "Resaltar",
+            1
+          ]
+        ],
+        [
+          [
+            "seg",
+            "Resaltar",
+            2
+          ]
+        ]
+      ],
+      "question": "¿Qué distingue a una vena perforante?",
+      "answers": [
+        "Atraviesa la fascia muscular",
+        "Es una arteria pequeña"
+      ],
+      "correct": 0,
+      "why": "La perforante conecta el sistema superficial con el profundo atravesando la fascia muscular."
+    },
+    "valvula-sana": {
+      "patientTitle": "Una compuerta que abre y cierra",
+      "patient": "Sigue la sangre y mira cómo responden las valvas.",
+      "objective": "Relacionar la apertura y el cierre con el sentido del flujo.",
+      "medObjective": "Observar el ciclo valvular y su representación Doppler ilustrativa.",
+      "steps": [
+        "Sigue el flujo",
+        "Observa el cierre",
+        "Compara con el reflujo"
+      ],
+      "actions": [
+        [
+          [
+            "btn",
+            "Válvula sana"
+          ]
+        ],
+        [
+          [
+            "sl",
+            "Grado de incompetencia valvular",
+            0
+          ]
+        ],
+        [
+          [
+            "btn",
+            "Válvula incompetente"
+          ]
+        ]
+      ],
+      "question": "¿Hacia dónde se dirige el retorno venoso de la pierna?",
+      "answers": [
+        "Siempre hacia el pie",
+        "Hacia el corazón"
+      ],
+      "correct": 1,
+      "why": "El retorno venoso lleva la sangre hacia el corazón. Las válvulas y la actividad muscular contribuyen a ese recorrido."
+    },
+    "bomba-muscular": {
+      "patientTitle": "Caminar pone en marcha la bomba",
+      "patient": "Mira cómo la pantorrilla comprime las venas al moverse.",
+      "objective": "Comprender cómo participa el músculo en el retorno venoso.",
+      "medObjective": "Relacionar contracción, relajación y competencia del sistema venoso.",
+      "steps": [
+        "Pon el músculo en marcha",
+        "Observa el reposo",
+        "Compara las válvulas"
+      ],
+      "actions": [
+        [
+          [
+            "btn",
+            "Caminar"
+          ],
+          [
+            "seg",
+            "Estado venoso",
+            0
+          ]
+        ],
+        [
+          [
+            "btn",
+            "Detenerse"
+          ]
+        ],
+        [
+          [
+            "btn",
+            "Caminar"
+          ],
+          [
+            "seg",
+            "Estado venoso",
+            1
+          ]
+        ]
+      ],
+      "question": "¿Qué estructura participa en la bomba de la pantorrilla?",
+      "answers": [
+        "El músculo al contraerse",
+        "El pelo de la piel"
+      ],
+      "correct": 0,
+      "why": "La contracción muscular comprime las venas y contribuye al desplazamiento de la sangre."
+    },
+    "union-safenofemoral": {
+      "patientTitle": "Donde se encuentran las venas",
+      "patient": "Explora la unión de la safena con el sistema profundo.",
+      "objective": "Reconocer una conexión entre el sistema superficial y el profundo.",
+      "medObjective": "Localizar la unión safenofemoral y sus válvulas en el esquema.",
+      "steps": [
+        "Ubica la unión",
+        "Observa el estado competente",
+        "Compara la incompetencia"
+      ],
+      "actions": [
+        [
+          [
+            "seg",
+            "Estado de la unión",
+            0
+          ]
+        ],
+        [
+          [
+            "seg",
+            "Estado de la unión",
+            0
+          ]
+        ],
+        [
+          [
+            "seg",
+            "Estado de la unión",
+            1
+          ]
+        ]
+      ],
+      "question": "¿Qué sistemas se conectan en esta unión?",
+      "answers": [
+        "El nervioso y el digestivo",
+        "El venoso superficial y el profundo"
+      ],
+      "correct": 1,
+      "why": "La safena mayor se une a la vena femoral común, que pertenece al sistema profundo."
+    },
+    "valvula-incompetente": {
+      "patientTitle": "Cuando parte de la sangre regresa",
+      "patient": "Compara una válvula que cierra con otra que deja un espacio.",
+      "objective": "Reconocer qué significa reflujo en el modelo.",
+      "medObjective": "Relacionar el defecto de coaptación con flujo retrógrado ilustrativo.",
+      "steps": [
+        "Comienza con una válvula sana",
+        "Aumenta la separación",
+        "Sigue el flujo retrógrado"
+      ],
+      "actions": [
+        [
+          [
+            "btn",
+            "Válvula sana"
+          ]
+        ],
+        [
+          [
+            "sl",
+            "Grado de incompetencia valvular",
+            0.5
+          ]
+        ],
+        [
+          [
+            "sl",
+            "Grado de incompetencia valvular",
+            0.9
+          ]
+        ]
+      ],
+      "question": "¿Qué significa reflujo venoso?",
+      "answers": [
+        "Flujo que regresa en sentido contrario al esperado",
+        "Sangre que desaparece"
+      ],
+      "correct": 0,
+      "why": "Es flujo retrógrado. En este esquema se distingue con el color naranja."
+    },
+    "progresion-varice": {
+      "patientTitle": "Cómo cambia la forma de una vena",
+      "patient": "Transforma una vena recta en una estructura dilatada y tortuosa.",
+      "objective": "Reconocer cambios de forma sin confundirlos con una escala de tiempo real.",
+      "medObjective": "Explorar dilatación y tortuosidad con un parámetro morfológico ilustrativo.",
+      "steps": [
+        "Observa la forma inicial",
+        "Aumenta la deformación",
+        "Compara el conjunto"
+      ],
+      "actions": [
+        [
+          [
+            "sl",
+            "Deformación ilustrada",
+            0.05
+          ]
+        ],
+        [
+          [
+            "sl",
+            "Deformación ilustrada",
+            0.8
+          ]
+        ],
+        [
+          [
+            "sl",
+            "Deformación ilustrada",
+            0.35
+          ]
+        ]
+      ],
+      "question": "¿Este control predice cómo cambiará una vena de una persona?",
+      "answers": [
+        "Sí, calcula su evolución clínica",
+        "No, muestra una transformación didáctica"
+      ],
+      "correct": 1,
+      "why": "El control permite comparar formas. No es un pronóstico ni una línea de tiempo de un paciente."
+    },
+    "microcirculacion": {
+      "patientTitle": "Lo que ocurre en los vasos pequeños",
+      "patient": "Acércate al intercambio entre los capilares y los tejidos.",
+      "objective": "Relacionar los vasos pequeños con el tejido que los rodea.",
+      "medObjective": "Explorar de forma conceptual la relación entre presión venosa e intercambio tisular.",
+      "steps": [
+        "Ubica el capilar",
+        "Observa el intercambio",
+        "Relaciona vaso y tejido"
+      ],
+      "actions": [
+        [
+          [
+            "btn",
+            "Restablecer"
+          ]
+        ],
+        [
+          [
+            "sl",
+            "Presión venosa",
+            45
+          ]
+        ],
+        [
+          [
+            "sl",
+            "Presión venosa",
+            85
+          ]
+        ]
+      ],
+      "question": "¿Qué muestra esta escala de observación?",
+      "answers": [
+        "Vasos pequeños y el tejido que los rodea",
+        "Todo el sistema venoso a tamaño real"
+      ],
+      "correct": 0,
+      "why": "Es una vista ampliada y simplificada de la microcirculación y del tejido cercano."
+    },
+    "escleroterapia": {
+      "patientTitle": "Cómo se representa el cierre de una vena",
+      "patient": "Recorre una secuencia didáctica del procedimiento y sus etapas.",
+      "objective": "Reconocer las etapas generales sin utilizar el modelo como guía de tratamiento.",
+      "medObjective": "Explorar la secuencia conceptual y distinguirla de una prescripción clínica.",
+      "steps": [
+        "Reconoce la vena",
+        "Observa la inyección",
+        "Sigue la secuencia"
+      ],
+      "actions": [
+        [
+          [
+            "seg",
+            "Paso",
+            0
+          ]
+        ],
+        [
+          [
+            "seg",
+            "Paso",
+            2
+          ]
+        ],
+        [
+          [
+            "btn",
+            "Reproducir secuencia completa"
+          ]
+        ]
+      ],
+      "question": "¿La simulación indica qué dosis necesita una persona?",
+      "answers": [
+        "Sí, sustituye la valoración",
+        "No, es una representación educativa"
+      ],
+      "correct": 1,
+      "why": "La selección de un tratamiento y sus parámetros requiere valoración profesional. El modelo no prescribe."
+    },
+    "trombosis-venosa-profunda": {
+      "patientTitle": "Un coágulo en una vena profunda",
+      "patient": "Observa el lugar, el crecimiento ilustrativo y el sentido de propagación.",
+      "objective": "Entender qué nombra una trombosis venosa profunda.",
+      "medObjective": "Explorar el mecanismo conceptual sin interpretar los valores como un riesgo calculado.",
+      "steps": [
+        "Reinicia el ejemplo",
+        "Compara los factores",
+        "Explora la anticoagulación"
+      ],
+      "actions": [
+        [
+          [
+            "btn",
+            "Reiniciar"
+          ]
+        ],
+        [
+          [
+            "btn",
+            "Posoperatorio"
+          ]
+        ],
+        [
+          [
+            "tg",
+            "Anticoagulación",
+            true
+          ]
+        ]
+      ],
+      "question": "¿Qué significa trombosis venosa profunda?",
+      "answers": [
+        "Un coágulo en una vena profunda",
+        "Una lesión del hueso"
+      ],
+      "correct": 0,
+      "why": "La trombosis venosa profunda se refiere a la formación de un coágulo en una vena profunda."
+    },
+    "sindrome-postrombotico": {
+      "patientTitle": "Los cambios que pueden quedar después",
+      "patient": "Explora las secuelas que una trombosis puede dejar en la vena.",
+      "objective": "Reconocer que la estructura puede cambiar después de una trombosis.",
+      "medObjective": "Observar organización, recanalización y secuelas valvulares de forma ilustrativa.",
+      "steps": [
+        "Observa la fase inicial",
+        "Explora la organización",
+        "Compara el estado residual"
+      ],
+      "actions": [
+        [
+          [
+            "btn",
+            "Pausar evolución"
+          ],
+          [
+            "sl",
+            "Etapa didáctica",
+            0.2
+          ]
+        ],
+        [
+          [
+            "sl",
+            "Etapa didáctica",
+            10
+          ]
+        ],
+        [
+          [
+            "sl",
+            "Etapa didáctica",
+            22
+          ]
+        ]
+      ],
+      "question": "¿El síndrome postrombótico puede aparecer después de una trombosis?",
+      "answers": [
+        "No tiene relación con las venas",
+        "Sí, puede ser una secuela"
+      ],
+      "correct": 1,
+      "why": "Puede aparecer tras una trombosis venosa profunda. La representación no predice si ocurrirá en una persona."
+    }
   },
-  structures:{
-    endotelio:{name:'Endotelio',patient:'La superficie que está en contacto con la sangre.',medico:'Revestimiento endotelial de la superficie luminal. Su escala está ampliada en este modelo.'},
-    intima:{name:'Íntima',patient:'La capa más interna de la pared de la vena.',medico:'Túnica íntima: endotelio y tejido subendotelial, representados de forma esquemática.'},
-    media:{name:'Media',patient:'Una capa de la pared que contiene músculo liso.',medico:'Túnica media con músculo liso y componentes de matriz extracelular.'},
-    adventicia:{name:'Adventicia',patient:'La envoltura externa de tejido que da soporte a la vena.',medico:'Túnica adventicia, representada con fibras de colágeno y pequeños vasos externos.'},
-    valvas:{name:'Valvas',patient:'Dos pliegues que se aproximan para limitar el regreso de la sangre.',medico:'Cúspides valvulares. Observa inserción, apertura y coaptación durante el ciclo ilustrativo.'},
-    superficial:{name:'Vena superficial',patient:'Una vena situada en el sistema superficial de la pierna.',medico:'Vaso superficial con cambios paramétricos de radio y tortuosidad; no es un modelo de progresión clínica.'},
-    profunda:{name:'Vena profunda',patient:'Parte del sistema que discurre por debajo de la fascia muscular.',medico:'Sistema venoso profundo, situado bajo la fascia muscular.'},
-    safena:{name:'Safena mayor',patient:'Una de las venas del sistema superficial, dentro de su compartimento.',medico:'Vena safena mayor dentro del compartimento safeno.'},
-    comunicante:{name:'Vena comunicante',patient:'Una conexión entre venas del mismo sistema.',medico:'Conexión venosa dentro del mismo sistema; se diferencia de la perforante por su relación con la fascia muscular.'},
-    perforante:{name:'Vena perforante',patient:'Una conexión que atraviesa una membrana para unir venas superficiales y profundas.',medico:'Vena que cruza la fascia muscular y conecta los sistemas superficial y profundo.'},
-    piel:{name:'Piel',patient:'La capa más externa del modelo de la pierna.',medico:'Cubierta cutánea esquemática; separa las capas para examinar el espacio subyacente.'},
-    tejido:{name:'Tejido subcutáneo',patient:'El tejido situado debajo de la piel.',medico:'Plano subcutáneo representado por lobulillos y tributarias superficiales.'},
-    fascia:{name:'Fascia',patient:'Una membrana que delimita espacios entre los tejidos.',medico:'Plano fascial. Distingue fascia safena y fascia muscular mediante la posición en el modelo.'},
-    'fascia-muscular':{name:'Fascia muscular',patient:'La membrana que delimita el plano muscular profundo.',medico:'Fascia muscular o profunda, que atraviesan las venas perforantes.'},
-    'fascia-safena':{name:'Fascia safena',patient:'Parte de la envoltura del compartimento donde discurre la safena.',medico:'Plano fascial superficial del compartimento safeno; observa su relación con la fascia muscular.'},
-    nervio:{name:'Nervio safeno',patient:'Una estructura nerviosa incluida como referencia anatómica.',medico:'Nervio safeno esquemático, representado en relación con el compartimento safeno.'},
-    arteria:{name:'Arteria femoral',patient:'Un vaso arterial que aparece junto al sistema venoso como referencia.',medico:'Arteria femoral incluida como referencia de relación espacial; no representa un modelo arterial clínico.'},
-    musculo:{name:'Músculo',patient:'El tejido muscular del plano profundo.',medico:'Plano muscular profundo del esquema.'}
+  "structures": {
+    "endotelio": {
+      "name": "Endotelio",
+      "patient": "La superficie que está en contacto con la sangre.",
+      "medico": "Revestimiento endotelial de la superficie luminal. Su escala está ampliada en este modelo."
+    },
+    "intima": {
+      "name": "Íntima",
+      "patient": "La capa más interna de la pared de la vena.",
+      "medico": "Túnica íntima: endotelio y tejido subendotelial, representados de forma esquemática."
+    },
+    "media": {
+      "name": "Media",
+      "patient": "Una capa de la pared que contiene músculo liso.",
+      "medico": "Túnica media con músculo liso y componentes de matriz extracelular."
+    },
+    "adventicia": {
+      "name": "Adventicia",
+      "patient": "La envoltura externa de tejido que da soporte a la vena.",
+      "medico": "Túnica adventicia, representada con fibras de colágeno y pequeños vasos externos."
+    },
+    "valvas": {
+      "name": "Valvas",
+      "patient": "Dos pliegues que se aproximan para limitar el regreso de la sangre.",
+      "medico": "Cúspides valvulares. Observa inserción, apertura y coaptación durante el ciclo ilustrativo."
+    },
+    "superficial": {
+      "name": "Vena superficial",
+      "patient": "Una vena situada en el sistema superficial de la pierna.",
+      "medico": "Vaso superficial con cambios paramétricos de radio y tortuosidad; no es un modelo de progresión clínica."
+    },
+    "profunda": {
+      "name": "Vena profunda",
+      "patient": "Parte del sistema que discurre por debajo de la fascia muscular.",
+      "medico": "Sistema venoso profundo, situado bajo la fascia muscular."
+    },
+    "safena": {
+      "name": "Safena mayor",
+      "patient": "Una de las venas del sistema superficial, dentro de su compartimento.",
+      "medico": "Vena safena mayor dentro del compartimento safeno."
+    },
+    "comunicante": {
+      "name": "Vena comunicante",
+      "patient": "Una conexión entre venas del mismo sistema.",
+      "medico": "Conexión venosa dentro del mismo sistema; se diferencia de la perforante por su relación con la fascia muscular."
+    },
+    "perforante": {
+      "name": "Vena perforante",
+      "patient": "Una conexión que atraviesa una membrana para unir venas superficiales y profundas.",
+      "medico": "Vena que cruza la fascia muscular y conecta los sistemas superficial y profundo."
+    },
+    "piel": {
+      "name": "Piel",
+      "patient": "La capa más externa del modelo de la pierna.",
+      "medico": "Cubierta cutánea esquemática; separa las capas para examinar el espacio subyacente."
+    },
+    "tejido": {
+      "name": "Tejido subcutáneo",
+      "patient": "El tejido situado debajo de la piel.",
+      "medico": "Plano subcutáneo representado por lobulillos y tributarias superficiales."
+    },
+    "fascia": {
+      "name": "Fascia",
+      "patient": "Una membrana que delimita espacios entre los tejidos.",
+      "medico": "Plano fascial. Distingue fascia safena y fascia muscular mediante la posición en el modelo."
+    },
+    "fascia-muscular": {
+      "name": "Fascia muscular",
+      "patient": "La membrana que delimita el plano muscular profundo.",
+      "medico": "Fascia muscular o profunda, que atraviesan las venas perforantes."
+    },
+    "fascia-safena": {
+      "name": "Fascia safena",
+      "patient": "Parte de la envoltura del compartimento donde discurre la safena.",
+      "medico": "Plano fascial superficial del compartimento safeno; observa su relación con la fascia muscular."
+    },
+    "nervio": {
+      "name": "Nervio safeno",
+      "patient": "Una estructura nerviosa incluida como referencia anatómica.",
+      "medico": "Nervio safeno esquemático, representado en relación con el compartimento safeno."
+    },
+    "arteria": {
+      "name": "Arteria femoral",
+      "patient": "Un vaso arterial que aparece junto al sistema venoso como referencia.",
+      "medico": "Arteria femoral incluida como referencia de relación espacial; no representa un modelo arterial clínico."
+    },
+    "musculo": {
+      "name": "Músculo",
+      "patient": "El tejido muscular del plano profundo.",
+      "medico": "Plano muscular profundo del esquema."
+    }
   }
 };

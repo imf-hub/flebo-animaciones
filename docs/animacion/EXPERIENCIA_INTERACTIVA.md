@@ -1,5 +1,7 @@
 # Experiencia de aprendizaje y modelos interactivos
 
+**Estado vigente tras el cierre:** 22 módulos, 13 modelos 3D, 9 esquemas 2D, 66 pasos y 22 preguntas. Se añadieron ablación, TVS y obstrucción ilíaca y se corrigieron textos, mecanismos y las doce narraciones originales. Ver [entrega de cierre](entregas/cierre-temas-2026-11-06.md) y [revisión completa](REVISION_MEDICA_CATALOGO_COMPLETO.md). Los apartados fechados anteriores conservan el registro histórico.
+
 Implementación del 6 de noviembre de 2026, posterior al análisis de la referencia original. Leer junto con `ARQUITECTURA.md`: ese documento conserva el inventario y las limitaciones de la versión inicial; este describe los cambios realizados.
 
 **Ampliación posterior del mismo día:** el catálogo tiene ahora 19 módulos, 57 pasos y 19 preguntas. Los siete modelos añadidos tienen 40 piezas seleccionables y narraciones nuevas con marcas de palabra del proveedor. Ver [producción y comprobaciones](entregas/siete-modulos-2026-11-06.md) y [revisión documental médica](REVISION_MEDICA_SIETE_MODULOS.md). Los apartados originales siguientes describen la primera evolución de doce módulos.

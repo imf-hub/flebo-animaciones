@@ -31,12 +31,12 @@ export function literal(source, name) {
 export async function readAnimationCatalog() {
   const source = await readFile(new URL('../assets/app.js', import.meta.url), 'utf8');
   const extension = await readFile(new URL('../assets/extension-data.js', import.meta.url), 'utf8');
-  const scenes = await readFile(new URL('../assets/anatomy-scenes.js', import.meta.url), 'utf8');
+  const scenes = await readFile(new URL('../assets/anatomy-scenes.js', import.meta.url), 'utf8')+'\n'+await readFile(new URL('../assets/clinical-scenes.js', import.meta.url), 'utf8');
   const narration = await readFile(new URL('../assets/extension-audio.js', import.meta.url), 'utf8');
   const marker = name => Object.assign((...args) => marker(`${name}(${args.map(value => JSON.stringify(value)).join(',')})`), { catalogName: name });
   const bindings = Object.create(null);
   const modulesLiteral = literal(source, 'MODS')+'\n'+literal(extension,'EXTENSION_MODULES');
-  for (const [, name] of modulesLiteral.matchAll(/\b(?:init|thumb)\s*:\s*([A-Za-z_$][\w$]*)/g)) {
+  for (const [, name] of modulesLiteral.matchAll(/\b(?:init|thumb)"?\s*:\s*([A-Za-z_$][\w$]*)/g)) {
     if (!new RegExp(`(?:function\\s+|(?:const|let|var)\\s+)${name}\\b`).test(source+'\n'+scenes)) throw new Error(`No se encontró la declaración de ${name}.`);
     bindings[name] = marker(name);
   }

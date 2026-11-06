@@ -1,0 +1,98 @@
+{
+  "pared-3d": {
+    "sources": [
+      "valve",
+      "esvs"
+    ],
+    "narrationRevised": true,
+    "scope": "Contraste documental, sin aprobación clínica independiente."
+  },
+  "valvula-sana": {
+    "sources": [
+      "valve",
+      "valve2002"
+    ],
+    "narrationRevised": true,
+    "scope": "Contraste documental, sin aprobación clínica independiente."
+  },
+  "valvula-incompetente": {
+    "sources": [
+      "svs",
+      "valve"
+    ],
+    "narrationRevised": true,
+    "scope": "Contraste documental, sin aprobación clínica independiente."
+  },
+  "bomba-muscular": {
+    "sources": [
+      "pump",
+      "esvs"
+    ],
+    "narrationRevised": true,
+    "scope": "Contraste documental, sin aprobación clínica independiente."
+  },
+  "fascias": {
+    "sources": [
+      "nomenclature",
+      "esvs"
+    ],
+    "narrationRevised": true,
+    "scope": "Contraste documental, sin aprobación clínica independiente."
+  },
+  "compartimentos-3d": {
+    "sources": [
+      "nomenclature",
+      "esvs"
+    ],
+    "narrationRevised": true,
+    "scope": "Contraste documental, sin aprobación clínica independiente."
+  },
+  "union-safenofemoral": {
+    "sources": [
+      "nomenclature",
+      "svs"
+    ],
+    "narrationRevised": true,
+    "scope": "Contraste documental, sin aprobación clínica independiente."
+  },
+  "progresion-varice": {
+    "sources": [
+      "svs",
+      "esvs"
+    ],
+    "narrationRevised": true,
+    "scope": "Contraste documental, sin aprobación clínica independiente."
+  },
+  "microcirculacion": {
+    "sources": [
+      "starling",
+      "esvs"
+    ],
+    "narrationRevised": true,
+    "scope": "Contraste documental, sin aprobación clínica independiente."
+  },
+  "escleroterapia": {
+    "sources": [
+      "sclero2023",
+      "sclero2021"
+    ],
+    "narrationRevised": true,
+    "scope": "Contraste documental, sin aprobación clínica independiente."
+  },
+  "trombosis-venosa-profunda": {
+    "sources": [
+      "ashDiagnosis",
+      "esvsThrombosis"
+    ],
+    "narrationRevised": true,
+    "scope": "Contraste documental, sin aprobación clínica independiente."
+  },
+  "sindrome-postrombotico": {
+    "sources": [
+      "pts",
+      "ashTreatment"
+    ],
+    "narrationRevised": true,
+    "scope": "Contraste documental, sin aprobación clínica independiente."
+  }
+}

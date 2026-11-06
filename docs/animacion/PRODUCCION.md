@@ -1,5 +1,7 @@
 # Producir e integrar animaciones y videos
 
+**Estado vigente (22 módulos):** consultar [la entrega de cierre](entregas/cierre-temas-2026-11-06.md). Todos los tiempos y versiones MP3 se concentran en `assets/extension-audio.js`; el reproductor conserva `AUDIO_DIR` y añade el hash a la URL del audio. Ambos compiladores de lotes fusionan registros para no borrar otras narraciones. El contrato de tomas descrito a continuación sigue siendo válido.
+
 Para extender la web de aprendizaje, completar también el contrato de `COURSE` y las piezas semánticas descritos en [Experiencia interactiva](EXPERIENCIA_INTERACTIVA.md). El catálogo visual y el recorrido deben seguir siendo coherentes.
 
 ## Elegir la representación

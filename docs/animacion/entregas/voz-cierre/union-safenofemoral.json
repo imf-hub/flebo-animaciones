@@ -1,0 +1,598 @@
+{
+  "duration": 47.49061224489796,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Este esquema sitúa la unión venosa cerca de la ingle.<break time=\"0.9s\"/>La safena mayor desemboca en la vena femoral común, que es profunda.<break time=\"0.9s\"/>Se representan las válvulas terminal y preterminal; su anatomía puede variar.<break time=\"0.9s\"/>La maniobra de Valsalva modifica las presiones durante el estudio dúplex.<break time=\"0.9s\"/>Compare la respuesta del flujo con el cierre valvular conservado.<break time=\"0.9s\"/>Ahora se ilustra una unión con incompetencia.<break time=\"0.9s\"/>La presión puede acompañarse de flujo retrógrado hacia la safena.<break time=\"0.9s\"/>El registro es esquemático; los umbrales dependen del segmento explorado.<break time=\"0.9s\"/>La compresión distal y su liberación son otras maniobras del estudio venoso.<break time=\"0.9s\"/>El diagnóstico y la planificación requieren integrar el mapa completo y la situación clínica.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Este",
+      "start": 0.299,
+      "end": 0.512
+    },
+    {
+      "word": "esquema",
+      "start": 0.597,
+      "end": 0.853
+    },
+    {
+      "word": "sitúa",
+      "start": 0.939,
+      "end": 1.28
+    },
+    {
+      "word": "la",
+      "start": 1.323,
+      "end": 1.408
+    },
+    {
+      "word": "unión",
+      "start": 1.451,
+      "end": 1.749
+    },
+    {
+      "word": "venosa",
+      "start": 1.792,
+      "end": 2.176
+    },
+    {
+      "word": "cerca",
+      "start": 2.219,
+      "end": 2.56
+    },
+    {
+      "word": "de",
+      "start": 2.603,
+      "end": 2.645
+    },
+    {
+      "word": "la",
+      "start": 2.688,
+      "end": 2.7307
+    },
+    {
+      "word": "ingle.",
+      "start": 2.773,
+      "end": 3.076
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 3.076,
+      "end": 3.976
+    },
+    {
+      "word": "La",
+      "start": 3.976,
+      "end": 4.232
+    },
+    {
+      "word": "safena",
+      "start": 4.274,
+      "end": 4.53
+    },
+    {
+      "word": "mayor",
+      "start": 4.573,
+      "end": 4.872
+    },
+    {
+      "word": "desemboca",
+      "start": 4.914000000000001,
+      "end": 5.426
+    },
+    {
+      "word": "en",
+      "start": 5.469,
+      "end": 5.5120000000000005
+    },
+    {
+      "word": "la",
+      "start": 5.554,
+      "end": 5.597
+    },
+    {
+      "word": "vena",
+      "start": 5.640000000000001,
+      "end": 5.8100000000000005
+    },
+    {
+      "word": "femoral",
+      "start": 5.853000000000001,
+      "end": 6.194
+    },
+    {
+      "word": "común,",
+      "start": 6.28,
+      "end": 6.7490000000000006
+    },
+    {
+      "word": "que",
+      "start": 6.92,
+      "end": 7.048
+    },
+    {
+      "word": "es",
+      "start": 7.090000000000001,
+      "end": 7.133
+    },
+    {
+      "word": "profunda.",
+      "start": 7.218,
+      "end": 7.752000000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 7.752000000000001,
+      "end": 8.652000000000001
+    },
+    {
+      "word": "Se",
+      "start": 8.652000000000001,
+      "end": 8.951
+    },
+    {
+      "word": "representan",
+      "start": 8.994000000000002,
+      "end": 9.335
+    },
+    {
+      "word": "las",
+      "start": 9.506,
+      "end": 9.634
+    },
+    {
+      "word": "válvulas",
+      "start": 9.676,
+      "end": 10.06
+    },
+    {
+      "word": "terminal",
+      "start": 10.103000000000002,
+      "end": 10.572000000000001
+    },
+    {
+      "word": "y",
+      "start": 10.658000000000001,
+      "end": 10.700000000000001
+    },
+    {
+      "word": "preterminal;",
+      "start": 10.743,
+      "end": 11.511000000000001
+    },
+    {
+      "word": "su",
+      "start": 11.724,
+      "end": 11.895000000000001
+    },
+    {
+      "word": "anatomía",
+      "start": 11.938,
+      "end": 12.407
+    },
+    {
+      "word": "puede",
+      "start": 12.450000000000001,
+      "end": 12.748000000000001
+    },
+    {
+      "word": "variar.",
+      "start": 12.791,
+      "end": 13.094000000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 13.094000000000001,
+      "end": 13.994
+    },
+    {
+      "word": "La",
+      "start": 13.994,
+      "end": 14.122
+    },
+    {
+      "word": "maniobra",
+      "start": 14.165000000000003,
+      "end": 14.464000000000002
+    },
+    {
+      "word": "de",
+      "start": 14.506,
+      "end": 14.592000000000002
+    },
+    {
+      "word": "Valsalva",
+      "start": 14.634,
+      "end": 15.061
+    },
+    {
+      "word": "modifica",
+      "start": 15.104000000000003,
+      "end": 15.488000000000003
+    },
+    {
+      "word": "las",
+      "start": 15.616,
+      "end": 15.701
+    },
+    {
+      "word": "presiones",
+      "start": 15.744,
+      "end": 16.213
+    },
+    {
+      "word": "durante",
+      "start": 16.256,
+      "end": 16.469
+    },
+    {
+      "word": "el",
+      "start": 16.554000000000002,
+      "end": 16.597
+    },
+    {
+      "word": "estudio",
+      "start": 16.64,
+      "end": 16.981
+    },
+    {
+      "word": "dúplex.",
+      "start": 17.024,
+      "end": 17.448000000000004
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 17.448000000000004,
+      "end": 18.199
+    },
+    {
+      "word": "Compare",
+      "start": 18.199,
+      "end": 18.796000000000003
+    },
+    {
+      "word": "la",
+      "start": 18.924000000000003,
+      "end": 19.009000000000004
+    },
+    {
+      "word": "respuesta",
+      "start": 19.052000000000003,
+      "end": 19.521
+    },
+    {
+      "word": "del",
+      "start": 19.564000000000004,
+      "end": 19.649
+    },
+    {
+      "word": "flujo",
+      "start": 19.735000000000003,
+      "end": 20.119000000000003
+    },
+    {
+      "word": "con",
+      "start": 20.161,
+      "end": 20.332
+    },
+    {
+      "word": "el",
+      "start": 20.375000000000004,
+      "end": 20.46
+    },
+    {
+      "word": "cierre",
+      "start": 20.503000000000004,
+      "end": 20.844
+    },
+    {
+      "word": "valvular",
+      "start": 20.887000000000004,
+      "end": 21.185000000000002
+    },
+    {
+      "word": "conservado.",
+      "start": 21.356,
+      "end": 22.069000000000003
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 22.069000000000003,
+      "end": 22.969
+    },
+    {
+      "word": "Ahora",
+      "start": 22.969,
+      "end": 23.353
+    },
+    {
+      "word": "se",
+      "start": 23.567,
+      "end": 23.993
+    },
+    {
+      "word": "ilustra",
+      "start": 24.036,
+      "end": 24.419999999999998
+    },
+    {
+      "word": "una",
+      "start": 24.463,
+      "end": 24.633
+    },
+    {
+      "word": "unión",
+      "start": 24.676,
+      "end": 24.975
+    },
+    {
+      "word": "con",
+      "start": 25.06,
+      "end": 25.188
+    },
+    {
+      "word": "incompetencia.",
+      "start": 25.230999999999998,
+      "end": 26.129
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 26.129,
+      "end": 26.919
+    },
+    {
+      "word": "La",
+      "start": 26.919,
+      "end": 27.218
+    },
+    {
+      "word": "presión",
+      "start": 27.261,
+      "end": 27.602
+    },
+    {
+      "word": "puede",
+      "start": 27.645,
+      "end": 27.858
+    },
+    {
+      "word": "acompañarse",
+      "start": 27.901,
+      "end": 28.498
+    },
+    {
+      "word": "de",
+      "start": 28.541,
+      "end": 28.626
+    },
+    {
+      "word": "flujo",
+      "start": 28.669,
+      "end": 28.968
+    },
+    {
+      "word": "retrógrado",
+      "start": 29.01,
+      "end": 29.65
+    },
+    {
+      "word": "hacia",
+      "start": 29.693,
+      "end": 29.863
+    },
+    {
+      "word": "la",
+      "start": 29.906,
+      "end": 29.991
+    },
+    {
+      "word": "safena.",
+      "start": 30.034,
+      "end": 30.451999999999998
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 30.451999999999998,
+      "end": 31.351999999999997
+    },
+    {
+      "word": "El",
+      "start": 31.351999999999997,
+      "end": 31.735999999999997
+    },
+    {
+      "word": "registro",
+      "start": 31.778999999999996,
+      "end": 32.163
+    },
+    {
+      "word": "es",
+      "start": 32.248999999999995,
+      "end": 32.291
+    },
+    {
+      "word": "esquemático;",
+      "start": 32.333999999999996,
+      "end": 33.187
+    },
+    {
+      "word": "los",
+      "start": 33.400999999999996,
+      "end": 33.528999999999996
+    },
+    {
+      "word": "umbrales",
+      "start": 33.571,
+      "end": 34.041
+    },
+    {
+      "word": "dependen",
+      "start": 34.083,
+      "end": 34.51
+    },
+    {
+      "word": "del",
+      "start": 34.553,
+      "end": 34.681
+    },
+    {
+      "word": "segmento",
+      "start": 34.723,
+      "end": 35.193
+    },
+    {
+      "word": "explorado.",
+      "start": 35.278,
+      "end": 35.844
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 35.844,
+      "end": 36.713
+    },
+    {
+      "word": "La",
+      "start": 36.713,
+      "end": 36.884
+    },
+    {
+      "word": "compresión",
+      "start": 36.926,
+      "end": 37.353
+    },
+    {
+      "word": "distal",
+      "start": 37.396,
+      "end": 37.737
+    },
+    {
+      "word": "y",
+      "start": 37.908,
+      "end": 37.95
+    },
+    {
+      "word": "su",
+      "start": 37.993,
+      "end": 38.121
+    },
+    {
+      "word": "liberación",
+      "start": 38.164,
+      "end": 38.717999999999996
+    },
+    {
+      "word": "son",
+      "start": 38.889,
+      "end": 39.23
+    },
+    {
+      "word": "otras",
+      "start": 39.273,
+      "end": 39.528999999999996
+    },
+    {
+      "word": "maniobras",
+      "start": 39.572,
+      "end": 39.998
+    },
+    {
+      "word": "del",
+      "start": 40.041,
+      "end": 40.169
+    },
+    {
+      "word": "estudio",
+      "start": 40.212,
+      "end": 40.596
+    },
+    {
+      "word": "venoso.",
+      "start": 40.638,
+      "end": 40.941
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 40.941,
+      "end": 41.841
+    },
+    {
+      "word": "El",
+      "start": 41.841,
+      "end": 42.225
+    },
+    {
+      "word": "diagnóstico",
+      "start": 42.267,
+      "end": 42.822
+    },
+    {
+      "word": "y",
+      "start": 42.865,
+      "end": 42.907000000000004
+    },
+    {
+      "word": "la",
+      "start": 42.95,
+      "end": 42.993
+    },
+    {
+      "word": "planificación",
+      "start": 43.035000000000004,
+      "end": 43.761
+    },
+    {
+      "word": "requieren",
+      "start": 43.846000000000004,
+      "end": 44.315000000000005
+    },
+    {
+      "word": "integrar",
+      "start": 44.358000000000004,
+      "end": 44.742000000000004
+    },
+    {
+      "word": "el",
+      "start": 44.785000000000004,
+      "end": 44.870000000000005
+    },
+    {
+      "word": "mapa",
+      "start": 44.913000000000004,
+      "end": 45.126000000000005
+    },
+    {
+      "word": "completo",
+      "start": 45.169000000000004,
+      "end": 45.595000000000006
+    },
+    {
+      "word": "y",
+      "start": 45.766000000000005,
+      "end": 45.979000000000006
+    },
+    {
+      "word": "la",
+      "start": 46.022000000000006,
+      "end": 46.065000000000005
+    },
+    {
+      "word": "situación",
+      "start": 46.107000000000006,
+      "end": 46.577000000000005
+    },
+    {
+      "word": "clínica.",
+      "start": 46.61900000000001,
+      "end": 47.239582766439916
+    },
+    {
+      "word": "<end>",
+      "start": 47.49061224489796,
+      "end": 47.49061224489796
+    }
+  ]
+}

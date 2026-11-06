@@ -1,0 +1,508 @@
+{
+  "duration": 40.6204081632653,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Comience comparando unas valvas que se aproximan durante el cierre.<break time=\"0.9s\"/>En este ejemplo, la dilatación modifica la relación entre pared y valvas.<break time=\"0.9s\"/>Los bordes dejan un espacio de coaptación incompleta.<break time=\"0.9s\"/>Por ese espacio se representa flujo hacia el extremo distal.<break time=\"0.9s\"/>El color naranja identifica el flujo retrógrado, llamado reflujo.<break time=\"0.9s\"/>El tiempo de flujo invertido se interpreta según la vena y la técnica de estudio.<break time=\"0.9s\"/>El reflujo puede contribuir a mantener una presión venosa elevada durante la actividad.<break time=\"0.9s\"/>La dilatación y las várices tienen mecanismos diversos; esta transformación no predice su evolución.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Comience",
+      "start": 0.256,
+      "end": 0.597
+    },
+    {
+      "word": "comparando",
+      "start": 0.768,
+      "end": 1.28
+    },
+    {
+      "word": "unas",
+      "start": 1.323,
+      "end": 1.536
+    },
+    {
+      "word": "valvas",
+      "start": 1.579,
+      "end": 1.9627
+    },
+    {
+      "word": "que",
+      "start": 2.048,
+      "end": 2.133
+    },
+    {
+      "word": "se",
+      "start": 2.176,
+      "end": 2.261
+    },
+    {
+      "word": "aproximan",
+      "start": 2.304,
+      "end": 2.688
+    },
+    {
+      "word": "durante",
+      "start": 2.731,
+      "end": 2.944
+    },
+    {
+      "word": "el",
+      "start": 3.115,
+      "end": 3.157
+    },
+    {
+      "word": "cierre.",
+      "start": 3.2,
+      "end": 3.533
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 3.533,
+      "end": 4.433
+    },
+    {
+      "word": "En",
+      "start": 4.433,
+      "end": 4.732
+    },
+    {
+      "word": "este",
+      "start": 4.774,
+      "end": 4.9879999999999995
+    },
+    {
+      "word": "ejemplo,",
+      "start": 5.03,
+      "end": 5.521
+    },
+    {
+      "word": "la",
+      "start": 5.67,
+      "end": 5.841
+    },
+    {
+      "word": "dilatación",
+      "start": 5.884,
+      "end": 6.438
+    },
+    {
+      "word": "modifica",
+      "start": 6.481,
+      "end": 6.822
+    },
+    {
+      "word": "la",
+      "start": 6.95,
+      "end": 7.078
+    },
+    {
+      "word": "relación",
+      "start": 7.1209999999999996,
+      "end": 7.505
+    },
+    {
+      "word": "entre",
+      "start": 7.548,
+      "end": 7.761
+    },
+    {
+      "word": "pared",
+      "start": 7.804,
+      "end": 7.974
+    },
+    {
+      "word": "y",
+      "start": 8.188,
+      "end": 8.401
+    },
+    {
+      "word": "valvas.",
+      "start": 8.444,
+      "end": 8.827
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 8.827,
+      "end": 9.727
+    },
+    {
+      "word": "Los",
+      "start": 9.727,
+      "end": 10.324000000000002
+    },
+    {
+      "word": "bordes",
+      "start": 10.367,
+      "end": 10.58
+    },
+    {
+      "word": "dejan",
+      "start": 10.623000000000001,
+      "end": 10.964
+    },
+    {
+      "word": "un",
+      "start": 11.007000000000001,
+      "end": 11.05
+    },
+    {
+      "word": "espacio",
+      "start": 11.092,
+      "end": 11.476
+    },
+    {
+      "word": "de",
+      "start": 11.519,
+      "end": 11.604000000000001
+    },
+    {
+      "word": "coaptación",
+      "start": 11.647,
+      "end": 12.159
+    },
+    {
+      "word": "incompleta.",
+      "start": 12.202000000000002,
+      "end": 12.722000000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 12.722000000000001,
+      "end": 13.622000000000002
+    },
+    {
+      "word": "Por",
+      "start": 13.622000000000002,
+      "end": 13.750000000000002
+    },
+    {
+      "word": "ese",
+      "start": 13.793000000000001,
+      "end": 13.921000000000001
+    },
+    {
+      "word": "espacio",
+      "start": 13.963000000000001,
+      "end": 14.347000000000001
+    },
+    {
+      "word": "se",
+      "start": 14.39,
+      "end": 14.561000000000002
+    },
+    {
+      "word": "representa",
+      "start": 14.603000000000002,
+      "end": 14.945
+    },
+    {
+      "word": "flujo",
+      "start": 15.115,
+      "end": 15.585
+    },
+    {
+      "word": "hacia",
+      "start": 15.627,
+      "end": 15.926
+    },
+    {
+      "word": "el",
+      "start": 15.969000000000001,
+      "end": 16.011
+    },
+    {
+      "word": "extremo",
+      "start": 16.054,
+      "end": 16.353
+    },
+    {
+      "word": "distal.",
+      "start": 16.481,
+      "end": 16.838
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 16.838,
+      "end": 17.738
+    },
+    {
+      "word": "El",
+      "start": 17.738,
+      "end": 18.293
+    },
+    {
+      "word": "color",
+      "start": 18.336000000000002,
+      "end": 18.464000000000002
+    },
+    {
+      "word": "naranja",
+      "start": 18.592000000000002,
+      "end": 19.018
+    },
+    {
+      "word": "identifica",
+      "start": 19.061,
+      "end": 19.573
+    },
+    {
+      "word": "el",
+      "start": 19.701,
+      "end": 19.744
+    },
+    {
+      "word": "flujo",
+      "start": 19.786,
+      "end": 20.128
+    },
+    {
+      "word": "retrógrado,",
+      "start": 20.17,
+      "end": 20.917
+    },
+    {
+      "word": "llamado",
+      "start": 21.024,
+      "end": 21.45
+    },
+    {
+      "word": "reflujo.",
+      "start": 21.536,
+      "end": 22.312
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 22.312,
+      "end": 23.212
+    },
+    {
+      "word": "El",
+      "start": 23.212,
+      "end": 23.425
+    },
+    {
+      "word": "tiempo",
+      "start": 23.511,
+      "end": 23.724
+    },
+    {
+      "word": "de",
+      "start": 23.767,
+      "end": 23.895
+    },
+    {
+      "word": "flujo",
+      "start": 23.937,
+      "end": 24.193
+    },
+    {
+      "word": "invertido",
+      "start": 24.236,
+      "end": 24.705000000000002
+    },
+    {
+      "word": "se",
+      "start": 24.748,
+      "end": 24.876
+    },
+    {
+      "word": "interpreta",
+      "start": 24.919,
+      "end": 25.388
+    },
+    {
+      "word": "según",
+      "start": 25.431,
+      "end": 25.729
+    },
+    {
+      "word": "la",
+      "start": 25.772000000000002,
+      "end": 25.857
+    },
+    {
+      "word": "vena",
+      "start": 25.900000000000002,
+      "end": 26.199
+    },
+    {
+      "word": "y",
+      "start": 26.284000000000002,
+      "end": 26.455000000000002
+    },
+    {
+      "word": "la",
+      "start": 26.497,
+      "end": 26.583000000000002
+    },
+    {
+      "word": "técnica",
+      "start": 26.625,
+      "end": 26.881
+    },
+    {
+      "word": "de",
+      "start": 27.009,
+      "end": 27.137
+    },
+    {
+      "word": "estudio.",
+      "start": 27.18,
+      "end": 27.579
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 27.579,
+      "end": 28.479
+    },
+    {
+      "word": "El",
+      "start": 28.479,
+      "end": 28.991
+    },
+    {
+      "word": "reflujo",
+      "start": 29.033,
+      "end": 29.503
+    },
+    {
+      "word": "puede",
+      "start": 29.545,
+      "end": 29.801000000000002
+    },
+    {
+      "word": "contribuir",
+      "start": 29.844,
+      "end": 30.398000000000003
+    },
+    {
+      "word": "a",
+      "start": 30.441000000000003,
+      "end": 30.484
+    },
+    {
+      "word": "mantener",
+      "start": 30.526000000000003,
+      "end": 30.782000000000004
+    },
+    {
+      "word": "una",
+      "start": 30.953000000000003,
+      "end": 31.081000000000003
+    },
+    {
+      "word": "presión",
+      "start": 31.124000000000002,
+      "end": 31.508000000000003
+    },
+    {
+      "word": "venosa",
+      "start": 31.593000000000004,
+      "end": 31.935000000000002
+    },
+    {
+      "word": "elevada",
+      "start": 32.02,
+      "end": 32.361000000000004
+    },
+    {
+      "word": "durante",
+      "start": 32.489000000000004,
+      "end": 32.660000000000004
+    },
+    {
+      "word": "la",
+      "start": 32.831,
+      "end": 32.916000000000004
+    },
+    {
+      "word": "actividad.",
+      "start": 32.959,
+      "end": 33.439
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 33.439,
+      "end": 34.339
+    },
+    {
+      "word": "La",
+      "start": 34.339,
+      "end": 34.851
+    },
+    {
+      "word": "dilatación",
+      "start": 34.893,
+      "end": 35.36300000000001
+    },
+    {
+      "word": "y",
+      "start": 35.405,
+      "end": 35.448
+    },
+    {
+      "word": "las",
+      "start": 35.49100000000001,
+      "end": 35.576
+    },
+    {
+      "word": "várices",
+      "start": 35.61900000000001,
+      "end": 35.875
+    },
+    {
+      "word": "tienen",
+      "start": 36.045,
+      "end": 36.301
+    },
+    {
+      "word": "mecanismos",
+      "start": 36.344,
+      "end": 36.813
+    },
+    {
+      "word": "diversos;",
+      "start": 36.856,
+      "end": 37.453
+    },
+    {
+      "word": "esta",
+      "start": 37.624,
+      "end": 37.923
+    },
+    {
+      "word": "transformación",
+      "start": 37.965,
+      "end": 38.691
+    },
+    {
+      "word": "no",
+      "start": 38.861000000000004,
+      "end": 39.075
+    },
+    {
+      "word": "predice",
+      "start": 39.160000000000004,
+      "end": 39.459
+    },
+    {
+      "word": "su",
+      "start": 39.587,
+      "end": 39.715
+    },
+    {
+      "word": "evolución.",
+      "start": 39.757000000000005,
+      "end": 40.392
+    },
+    {
+      "word": "<end>",
+      "start": 40.6204081632653,
+      "end": 40.6204081632653
+    }
+  ]
+}

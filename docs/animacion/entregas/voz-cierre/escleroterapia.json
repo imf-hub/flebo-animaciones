@@ -1,0 +1,1013 @@
+{
+  "duration": 78.18448979591837,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>La escleroterapia busca cerrar una vena seleccionada mediante un medicamento esclerosante.<break time=\"0.9s\"/>El corte muestra una vena y los tejidos que la rodean.<break time=\"0.9s\"/>La punción se representa dentro de la luz, sin enseñar una técnica de aplicación.<break time=\"0.9s\"/>El ejemplo muestra un esclerosante detergente en forma de espuma.<break time=\"0.9s\"/>La espuma desplaza parte de la sangre y facilita el contacto con la pared.<break time=\"0.9s\"/>La lesión endotelial y la respuesta local pueden favorecer el cierre venoso.<break time=\"0.9s\"/>La compresión posterior se decide según el procedimiento y la situación clínica.<break time=\"0.9s\"/>Los cuidados y la actividad después del tratamiento se individualizan.<break time=\"0.9s\"/>Con el tiempo puede desarrollarse fibrosis, aunque también puede haber recanalización.<break time=\"0.9s\"/>La vista de la piel es una comparación conceptual, sin prometer desaparición.<break time=\"0.9s\"/>El esclerosante líquido se mezcla con la sangre y su actividad cambia al contactar con proteínas.<break time=\"0.9s\"/>La espuma también se mezcla y pierde actividad; no elimina los riesgos del procedimiento.<break time=\"0.9s\"/>La intensidad de este control no representa una concentración ni una dosis clínica.<break time=\"0.9s\"/>Una lesión excesiva puede acompañarse de inflamación o daño de los tejidos.<break time=\"0.9s\"/>La indicación y todos los parámetros de tratamiento requieren valoración y seguimiento profesional.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "La",
+      "start": 0.299,
+      "end": 0.4267
+    },
+    {
+      "word": "escleroterapia",
+      "start": 0.469,
+      "end": 1.0667
+    },
+    {
+      "word": "busca",
+      "start": 1.109,
+      "end": 1.408
+    },
+    {
+      "word": "cerrar",
+      "start": 1.451,
+      "end": 1.7067
+    },
+    {
+      "word": "una",
+      "start": 1.749,
+      "end": 1.877
+    },
+    {
+      "word": "vena",
+      "start": 1.92,
+      "end": 2.133
+    },
+    {
+      "word": "seleccionada",
+      "start": 2.176,
+      "end": 2.688
+    },
+    {
+      "word": "mediante",
+      "start": 2.859,
+      "end": 3.1147
+    },
+    {
+      "word": "un",
+      "start": 3.243,
+      "end": 3.328
+    },
+    {
+      "word": "medicamento",
+      "start": 3.371,
+      "end": 3.925
+    },
+    {
+      "word": "esclerosante.",
+      "start": 3.968,
+      "end": 4.497
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 4.497,
+      "end": 5.397
+    },
+    {
+      "word": "El",
+      "start": 5.397,
+      "end": 5.61
+    },
+    {
+      "word": "corte",
+      "start": 5.695,
+      "end": 5.9510000000000005
+    },
+    {
+      "word": "muestra",
+      "start": 5.994,
+      "end": 6.335
+    },
+    {
+      "word": "una",
+      "start": 6.378,
+      "end": 6.549
+    },
+    {
+      "word": "vena",
+      "start": 6.591,
+      "end": 6.805
+    },
+    {
+      "word": "y",
+      "start": 6.89,
+      "end": 7.018
+    },
+    {
+      "word": "los",
+      "start": 7.061,
+      "end": 7.146
+    },
+    {
+      "word": "tejidos",
+      "start": 7.231,
+      "end": 7.615
+    },
+    {
+      "word": "que",
+      "start": 7.658,
+      "end": 7.743
+    },
+    {
+      "word": "la",
+      "start": 7.7860000000000005,
+      "end": 7.829
+    },
+    {
+      "word": "rodean.",
+      "start": 7.871,
+      "end": 8.26
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 8.26,
+      "end": 9.16
+    },
+    {
+      "word": "La",
+      "start": 9.16,
+      "end": 9.672
+    },
+    {
+      "word": "punción",
+      "start": 9.715,
+      "end": 10.056000000000001
+    },
+    {
+      "word": "se",
+      "start": 10.099,
+      "end": 10.184000000000001
+    },
+    {
+      "word": "representa",
+      "start": 10.227,
+      "end": 10.653
+    },
+    {
+      "word": "dentro",
+      "start": 10.781,
+      "end": 11.251
+    },
+    {
+      "word": "de",
+      "start": 11.293000000000001,
+      "end": 11.379
+    },
+    {
+      "word": "la",
+      "start": 11.421000000000001,
+      "end": 11.464
+    },
+    {
+      "word": "luz,",
+      "start": 11.507,
+      "end": 11.891
+    },
+    {
+      "word": "sin",
+      "start": 12.104000000000001,
+      "end": 12.275
+    },
+    {
+      "word": "enseñar",
+      "start": 12.317,
+      "end": 12.701
+    },
+    {
+      "word": "una",
+      "start": 12.744,
+      "end": 12.872
+    },
+    {
+      "word": "técnica",
+      "start": 12.915000000000001,
+      "end": 13.171000000000001
+    },
+    {
+      "word": "de",
+      "start": 13.299,
+      "end": 13.341000000000001
+    },
+    {
+      "word": "aplicación.",
+      "start": 13.384,
+      "end": 13.96
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 13.96,
+      "end": 14.86
+    },
+    {
+      "word": "El",
+      "start": 14.86,
+      "end": 15.031000000000002
+    },
+    {
+      "word": "ejemplo",
+      "start": 15.073,
+      "end": 15.329
+    },
+    {
+      "word": "muestra",
+      "start": 15.415000000000003,
+      "end": 15.713000000000001
+    },
+    {
+      "word": "un",
+      "start": 15.756,
+      "end": 15.841000000000001
+    },
+    {
+      "word": "esclerosante",
+      "start": 15.884,
+      "end": 16.439
+    },
+    {
+      "word": "detergente",
+      "start": 16.567,
+      "end": 17.164
+    },
+    {
+      "word": "en",
+      "start": 17.207,
+      "end": 17.249
+    },
+    {
+      "word": "forma",
+      "start": 17.292,
+      "end": 17.548000000000002
+    },
+    {
+      "word": "de",
+      "start": 17.591,
+      "end": 17.633
+    },
+    {
+      "word": "espuma.",
+      "start": 17.676,
+      "end": 18.054
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 18.054,
+      "end": 18.773
+    },
+    {
+      "word": "La",
+      "start": 18.773,
+      "end": 19.115
+    },
+    {
+      "word": "espuma",
+      "start": 19.157,
+      "end": 19.456
+    },
+    {
+      "word": "desplaza",
+      "start": 19.499,
+      "end": 19.968
+    },
+    {
+      "word": "parte",
+      "start": 20.011,
+      "end": 20.352
+    },
+    {
+      "word": "de",
+      "start": 20.395,
+      "end": 20.523
+    },
+    {
+      "word": "la",
+      "start": 20.565,
+      "end": 20.608
+    },
+    {
+      "word": "sangre",
+      "start": 20.651,
+      "end": 20.992
+    },
+    {
+      "word": "y",
+      "start": 21.078,
+      "end": 21.334
+    },
+    {
+      "word": "facilita",
+      "start": 21.376,
+      "end": 21.803
+    },
+    {
+      "word": "el",
+      "start": 21.846,
+      "end": 21.888
+    },
+    {
+      "word": "contacto",
+      "start": 21.931,
+      "end": 22.358
+    },
+    {
+      "word": "con",
+      "start": 22.443,
+      "end": 22.571
+    },
+    {
+      "word": "la",
+      "start": 22.613,
+      "end": 22.656
+    },
+    {
+      "word": "pared.",
+      "start": 22.699,
+      "end": 22.878
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 22.878,
+      "end": 23.778000000000002
+    },
+    {
+      "word": "La",
+      "start": 23.778000000000002,
+      "end": 24.119000000000003
+    },
+    {
+      "word": "lesión",
+      "start": 24.162000000000003,
+      "end": 24.460000000000004
+    },
+    {
+      "word": "endotelial",
+      "start": 24.503000000000004,
+      "end": 24.972000000000005
+    },
+    {
+      "word": "y",
+      "start": 25.143000000000004,
+      "end": 25.271000000000004
+    },
+    {
+      "word": "la",
+      "start": 25.314000000000004,
+      "end": 25.357000000000003
+    },
+    {
+      "word": "respuesta",
+      "start": 25.399000000000004,
+      "end": 25.826000000000004
+    },
+    {
+      "word": "local",
+      "start": 25.869000000000003,
+      "end": 25.997000000000003
+    },
+    {
+      "word": "pueden",
+      "start": 26.253000000000004,
+      "end": 26.765000000000004
+    },
+    {
+      "word": "favorecer",
+      "start": 26.807000000000002,
+      "end": 27.276000000000003
+    },
+    {
+      "word": "el",
+      "start": 27.319000000000003,
+      "end": 27.404000000000003
+    },
+    {
+      "word": "cierre",
+      "start": 27.447000000000003,
+      "end": 27.746000000000002
+    },
+    {
+      "word": "venoso.",
+      "start": 27.788000000000004,
+      "end": 28.203000000000003
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 28.203000000000003,
+      "end": 29.103
+    },
+    {
+      "word": "La",
+      "start": 29.103,
+      "end": 29.53
+    },
+    {
+      "word": "compresión",
+      "start": 29.572000000000003,
+      "end": 29.956000000000003
+    },
+    {
+      "word": "posterior",
+      "start": 29.999000000000002,
+      "end": 30.383000000000003
+    },
+    {
+      "word": "se",
+      "start": 30.511000000000003,
+      "end": 30.639000000000003
+    },
+    {
+      "word": "decide",
+      "start": 30.682000000000002,
+      "end": 30.895000000000003
+    },
+    {
+      "word": "según",
+      "start": 31.066000000000003,
+      "end": 31.364
+    },
+    {
+      "word": "el",
+      "start": 31.407000000000004,
+      "end": 31.450000000000003
+    },
+    {
+      "word": "procedimiento",
+      "start": 31.492,
+      "end": 32.175
+    },
+    {
+      "word": "y",
+      "start": 32.260000000000005,
+      "end": 32.431
+    },
+    {
+      "word": "la",
+      "start": 32.474000000000004,
+      "end": 32.516000000000005
+    },
+    {
+      "word": "situación",
+      "start": 32.559,
+      "end": 32.986000000000004
+    },
+    {
+      "word": "clínica.",
+      "start": 33.028000000000006,
+      "end": 33.391000000000005
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 33.391000000000005,
+      "end": 34.291000000000004
+    },
+    {
+      "word": "Los",
+      "start": 34.291000000000004,
+      "end": 34.504000000000005
+    },
+    {
+      "word": "cuidados",
+      "start": 34.547000000000004,
+      "end": 35.016000000000005
+    },
+    {
+      "word": "y",
+      "start": 35.144000000000005,
+      "end": 35.230000000000004
+    },
+    {
+      "word": "la",
+      "start": 35.272000000000006,
+      "end": 35.358000000000004
+    },
+    {
+      "word": "actividad",
+      "start": 35.400000000000006,
+      "end": 35.784000000000006
+    },
+    {
+      "word": "después",
+      "start": 35.870000000000005,
+      "end": 36.168000000000006
+    },
+    {
+      "word": "del",
+      "start": 36.211000000000006,
+      "end": 36.254000000000005
+    },
+    {
+      "word": "tratamiento",
+      "start": 36.339000000000006,
+      "end": 36.851000000000006
+    },
+    {
+      "word": "se",
+      "start": 36.93600000000001,
+      "end": 37.06400000000001
+    },
+    {
+      "word": "individualizan.",
+      "start": 37.107000000000006,
+      "end": 37.874
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 37.874,
+      "end": 38.632000000000005
+    },
+    {
+      "word": "Con",
+      "start": 38.632000000000005,
+      "end": 38.931000000000004
+    },
+    {
+      "word": "el",
+      "start": 38.973000000000006,
+      "end": 39.016000000000005
+    },
+    {
+      "word": "tiempo",
+      "start": 39.059000000000005,
+      "end": 39.400000000000006
+    },
+    {
+      "word": "puede",
+      "start": 39.528000000000006,
+      "end": 39.86900000000001
+    },
+    {
+      "word": "desarrollarse",
+      "start": 39.912000000000006,
+      "end": 40.50900000000001
+    },
+    {
+      "word": "fibrosis,",
+      "start": 40.55200000000001,
+      "end": 41.149
+    },
+    {
+      "word": "aunque",
+      "start": 41.277,
+      "end": 41.789
+    },
+    {
+      "word": "también",
+      "start": 41.832,
+      "end": 42.13100000000001
+    },
+    {
+      "word": "puede",
+      "start": 42.17400000000001,
+      "end": 42.38700000000001
+    },
+    {
+      "word": "haber",
+      "start": 42.43000000000001,
+      "end": 42.6
+    },
+    {
+      "word": "recanalización.",
+      "start": 42.643,
+      "end": 43.458000000000006
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 43.458000000000006,
+      "end": 44.358000000000004
+    },
+    {
+      "word": "La",
+      "start": 44.358000000000004,
+      "end": 44.486000000000004
+    },
+    {
+      "word": "vista",
+      "start": 44.529,
+      "end": 44.7
+    },
+    {
+      "word": "de",
+      "start": 44.742000000000004,
+      "end": 44.828
+    },
+    {
+      "word": "la",
+      "start": 44.870000000000005,
+      "end": 44.913000000000004
+    },
+    {
+      "word": "piel",
+      "start": 44.956,
+      "end": 45.169000000000004
+    },
+    {
+      "word": "es",
+      "start": 45.297000000000004,
+      "end": 45.382000000000005
+    },
+    {
+      "word": "una",
+      "start": 45.425000000000004,
+      "end": 45.553000000000004
+    },
+    {
+      "word": "comparación",
+      "start": 45.596000000000004,
+      "end": 46.150000000000006
+    },
+    {
+      "word": "conceptual,",
+      "start": 46.193000000000005,
+      "end": 46.790000000000006
+    },
+    {
+      "word": "sin",
+      "start": 47.04600000000001,
+      "end": 47.17400000000001
+    },
+    {
+      "word": "prometer",
+      "start": 47.217000000000006,
+      "end": 47.601000000000006
+    },
+    {
+      "word": "desaparición.",
+      "start": 47.64300000000001,
+      "end": 48.35000000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 48.35000000000001,
+      "end": 49.25000000000001
+    },
+    {
+      "word": "El",
+      "start": 49.25000000000001,
+      "end": 49.76200000000001
+    },
+    {
+      "word": "esclerosante",
+      "start": 49.80500000000001,
+      "end": 50.36000000000001
+    },
+    {
+      "word": "líquido",
+      "start": 50.53100000000001,
+      "end": 50.91500000000001
+    },
+    {
+      "word": "se",
+      "start": 51.04300000000001,
+      "end": 51.21300000000001
+    },
+    {
+      "word": "mezcla",
+      "start": 51.25600000000001,
+      "end": 51.51200000000001
+    },
+    {
+      "word": "con",
+      "start": 51.55500000000001,
+      "end": 51.68300000000001
+    },
+    {
+      "word": "la",
+      "start": 51.72500000000001,
+      "end": 51.81100000000001
+    },
+    {
+      "word": "sangre",
+      "start": 51.85300000000001,
+      "end": 52.15200000000001
+    },
+    {
+      "word": "y",
+      "start": 52.23700000000001,
+      "end": 52.45100000000001
+    },
+    {
+      "word": "su",
+      "start": 52.49300000000001,
+      "end": 52.57900000000001
+    },
+    {
+      "word": "actividad",
+      "start": 52.62100000000001,
+      "end": 53.00500000000001
+    },
+    {
+      "word": "cambia",
+      "start": 53.09100000000001,
+      "end": 53.43200000000001
+    },
+    {
+      "word": "al",
+      "start": 53.47500000000001,
+      "end": 53.51700000000001
+    },
+    {
+      "word": "contactar",
+      "start": 53.56000000000001,
+      "end": 53.98600000000001
+    },
+    {
+      "word": "con",
+      "start": 54.02900000000001,
+      "end": 54.11400000000001
+    },
+    {
+      "word": "proteínas.",
+      "start": 54.15700000000001,
+      "end": 54.77500000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 54.77500000000001,
+      "end": 55.72300000000001
+    },
+    {
+      "word": "La",
+      "start": 55.72300000000001,
+      "end": 55.85100000000001
+    },
+    {
+      "word": "espuma",
+      "start": 55.89400000000001,
+      "end": 56.10700000000001
+    },
+    {
+      "word": "también",
+      "start": 56.19300000000001,
+      "end": 56.49100000000001
+    },
+    {
+      "word": "se",
+      "start": 56.53400000000001,
+      "end": 56.61900000000001
+    },
+    {
+      "word": "mezcla",
+      "start": 56.66200000000001,
+      "end": 57.00300000000001
+    },
+    {
+      "word": "y",
+      "start": 57.08900000000001,
+      "end": 57.25900000000001
+    },
+    {
+      "word": "pierde",
+      "start": 57.30200000000001,
+      "end": 57.64300000000001
+    },
+    {
+      "word": "actividad;",
+      "start": 57.68600000000001,
+      "end": 58.34700000000001
+    },
+    {
+      "word": "no",
+      "start": 58.58200000000001,
+      "end": 58.83800000000001
+    },
+    {
+      "word": "elimina",
+      "start": 58.88100000000001,
+      "end": 59.26500000000001
+    },
+    {
+      "word": "los",
+      "start": 59.35000000000001,
+      "end": 59.43500000000001
+    },
+    {
+      "word": "riesgos",
+      "start": 59.47800000000001,
+      "end": 59.81900000000001
+    },
+    {
+      "word": "del",
+      "start": 59.86200000000001,
+      "end": 59.94700000000001
+    },
+    {
+      "word": "procedimiento.",
+      "start": 59.99000000000001,
+      "end": 60.66800000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 60.66800000000001,
+      "end": 61.56800000000001
+    },
+    {
+      "word": "La",
+      "start": 61.56800000000001,
+      "end": 61.69600000000001
+    },
+    {
+      "word": "intensidad",
+      "start": 61.73900000000001,
+      "end": 62.20800000000001
+    },
+    {
+      "word": "de",
+      "start": 62.25100000000001,
+      "end": 62.29300000000001
+    },
+    {
+      "word": "este",
+      "start": 62.33600000000001,
+      "end": 62.50700000000001
+    },
+    {
+      "word": "control",
+      "start": 62.549000000000014,
+      "end": 62.72000000000001
+    },
+    {
+      "word": "no",
+      "start": 63.01900000000001,
+      "end": 63.53100000000001
+    },
+    {
+      "word": "representa",
+      "start": 63.573000000000015,
+      "end": 64.04300000000002
+    },
+    {
+      "word": "una",
+      "start": 64.17100000000002,
+      "end": 64.34100000000002
+    },
+    {
+      "word": "concentración",
+      "start": 64.38400000000001,
+      "end": 65.10900000000001
+    },
+    {
+      "word": "ni",
+      "start": 65.32300000000002,
+      "end": 65.66400000000002
+    },
+    {
+      "word": "una",
+      "start": 65.70700000000002,
+      "end": 65.83500000000002
+    },
+    {
+      "word": "dosis",
+      "start": 65.87700000000001,
+      "end": 66.13300000000001
+    },
+    {
+      "word": "clínica.",
+      "start": 66.21900000000002,
+      "end": 66.58700000000002
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 66.58700000000002,
+      "end": 67.48700000000001
+    },
+    {
+      "word": "Una",
+      "start": 67.48700000000001,
+      "end": 68.04200000000002
+    },
+    {
+      "word": "lesión",
+      "start": 68.08400000000002,
+      "end": 68.38300000000001
+    },
+    {
+      "word": "excesiva",
+      "start": 68.42600000000002,
+      "end": 68.89500000000001
+    },
+    {
+      "word": "puede",
+      "start": 68.93800000000002,
+      "end": 69.15100000000001
+    },
+    {
+      "word": "acompañarse",
+      "start": 69.19400000000002,
+      "end": 69.79100000000001
+    },
+    {
+      "word": "de",
+      "start": 69.876,
+      "end": 69.96200000000002
+    },
+    {
+      "word": "inflamación",
+      "start": 70.004,
+      "end": 70.602
+    },
+    {
+      "word": "o",
+      "start": 70.73,
+      "end": 70.9
+    },
+    {
+      "word": "daño",
+      "start": 70.94300000000001,
+      "end": 71.156
+    },
+    {
+      "word": "de",
+      "start": 71.19900000000001,
+      "end": 71.284
+    },
+    {
+      "word": "los",
+      "start": 71.32700000000001,
+      "end": 71.412
+    },
+    {
+      "word": "tejidos.",
+      "start": 71.45500000000001,
+      "end": 71.88600000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 71.88600000000001,
+      "end": 72.78600000000002
+    },
+    {
+      "word": "La",
+      "start": 72.78600000000002,
+      "end": 72.91400000000002
+    },
+    {
+      "word": "indicación",
+      "start": 72.95700000000002,
+      "end": 73.42600000000002
+    },
+    {
+      "word": "y",
+      "start": 73.46900000000002,
+      "end": 73.55400000000002
+    },
+    {
+      "word": "todos",
+      "start": 73.59700000000002,
+      "end": 73.89600000000002
+    },
+    {
+      "word": "los",
+      "start": 73.93800000000002,
+      "end": 74.02400000000002
+    },
+    {
+      "word": "parámetros",
+      "start": 74.06600000000002,
+      "end": 74.53600000000002
+    },
+    {
+      "word": "de",
+      "start": 74.57800000000002,
+      "end": 74.62100000000002
+    },
+    {
+      "word": "tratamiento",
+      "start": 74.66400000000002,
+      "end": 75.17600000000002
+    },
+    {
+      "word": "requieren",
+      "start": 75.26100000000002,
+      "end": 75.68800000000002
+    },
+    {
+      "word": "valoración",
+      "start": 75.73000000000002,
+      "end": 76.37000000000002
+    },
+    {
+      "word": "y",
+      "start": 76.45600000000002,
+      "end": 76.58400000000002
+    },
+    {
+      "word": "seguimiento",
+      "start": 76.62600000000002,
+      "end": 77.09600000000002
+    },
+    {
+      "word": "profesional.",
+      "start": 77.13800000000002,
+      "end": 77.93800000000002
+    },
+    {
+      "word": "<end>",
+      "start": 78.18448979591837,
+      "end": 78.18448979591837
+    }
+  ]
+}

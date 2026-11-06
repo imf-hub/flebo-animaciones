@@ -1,0 +1,838 @@
+{
+  "date": "2026-11-06",
+  "medicalReview": "Documentary and technical contrast; no independent clinician approval.",
+  "catalogModules": 22,
+  "threeDModels": 13,
+  "newTopics": 3,
+  "newSelectableParts": 23,
+  "newGuidedSteps": 9,
+  "totalGuidedSteps": 66,
+  "totalQuestions": 22,
+  "totalNarratedScenes": 199,
+  "desktopViewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "mobileViewport": {
+    "width": 390,
+    "height": 844,
+    "physicalDevice": false
+  },
+  "fullPlayback": [
+    {
+      "duration": "42.527344",
+      "fps": "60.0",
+      "id": "ablacion-endovenosa",
+      "result": "completed",
+      "scenes": "7"
+    },
+    {
+      "duration": "40.463656",
+      "fps": "60.0",
+      "id": "trombosis-venosa-superficial",
+      "result": "completed",
+      "scenes": "7"
+    },
+    {
+      "duration": "43.25875",
+      "fps": "60.0",
+      "id": "obstruccion-iliaca",
+      "result": "completed",
+      "scenes": "7"
+    },
+    {
+      "duration": "51.565688",
+      "fps": "60.0",
+      "id": "pared-3d",
+      "result": "completed",
+      "scenes": "10"
+    },
+    {
+      "duration": "49.789375",
+      "id": "valvula-sana",
+      "result": "completed",
+      "scenes": "10"
+    },
+    {
+      "duration": "40.620406",
+      "id": "valvula-incompetente",
+      "result": "completed",
+      "scenes": "8"
+    },
+    {
+      "duration": "58.462031",
+      "id": "bomba-muscular",
+      "result": "completed",
+      "scenes": "11"
+    },
+    {
+      "duration": "49.110188",
+      "id": "fascias",
+      "result": "completed",
+      "scenes": "10"
+    },
+    {
+      "duration": "55.248969",
+      "fps": "60.0",
+      "id": "compartimentos-3d",
+      "result": "completed",
+      "scenes": "11"
+    },
+    {
+      "duration": "47.490594",
+      "id": "union-safenofemoral",
+      "result": "completed",
+      "scenes": "10"
+    },
+    {
+      "duration": "40.777125",
+      "fps": "60.0",
+      "id": "progresion-varice",
+      "result": "completed",
+      "scenes": "8"
+    },
+    {
+      "duration": "54.648156",
+      "id": "microcirculacion",
+      "result": "completed",
+      "scenes": "10"
+    },
+    {
+      "duration": "78.184469",
+      "id": "escleroterapia",
+      "result": "completed",
+      "scenes": "15"
+    },
+    {
+      "duration": "63.007344",
+      "id": "trombosis-venosa-profunda",
+      "result": "completed",
+      "scenes": "11"
+    },
+    {
+      "duration": "56.711813",
+      "id": "sindrome-postrombotico",
+      "result": "completed",
+      "scenes": "10"
+    },
+    {
+      "duration": "55.248969",
+      "fps": "60.0",
+      "id": "compartimentos-3d",
+      "result": "completed",
+      "scenes": "11"
+    }
+  ],
+  "fullPlaybackUnique": 15,
+  "catalogChecks": [
+    {
+      "canvas": true,
+      "doctor": "Relacionar las túnicas de la pared con la coaptación valvular.",
+      "id": "pared-3d",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 2,
+      "patient": "Reconocer la pared, la luz y las dos valvas.",
+      "quiz": "Así es. Sus valvas ayudan a limitar el regreso de la sangre. Observa cómo se aproximan al cerrarse."
+    },
+    {
+      "canvas": true,
+      "doctor": "Observar el ciclo valvular y su representación Doppler ilustrativa.",
+      "id": "valvula-sana",
+      "kind": "2d",
+      "missing": [],
+      "sources": 2,
+      "patient": "Relacionar la apertura y el cierre con el sentido del flujo.",
+      "quiz": "Así es. El retorno venoso lleva la sangre hacia el corazón. Las válvulas y la actividad muscular contribuyen a ese recorrido."
+    },
+    {
+      "canvas": true,
+      "doctor": "Relacionar el defecto de coaptación con flujo retrógrado ilustrativo.",
+      "id": "valvula-incompetente",
+      "kind": "2d",
+      "missing": [],
+      "sources": 2,
+      "patient": "Reconocer qué significa reflujo en el modelo.",
+      "quiz": "Así es. Es flujo retrógrado. En este esquema se distingue con el color naranja."
+    },
+    {
+      "canvas": true,
+      "doctor": "Relacionar contracción, relajación y competencia del sistema venoso.",
+      "id": "bomba-muscular",
+      "kind": "2d",
+      "missing": [],
+      "sources": 2,
+      "patient": "Comprender cómo participa el músculo en el retorno venoso.",
+      "quiz": "Así es. La contracción muscular comprime las venas y contribuye al desplazamiento de la sangre."
+    },
+    {
+      "canvas": true,
+      "doctor": "Identificar el compartimento safeno y distinguirlo del tejido extrafascial.",
+      "id": "fascias",
+      "kind": "2d",
+      "missing": [],
+      "sources": 2,
+      "patient": "Ubicar la safena respecto de la piel y el músculo.",
+      "quiz": "Así es. La safena pertenece al sistema superficial; las venas profundas se encuentran bajo la fascia muscular."
+    },
+    {
+      "canvas": true,
+      "doctor": "Distinguir comunicantes y perforantes por su relación con la fascia muscular.",
+      "id": "compartimentos-3d",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 3,
+      "patient": "Distinguir venas superficiales, profundas y sus conexiones.",
+      "quiz": "Así es. La perforante conecta el sistema superficial con el profundo atravesando la fascia muscular."
+    },
+    {
+      "canvas": true,
+      "doctor": "Localizar la unión safenofemoral y sus válvulas en el esquema.",
+      "id": "union-safenofemoral",
+      "kind": "2d",
+      "missing": [],
+      "sources": 2,
+      "patient": "Reconocer una conexión entre el sistema superficial y el profundo.",
+      "quiz": "Así es. La safena mayor se une a la vena femoral común, que pertenece al sistema profundo."
+    },
+    {
+      "canvas": true,
+      "doctor": "Explorar dilatación y tortuosidad con un parámetro morfológico ilustrativo.",
+      "id": "progresion-varice",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 2,
+      "patient": "Reconocer cambios de forma sin confundirlos con una escala de tiempo real.",
+      "quiz": "Así es. El control permite comparar formas. No es un pronóstico ni una línea de tiempo de un paciente."
+    },
+    {
+      "canvas": true,
+      "doctor": "Explorar de forma conceptual la relación entre presión venosa e intercambio tisular.",
+      "id": "microcirculacion",
+      "kind": "2d",
+      "missing": [],
+      "sources": 2,
+      "patient": "Relacionar los vasos pequeños con el tejido que los rodea.",
+      "quiz": "Así es. Es una vista ampliada y simplificada de la microcirculación y del tejido cercano."
+    },
+    {
+      "canvas": true,
+      "doctor": "Explorar la secuencia conceptual y distinguirla de una prescripción clínica.",
+      "id": "escleroterapia",
+      "kind": "2d",
+      "missing": [],
+      "sources": 2,
+      "patient": "Reconocer las etapas generales sin utilizar el modelo como guía de tratamiento.",
+      "quiz": "Así es. La selección de un tratamiento y sus parámetros requiere valoración profesional. El modelo no prescribe."
+    },
+    {
+      "canvas": true,
+      "doctor": "Explorar el mecanismo conceptual sin interpretar los valores como un riesgo calculado.",
+      "id": "trombosis-venosa-profunda",
+      "kind": "2d",
+      "missing": [],
+      "sources": 2,
+      "patient": "Entender qué nombra una trombosis venosa profunda.",
+      "quiz": "Así es. La trombosis venosa profunda se refiere a la formación de un coágulo en una vena profunda."
+    },
+    {
+      "canvas": true,
+      "doctor": "Observar organización, recanalización y secuelas valvulares de forma ilustrativa.",
+      "id": "sindrome-postrombotico",
+      "kind": "2d",
+      "missing": [],
+      "sources": 2,
+      "patient": "Reconocer que la estructura puede cambiar después de una trombosis.",
+      "quiz": "Así es. Puede aparecer tras una trombosis venosa profunda. La representación no predice si ocurrirá en una persona."
+    },
+    {
+      "canvas": true,
+      "doctor": "Relacionar tibiales, poplítea, femorales, ilíacas y cava con los ejes safenos.",
+      "id": "viaje-venoso",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 2,
+      "patient": "Reconocer los caminos principales del retorno venoso.",
+      "quiz": "Así es. La cava inferior desemboca en la aurícula derecha. El modelo no representa el circuito completo."
+    },
+    {
+      "canvas": true,
+      "doctor": "Relacionar localización, calibres convencionales y componentes C1/C2 sin inferir el origen del reflujo.",
+      "id": "venas-superficiales",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 2,
+      "patient": "Distinguir vasos pequeños de la piel y venas subcutáneas dilatadas.",
+      "quiz": "Así es. Telangiectasias y reticulares corresponden a C1; las várices, a C2. El aspecto no establece por sí solo su causa."
+    },
+    {
+      "canvas": true,
+      "doctor": "Relacionar soporte tisular y bomba muscular; reconocer la valoración arterial y el ajuste como requisitos clínicos.",
+      "id": "compresion-medica",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 3,
+      "patient": "Entender el papel de la compresión sin usar el modelo para elegir una presión.",
+      "quiz": "Así es. La indicación depende del problema, la perfusión arterial, el ajuste y otras condiciones. El control no prescribe."
+    },
+    {
+      "canvas": true,
+      "doctor": "Diferenciar modo B, compresibilidad y Doppler; evitar interpretar rojo/azul como identidad vascular o diagnóstico aislado.",
+      "id": "ultrasonido-duplex",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 2,
+      "patient": "Distinguir imagen anatómica, compresión y señales de flujo.",
+      "quiz": "Así es. El mapa de color depende de la dirección respecto al transductor y de la configuración; no identifica por sí solo el tipo de vaso."
+    },
+    {
+      "canvas": true,
+      "doctor": "Representar filtración y retorno linfático sin imponer reabsorción venular sostenida universal ni una causa única de edema.",
+      "id": "edema-linfatico",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 2,
+      "patient": "Relacionar la hinchazón con el equilibrio del líquido en el tejido.",
+      "quiz": "Así es. El transporte linfático es fundamental para el balance tisular. La hinchazón puede tener causas venosas, linfáticas y sistémicas."
+    },
+    {
+      "canvas": true,
+      "doctor": "Identificar el componente clínico CEAP 2020, incluidas C4a/b/c, C5/C6 y los modificadores aplicables.",
+      "id": "clasificacion-ceap",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 2,
+      "patient": "Comprender que la clasificación describe hallazgos, no el futuro de una persona.",
+      "quiz": "Así es. El componente clínico clasifica manifestaciones en un momento determinado. No predice una evolución inevitable."
+    },
+    {
+      "canvas": true,
+      "doctor": "Relacionar hipertensión venosa, microcirculación y lesión cutánea, distinguiendo mecanismo ilustrativo, etiología y evaluación arterial.",
+      "id": "ulcera-venosa",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 2,
+      "patient": "Entender que una herida requiere estudiar su causa y no solo su aspecto.",
+      "quiz": "Así es. Pueden existir causas arteriales, mixtas y otras. La valoración de la herida y de la circulación orienta el diagnóstico y el manejo."
+    },
+    {
+      "canvas": true,
+      "doctor": "Relacionar ablación térmica, tumescencia y conservación del sistema profundo.",
+      "id": "ablacion-endovenosa",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 2,
+      "patient": "Distinguir el segmento tratado del drenaje profundo.",
+      "quiz": "Así es. El modelo explica relaciones y un mecanismo. No representa dosimetría, distancias ni un plan de tratamiento."
+    },
+    {
+      "canvas": true,
+      "doctor": "Distinguir TVS localizada, cercanía a la unión y coexistencia de TVP.",
+      "id": "trombosis-venosa-superficial",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 2,
+      "patient": "Entender por qué importa localizar y medir la extensión de una TVS.",
+      "quiz": "Así es. La evaluación por dúplex localiza la extensión y busca relación con el sistema profundo o TVP coexistente."
+    },
+    {
+      "canvas": true,
+      "doctor": "Comparar compresión no trombótica y cambios postrombóticos sin inferir indicación de stent.",
+      "id": "obstruccion-iliaca",
+      "kind": "3d",
+      "missing": [],
+      "rendered": "true",
+      "sources": 2,
+      "patient": "Distinguir una compresión anatómica de un diagnóstico clínico.",
+      "quiz": "Así es. La compresión puede ser asintomática. La decisión integra síntomas, diagnósticos alternativos y pruebas adecuadas."
+    }
+  ],
+  "mobile": [
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "pared-3d",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "valvula-sana",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "valvula-incompetente",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "bomba-muscular",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "fascias",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "compartimentos-3d",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "union-safenofemoral",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "progresion-varice",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "microcirculacion",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "escleroterapia",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "trombosis-venosa-profunda",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "sindrome-postrombotico",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "viaje-venoso",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "venas-superficiales",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "compresion-medica",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "ultrasonido-duplex",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "edema-linfatico",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "clasificacion-ceap",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "ulcera-venosa",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "ablacion-endovenosa",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "trombosis-venosa-superficial",
+      "viewerWidth": 390,
+      "width": 390
+    },
+    {
+      "canvas": true,
+      "documentWidth": 390,
+      "id": "obstruccion-iliaca",
+      "viewerWidth": 390,
+      "width": 390
+    }
+  ],
+  "finalSmoke": [
+    {
+      "canvas": true,
+      "id": "pared-3d",
+      "rendered": "true"
+    },
+    {
+      "canvas": true,
+      "id": "valvula-sana"
+    },
+    {
+      "canvas": true,
+      "id": "valvula-incompetente"
+    },
+    {
+      "canvas": true,
+      "id": "bomba-muscular"
+    },
+    {
+      "canvas": true,
+      "id": "fascias"
+    },
+    {
+      "canvas": true,
+      "id": "compartimentos-3d",
+      "rendered": "true"
+    },
+    {
+      "canvas": true,
+      "id": "union-safenofemoral"
+    },
+    {
+      "canvas": true,
+      "id": "progresion-varice",
+      "rendered": "true"
+    },
+    {
+      "canvas": true,
+      "id": "microcirculacion"
+    },
+    {
+      "canvas": true,
+      "id": "escleroterapia"
+    },
+    {
+      "canvas": true,
+      "id": "trombosis-venosa-profunda"
+    },
+    {
+      "canvas": true,
+      "id": "sindrome-postrombotico"
+    },
+    {
+      "canvas": true,
+      "id": "viaje-venoso",
+      "rendered": "true"
+    },
+    {
+      "canvas": true,
+      "id": "venas-superficiales",
+      "rendered": "true"
+    },
+    {
+      "canvas": true,
+      "id": "compresion-medica",
+      "rendered": "true"
+    },
+    {
+      "canvas": true,
+      "id": "ultrasonido-duplex",
+      "rendered": "true"
+    },
+    {
+      "canvas": true,
+      "id": "edema-linfatico",
+      "rendered": "true"
+    },
+    {
+      "canvas": true,
+      "id": "clasificacion-ceap",
+      "rendered": "true"
+    },
+    {
+      "canvas": true,
+      "id": "ulcera-venosa",
+      "rendered": "true"
+    },
+    {
+      "canvas": true,
+      "id": "ablacion-endovenosa",
+      "rendered": "true"
+    },
+    {
+      "canvas": true,
+      "id": "trombosis-venosa-superficial",
+      "rendered": "true"
+    },
+    {
+      "canvas": true,
+      "id": "obstruccion-iliaca",
+      "rendered": "true"
+    }
+  ],
+  "interactive": [
+    {
+      "id": "ablacion-endovenosa",
+      "steps": [
+        {
+          "readout": "Mecanismo observadoLocalización superficial y drenaje profundoLímite del esquemaSin distancia, potencia, temperatura ni dosis clínica",
+          "selected": [
+            "true",
+            "false",
+            "false"
+          ]
+        },
+        {
+          "readout": "Mecanismo observadoLíquido perivenoso: anestesia y separación tisularLímite del esquemaSin distancia, potencia, temperatura ni dosis clínica",
+          "selected": [
+            "false",
+            "true",
+            "false"
+          ]
+        },
+        {
+          "readout": "Mecanismo observadoEnergía localizada durante retirada ilustradaLímite del esquemaSin distancia, potencia, temperatura ni dosis clínica",
+          "selected": [
+            "false",
+            "false",
+            "true"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "name": "Tejido subcutáneo",
+          "isolated": "true",
+          "description": "Plano subcutáneo representado por lobulillos y tributarias superficiales."
+        },
+        {
+          "name": "Vena superficial seleccionada",
+          "isolated": "true",
+          "description": "Segmento superficial con lesión térmica y remodelado esquemáticos. No fija indicación ni extensión del tratamiento."
+        },
+        {
+          "name": "Vena profunda",
+          "isolated": "true",
+          "description": "Referencia del sistema profundo: debe distinguirse del segmento superficial tratado o trombosado."
+        },
+        {
+          "name": "Unión superficial-profunda",
+          "isolated": "true",
+          "description": "Referencia proximal de una conexión superficial-profunda, sin distancias a escala. No sirve para posicionar un catéter."
+        },
+        {
+          "name": "Nervio: referencia de proximidad",
+          "isolated": "true",
+          "description": "Referencia nerviosa simplificada. La proximidad nervio-vena varía según el territorio y la persona."
+        },
+        {
+          "name": "Tumescencia perivenosa",
+          "isolated": "true",
+          "description": "En ablación térmica, la tumescencia aporta anestesia y ayuda a separar/proteger tejidos y comprimir el segmento. No se representa dosis ni composición."
+        },
+        {
+          "name": "Catéter térmico",
+          "isolated": "true",
+          "description": "Representación conjunta de técnicas térmicas. La posición, potencia, temperatura y velocidad dependen del dispositivo, técnica y evaluación."
+        },
+        {
+          "name": "Frente térmico ilustrado",
+          "isolated": "true",
+          "description": "Marcador conceptual de energía. No representa un mapa térmico ni modela la propagación de calor."
+        }
+      ],
+      "patient": "Distinguir el segmento tratado del drenaje profundo.",
+      "feedback": "Así es. El modelo explica relaciones y un mecanismo. No representa dosimetría, distancias ni un plan de tratamiento."
+    },
+    {
+      "id": "trombosis-venosa-superficial",
+      "steps": [
+        {
+          "readout": "Relación anatómicaSegmento superficial, alejado en este dibujoQué debe comprobarseDúplex: extensión y relación con venas profundas",
+          "selected": [
+            "true",
+            "false",
+            "false"
+          ]
+        },
+        {
+          "readout": "Relación anatómicaEl extremo se aproxima a la unión profundaQué debe comprobarseDúplex: extensión y relación con venas profundas",
+          "selected": [
+            "false",
+            "true",
+            "false"
+          ]
+        },
+        {
+          "readout": "Relación anatómicaTVS y TVP mostradas juntas, sin inferir cronologíaQué debe comprobarseDúplex: extensión y relación con venas profundas",
+          "selected": [
+            "false",
+            "false",
+            "true"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "name": "Tejido subcutáneo",
+          "isolated": "true",
+          "description": "Plano subcutáneo representado por lobulillos y tributarias superficiales."
+        },
+        {
+          "name": "Vena profunda",
+          "isolated": "true",
+          "description": "Referencia del sistema profundo: debe distinguirse del segmento superficial tratado o trombosado."
+        },
+        {
+          "name": "Safena: sistema superficial",
+          "isolated": "true",
+          "description": "Eje safeno ilustrado para localizar TVS y relacionar su extremo proximal con el sistema profundo."
+        },
+        {
+          "name": "Unión superficial-profunda",
+          "isolated": "true",
+          "description": "Referencia proximal de una conexión superficial-profunda, sin distancias a escala. No sirve para posicionar un catéter."
+        },
+        {
+          "name": "Trombo superficial",
+          "isolated": "true",
+          "description": "TVS de extensión variable. El aspecto de la piel no mide longitud ni excluye TVP o embolia pulmonar."
+        },
+        {
+          "name": "Inflamación perivenosa",
+          "isolated": "true",
+          "description": "Halo conceptual de inflamación; no demuestra infección ni representa temperatura medida."
+        },
+        {
+          "name": "TVP asociada: comparación",
+          "isolated": "true",
+          "description": "Ejemplo de coexistencia de TVS y TVP; no representa una progresión inevitable ni una tasa de extensión."
+        }
+      ],
+      "patient": "Entender por qué importa localizar y medir la extensión de una TVS.",
+      "feedback": "Así es. La evaluación por dúplex localiza la extensión y busca relación con el sistema profundo o TVP coexistente."
+    },
+    {
+      "id": "obstruccion-iliaca",
+      "steps": [
+        {
+          "readout": "Situación comparadaDrenaje proximal permeableInterpretaciónLa anatomía aislada no determina síntomas ni indica un stent",
+          "selected": [
+            "true",
+            "false",
+            "false"
+          ]
+        },
+        {
+          "readout": "Situación comparadaArteria anterior y referencia lumbar posteriorInterpretaciónLa anatomía aislada no determina síntomas ni indica un stent",
+          "selected": [
+            "false",
+            "true",
+            "false"
+          ]
+        },
+        {
+          "readout": "Situación comparadaBandas intraluminales tras una trombosis previaInterpretaciónLa anatomía aislada no determina síntomas ni indica un stent",
+          "selected": [
+            "false",
+            "false",
+            "true"
+          ]
+        }
+      ],
+      "parts": [
+        {
+          "name": "Referencia lumbar posterior",
+          "isolated": "true",
+          "description": "Referencia vertebral simplificada posterior al cruce vascular, sin reconstrucción individual ni asignación de nivel a escala."
+        },
+        {
+          "name": "Ilíaca común izquierda",
+          "isolated": "true",
+          "description": "Cruza hacia la cava inferior y puede relacionarse con la arteria ilíaca común derecha y estructuras lumbares. Compresión anatómica no equivale a síndrome."
+        },
+        {
+          "name": "Ilíaca común derecha",
+          "isolated": "true",
+          "description": "Se une con la ilíaca común izquierda para formar la cava inferior; trayecto y proporciones simplificados."
+        },
+        {
+          "name": "Vena cava inferior",
+          "isolated": "true",
+          "description": "Vena cava inferior, que desemboca en la aurícula derecha."
+        },
+        {
+          "name": "Arteria ilíaca común derecha",
+          "isolated": "true",
+          "description": "Relación anterior en el patrón clásico de compresión ilíaca izquierda. No implica por sí sola una obstrucción clínicamente significativa."
+        },
+        {
+          "name": "Arteria ilíaca común izquierda",
+          "isolated": "true",
+          "description": "Referencia arterial contralateral para orientación espacial. No se simula circulación arterial."
+        },
+        {
+          "name": "Bandas postrombóticas",
+          "isolated": "true",
+          "description": "Bandas intraluminales conceptuales en una comparación postrombótica. Se distinguen de la lesión ilíaca no trombótica."
+        },
+        {
+          "name": "Vía colateral: ejemplo",
+          "isolated": "true",
+          "description": "Trayecto conceptual, no mapa anatómico exhaustivo. Su presencia no mide la relevancia hemodinámica ni indica por sí sola intervención."
+        }
+      ],
+      "patient": "Distinguir una compresión anatómica de un diagnóstico clínico.",
+      "feedback": "Así es. La compresión puede ser asintomática. La decisión integra síntomas, diagnósticos alternativos y pruebas adecuadas."
+    }
+  ],
+  "knownReviewLimit": "No independent phonetic/auditory audit, clinical simulator validation or physical-phone benchmark."
+}

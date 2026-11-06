@@ -1,5 +1,7 @@
 # Contraste documental de los siete módulos nuevos
 
+**Revisión posterior:** consultar también el [catálogo completo de 22 módulos](REVISION_MEDICA_CATALOGO_COMPLETO.md), que incluye la corrección documental y técnica de los doce originales. Este archivo conserva el alcance del primer lote.
+
 Fecha: 6 de noviembre de 2026. Alcance: contenido nuevo de `extension-data.js`, sus guiones grabados y la representación conceptual en `anatomy-scenes.js`. **Es un contraste con fuentes publicadas; no una aprobación clínica de un especialista humano ni una validación de un simulador fisiológico.** No se extiende automáticamente a los doce módulos heredados.
 
 ## Matriz de revisión

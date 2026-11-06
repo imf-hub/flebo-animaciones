@@ -1,0 +1,748 @@
+{
+  "duration": 58.46204081632653,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>La pantorrilla participa en el retorno venoso mediante su actividad muscular.<break time=\"0.9s\"/>El corte distingue piel, tejido subcutáneo, fascia y músculo.<break time=\"0.9s\"/>La contracción comprime las venas profundas del segmento ilustrado.<break time=\"0.9s\"/>En la eyección, la válvula proximal abre y la distal limita el retorno hacia el pie.<break time=\"0.9s\"/>Al relajarse el músculo, se representa el llenado desde distal y desde conexiones superficiales.<break time=\"0.9s\"/>La gráfica compara la tendencia de presión durante la marcha, sin dar una medición clínica.<break time=\"0.9s\"/>Estar de pie sin moverse reduce la contribución de la bomba muscular.<break time=\"0.9s\"/>Compare ahora el escenario con incompetencia valvular.<break time=\"0.9s\"/>El dibujo muestra reflujo superficial y flujo saliente por una perforante incompetente.<break time=\"0.9s\"/>La presión venosa elevada puede contribuir a molestias y cambios de los tejidos.<break time=\"0.9s\"/>La actividad física y otras medidas se adaptan a la valoración y a la capacidad de cada persona.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "La",
+      "start": 0.299,
+      "end": 0.469
+    },
+    {
+      "word": "pantorrilla",
+      "start": 0.512,
+      "end": 1.024
+    },
+    {
+      "word": "participa",
+      "start": 1.067,
+      "end": 1.579
+    },
+    {
+      "word": "en",
+      "start": 1.621,
+      "end": 1.664
+    },
+    {
+      "word": "el",
+      "start": 1.707,
+      "end": 1.792
+    },
+    {
+      "word": "retorno",
+      "start": 1.835,
+      "end": 2.261
+    },
+    {
+      "word": "venoso",
+      "start": 2.304,
+      "end": 2.688
+    },
+    {
+      "word": "mediante",
+      "start": 2.816,
+      "end": 3.072
+    },
+    {
+      "word": "su",
+      "start": 3.243,
+      "end": 3.3707
+    },
+    {
+      "word": "actividad",
+      "start": 3.413,
+      "end": 3.84
+    },
+    {
+      "word": "muscular.",
+      "start": 3.883,
+      "end": 4.284
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 4.284,
+      "end": 5.184
+    },
+    {
+      "word": "El",
+      "start": 5.184,
+      "end": 5.44
+    },
+    {
+      "word": "corte",
+      "start": 5.526000000000001,
+      "end": 5.782
+    },
+    {
+      "word": "distingue",
+      "start": 5.867,
+      "end": 6.2940000000000005
+    },
+    {
+      "word": "piel,",
+      "start": 6.336,
+      "end": 6.784000000000001
+    },
+    {
+      "word": "tejido",
+      "start": 6.934,
+      "end": 7.3180000000000005
+    },
+    {
+      "word": "subcutáneo,",
+      "start": 7.36,
+      "end": 8.171
+    },
+    {
+      "word": "fascia",
+      "start": 8.299,
+      "end": 8.811
+    },
+    {
+      "word": "y",
+      "start": 8.895999999999999,
+      "end": 9.11
+    },
+    {
+      "word": "músculo.",
+      "start": 9.11,
+      "end": 9.609
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 9.609,
+      "end": 10.509
+    },
+    {
+      "word": "La",
+      "start": 10.509,
+      "end": 11.106
+    },
+    {
+      "word": "contracción",
+      "start": 11.149000000000001,
+      "end": 11.661
+    },
+    {
+      "word": "comprime",
+      "start": 11.703000000000001,
+      "end": 12.215
+    },
+    {
+      "word": "las",
+      "start": 12.258000000000001,
+      "end": 12.429
+    },
+    {
+      "word": "venas",
+      "start": 12.471,
+      "end": 12.685
+    },
+    {
+      "word": "profundas",
+      "start": 12.77,
+      "end": 13.367
+    },
+    {
+      "word": "del",
+      "start": 13.41,
+      "end": 13.453000000000001
+    },
+    {
+      "word": "segmento",
+      "start": 13.538,
+      "end": 13.965
+    },
+    {
+      "word": "ilustrado.",
+      "start": 14.007,
+      "end": 14.528
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 14.528,
+      "end": 15.428
+    },
+    {
+      "word": "En",
+      "start": 15.428,
+      "end": 15.598
+    },
+    {
+      "word": "la",
+      "start": 15.641,
+      "end": 15.726
+    },
+    {
+      "word": "eyección,",
+      "start": 15.769,
+      "end": 16.302
+    },
+    {
+      "word": "la",
+      "start": 16.451999999999998,
+      "end": 16.708
+    },
+    {
+      "word": "válvula",
+      "start": 16.75,
+      "end": 17.092
+    },
+    {
+      "word": "proximal",
+      "start": 17.134,
+      "end": 17.561
+    },
+    {
+      "word": "abre",
+      "start": 17.646,
+      "end": 18.03
+    },
+    {
+      "word": "y",
+      "start": 18.116,
+      "end": 18.286
+    },
+    {
+      "word": "la",
+      "start": 18.329,
+      "end": 18.372
+    },
+    {
+      "word": "distal",
+      "start": 18.414,
+      "end": 18.756
+    },
+    {
+      "word": "limita",
+      "start": 18.841,
+      "end": 19.225
+    },
+    {
+      "word": "el",
+      "start": 19.268,
+      "end": 19.310000000000002
+    },
+    {
+      "word": "retorno",
+      "start": 19.353,
+      "end": 19.78
+    },
+    {
+      "word": "hacia",
+      "start": 19.822000000000003,
+      "end": 19.993000000000002
+    },
+    {
+      "word": "el",
+      "start": 20.036,
+      "end": 20.078000000000003
+    },
+    {
+      "word": "pie.",
+      "start": 20.121000000000002,
+      "end": 20.359
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 20.359,
+      "end": 21.259
+    },
+    {
+      "word": "Al",
+      "start": 21.259,
+      "end": 21.686
+    },
+    {
+      "word": "relajarse",
+      "start": 21.727999999999998,
+      "end": 22.198
+    },
+    {
+      "word": "el",
+      "start": 22.24,
+      "end": 22.282999999999998
+    },
+    {
+      "word": "músculo,",
+      "start": 22.326,
+      "end": 22.923
+    },
+    {
+      "word": "se",
+      "start": 23.093999999999998,
+      "end": 23.264
+    },
+    {
+      "word": "representa",
+      "start": 23.307,
+      "end": 23.691
+    },
+    {
+      "word": "el",
+      "start": 23.776,
+      "end": 23.819
+    },
+    {
+      "word": "llenado",
+      "start": 23.862,
+      "end": 24.246
+    },
+    {
+      "word": "desde",
+      "start": 24.331,
+      "end": 24.587
+    },
+    {
+      "word": "distal",
+      "start": 24.63,
+      "end": 25.014
+    },
+    {
+      "word": "y",
+      "start": 25.183999999999997,
+      "end": 25.311999999999998
+    },
+    {
+      "word": "desde",
+      "start": 25.355,
+      "end": 25.526
+    },
+    {
+      "word": "conexiones",
+      "start": 25.567999999999998,
+      "end": 26.208
+    },
+    {
+      "word": "superficiales.",
+      "start": 26.250999999999998,
+      "end": 27.018
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 27.018,
+      "end": 27.774
+    },
+    {
+      "word": "La",
+      "start": 27.774,
+      "end": 28.157999999999998
+    },
+    {
+      "word": "gráfica",
+      "start": 28.2,
+      "end": 28.541999999999998
+    },
+    {
+      "word": "compara",
+      "start": 28.584,
+      "end": 29.011
+    },
+    {
+      "word": "la",
+      "start": 29.054,
+      "end": 29.096
+    },
+    {
+      "word": "tendencia",
+      "start": 29.139,
+      "end": 29.651
+    },
+    {
+      "word": "de",
+      "start": 29.694,
+      "end": 29.779
+    },
+    {
+      "word": "presión",
+      "start": 29.822,
+      "end": 30.206
+    },
+    {
+      "word": "durante",
+      "start": 30.247999999999998,
+      "end": 30.419
+    },
+    {
+      "word": "la",
+      "start": 30.59,
+      "end": 30.675
+    },
+    {
+      "word": "marcha,",
+      "start": 30.718,
+      "end": 31.144
+    },
+    {
+      "word": "sin",
+      "start": 31.272,
+      "end": 31.486
+    },
+    {
+      "word": "dar",
+      "start": 31.528,
+      "end": 31.656
+    },
+    {
+      "word": "una",
+      "start": 31.698999999999998,
+      "end": 31.869999999999997
+    },
+    {
+      "word": "medición",
+      "start": 31.912,
+      "end": 32.296
+    },
+    {
+      "word": "clínica.",
+      "start": 32.339,
+      "end": 32.663
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 32.663,
+      "end": 33.563
+    },
+    {
+      "word": "Estar",
+      "start": 33.563,
+      "end": 33.861000000000004
+    },
+    {
+      "word": "de",
+      "start": 33.947,
+      "end": 34.032000000000004
+    },
+    {
+      "word": "pie",
+      "start": 34.075,
+      "end": 34.245000000000005
+    },
+    {
+      "word": "sin",
+      "start": 34.288000000000004,
+      "end": 34.416000000000004
+    },
+    {
+      "word": "moverse",
+      "start": 34.459,
+      "end": 34.757000000000005
+    },
+    {
+      "word": "reduce",
+      "start": 35.013000000000005,
+      "end": 35.568000000000005
+    },
+    {
+      "word": "la",
+      "start": 35.696000000000005,
+      "end": 35.739000000000004
+    },
+    {
+      "word": "contribución",
+      "start": 35.781000000000006,
+      "end": 36.421
+    },
+    {
+      "word": "de",
+      "start": 36.464000000000006,
+      "end": 36.549
+    },
+    {
+      "word": "la",
+      "start": 36.592000000000006,
+      "end": 36.635000000000005
+    },
+    {
+      "word": "bomba",
+      "start": 36.677,
+      "end": 36.933
+    },
+    {
+      "word": "muscular.",
+      "start": 36.976000000000006,
+      "end": 37.363
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 37.363,
+      "end": 38.157000000000004
+    },
+    {
+      "word": "Compare",
+      "start": 38.157000000000004,
+      "end": 38.754000000000005
+    },
+    {
+      "word": "ahora",
+      "start": 38.882000000000005,
+      "end": 39.138000000000005
+    },
+    {
+      "word": "el",
+      "start": 39.181000000000004,
+      "end": 39.223000000000006
+    },
+    {
+      "word": "escenario",
+      "start": 39.266000000000005,
+      "end": 39.693000000000005
+    },
+    {
+      "word": "con",
+      "start": 39.735,
+      "end": 39.863
+    },
+    {
+      "word": "incompetencia",
+      "start": 39.906000000000006,
+      "end": 40.546
+    },
+    {
+      "word": "valvular.",
+      "start": 40.589000000000006,
+      "end": 40.909000000000006
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 40.909000000000006,
+      "end": 41.809000000000005
+    },
+    {
+      "word": "El",
+      "start": 41.809000000000005,
+      "end": 41.937000000000005
+    },
+    {
+      "word": "dibujo",
+      "start": 41.979000000000006,
+      "end": 42.278000000000006
+    },
+    {
+      "word": "muestra",
+      "start": 42.321000000000005,
+      "end": 42.61900000000001
+    },
+    {
+      "word": "reflujo",
+      "start": 42.662000000000006,
+      "end": 43.089000000000006
+    },
+    {
+      "word": "superficial",
+      "start": 43.13100000000001,
+      "end": 43.729000000000006
+    },
+    {
+      "word": "y",
+      "start": 43.89900000000001,
+      "end": 44.02700000000001
+    },
+    {
+      "word": "flujo",
+      "start": 44.07000000000001,
+      "end": 44.32600000000001
+    },
+    {
+      "word": "saliente",
+      "start": 44.36900000000001,
+      "end": 44.83800000000001
+    },
+    {
+      "word": "por",
+      "start": 44.88100000000001,
+      "end": 45.00900000000001
+    },
+    {
+      "word": "una",
+      "start": 45.05100000000001,
+      "end": 45.17900000000001
+    },
+    {
+      "word": "perforante",
+      "start": 45.22200000000001,
+      "end": 45.64900000000001
+    },
+    {
+      "word": "incompetente.",
+      "start": 45.81900000000001,
+      "end": 46.48300000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 46.48300000000001,
+      "end": 47.38300000000001
+    },
+    {
+      "word": "La",
+      "start": 47.38300000000001,
+      "end": 47.85200000000001
+    },
+    {
+      "word": "presión",
+      "start": 47.89500000000001,
+      "end": 48.19300000000001
+    },
+    {
+      "word": "venosa",
+      "start": 48.23600000000001,
+      "end": 48.53500000000001
+    },
+    {
+      "word": "elevada",
+      "start": 48.57700000000001,
+      "end": 48.87600000000001
+    },
+    {
+      "word": "puede",
+      "start": 49.04700000000001,
+      "end": 49.26000000000001
+    },
+    {
+      "word": "contribuir",
+      "start": 49.30300000000001,
+      "end": 49.77200000000001
+    },
+    {
+      "word": "a",
+      "start": 49.81500000000001,
+      "end": 49.90000000000001
+    },
+    {
+      "word": "molestias",
+      "start": 49.94300000000001,
+      "end": 50.49700000000001
+    },
+    {
+      "word": "y",
+      "start": 50.54000000000001,
+      "end": 50.71100000000001
+    },
+    {
+      "word": "cambios",
+      "start": 50.75300000000001,
+      "end": 51.09500000000001
+    },
+    {
+      "word": "de",
+      "start": 51.13700000000001,
+      "end": 51.22300000000001
+    },
+    {
+      "word": "los",
+      "start": 51.26500000000001,
+      "end": 51.35100000000001
+    },
+    {
+      "word": "tejidos.",
+      "start": 51.39300000000001,
+      "end": 51.79400000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 51.79400000000001,
+      "end": 52.69400000000001
+    },
+    {
+      "word": "La",
+      "start": 52.69400000000001,
+      "end": 52.86500000000001
+    },
+    {
+      "word": "actividad",
+      "start": 52.90700000000001,
+      "end": 53.20600000000001
+    },
+    {
+      "word": "física",
+      "start": 53.29100000000001,
+      "end": 53.67500000000001
+    },
+    {
+      "word": "y",
+      "start": 53.84600000000001,
+      "end": 53.88900000000001
+    },
+    {
+      "word": "otras",
+      "start": 53.93100000000001,
+      "end": 54.14500000000001
+    },
+    {
+      "word": "medidas",
+      "start": 54.18700000000001,
+      "end": 54.57100000000001
+    },
+    {
+      "word": "se",
+      "start": 54.74200000000001,
+      "end": 54.91300000000001
+    },
+    {
+      "word": "adaptan",
+      "start": 54.95500000000001,
+      "end": 55.29700000000001
+    },
+    {
+      "word": "a",
+      "start": 55.33900000000001,
+      "end": 55.38200000000001
+    },
+    {
+      "word": "la",
+      "start": 55.42500000000001,
+      "end": 55.46700000000001
+    },
+    {
+      "word": "valoración",
+      "start": 55.51000000000001,
+      "end": 56.15000000000001
+    },
+    {
+      "word": "y",
+      "start": 56.32100000000001,
+      "end": 56.363000000000014
+    },
+    {
+      "word": "a",
+      "start": 56.40600000000001,
+      "end": 56.44900000000001
+    },
+    {
+      "word": "la",
+      "start": 56.491000000000014,
+      "end": 56.57700000000001
+    },
+    {
+      "word": "capacidad",
+      "start": 56.619000000000014,
+      "end": 57.131000000000014
+    },
+    {
+      "word": "de",
+      "start": 57.174000000000014,
+      "end": 57.259000000000015
+    },
+    {
+      "word": "cada",
+      "start": 57.302000000000014,
+      "end": 57.47300000000001
+    },
+    {
+      "word": "persona.",
+      "start": 57.558000000000014,
+      "end": 58.22800000000001
+    },
+    {
+      "word": "<end>",
+      "start": 58.46204081632653,
+      "end": 58.46204081632653
+    }
+  ]
+}

@@ -1,0 +1,658 @@
+{
+  "duration": 51.565714285714286,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Este modelo muestra una vena y sus capas, con proporciones ampliadas para aprender.<break time=\"0.9s\"/>El endotelio recubre su interior y participa en mantener la sangre fluida.<break time=\"0.9s\"/>La pared contiene músculo liso y tejido de sostén.<break time=\"0.9s\"/>La envoltura externa aporta soporte y puede contener pequeños vasos y nervios.<break time=\"0.9s\"/>Los elementos rojos representan glóbulos rojos dentro de la luz venosa.<break time=\"0.9s\"/>La válvula representada tiene dos valvas cubiertas de endotelio.<break time=\"0.9s\"/>Sus movimientos ayudan a favorecer el avance de la sangre y limitar el flujo hacia atrás.<break time=\"0.9s\"/>Compare ahora una coaptación incompleta de las valvas.<break time=\"0.9s\"/>El flujo retrógrado se llama reflujo; puede contribuir a la enfermedad venosa.<break time=\"0.9s\"/>La pared, las válvulas y el movimiento muscular trabajan juntos; este dibujo no predice una enfermedad individual.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Este",
+      "start": 0.299,
+      "end": 0.5547
+    },
+    {
+      "word": "modelo",
+      "start": 0.597,
+      "end": 0.8107
+    },
+    {
+      "word": "muestra",
+      "start": 0.939,
+      "end": 1.28
+    },
+    {
+      "word": "una",
+      "start": 1.323,
+      "end": 1.493
+    },
+    {
+      "word": "vena",
+      "start": 1.536,
+      "end": 1.792
+    },
+    {
+      "word": "y",
+      "start": 1.877,
+      "end": 1.9627
+    },
+    {
+      "word": "sus",
+      "start": 2.005,
+      "end": 2.0907
+    },
+    {
+      "word": "capas,",
+      "start": 2.176,
+      "end": 2.688
+    },
+    {
+      "word": "con",
+      "start": 2.901,
+      "end": 2.9867
+    },
+    {
+      "word": "proporciones",
+      "start": 3.029,
+      "end": 3.541
+    },
+    {
+      "word": "ampliadas",
+      "start": 3.627,
+      "end": 4.181
+    },
+    {
+      "word": "para",
+      "start": 4.224,
+      "end": 4.437
+    },
+    {
+      "word": "aprender.",
+      "start": 4.48,
+      "end": 4.834
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 4.834,
+      "end": 5.734
+    },
+    {
+      "word": "El",
+      "start": 5.734,
+      "end": 5.904999999999999
+    },
+    {
+      "word": "endotelio",
+      "start": 5.9479999999999995,
+      "end": 6.374
+    },
+    {
+      "word": "recubre",
+      "start": 6.46,
+      "end": 6.843999999999999
+    },
+    {
+      "word": "su",
+      "start": 6.886,
+      "end": 7.014
+    },
+    {
+      "word": "interior",
+      "start": 7.0569999999999995,
+      "end": 7.356
+    },
+    {
+      "word": "y",
+      "start": 7.526,
+      "end": 7.867999999999999
+    },
+    {
+      "word": "participa",
+      "start": 7.91,
+      "end": 8.422
+    },
+    {
+      "word": "en",
+      "start": 8.508,
+      "end": 8.549999999999999
+    },
+    {
+      "word": "mantener",
+      "start": 8.593,
+      "end": 8.849
+    },
+    {
+      "word": "la",
+      "start": 9.02,
+      "end": 9.105
+    },
+    {
+      "word": "sangre",
+      "start": 9.148,
+      "end": 9.446
+    },
+    {
+      "word": "fluida.",
+      "start": 9.488999999999999,
+      "end": 9.886
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 9.886,
+      "end": 10.786
+    },
+    {
+      "word": "La",
+      "start": 10.786,
+      "end": 11.127
+    },
+    {
+      "word": "pared",
+      "start": 11.17,
+      "end": 11.298
+    },
+    {
+      "word": "contiene",
+      "start": 11.469,
+      "end": 11.725
+    },
+    {
+      "word": "músculo",
+      "start": 11.853,
+      "end": 12.279
+    },
+    {
+      "word": "liso",
+      "start": 12.322,
+      "end": 12.663
+    },
+    {
+      "word": "y",
+      "start": 12.749,
+      "end": 12.919
+    },
+    {
+      "word": "tejido",
+      "start": 12.962,
+      "end": 13.346
+    },
+    {
+      "word": "de",
+      "start": 13.389,
+      "end": 13.474
+    },
+    {
+      "word": "sostén.",
+      "start": 13.517,
+      "end": 13.918
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 13.918,
+      "end": 14.817999999999998
+    },
+    {
+      "word": "La",
+      "start": 14.817999999999998,
+      "end": 14.988999999999997
+    },
+    {
+      "word": "envoltura",
+      "start": 15.032,
+      "end": 15.415999999999997
+    },
+    {
+      "word": "externa",
+      "start": 15.457999999999998,
+      "end": 15.841999999999999
+    },
+    {
+      "word": "aporta",
+      "start": 15.927999999999997,
+      "end": 16.354
+    },
+    {
+      "word": "soporte",
+      "start": 16.397,
+      "end": 16.866
+    },
+    {
+      "word": "y",
+      "start": 16.951999999999998,
+      "end": 17.293
+    },
+    {
+      "word": "puede",
+      "start": 17.336,
+      "end": 17.548999999999996
+    },
+    {
+      "word": "contener",
+      "start": 17.592,
+      "end": 17.848
+    },
+    {
+      "word": "pequeños",
+      "start": 18.017999999999997,
+      "end": 18.444999999999997
+    },
+    {
+      "word": "vasos",
+      "start": 18.529999999999998,
+      "end": 18.828999999999997
+    },
+    {
+      "word": "y",
+      "start": 18.913999999999998,
+      "end": 18.956999999999997
+    },
+    {
+      "word": "nervios.",
+      "start": 18.999999999999996,
+      "end": 19.372999999999998
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 19.372999999999998,
+      "end": 20.273
+    },
+    {
+      "word": "Los",
+      "start": 20.273,
+      "end": 20.7
+    },
+    {
+      "word": "elementos",
+      "start": 20.743,
+      "end": 21.169
+    },
+    {
+      "word": "rojos",
+      "start": 21.212,
+      "end": 21.596
+    },
+    {
+      "word": "representan",
+      "start": 21.724,
+      "end": 22.151
+    },
+    {
+      "word": "glóbulos",
+      "start": 22.279,
+      "end": 22.875999999999998
+    },
+    {
+      "word": "rojos",
+      "start": 22.961,
+      "end": 23.303
+    },
+    {
+      "word": "dentro",
+      "start": 23.387999999999998,
+      "end": 23.772
+    },
+    {
+      "word": "de",
+      "start": 23.814999999999998,
+      "end": 23.9
+    },
+    {
+      "word": "la",
+      "start": 23.942999999999998,
+      "end": 23.985
+    },
+    {
+      "word": "luz",
+      "start": 24.028,
+      "end": 24.198999999999998
+    },
+    {
+      "word": "venosa.",
+      "start": 24.241,
+      "end": 24.634
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 24.634,
+      "end": 25.534
+    },
+    {
+      "word": "La",
+      "start": 25.534,
+      "end": 25.704
+    },
+    {
+      "word": "válvula",
+      "start": 25.747,
+      "end": 26.087999999999997
+    },
+    {
+      "word": "representada",
+      "start": 26.131,
+      "end": 26.643
+    },
+    {
+      "word": "tiene",
+      "start": 26.814,
+      "end": 27.026999999999997
+    },
+    {
+      "word": "dos",
+      "start": 27.154999999999998,
+      "end": 27.368
+    },
+    {
+      "word": "valvas",
+      "start": 27.454,
+      "end": 27.794999999999998
+    },
+    {
+      "word": "cubiertas",
+      "start": 27.837999999999997,
+      "end": 28.349999999999998
+    },
+    {
+      "word": "de",
+      "start": 28.392,
+      "end": 28.477999999999998
+    },
+    {
+      "word": "endotelio.",
+      "start": 28.52,
+      "end": 29.043
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 29.043,
+      "end": 29.909
+    },
+    {
+      "word": "Sus",
+      "start": 29.909,
+      "end": 30.08
+    },
+    {
+      "word": "movimientos",
+      "start": 30.122999999999998,
+      "end": 30.677
+    },
+    {
+      "word": "ayudan",
+      "start": 30.72,
+      "end": 31.061
+    },
+    {
+      "word": "a",
+      "start": 31.104,
+      "end": 31.189
+    },
+    {
+      "word": "favorecer",
+      "start": 31.232,
+      "end": 31.659
+    },
+    {
+      "word": "el",
+      "start": 31.701,
+      "end": 31.787
+    },
+    {
+      "word": "avance",
+      "start": 31.829,
+      "end": 32.043
+    },
+    {
+      "word": "de",
+      "start": 32.212999999999994,
+      "end": 32.299
+    },
+    {
+      "word": "la",
+      "start": 32.340999999999994,
+      "end": 32.384
+    },
+    {
+      "word": "sangre",
+      "start": 32.427,
+      "end": 32.811
+    },
+    {
+      "word": "y",
+      "start": 32.896,
+      "end": 33.067
+    },
+    {
+      "word": "limitar",
+      "start": 33.108999999999995,
+      "end": 33.492999999999995
+    },
+    {
+      "word": "el",
+      "start": 33.536,
+      "end": 33.579
+    },
+    {
+      "word": "flujo",
+      "start": 33.620999999999995,
+      "end": 34.004999999999995
+    },
+    {
+      "word": "hacia",
+      "start": 34.048,
+      "end": 34.176
+    },
+    {
+      "word": "atrás.",
+      "start": 34.218999999999994,
+      "end": 34.504999999999995
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 34.504999999999995,
+      "end": 35.405
+    },
+    {
+      "word": "Compare",
+      "start": 35.405,
+      "end": 35.747
+    },
+    {
+      "word": "ahora",
+      "start": 35.875,
+      "end": 36.131
+    },
+    {
+      "word": "una",
+      "start": 36.173,
+      "end": 36.344
+    },
+    {
+      "word": "coaptación",
+      "start": 36.387,
+      "end": 37.069
+    },
+    {
+      "word": "incompleta",
+      "start": 37.112,
+      "end": 37.581
+    },
+    {
+      "word": "de",
+      "start": 37.709,
+      "end": 37.752
+    },
+    {
+      "word": "las",
+      "start": 37.795,
+      "end": 37.923
+    },
+    {
+      "word": "valvas.",
+      "start": 37.965,
+      "end": 38.408
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 38.408,
+      "end": 39.315
+    },
+    {
+      "word": "El",
+      "start": 39.315,
+      "end": 39.443
+    },
+    {
+      "word": "flujo",
+      "start": 39.486,
+      "end": 39.827
+    },
+    {
+      "word": "retrógrado",
+      "start": 39.87,
+      "end": 40.382
+    },
+    {
+      "word": "se",
+      "start": 40.424,
+      "end": 40.51
+    },
+    {
+      "word": "llama",
+      "start": 40.552,
+      "end": 40.68
+    },
+    {
+      "word": "reflujo;",
+      "start": 40.808,
+      "end": 41.491
+    },
+    {
+      "word": "puede",
+      "start": 41.704,
+      "end": 41.96
+    },
+    {
+      "word": "contribuir",
+      "start": 42.003,
+      "end": 42.515
+    },
+    {
+      "word": "a",
+      "start": 42.6,
+      "end": 42.643
+    },
+    {
+      "word": "la",
+      "start": 42.686,
+      "end": 42.728
+    },
+    {
+      "word": "enfermedad",
+      "start": 42.771,
+      "end": 43.198
+    },
+    {
+      "word": "venosa.",
+      "start": 43.24,
+      "end": 43.722
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 43.722,
+      "end": 44.599000000000004
+    },
+    {
+      "word": "La",
+      "start": 44.599000000000004,
+      "end": 44.684
+    },
+    {
+      "word": "pared,",
+      "start": 44.727,
+      "end": 45.132
+    },
+    {
+      "word": "las",
+      "start": 45.324,
+      "end": 45.495
+    },
+    {
+      "word": "válvulas",
+      "start": 45.538000000000004,
+      "end": 46.007
+    },
+    {
+      "word": "y",
+      "start": 46.092,
+      "end": 46.135
+    },
+    {
+      "word": "el",
+      "start": 46.178,
+      "end": 46.22
+    },
+    {
+      "word": "movimiento",
+      "start": 46.263,
+      "end": 46.732
+    },
+    {
+      "word": "muscular",
+      "start": 46.775,
+      "end": 47.074
+    },
+    {
+      "word": "trabajan",
+      "start": 47.202,
+      "end": 47.628
+    },
+    {
+      "word": "juntos;",
+      "start": 47.671,
+      "end": 48.119
+    },
+    {
+      "word": "este",
+      "start": 48.226,
+      "end": 48.865
+    },
+    {
+      "word": "dibujo",
+      "start": 48.908,
+      "end": 49.292
+    },
+    {
+      "word": "no",
+      "start": 49.335,
+      "end": 49.505
+    },
+    {
+      "word": "predice",
+      "start": 49.548,
+      "end": 49.847
+    },
+    {
+      "word": "una",
+      "start": 49.975,
+      "end": 50.103
+    },
+    {
+      "word": "enfermedad",
+      "start": 50.145,
+      "end": 50.529
+    },
+    {
+      "word": "individual.",
+      "start": 50.615,
+      "end": 51.33664399092971
+    },
+    {
+      "word": "<end>",
+      "start": 51.565714285714286,
+      "end": 51.565714285714286
+    }
+  ]
+}

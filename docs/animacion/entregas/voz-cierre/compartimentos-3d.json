@@ -1,0 +1,668 @@
+{
+  "duration": 55.248979591836736,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Este bloque anatómico relaciona tejidos y venas del miembro inferior.<break time=\"0.9s\"/>Separe las capas para observar sus conexiones.<break time=\"0.9s\"/>La piel contiene una red vascular pequeña, muy ampliada en esta representación.<break time=\"0.9s\"/>El tejido subcutáneo aloja tributarias superficiales.<break time=\"0.9s\"/>La safena mayor se muestra dentro de su compartimento.<break time=\"0.9s\"/>Las venas profundas están bajo la fascia muscular, próximas a estructuras arteriales.<break time=\"0.9s\"/>Las comunicantes unen venas del mismo sistema sin atravesar la fascia muscular.<break time=\"0.9s\"/>Las perforantes cruzan esa fascia y conectan los sistemas superficial y profundo.<break time=\"0.9s\"/>El ejemplo representa válvulas y flujo predominante hacia el sistema profundo.<break time=\"0.9s\"/>La comparación con incompetencia muestra una posible alteración del flujo, no una evolución obligatoria.<break time=\"0.9s\"/>La anatomía se completa con la exploración clínica y el estudio dúplex cuando está indicado.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Este",
+      "start": 0.299,
+      "end": 0.5547
+    },
+    {
+      "word": "bloque",
+      "start": 0.597,
+      "end": 0.8107
+    },
+    {
+      "word": "anatómico",
+      "start": 0.853,
+      "end": 1.365
+    },
+    {
+      "word": "relaciona",
+      "start": 1.408,
+      "end": 1.792
+    },
+    {
+      "word": "tejidos",
+      "start": 1.835,
+      "end": 2.389
+    },
+    {
+      "word": "y",
+      "start": 2.475,
+      "end": 2.645
+    },
+    {
+      "word": "venas",
+      "start": 2.688,
+      "end": 2.944
+    },
+    {
+      "word": "del",
+      "start": 2.987,
+      "end": 3.072
+    },
+    {
+      "word": "miembro",
+      "start": 3.157,
+      "end": 3.413
+    },
+    {
+      "word": "inferior.",
+      "start": 3.456,
+      "end": 3.84
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 3.84,
+      "end": 4.74
+    },
+    {
+      "word": "Separe",
+      "start": 4.74,
+      "end": 5.252
+    },
+    {
+      "word": "las",
+      "start": 5.337,
+      "end": 5.423
+    },
+    {
+      "word": "capas",
+      "start": 5.508,
+      "end": 5.764
+    },
+    {
+      "word": "para",
+      "start": 5.849,
+      "end": 5.977
+    },
+    {
+      "word": "observar",
+      "start": 6.02,
+      "end": 6.361
+    },
+    {
+      "word": "sus",
+      "start": 6.404,
+      "end": 6.532
+    },
+    {
+      "word": "conexiones.",
+      "start": 6.575,
+      "end": 7.168
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 7.168,
+      "end": 7.898
+    },
+    {
+      "word": "La",
+      "start": 7.898,
+      "end": 8.068999999999999
+    },
+    {
+      "word": "piel",
+      "start": 8.110999999999999,
+      "end": 8.282
+    },
+    {
+      "word": "contiene",
+      "start": 8.325,
+      "end": 8.623
+    },
+    {
+      "word": "una",
+      "start": 8.666,
+      "end": 8.837
+    },
+    {
+      "word": "red",
+      "start": 8.879,
+      "end": 9.007
+    },
+    {
+      "word": "vascular",
+      "start": 9.093,
+      "end": 9.391
+    },
+    {
+      "word": "pequeña,",
+      "start": 9.519,
+      "end": 10.181
+    },
+    {
+      "word": "muy",
+      "start": 10.287,
+      "end": 10.543
+    },
+    {
+      "word": "ampliada",
+      "start": 10.586,
+      "end": 10.97
+    },
+    {
+      "word": "en",
+      "start": 11.055,
+      "end": 11.098
+    },
+    {
+      "word": "esta",
+      "start": 11.141,
+      "end": 11.311
+    },
+    {
+      "word": "representación.",
+      "start": 11.354,
+      "end": 12.13
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 12.13,
+      "end": 13.030000000000001
+    },
+    {
+      "word": "El",
+      "start": 13.030000000000001,
+      "end": 13.201000000000002
+    },
+    {
+      "word": "tejido",
+      "start": 13.244000000000002,
+      "end": 13.542000000000002
+    },
+    {
+      "word": "subcutáneo",
+      "start": 13.585000000000003,
+      "end": 14.225000000000001
+    },
+    {
+      "word": "aloja",
+      "start": 14.268000000000002,
+      "end": 14.609000000000002
+    },
+    {
+      "word": "tributarias",
+      "start": 14.652000000000001,
+      "end": 15.164000000000001
+    },
+    {
+      "word": "superficiales.",
+      "start": 15.249000000000002,
+      "end": 16.011
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 16.011,
+      "end": 16.729
+    },
+    {
+      "word": "La",
+      "start": 16.729,
+      "end": 17.198
+    },
+    {
+      "word": "safena",
+      "start": 17.241000000000003,
+      "end": 17.540000000000003
+    },
+    {
+      "word": "mayor",
+      "start": 17.582,
+      "end": 17.881
+    },
+    {
+      "word": "se",
+      "start": 17.966,
+      "end": 18.094
+    },
+    {
+      "word": "muestra",
+      "start": 18.137,
+      "end": 18.436000000000003
+    },
+    {
+      "word": "dentro",
+      "start": 18.521,
+      "end": 18.905
+    },
+    {
+      "word": "de",
+      "start": 18.990000000000002,
+      "end": 19.076
+    },
+    {
+      "word": "su",
+      "start": 19.118000000000002,
+      "end": 19.161
+    },
+    {
+      "word": "compartimento.",
+      "start": 19.204,
+      "end": 19.929000000000002
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 19.929000000000002,
+      "end": 20.829
+    },
+    {
+      "word": "Las",
+      "start": 20.829,
+      "end": 21.042
+    },
+    {
+      "word": "venas",
+      "start": 21.085,
+      "end": 21.256
+    },
+    {
+      "word": "profundas",
+      "start": 21.298000000000002,
+      "end": 21.81
+    },
+    {
+      "word": "están",
+      "start": 21.853,
+      "end": 22.066
+    },
+    {
+      "word": "bajo",
+      "start": 22.109,
+      "end": 22.365
+    },
+    {
+      "word": "la",
+      "start": 22.408,
+      "end": 22.493
+    },
+    {
+      "word": "fascia",
+      "start": 22.536,
+      "end": 22.92
+    },
+    {
+      "word": "muscular,",
+      "start": 22.962,
+      "end": 23.538
+    },
+    {
+      "word": "próximas",
+      "start": 23.816,
+      "end": 24.242
+    },
+    {
+      "word": "a",
+      "start": 24.285,
+      "end": 24.37
+    },
+    {
+      "word": "estructuras",
+      "start": 24.413,
+      "end": 24.797
+    },
+    {
+      "word": "arteriales.",
+      "start": 24.882,
+      "end": 25.478
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 25.478,
+      "end": 26.232
+    },
+    {
+      "word": "Las",
+      "start": 26.232,
+      "end": 26.574
+    },
+    {
+      "word": "comunicantes",
+      "start": 26.659,
+      "end": 27.214
+    },
+    {
+      "word": "unen",
+      "start": 27.256,
+      "end": 27.47
+    },
+    {
+      "word": "venas",
+      "start": 27.512,
+      "end": 27.768
+    },
+    {
+      "word": "del",
+      "start": 27.811,
+      "end": 27.896
+    },
+    {
+      "word": "mismo",
+      "start": 27.982,
+      "end": 28.195
+    },
+    {
+      "word": "sistema",
+      "start": 28.28,
+      "end": 28.664
+    },
+    {
+      "word": "sin",
+      "start": 28.792,
+      "end": 28.92
+    },
+    {
+      "word": "atravesar",
+      "start": 28.963,
+      "end": 29.432
+    },
+    {
+      "word": "la",
+      "start": 29.475,
+      "end": 29.603
+    },
+    {
+      "word": "fascia",
+      "start": 29.646,
+      "end": 29.902
+    },
+    {
+      "word": "muscular.",
+      "start": 29.944,
+      "end": 30.298000000000002
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 30.298000000000002,
+      "end": 31.198000000000004
+    },
+    {
+      "word": "Las",
+      "start": 31.198000000000004,
+      "end": 31.582
+    },
+    {
+      "word": "perforantes",
+      "start": 31.624000000000002,
+      "end": 32.179
+    },
+    {
+      "word": "cruzan",
+      "start": 32.264,
+      "end": 32.648
+    },
+    {
+      "word": "esa",
+      "start": 32.691,
+      "end": 32.862
+    },
+    {
+      "word": "fascia",
+      "start": 32.904,
+      "end": 33.288000000000004
+    },
+    {
+      "word": "y",
+      "start": 33.374,
+      "end": 33.63
+    },
+    {
+      "word": "conectan",
+      "start": 33.672,
+      "end": 34.099000000000004
+    },
+    {
+      "word": "los",
+      "start": 34.142,
+      "end": 34.227000000000004
+    },
+    {
+      "word": "sistemas",
+      "start": 34.27,
+      "end": 34.654
+    },
+    {
+      "word": "superficial",
+      "start": 34.739000000000004,
+      "end": 35.336000000000006
+    },
+    {
+      "word": "y",
+      "start": 35.464000000000006,
+      "end": 35.592
+    },
+    {
+      "word": "profundo.",
+      "start": 35.635000000000005,
+      "end": 36.171
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 36.171,
+      "end": 37.071
+    },
+    {
+      "word": "El",
+      "start": 37.071,
+      "end": 37.498
+    },
+    {
+      "word": "ejemplo",
+      "start": 37.53999999999999,
+      "end": 37.83899999999999
+    },
+    {
+      "word": "representa",
+      "start": 37.882,
+      "end": 38.35099999999999
+    },
+    {
+      "word": "válvulas",
+      "start": 38.47899999999999,
+      "end": 39.16199999999999
+    },
+    {
+      "word": "y",
+      "start": 39.24699999999999,
+      "end": 39.37499999999999
+    },
+    {
+      "word": "flujo",
+      "start": 39.41799999999999,
+      "end": 39.715999999999994
+    },
+    {
+      "word": "predominante",
+      "start": 39.75899999999999,
+      "end": 40.227999999999994
+    },
+    {
+      "word": "hacia",
+      "start": 40.398999999999994,
+      "end": 40.56999999999999
+    },
+    {
+      "word": "el",
+      "start": 40.611999999999995,
+      "end": 40.654999999999994
+    },
+    {
+      "word": "sistema",
+      "start": 40.69799999999999,
+      "end": 40.95399999999999
+    },
+    {
+      "word": "profundo.",
+      "start": 41.038999999999994,
+      "end": 41.528999999999996
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 41.528999999999996,
+      "end": 42.428999999999995
+    },
+    {
+      "word": "La",
+      "start": 42.428999999999995,
+      "end": 42.940999999999995
+    },
+    {
+      "word": "comparación",
+      "start": 42.983999999999995,
+      "end": 43.411
+    },
+    {
+      "word": "con",
+      "start": 43.452999999999996,
+      "end": 43.538999999999994
+    },
+    {
+      "word": "incompetencia",
+      "start": 43.580999999999996,
+      "end": 44.306999999999995
+    },
+    {
+      "word": "muestra",
+      "start": 44.434999999999995,
+      "end": 44.861
+    },
+    {
+      "word": "una",
+      "start": 44.903999999999996,
+      "end": 45.032
+    },
+    {
+      "word": "posible",
+      "start": 45.074999999999996,
+      "end": 45.586999999999996
+    },
+    {
+      "word": "alteración",
+      "start": 45.672,
+      "end": 46.141
+    },
+    {
+      "word": "del",
+      "start": 46.184,
+      "end": 46.269
+    },
+    {
+      "word": "flujo,",
+      "start": 46.355,
+      "end": 46.867
+    },
+    {
+      "word": "no",
+      "start": 47.037,
+      "end": 47.379
+    },
+    {
+      "word": "una",
+      "start": 47.421,
+      "end": 47.635
+    },
+    {
+      "word": "evolución",
+      "start": 47.677,
+      "end": 48.104
+    },
+    {
+      "word": "obligatoria.",
+      "start": 48.104,
+      "end": 48.696
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 48.696,
+      "end": 49.416
+    },
+    {
+      "word": "La",
+      "start": 49.416,
+      "end": 49.885
+    },
+    {
+      "word": "anatomía",
+      "start": 49.928,
+      "end": 50.355
+    },
+    {
+      "word": "se",
+      "start": 50.397,
+      "end": 50.525
+    },
+    {
+      "word": "completa",
+      "start": 50.568,
+      "end": 50.909
+    },
+    {
+      "word": "con",
+      "start": 51.037,
+      "end": 51.165
+    },
+    {
+      "word": "la",
+      "start": 51.208,
+      "end": 51.251
+    },
+    {
+      "word": "exploración",
+      "start": 51.293,
+      "end": 51.848
+    },
+    {
+      "word": "clínica",
+      "start": 51.891,
+      "end": 52.275
+    },
+    {
+      "word": "y",
+      "start": 52.488,
+      "end": 52.701
+    },
+    {
+      "word": "el",
+      "start": 52.744,
+      "end": 52.787
+    },
+    {
+      "word": "estudio",
+      "start": 52.829,
+      "end": 53.213
+    },
+    {
+      "word": "dúplex",
+      "start": 53.256,
+      "end": 53.683
+    },
+    {
+      "word": "cuando",
+      "start": 53.852999999999994,
+      "end": 54.108999999999995
+    },
+    {
+      "word": "está",
+      "start": 54.152,
+      "end": 54.323
+    },
+    {
+      "word": "indicado.",
+      "start": 54.364999999999995,
+      "end": 55.00795238095238
+    },
+    {
+      "word": "<end>",
+      "start": 55.248979591836736,
+      "end": 55.248979591836736
+    }
+  ]
+}

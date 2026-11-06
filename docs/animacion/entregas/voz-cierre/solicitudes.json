@@ -1,0 +1,282 @@
+[
+  {
+    "id": "pared-3d",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Este modelo muestra una vena y sus capas, con proporciones ampliadas para aprender.<break time=\"0.9s\"/>El endotelio recubre su interior y participa en mantener la sangre fluida.<break time=\"0.9s\"/>La pared contiene músculo liso y tejido de sostén.<break time=\"0.9s\"/>La envoltura externa aporta soporte y puede contener pequeños vasos y nervios.<break time=\"0.9s\"/>Los elementos rojos representan glóbulos rojos dentro de la luz venosa.<break time=\"0.9s\"/>La válvula representada tiene dos valvas cubiertas de endotelio.<break time=\"0.9s\"/>Sus movimientos ayudan a favorecer el avance de la sangre y limitar el flujo hacia atrás.<break time=\"0.9s\"/>Compare ahora una coaptación incompleta de las valvas.<break time=\"0.9s\"/>El flujo retrógrado se llama reflujo; puede contribuir a la enfermedad venosa.<break time=\"0.9s\"/>La pared, las válvulas y el movimiento muscular trabajan juntos; este dibujo no predice una enfermedad individual.</speak>",
+    "scenes": [
+      "Este modelo muestra una vena y sus capas, con proporciones ampliadas para aprender.",
+      "El endotelio recubre su interior y participa en mantener la sangre fluida.",
+      "La pared contiene músculo liso y tejido de sostén.",
+      "La envoltura externa aporta soporte y puede contener pequeños vasos y nervios.",
+      "Los elementos rojos representan glóbulos rojos dentro de la luz venosa.",
+      "La válvula representada tiene dos valvas cubiertas de endotelio.",
+      "Sus movimientos ayudan a favorecer el avance de la sangre y limitar el flujo hacia atrás.",
+      "Compare ahora una coaptación incompleta de las valvas.",
+      "El flujo retrógrado se llama reflujo; puede contribuir a la enfermedad venosa.",
+      "La pared, las válvulas y el movimiento muscular trabajan juntos; este dibujo no predice una enfermedad individual."
+    ]
+  },
+  {
+    "id": "valvula-sana",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Observe una vena de la pierna en un corte longitudinal ampliado.<break time=\"0.9s\"/>El extremo distal está a la izquierda y el proximal a la derecha.<break time=\"0.9s\"/>La actividad muscular ayuda a impulsar la sangre hacia el corazón.<break time=\"0.9s\"/>Las valvas se abren y permanecen cerca de la pared del seno, sin pegarse a ella.<break time=\"0.9s\"/>Cuando cambia el flujo y la relación de presiones, las valvas se aproximan.<break time=\"0.9s\"/>Los senos y el flujo local participan en el movimiento valvular.<break time=\"0.9s\"/>El cierre limita el regreso de sangre; el remolino no garantiza que la válvula permanezca sana.<break time=\"0.9s\"/>El recuadro inferior representa un registro Doppler esquemático.<break time=\"0.9s\"/>Los colores distinguen los sentidos del flujo dentro de esta ilustración.<break time=\"0.9s\"/>La escena explica un mecanismo; sus tiempos no son una prueba diagnóstica.</speak>",
+    "scenes": [
+      "Observe una vena de la pierna en un corte longitudinal ampliado.",
+      "El extremo distal está a la izquierda y el proximal a la derecha.",
+      "La actividad muscular ayuda a impulsar la sangre hacia el corazón.",
+      "Las valvas se abren y permanecen cerca de la pared del seno, sin pegarse a ella.",
+      "Cuando cambia el flujo y la relación de presiones, las valvas se aproximan.",
+      "Los senos y el flujo local participan en el movimiento valvular.",
+      "El cierre limita el regreso de sangre; el remolino no garantiza que la válvula permanezca sana.",
+      "El recuadro inferior representa un registro Doppler esquemático.",
+      "Los colores distinguen los sentidos del flujo dentro de esta ilustración.",
+      "La escena explica un mecanismo; sus tiempos no son una prueba diagnóstica."
+    ]
+  },
+  {
+    "id": "valvula-incompetente",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Comience comparando unas valvas que se aproximan durante el cierre.<break time=\"0.9s\"/>En este ejemplo, la dilatación modifica la relación entre pared y valvas.<break time=\"0.9s\"/>Los bordes dejan un espacio de coaptación incompleta.<break time=\"0.9s\"/>Por ese espacio se representa flujo hacia el extremo distal.<break time=\"0.9s\"/>El color naranja identifica el flujo retrógrado, llamado reflujo.<break time=\"0.9s\"/>El tiempo de flujo invertido se interpreta según la vena y la técnica de estudio.<break time=\"0.9s\"/>El reflujo puede contribuir a mantener una presión venosa elevada durante la actividad.<break time=\"0.9s\"/>La dilatación y las várices tienen mecanismos diversos; esta transformación no predice su evolución.</speak>",
+    "scenes": [
+      "Comience comparando unas valvas que se aproximan durante el cierre.",
+      "En este ejemplo, la dilatación modifica la relación entre pared y valvas.",
+      "Los bordes dejan un espacio de coaptación incompleta.",
+      "Por ese espacio se representa flujo hacia el extremo distal.",
+      "El color naranja identifica el flujo retrógrado, llamado reflujo.",
+      "El tiempo de flujo invertido se interpreta según la vena y la técnica de estudio.",
+      "El reflujo puede contribuir a mantener una presión venosa elevada durante la actividad.",
+      "La dilatación y las várices tienen mecanismos diversos; esta transformación no predice su evolución."
+    ]
+  },
+  {
+    "id": "bomba-muscular",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>La pantorrilla participa en el retorno venoso mediante su actividad muscular.<break time=\"0.9s\"/>El corte distingue piel, tejido subcutáneo, fascia y músculo.<break time=\"0.9s\"/>La contracción comprime las venas profundas del segmento ilustrado.<break time=\"0.9s\"/>En la eyección, la válvula proximal abre y la distal limita el retorno hacia el pie.<break time=\"0.9s\"/>Al relajarse el músculo, se representa el llenado desde distal y desde conexiones superficiales.<break time=\"0.9s\"/>La gráfica compara la tendencia de presión durante la marcha, sin dar una medición clínica.<break time=\"0.9s\"/>Estar de pie sin moverse reduce la contribución de la bomba muscular.<break time=\"0.9s\"/>Compare ahora el escenario con incompetencia valvular.<break time=\"0.9s\"/>El dibujo muestra reflujo superficial y flujo saliente por una perforante incompetente.<break time=\"0.9s\"/>La presión venosa elevada puede contribuir a molestias y cambios de los tejidos.<break time=\"0.9s\"/>La actividad física y otras medidas se adaptan a la valoración y a la capacidad de cada persona.</speak>",
+    "scenes": [
+      "La pantorrilla participa en el retorno venoso mediante su actividad muscular.",
+      "El corte distingue piel, tejido subcutáneo, fascia y músculo.",
+      "La contracción comprime las venas profundas del segmento ilustrado.",
+      "En la eyección, la válvula proximal abre y la distal limita el retorno hacia el pie.",
+      "Al relajarse el músculo, se representa el llenado desde distal y desde conexiones superficiales.",
+      "La gráfica compara la tendencia de presión durante la marcha, sin dar una medición clínica.",
+      "Estar de pie sin moverse reduce la contribución de la bomba muscular.",
+      "Compare ahora el escenario con incompetencia valvular.",
+      "El dibujo muestra reflujo superficial y flujo saliente por una perforante incompetente.",
+      "La presión venosa elevada puede contribuir a molestias y cambios de los tejidos.",
+      "La actividad física y otras medidas se adaptan a la valoración y a la capacidad de cada persona."
+    ]
+  },
+  {
+    "id": "fascias",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Observe un corte transversal simplificado de la pierna.<break time=\"0.9s\"/>La piel y el tejido subcutáneo quedan por encima de la fascia muscular.<break time=\"0.9s\"/>Las fascias delimitan relaciones anatómicas entre tejidos y venas.<break time=\"0.9s\"/>La safena mayor discurre en su compartimento, reconocible en ecografía como el ojo safeno.<break time=\"0.9s\"/>Bajo la fascia muscular se sitúan las venas profundas y estructuras arteriales.<break time=\"0.9s\"/>Una perforante atraviesa esa fascia y conecta los dos sistemas venosos.<break time=\"0.9s\"/>Compare ahora un escenario con alteraciones venosas.<break time=\"0.9s\"/>La safena también puede dilatarse a pesar de estar en su compartimento.<break time=\"0.9s\"/>Las tributarias extrafasciales pueden presentar dilatación y tortuosidad.<break time=\"0.9s\"/>El flujo saliente por una perforante puede coexistir con cambios tisulares; el dibujo no demuestra una causa única.</speak>",
+    "scenes": [
+      "Observe un corte transversal simplificado de la pierna.",
+      "La piel y el tejido subcutáneo quedan por encima de la fascia muscular.",
+      "Las fascias delimitan relaciones anatómicas entre tejidos y venas.",
+      "La safena mayor discurre en su compartimento, reconocible en ecografía como el ojo safeno.",
+      "Bajo la fascia muscular se sitúan las venas profundas y estructuras arteriales.",
+      "Una perforante atraviesa esa fascia y conecta los dos sistemas venosos.",
+      "Compare ahora un escenario con alteraciones venosas.",
+      "La safena también puede dilatarse a pesar de estar en su compartimento.",
+      "Las tributarias extrafasciales pueden presentar dilatación y tortuosidad.",
+      "El flujo saliente por una perforante puede coexistir con cambios tisulares; el dibujo no demuestra una causa única."
+    ]
+  },
+  {
+    "id": "compartimentos-3d",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Este bloque anatómico relaciona tejidos y venas del miembro inferior.<break time=\"0.9s\"/>Separe las capas para observar sus conexiones.<break time=\"0.9s\"/>La piel contiene una red vascular pequeña, muy ampliada en esta representación.<break time=\"0.9s\"/>El tejido subcutáneo aloja tributarias superficiales.<break time=\"0.9s\"/>La safena mayor se muestra dentro de su compartimento.<break time=\"0.9s\"/>Las venas profundas están bajo la fascia muscular, próximas a estructuras arteriales.<break time=\"0.9s\"/>Las comunicantes unen venas del mismo sistema sin atravesar la fascia muscular.<break time=\"0.9s\"/>Las perforantes cruzan esa fascia y conectan los sistemas superficial y profundo.<break time=\"0.9s\"/>El ejemplo representa válvulas y flujo predominante hacia el sistema profundo.<break time=\"0.9s\"/>La comparación con incompetencia muestra una posible alteración del flujo, no una evolución obligatoria.<break time=\"0.9s\"/>La anatomía se completa con la exploración clínica y el estudio dúplex cuando está indicado.</speak>",
+    "scenes": [
+      "Este bloque anatómico relaciona tejidos y venas del miembro inferior.",
+      "Separe las capas para observar sus conexiones.",
+      "La piel contiene una red vascular pequeña, muy ampliada en esta representación.",
+      "El tejido subcutáneo aloja tributarias superficiales.",
+      "La safena mayor se muestra dentro de su compartimento.",
+      "Las venas profundas están bajo la fascia muscular, próximas a estructuras arteriales.",
+      "Las comunicantes unen venas del mismo sistema sin atravesar la fascia muscular.",
+      "Las perforantes cruzan esa fascia y conectan los sistemas superficial y profundo.",
+      "El ejemplo representa válvulas y flujo predominante hacia el sistema profundo.",
+      "La comparación con incompetencia muestra una posible alteración del flujo, no una evolución obligatoria.",
+      "La anatomía se completa con la exploración clínica y el estudio dúplex cuando está indicado."
+    ]
+  },
+  {
+    "id": "union-safenofemoral",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Este esquema sitúa la unión venosa cerca de la ingle.<break time=\"0.9s\"/>La safena mayor desemboca en la vena femoral común, que es profunda.<break time=\"0.9s\"/>Se representan las válvulas terminal y preterminal; su anatomía puede variar.<break time=\"0.9s\"/>La maniobra de Valsalva modifica las presiones durante el estudio dúplex.<break time=\"0.9s\"/>Compare la respuesta del flujo con el cierre valvular conservado.<break time=\"0.9s\"/>Ahora se ilustra una unión con incompetencia.<break time=\"0.9s\"/>La presión puede acompañarse de flujo retrógrado hacia la safena.<break time=\"0.9s\"/>El registro es esquemático; los umbrales dependen del segmento explorado.<break time=\"0.9s\"/>La compresión distal y su liberación son otras maniobras del estudio venoso.<break time=\"0.9s\"/>El diagnóstico y la planificación requieren integrar el mapa completo y la situación clínica.</speak>",
+    "scenes": [
+      "Este esquema sitúa la unión venosa cerca de la ingle.",
+      "La safena mayor desemboca en la vena femoral común, que es profunda.",
+      "Se representan las válvulas terminal y preterminal; su anatomía puede variar.",
+      "La maniobra de Valsalva modifica las presiones durante el estudio dúplex.",
+      "Compare la respuesta del flujo con el cierre valvular conservado.",
+      "Ahora se ilustra una unión con incompetencia.",
+      "La presión puede acompañarse de flujo retrógrado hacia la safena.",
+      "El registro es esquemático; los umbrales dependen del segmento explorado.",
+      "La compresión distal y su liberación son otras maniobras del estudio venoso.",
+      "El diagnóstico y la planificación requieren integrar el mapa completo y la situación clínica."
+    ]
+  },
+  {
+    "id": "progresion-varice",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Este modelo compara distintas formas de una vena superficial.<break time=\"0.9s\"/>Los elementos valvulares y el flujo están ampliados para reconocerlos.<break time=\"0.9s\"/>El control aumenta la dilatación como una transformación didáctica.<break time=\"0.9s\"/>También modifica la longitud y la tortuosidad de la geometría.<break time=\"0.9s\"/>Se representa una posible coaptación incompleta y flujo retrógrado.<break time=\"0.9s\"/>Las várices se definen como venas subcutáneas dilatadas de al menos tres milímetros en bipedestación.<break time=\"0.9s\"/>La fascia y la vena profunda permiten reconocer el contexto anatómico.<break time=\"0.9s\"/>La comparación no predice progresión ni decide tratamiento; cada caso requiere valoración.</speak>",
+    "scenes": [
+      "Este modelo compara distintas formas de una vena superficial.",
+      "Los elementos valvulares y el flujo están ampliados para reconocerlos.",
+      "El control aumenta la dilatación como una transformación didáctica.",
+      "También modifica la longitud y la tortuosidad de la geometría.",
+      "Se representa una posible coaptación incompleta y flujo retrógrado.",
+      "Las várices se definen como venas subcutáneas dilatadas de al menos tres milímetros en bipedestación.",
+      "La fascia y la vena profunda permiten reconocer el contexto anatómico.",
+      "La comparación no predice progresión ni decide tratamiento; cada caso requiere valoración."
+    ]
+  },
+  {
+    "id": "microcirculacion",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Esta es una representación ampliada de los vasos pequeños de la piel.<break time=\"0.9s\"/>El intercambio microvascular permite relacionar la sangre con el tejido.<break time=\"0.9s\"/>Parte del líquido se filtra hacia el espacio intersticial.<break time=\"0.9s\"/>El transporte linfático contribuye al retorno del líquido; no es solamente una vía para un sobrante mínimo.<break time=\"0.9s\"/>La hipertensión venosa puede modificar la filtración y la barrera vascular.<break time=\"0.9s\"/>Si la filtración supera la capacidad de drenaje, aumenta el líquido intersticial.<break time=\"0.9s\"/>La extravasación de eritrocitos y el depósito de hemosiderina pueden producir pigmentación.<break time=\"0.9s\"/>La activación inflamatoria también participa en las alteraciones de los tejidos.<break time=\"0.9s\"/>La lesión cutánea tiene mecanismos múltiples; un manguito de fibrina no explica por sí solo una úlcera.<break time=\"0.9s\"/>Los colores y la aceleración comparan mecanismos, sin equivaler a años ni calcular daño de una persona.</speak>",
+    "scenes": [
+      "Esta es una representación ampliada de los vasos pequeños de la piel.",
+      "El intercambio microvascular permite relacionar la sangre con el tejido.",
+      "Parte del líquido se filtra hacia el espacio intersticial.",
+      "El transporte linfático contribuye al retorno del líquido; no es solamente una vía para un sobrante mínimo.",
+      "La hipertensión venosa puede modificar la filtración y la barrera vascular.",
+      "Si la filtración supera la capacidad de drenaje, aumenta el líquido intersticial.",
+      "La extravasación de eritrocitos y el depósito de hemosiderina pueden producir pigmentación.",
+      "La activación inflamatoria también participa en las alteraciones de los tejidos.",
+      "La lesión cutánea tiene mecanismos múltiples; un manguito de fibrina no explica por sí solo una úlcera.",
+      "Los colores y la aceleración comparan mecanismos, sin equivaler a años ni calcular daño de una persona."
+    ]
+  },
+  {
+    "id": "escleroterapia",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>La escleroterapia busca cerrar una vena seleccionada mediante un medicamento esclerosante.<break time=\"0.9s\"/>El corte muestra una vena y los tejidos que la rodean.<break time=\"0.9s\"/>La punción se representa dentro de la luz, sin enseñar una técnica de aplicación.<break time=\"0.9s\"/>El ejemplo muestra un esclerosante detergente en forma de espuma.<break time=\"0.9s\"/>La espuma desplaza parte de la sangre y facilita el contacto con la pared.<break time=\"0.9s\"/>La lesión endotelial y la respuesta local pueden favorecer el cierre venoso.<break time=\"0.9s\"/>La compresión posterior se decide según el procedimiento y la situación clínica.<break time=\"0.9s\"/>Los cuidados y la actividad después del tratamiento se individualizan.<break time=\"0.9s\"/>Con el tiempo puede desarrollarse fibrosis, aunque también puede haber recanalización.<break time=\"0.9s\"/>La vista de la piel es una comparación conceptual, sin prometer desaparición.<break time=\"0.9s\"/>El esclerosante líquido se mezcla con la sangre y su actividad cambia al contactar con proteínas.<break time=\"0.9s\"/>La espuma también se mezcla y pierde actividad; no elimina los riesgos del procedimiento.<break time=\"0.9s\"/>La intensidad de este control no representa una concentración ni una dosis clínica.<break time=\"0.9s\"/>Una lesión excesiva puede acompañarse de inflamación o daño de los tejidos.<break time=\"0.9s\"/>La indicación y todos los parámetros de tratamiento requieren valoración y seguimiento profesional.</speak>",
+    "scenes": [
+      "La escleroterapia busca cerrar una vena seleccionada mediante un medicamento esclerosante.",
+      "El corte muestra una vena y los tejidos que la rodean.",
+      "La punción se representa dentro de la luz, sin enseñar una técnica de aplicación.",
+      "El ejemplo muestra un esclerosante detergente en forma de espuma.",
+      "La espuma desplaza parte de la sangre y facilita el contacto con la pared.",
+      "La lesión endotelial y la respuesta local pueden favorecer el cierre venoso.",
+      "La compresión posterior se decide según el procedimiento y la situación clínica.",
+      "Los cuidados y la actividad después del tratamiento se individualizan.",
+      "Con el tiempo puede desarrollarse fibrosis, aunque también puede haber recanalización.",
+      "La vista de la piel es una comparación conceptual, sin prometer desaparición.",
+      "El esclerosante líquido se mezcla con la sangre y su actividad cambia al contactar con proteínas.",
+      "La espuma también se mezcla y pierde actividad; no elimina los riesgos del procedimiento.",
+      "La intensidad de este control no representa una concentración ni una dosis clínica.",
+      "Una lesión excesiva puede acompañarse de inflamación o daño de los tejidos.",
+      "La indicación y todos los parámetros de tratamiento requieren valoración y seguimiento profesional."
+    ]
+  },
+  {
+    "id": "trombosis-venosa-profunda",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Una trombosis venosa profunda es un coágulo dentro de una vena profunda.<break time=\"0.9s\"/>El seno valvular es uno de los lugares donde puede iniciarse, pero no es el único.<break time=\"0.9s\"/>La tríada de Virchow agrupa mecanismos; no exige que estén los tres presentes.<break time=\"0.9s\"/>La inmovilidad prolongada puede contribuir al riesgo, que varía entre personas.<break time=\"0.9s\"/>La cirugía es otro contexto en el que pueden coexistir varios factores.<break time=\"0.9s\"/>La activación de la coagulación y de células sanguíneas participa en la formación del trombo.<break time=\"0.9s\"/>El trombo puede extenderse; esta secuencia no predice su velocidad ni su evolución.<break time=\"0.9s\"/>La compresibilidad es parte del estudio ecográfico y se interpreta junto con otros hallazgos.<break time=\"0.9s\"/>Un fragmento puede viajar a las arterias pulmonares y causar embolia pulmonar.<break time=\"0.9s\"/>La anticoagulación reduce extensión y embolia, sin eliminar el riesgo ni disolver directamente el coágulo.<break time=\"0.9s\"/>Ante falta de aire, dolor torácico o desmayo se necesita atención urgente.</speak>",
+    "scenes": [
+      "Una trombosis venosa profunda es un coágulo dentro de una vena profunda.",
+      "El seno valvular es uno de los lugares donde puede iniciarse, pero no es el único.",
+      "La tríada de Virchow agrupa mecanismos; no exige que estén los tres presentes.",
+      "La inmovilidad prolongada puede contribuir al riesgo, que varía entre personas.",
+      "La cirugía es otro contexto en el que pueden coexistir varios factores.",
+      "La activación de la coagulación y de células sanguíneas participa en la formación del trombo.",
+      "El trombo puede extenderse; esta secuencia no predice su velocidad ni su evolución.",
+      "La compresibilidad es parte del estudio ecográfico y se interpreta junto con otros hallazgos.",
+      "Un fragmento puede viajar a las arterias pulmonares y causar embolia pulmonar.",
+      "La anticoagulación reduce extensión y embolia, sin eliminar el riesgo ni disolver directamente el coágulo.",
+      "Ante falta de aire, dolor torácico o desmayo se necesita atención urgente."
+    ]
+  },
+  {
+    "id": "sindrome-postrombotico",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>El síndrome postrombótico puede aparecer después de una trombosis, pero no ocurre en todas las personas.<break time=\"0.9s\"/>Al inicio se representa un trombo que reduce el paso de sangre.<break time=\"0.9s\"/>Durante la resolución pueden coexistir reducción del trombo y organización fibrosa.<break time=\"0.9s\"/>El tejido fibroso y los pequeños vasos forman parte de esa respuesta variable.<break time=\"0.9s\"/>La recanalización permite recuperar parte del paso a través de la vena.<break time=\"0.9s\"/>Pueden quedar bandas fibrosas y alteraciones de las válvulas; no es inevitable.<break time=\"0.9s\"/>Si existe incompetencia, parte del flujo puede regresar.<break time=\"0.9s\"/>La obstrucción o el reflujo pueden contribuir a molestias y cambios de la piel.<break time=\"0.9s\"/>La escala de Villalta requiere síntomas y exploración; esta escena no calcula un diagnóstico.<break time=\"0.9s\"/>El manejo se adapta a cada persona y puede incluir actividad, cuidados y compresión cuando esté indicada.</speak>",
+    "scenes": [
+      "El síndrome postrombótico puede aparecer después de una trombosis, pero no ocurre en todas las personas.",
+      "Al inicio se representa un trombo que reduce el paso de sangre.",
+      "Durante la resolución pueden coexistir reducción del trombo y organización fibrosa.",
+      "El tejido fibroso y los pequeños vasos forman parte de esa respuesta variable.",
+      "La recanalización permite recuperar parte del paso a través de la vena.",
+      "Pueden quedar bandas fibrosas y alteraciones de las válvulas; no es inevitable.",
+      "Si existe incompetencia, parte del flujo puede regresar.",
+      "La obstrucción o el reflujo pueden contribuir a molestias y cambios de la piel.",
+      "La escala de Villalta requiere síntomas y exploración; esta escena no calcula un diagnóstico.",
+      "El manejo se adapta a cada persona y puede incluir actividad, cuidados y compresión cuando esté indicada."
+    ]
+  },
+  {
+    "id": "ablacion-endovenosa",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>La ablación térmica busca cerrar un segmento superficial seleccionado, conservando el drenaje profundo.<break time=\"0.9s\"/>El catéter transmite energía bajo control ecográfico; aquí no se representan parámetros de tratamiento.<break time=\"0.9s\"/>La tumescencia rodea la vena y aporta anestesia, separación y protección de tejidos.<break time=\"0.9s\"/>Durante la retirada ilustrada, la acción se localiza en el segmento seleccionado.<break time=\"0.9s\"/>La vena profunda y las estructuras cercanas deben distinguirse del objetivo tratado.<break time=\"0.9s\"/>El remodelado posterior puede producir un segmento fibroso, pero el resultado no está garantizado.<break time=\"0.9s\"/>La técnica, sus riesgos y el seguimiento se adaptan a cada persona; este modelo no prescribe.</speak>",
+    "scenes": [
+      "La ablación térmica busca cerrar un segmento superficial seleccionado, conservando el drenaje profundo.",
+      "El catéter transmite energía bajo control ecográfico; aquí no se representan parámetros de tratamiento.",
+      "La tumescencia rodea la vena y aporta anestesia, separación y protección de tejidos.",
+      "Durante la retirada ilustrada, la acción se localiza en el segmento seleccionado.",
+      "La vena profunda y las estructuras cercanas deben distinguirse del objetivo tratado.",
+      "El remodelado posterior puede producir un segmento fibroso, pero el resultado no está garantizado.",
+      "La técnica, sus riesgos y el seguimiento se adaptan a cada persona; este modelo no prescribe."
+    ]
+  },
+  {
+    "id": "trombosis-venosa-superficial",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Una trombosis venosa superficial es un coágulo dentro de una vena superficial.<break time=\"0.9s\"/>Puede acompañarse de dolor e inflamación local, sin que la piel muestre toda su extensión.<break time=\"0.9s\"/>La safena se conecta con el sistema profundo, por eso importa localizar el extremo del trombo.<break time=\"0.9s\"/>Compare un trombo que se aproxima a esa unión; la relación anatómica modifica la evaluación.<break time=\"0.9s\"/>También puede coexistir una trombosis profunda, como en este escenario independiente.<break time=\"0.9s\"/>El estudio dúplex ayuda a definir extensión y coexistencia; el manejo depende del caso.<break time=\"0.9s\"/>Ante falta de aire, dolor torácico o desmayo se necesita atención urgente.</speak>",
+    "scenes": [
+      "Una trombosis venosa superficial es un coágulo dentro de una vena superficial.",
+      "Puede acompañarse de dolor e inflamación local, sin que la piel muestre toda su extensión.",
+      "La safena se conecta con el sistema profundo, por eso importa localizar el extremo del trombo.",
+      "Compare un trombo que se aproxima a esa unión; la relación anatómica modifica la evaluación.",
+      "También puede coexistir una trombosis profunda, como en este escenario independiente.",
+      "El estudio dúplex ayuda a definir extensión y coexistencia; el manejo depende del caso.",
+      "Ante falta de aire, dolor torácico o desmayo se necesita atención urgente."
+    ]
+  },
+  {
+    "id": "obstruccion-iliaca",
+    "voiceId": "84854979e66846989bc6c5855f53268f",
+    "language": "es",
+    "inputType": "ssml",
+    "text": "<speak>Las venas ilíacas conducen la sangre de la pelvis hacia la vena cava inferior.<break time=\"0.9s\"/>En el patrón clásico, la arteria ilíaca común derecha cruza por delante de la vena ilíaca común izquierda.<break time=\"0.9s\"/>La referencia lumbar queda por detrás; separar las piezas permite comprender la relación.<break time=\"0.9s\"/>Una compresión anatómica puede existir sin síntomas y no equivale por sí sola a un síndrome.<break time=\"0.9s\"/>Otra situación es la secuela de una trombosis, con bandas o cambios dentro de la vena.<break time=\"0.9s\"/>Pueden participar vías colaterales, pero el dibujo no calcula cuánto drenan ni la gravedad.<break time=\"0.9s\"/>El diagnóstico y la indicación de tratamiento integran síntomas, otras causas y estudios apropiados.</speak>",
+    "scenes": [
+      "Las venas ilíacas conducen la sangre de la pelvis hacia la vena cava inferior.",
+      "En el patrón clásico, la arteria ilíaca común derecha cruza por delante de la vena ilíaca común izquierda.",
+      "La referencia lumbar queda por detrás; separar las piezas permite comprender la relación.",
+      "Una compresión anatómica puede existir sin síntomas y no equivale por sí sola a un síndrome.",
+      "Otra situación es la secuela de una trombosis, con bandas o cambios dentro de la vena.",
+      "Pueden participar vías colaterales, pero el dibujo no calcula cuánto drenan ni la gravedad.",
+      "El diagnóstico y la indicación de tratamiento integran síntomas, otras causas y estudios apropiados."
+    ]
+  }
+]

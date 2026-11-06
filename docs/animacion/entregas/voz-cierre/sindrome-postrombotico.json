@@ -1,0 +1,708 @@
+{
+  "duration": 56.711836734693875,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>El síndrome postrombótico puede aparecer después de una trombosis, pero no ocurre en todas las personas.<break time=\"0.9s\"/>Al inicio se representa un trombo que reduce el paso de sangre.<break time=\"0.9s\"/>Durante la resolución pueden coexistir reducción del trombo y organización fibrosa.<break time=\"0.9s\"/>El tejido fibroso y los pequeños vasos forman parte de esa respuesta variable.<break time=\"0.9s\"/>La recanalización permite recuperar parte del paso a través de la vena.<break time=\"0.9s\"/>Pueden quedar bandas fibrosas y alteraciones de las válvulas; no es inevitable.<break time=\"0.9s\"/>Si existe incompetencia, parte del flujo puede regresar.<break time=\"0.9s\"/>La obstrucción o el reflujo pueden contribuir a molestias y cambios de la piel.<break time=\"0.9s\"/>La escala de Villalta requiere síntomas y exploración; esta escena no calcula un diagnóstico.<break time=\"0.9s\"/>El manejo se adapta a cada persona y puede incluir actividad, cuidados y compresión cuando esté indicada.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "El",
+      "start": 0.299,
+      "end": 0.4267
+    },
+    {
+      "word": "síndrome",
+      "start": 0.469,
+      "end": 0.896
+    },
+    {
+      "word": "postrombótico",
+      "start": 0.939,
+      "end": 1.7067
+    },
+    {
+      "word": "puede",
+      "start": 1.749,
+      "end": 2.005
+    },
+    {
+      "word": "aparecer",
+      "start": 2.048,
+      "end": 2.432
+    },
+    {
+      "word": "después",
+      "start": 2.517,
+      "end": 2.859
+    },
+    {
+      "word": "de",
+      "start": 2.901,
+      "end": 2.944
+    },
+    {
+      "word": "una",
+      "start": 2.987,
+      "end": 3.072
+    },
+    {
+      "word": "trombosis,",
+      "start": 3.115,
+      "end": 3.883
+    },
+    {
+      "word": "pero",
+      "start": 4.139,
+      "end": 4.309
+    },
+    {
+      "word": "no",
+      "start": 4.352,
+      "end": 4.5227
+    },
+    {
+      "word": "ocurre",
+      "start": 4.608,
+      "end": 4.949
+    },
+    {
+      "word": "en",
+      "start": 4.992,
+      "end": 5.077
+    },
+    {
+      "word": "todas",
+      "start": 5.12,
+      "end": 5.461
+    },
+    {
+      "word": "las",
+      "start": 5.504,
+      "end": 5.632
+    },
+    {
+      "word": "personas.",
+      "start": 5.675,
+      "end": 6.037
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 6.037,
+      "end": 6.937
+    },
+    {
+      "word": "Al",
+      "start": 6.937,
+      "end": 7.0649999999999995
+    },
+    {
+      "word": "inicio",
+      "start": 7.108,
+      "end": 7.449
+    },
+    {
+      "word": "se",
+      "start": 7.492,
+      "end": 7.62
+    },
+    {
+      "word": "representa",
+      "start": 7.663,
+      "end": 8.088999999999999
+    },
+    {
+      "word": "un",
+      "start": 8.174999999999999,
+      "end": 8.26
+    },
+    {
+      "word": "trombo",
+      "start": 8.302999999999999,
+      "end": 8.644
+    },
+    {
+      "word": "que",
+      "start": 8.729,
+      "end": 8.857
+    },
+    {
+      "word": "reduce",
+      "start": 8.9,
+      "end": 9.156
+    },
+    {
+      "word": "el",
+      "start": 9.284,
+      "end": 9.327
+    },
+    {
+      "word": "paso",
+      "start": 9.369,
+      "end": 9.625
+    },
+    {
+      "word": "de",
+      "start": 9.668,
+      "end": 9.753
+    },
+    {
+      "word": "sangre.",
+      "start": 9.796,
+      "end": 10.163
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 10.163,
+      "end": 11.063
+    },
+    {
+      "word": "Durante",
+      "start": 11.063,
+      "end": 11.490000000000002
+    },
+    {
+      "word": "la",
+      "start": 11.618,
+      "end": 11.660000000000002
+    },
+    {
+      "word": "resolución",
+      "start": 11.703000000000001,
+      "end": 12.3
+    },
+    {
+      "word": "pueden",
+      "start": 12.428,
+      "end": 12.940000000000001
+    },
+    {
+      "word": "coexistir",
+      "start": 12.983,
+      "end": 13.580000000000002
+    },
+    {
+      "word": "reducción",
+      "start": 13.666,
+      "end": 14.178
+    },
+    {
+      "word": "del",
+      "start": 14.22,
+      "end": 14.306000000000001
+    },
+    {
+      "word": "trombo",
+      "start": 14.348,
+      "end": 14.732000000000001
+    },
+    {
+      "word": "y",
+      "start": 14.818000000000001,
+      "end": 14.988000000000001
+    },
+    {
+      "word": "organización",
+      "start": 15.031,
+      "end": 15.586000000000002
+    },
+    {
+      "word": "fibrosa.",
+      "start": 15.628000000000002,
+      "end": 16.106
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 16.106,
+      "end": 17.006
+    },
+    {
+      "word": "El",
+      "start": 17.006,
+      "end": 17.134
+    },
+    {
+      "word": "tejido",
+      "start": 17.177,
+      "end": 17.474999999999998
+    },
+    {
+      "word": "fibroso",
+      "start": 17.518,
+      "end": 17.945
+    },
+    {
+      "word": "y",
+      "start": 18.073,
+      "end": 18.201
+    },
+    {
+      "word": "los",
+      "start": 18.243,
+      "end": 18.329
+    },
+    {
+      "word": "pequeños",
+      "start": 18.413999999999998,
+      "end": 18.798
+    },
+    {
+      "word": "vasos",
+      "start": 18.841,
+      "end": 19.182
+    },
+    {
+      "word": "forman",
+      "start": 19.438,
+      "end": 19.865
+    },
+    {
+      "word": "parte",
+      "start": 19.907,
+      "end": 20.206
+    },
+    {
+      "word": "de",
+      "start": 20.291,
+      "end": 20.419
+    },
+    {
+      "word": "esa",
+      "start": 20.462,
+      "end": 20.59
+    },
+    {
+      "word": "respuesta",
+      "start": 20.633,
+      "end": 21.059
+    },
+    {
+      "word": "variable.",
+      "start": 21.102,
+      "end": 21.437
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 21.437,
+      "end": 22.145
+    },
+    {
+      "word": "La",
+      "start": 22.145,
+      "end": 22.615
+    },
+    {
+      "word": "recanalización",
+      "start": 22.657,
+      "end": 23.425
+    },
+    {
+      "word": "permite",
+      "start": 23.468,
+      "end": 23.767
+    },
+    {
+      "word": "recuperar",
+      "start": 23.895,
+      "end": 24.364
+    },
+    {
+      "word": "parte",
+      "start": 24.448999999999998,
+      "end": 24.791
+    },
+    {
+      "word": "del",
+      "start": 24.876,
+      "end": 24.961
+    },
+    {
+      "word": "paso",
+      "start": 25.047,
+      "end": 25.345
+    },
+    {
+      "word": "a",
+      "start": 25.387999999999998,
+      "end": 25.431
+    },
+    {
+      "word": "través",
+      "start": 25.473,
+      "end": 25.729
+    },
+    {
+      "word": "de",
+      "start": 25.772,
+      "end": 25.857
+    },
+    {
+      "word": "la",
+      "start": 25.9,
+      "end": 25.942999999999998
+    },
+    {
+      "word": "vena.",
+      "start": 25.985,
+      "end": 26.22
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 26.22,
+      "end": 27.12
+    },
+    {
+      "word": "Pueden",
+      "start": 27.12,
+      "end": 27.376
+    },
+    {
+      "word": "quedar",
+      "start": 27.419,
+      "end": 27.632
+    },
+    {
+      "word": "bandas",
+      "start": 27.717000000000002,
+      "end": 27.973000000000003
+    },
+    {
+      "word": "fibrosas",
+      "start": 28.059,
+      "end": 28.656000000000002
+    },
+    {
+      "word": "y",
+      "start": 28.784000000000002,
+      "end": 28.827
+    },
+    {
+      "word": "alteraciones",
+      "start": 28.869,
+      "end": 29.424
+    },
+    {
+      "word": "de",
+      "start": 29.467000000000002,
+      "end": 29.552
+    },
+    {
+      "word": "las",
+      "start": 29.595000000000002,
+      "end": 29.68
+    },
+    {
+      "word": "válvulas;",
+      "start": 29.723000000000003,
+      "end": 30.299
+    },
+    {
+      "word": "no",
+      "start": 30.491,
+      "end": 30.747
+    },
+    {
+      "word": "es",
+      "start": 30.832,
+      "end": 30.96
+    },
+    {
+      "word": "inevitable.",
+      "start": 31.045,
+      "end": 31.552
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 31.552,
+      "end": 32.277
+    },
+    {
+      "word": "Si",
+      "start": 32.277,
+      "end": 32.702999999999996
+    },
+    {
+      "word": "existe",
+      "start": 32.746,
+      "end": 33.045
+    },
+    {
+      "word": "incompetencia,",
+      "start": 33.13,
+      "end": 34.025999999999996
+    },
+    {
+      "word": "parte",
+      "start": 34.196999999999996,
+      "end": 34.452999999999996
+    },
+    {
+      "word": "del",
+      "start": 34.538,
+      "end": 34.623
+    },
+    {
+      "word": "flujo",
+      "start": 34.666,
+      "end": 35.007
+    },
+    {
+      "word": "puede",
+      "start": 35.05,
+      "end": 35.391
+    },
+    {
+      "word": "regresar.",
+      "start": 35.434,
+      "end": 35.942
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 35.942,
+      "end": 36.842
+    },
+    {
+      "word": "La",
+      "start": 36.842,
+      "end": 37.141000000000005
+    },
+    {
+      "word": "obstrucción",
+      "start": 37.18300000000001,
+      "end": 37.82300000000001
+    },
+    {
+      "word": "o",
+      "start": 37.909000000000006,
+      "end": 38.037000000000006
+    },
+    {
+      "word": "el",
+      "start": 38.07900000000001,
+      "end": 38.122
+    },
+    {
+      "word": "reflujo",
+      "start": 38.165000000000006,
+      "end": 38.67700000000001
+    },
+    {
+      "word": "pueden",
+      "start": 38.762,
+      "end": 39.230999999999995
+    },
+    {
+      "word": "contribuir",
+      "start": 39.274,
+      "end": 39.82900000000001
+    },
+    {
+      "word": "a",
+      "start": 39.872,
+      "end": 39.914
+    },
+    {
+      "word": "molestias",
+      "start": 39.95700000000001,
+      "end": 40.554
+    },
+    {
+      "word": "y",
+      "start": 40.64,
+      "end": 40.81
+    },
+    {
+      "word": "cambios",
+      "start": 40.852999999999994,
+      "end": 41.194
+    },
+    {
+      "word": "de",
+      "start": 41.236999999999995,
+      "end": 41.322
+    },
+    {
+      "word": "la",
+      "start": 41.364999999999995,
+      "end": 41.408
+    },
+    {
+      "word": "piel.",
+      "start": 41.45,
+      "end": 41.696
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 41.696,
+      "end": 42.596000000000004
+    },
+    {
+      "word": "La",
+      "start": 42.596000000000004,
+      "end": 43.066
+    },
+    {
+      "word": "escala",
+      "start": 43.108000000000004,
+      "end": 43.364000000000004
+    },
+    {
+      "word": "de",
+      "start": 43.407000000000004,
+      "end": 43.535000000000004
+    },
+    {
+      "word": "Villalta",
+      "start": 43.578,
+      "end": 43.962
+    },
+    {
+      "word": "requiere",
+      "start": 44.047000000000004,
+      "end": 44.431000000000004
+    },
+    {
+      "word": "síntomas",
+      "start": 44.474000000000004,
+      "end": 45.071000000000005
+    },
+    {
+      "word": "y",
+      "start": 45.156000000000006,
+      "end": 45.284000000000006
+    },
+    {
+      "word": "exploración;",
+      "start": 45.327000000000005,
+      "end": 46.24400000000001
+    },
+    {
+      "word": "esta",
+      "start": 46.479000000000006,
+      "end": 46.778000000000006
+    },
+    {
+      "word": "escena",
+      "start": 46.82000000000001,
+      "end": 47.162000000000006
+    },
+    {
+      "word": "no",
+      "start": 47.20400000000001,
+      "end": 47.418000000000006
+    },
+    {
+      "word": "calcula",
+      "start": 47.46000000000001,
+      "end": 47.88700000000001
+    },
+    {
+      "word": "un",
+      "start": 47.93000000000001,
+      "end": 47.97200000000001
+    },
+    {
+      "word": "diagnóstico.",
+      "start": 48.01500000000001,
+      "end": 48.593
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 48.593,
+      "end": 49.493
+    },
+    {
+      "word": "El",
+      "start": 49.493,
+      "end": 50.005
+    },
+    {
+      "word": "manejo",
+      "start": 50.04800000000001,
+      "end": 50.30400000000001
+    },
+    {
+      "word": "se",
+      "start": 50.389,
+      "end": 50.47500000000001
+    },
+    {
+      "word": "adapta",
+      "start": 50.517,
+      "end": 50.773
+    },
+    {
+      "word": "a",
+      "start": 50.85900000000001,
+      "end": 50.98700000000001
+    },
+    {
+      "word": "cada",
+      "start": 51.029,
+      "end": 51.285000000000004
+    },
+    {
+      "word": "persona",
+      "start": 51.371,
+      "end": 51.712
+    },
+    {
+      "word": "y",
+      "start": 51.883,
+      "end": 52.437000000000005
+    },
+    {
+      "word": "puede",
+      "start": 52.480000000000004,
+      "end": 52.693000000000005
+    },
+    {
+      "word": "incluir",
+      "start": 52.736000000000004,
+      "end": 53.035000000000004
+    },
+    {
+      "word": "actividad,",
+      "start": 53.077000000000005,
+      "end": 53.760000000000005
+    },
+    {
+      "word": "cuidados",
+      "start": 53.973000000000006,
+      "end": 54.48500000000001
+    },
+    {
+      "word": "y",
+      "start": 54.61300000000001,
+      "end": 54.827000000000005
+    },
+    {
+      "word": "compresión",
+      "start": 54.86900000000001,
+      "end": 55.42400000000001
+    },
+    {
+      "word": "cuando",
+      "start": 55.467000000000006,
+      "end": 55.63700000000001
+    },
+    {
+      "word": "esté",
+      "start": 55.68000000000001,
+      "end": 55.851000000000006
+    },
+    {
+      "word": "indicada.",
+      "start": 55.89300000000001,
+      "end": 56.482000000000006
+    },
+    {
+      "word": "<end>",
+      "start": 56.711836734693875,
+      "end": 56.711836734693875
+    }
+  ]
+}

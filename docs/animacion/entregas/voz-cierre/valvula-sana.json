@@ -1,0 +1,673 @@
+{
+  "duration": 49.78938775510204,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Observe una vena de la pierna en un corte longitudinal ampliado.<break time=\"0.9s\"/>El extremo distal está a la izquierda y el proximal a la derecha.<break time=\"0.9s\"/>La actividad muscular ayuda a impulsar la sangre hacia el corazón.<break time=\"0.9s\"/>Las valvas se abren y permanecen cerca de la pared del seno, sin pegarse a ella.<break time=\"0.9s\"/>Cuando cambia el flujo y la relación de presiones, las valvas se aproximan.<break time=\"0.9s\"/>Los senos y el flujo local participan en el movimiento valvular.<break time=\"0.9s\"/>El cierre limita el regreso de sangre; el remolino no garantiza que la válvula permanezca sana.<break time=\"0.9s\"/>El recuadro inferior representa un registro Doppler esquemático.<break time=\"0.9s\"/>Los colores distinguen los sentidos del flujo dentro de esta ilustración.<break time=\"0.9s\"/>La escena explica un mecanismo; sus tiempos no son una prueba diagnóstica.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Observe",
+      "start": 0.299,
+      "end": 0.597
+    },
+    {
+      "word": "una",
+      "start": 0.768,
+      "end": 0.896
+    },
+    {
+      "word": "vena",
+      "start": 0.939,
+      "end": 1.0667
+    },
+    {
+      "word": "de",
+      "start": 1.109,
+      "end": 1.237
+    },
+    {
+      "word": "la",
+      "start": 1.28,
+      "end": 1.3227
+    },
+    {
+      "word": "pierna",
+      "start": 1.365,
+      "end": 1.664
+    },
+    {
+      "word": "en",
+      "start": 1.749,
+      "end": 1.792
+    },
+    {
+      "word": "un",
+      "start": 1.835,
+      "end": 1.92
+    },
+    {
+      "word": "corte",
+      "start": 1.963,
+      "end": 2.261
+    },
+    {
+      "word": "longitudinal",
+      "start": 2.304,
+      "end": 2.944
+    },
+    {
+      "word": "ampliado.",
+      "start": 2.987,
+      "end": 3.49
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 3.49,
+      "end": 4.390000000000001
+    },
+    {
+      "word": "El",
+      "start": 4.390000000000001,
+      "end": 4.646
+    },
+    {
+      "word": "extremo",
+      "start": 4.732,
+      "end": 4.9879999999999995
+    },
+    {
+      "word": "distal",
+      "start": 5.073,
+      "end": 5.414
+    },
+    {
+      "word": "está",
+      "start": 5.5,
+      "end": 5.67
+    },
+    {
+      "word": "a",
+      "start": 5.713,
+      "end": 5.756
+    },
+    {
+      "word": "la",
+      "start": 5.798,
+      "end": 5.841
+    },
+    {
+      "word": "izquierda",
+      "start": 5.884,
+      "end": 6.31
+    },
+    {
+      "word": "y",
+      "start": 6.396,
+      "end": 6.566
+    },
+    {
+      "word": "el",
+      "start": 6.609,
+      "end": 6.652
+    },
+    {
+      "word": "proximal",
+      "start": 6.737,
+      "end": 7.206
+    },
+    {
+      "word": "a",
+      "start": 7.377,
+      "end": 7.462
+    },
+    {
+      "word": "la",
+      "start": 7.505,
+      "end": 7.548
+    },
+    {
+      "word": "derecha.",
+      "start": 7.59,
+      "end": 7.974
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 7.974,
+      "end": 8.874
+    },
+    {
+      "word": "La",
+      "start": 8.874,
+      "end": 9.386
+    },
+    {
+      "word": "actividad",
+      "start": 9.427999999999999,
+      "end": 9.726999999999999
+    },
+    {
+      "word": "muscular",
+      "start": 9.77,
+      "end": 10.068
+    },
+    {
+      "word": "ayuda",
+      "start": 10.282,
+      "end": 10.708
+    },
+    {
+      "word": "a",
+      "start": 10.751,
+      "end": 10.793999999999999
+    },
+    {
+      "word": "impulsar",
+      "start": 10.835999999999999,
+      "end": 11.219999999999999
+    },
+    {
+      "word": "la",
+      "start": 11.263,
+      "end": 11.391
+    },
+    {
+      "word": "sangre",
+      "start": 11.434,
+      "end": 11.774999999999999
+    },
+    {
+      "word": "hacia",
+      "start": 11.818,
+      "end": 11.946
+    },
+    {
+      "word": "el",
+      "start": 11.988,
+      "end": 12.030999999999999
+    },
+    {
+      "word": "corazón.",
+      "start": 12.074,
+      "end": 12.504999999999999
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 12.504999999999999,
+      "end": 13.405
+    },
+    {
+      "word": "Las",
+      "start": 13.405,
+      "end": 13.661
+    },
+    {
+      "word": "valvas",
+      "start": 13.703999999999999,
+      "end": 14.045
+    },
+    {
+      "word": "se",
+      "start": 14.129999999999999,
+      "end": 14.216
+    },
+    {
+      "word": "abren",
+      "start": 14.258,
+      "end": 14.556999999999999
+    },
+    {
+      "word": "y",
+      "start": 14.684999999999999,
+      "end": 14.812999999999999
+    },
+    {
+      "word": "permanecen",
+      "start": 14.856,
+      "end": 15.325
+    },
+    {
+      "word": "cerca",
+      "start": 15.409999999999998,
+      "end": 15.793999999999999
+    },
+    {
+      "word": "de",
+      "start": 15.837,
+      "end": 15.879999999999999
+    },
+    {
+      "word": "la",
+      "start": 15.921999999999999,
+      "end": 15.965
+    },
+    {
+      "word": "pared",
+      "start": 16.008,
+      "end": 16.136
+    },
+    {
+      "word": "del",
+      "start": 16.306,
+      "end": 16.349
+    },
+    {
+      "word": "seno,",
+      "start": 16.392,
+      "end": 16.818
+    },
+    {
+      "word": "sin",
+      "start": 16.946,
+      "end": 17.117
+    },
+    {
+      "word": "pegarse",
+      "start": 17.16,
+      "end": 17.544
+    },
+    {
+      "word": "a",
+      "start": 17.586000000000002,
+      "end": 17.629
+    },
+    {
+      "word": "ella.",
+      "start": 17.672,
+      "end": 17.918
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 17.918,
+      "end": 18.817999999999998
+    },
+    {
+      "word": "Cuando",
+      "start": 18.817999999999998,
+      "end": 19.287
+    },
+    {
+      "word": "cambia",
+      "start": 19.33,
+      "end": 19.671
+    },
+    {
+      "word": "el",
+      "start": 19.714,
+      "end": 19.756
+    },
+    {
+      "word": "flujo",
+      "start": 19.799,
+      "end": 20.139999999999997
+    },
+    {
+      "word": "y",
+      "start": 20.226,
+      "end": 20.267999999999997
+    },
+    {
+      "word": "la",
+      "start": 20.311,
+      "end": 20.395999999999997
+    },
+    {
+      "word": "relación",
+      "start": 20.439,
+      "end": 20.822999999999997
+    },
+    {
+      "word": "de",
+      "start": 20.866,
+      "end": 20.907999999999998
+    },
+    {
+      "word": "presiones,",
+      "start": 20.950999999999997,
+      "end": 21.633999999999997
+    },
+    {
+      "word": "las",
+      "start": 21.804,
+      "end": 22.017999999999997
+    },
+    {
+      "word": "valvas",
+      "start": 22.06,
+      "end": 22.487
+    },
+    {
+      "word": "se",
+      "start": 22.572,
+      "end": 22.7
+    },
+    {
+      "word": "aproximan.",
+      "start": 22.743,
+      "end": 23.404
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 23.404,
+      "end": 24.304
+    },
+    {
+      "word": "Los",
+      "start": 24.304,
+      "end": 24.518
+    },
+    {
+      "word": "senos",
+      "start": 24.603,
+      "end": 24.944
+    },
+    {
+      "word": "y",
+      "start": 25.072,
+      "end": 25.115
+    },
+    {
+      "word": "el",
+      "start": 25.158,
+      "end": 25.2
+    },
+    {
+      "word": "flujo",
+      "start": 25.243,
+      "end": 25.499
+    },
+    {
+      "word": "local",
+      "start": 25.542,
+      "end": 25.627
+    },
+    {
+      "word": "participan",
+      "start": 25.883,
+      "end": 26.736
+    },
+    {
+      "word": "en",
+      "start": 26.779,
+      "end": 26.864
+    },
+    {
+      "word": "el",
+      "start": 26.907,
+      "end": 26.95
+    },
+    {
+      "word": "movimiento",
+      "start": 27.035,
+      "end": 27.504
+    },
+    {
+      "word": "valvular.",
+      "start": 27.547,
+      "end": 27.871
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 27.871,
+      "end": 28.771
+    },
+    {
+      "word": "El",
+      "start": 28.771,
+      "end": 29.283
+    },
+    {
+      "word": "cierre",
+      "start": 29.326,
+      "end": 29.752000000000002
+    },
+    {
+      "word": "limita",
+      "start": 29.923000000000002,
+      "end": 30.478
+    },
+    {
+      "word": "el",
+      "start": 30.521,
+      "end": 30.563000000000002
+    },
+    {
+      "word": "regreso",
+      "start": 30.606,
+      "end": 30.905
+    },
+    {
+      "word": "de",
+      "start": 30.947000000000003,
+      "end": 31.033
+    },
+    {
+      "word": "sangre;",
+      "start": 31.075000000000003,
+      "end": 31.545
+    },
+    {
+      "word": "el",
+      "start": 31.715000000000003,
+      "end": 32.057
+    },
+    {
+      "word": "remolino",
+      "start": 32.099,
+      "end": 32.611
+    },
+    {
+      "word": "no",
+      "start": 32.654,
+      "end": 33.038
+    },
+    {
+      "word": "garantiza",
+      "start": 33.08,
+      "end": 33.507
+    },
+    {
+      "word": "que",
+      "start": 33.635,
+      "end": 33.72
+    },
+    {
+      "word": "la",
+      "start": 33.763,
+      "end": 33.848
+    },
+    {
+      "word": "válvula",
+      "start": 33.891,
+      "end": 34.275
+    },
+    {
+      "word": "permanezca",
+      "start": 34.318,
+      "end": 34.745000000000005
+    },
+    {
+      "word": "sana.",
+      "start": 34.83,
+      "end": 35.056000000000004
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 35.056000000000004,
+      "end": 35.956
+    },
+    {
+      "word": "El",
+      "start": 35.956,
+      "end": 36.042
+    },
+    {
+      "word": "recuadro",
+      "start": 36.084,
+      "end": 36.511
+    },
+    {
+      "word": "inferior",
+      "start": 36.554,
+      "end": 36.895
+    },
+    {
+      "word": "representa",
+      "start": 37.066,
+      "end": 37.663000000000004
+    },
+    {
+      "word": "un",
+      "start": 37.748000000000005,
+      "end": 37.834
+    },
+    {
+      "word": "registro",
+      "start": 37.876000000000005,
+      "end": 38.303000000000004
+    },
+    {
+      "word": "Doppler",
+      "start": 38.388000000000005,
+      "end": 38.729000000000006
+    },
+    {
+      "word": "esquemático.",
+      "start": 38.772000000000006,
+      "end": 39.513000000000005
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 39.513000000000005,
+      "end": 40.417
+    },
+    {
+      "word": "Los",
+      "start": 40.417,
+      "end": 40.545
+    },
+    {
+      "word": "colores",
+      "start": 40.63,
+      "end": 40.929
+    },
+    {
+      "word": "distinguen",
+      "start": 40.971000000000004,
+      "end": 41.441
+    },
+    {
+      "word": "los",
+      "start": 41.483000000000004,
+      "end": 41.611000000000004
+    },
+    {
+      "word": "sentidos",
+      "start": 41.654,
+      "end": 42.081
+    },
+    {
+      "word": "del",
+      "start": 42.123000000000005,
+      "end": 42.209
+    },
+    {
+      "word": "flujo",
+      "start": 42.251000000000005,
+      "end": 42.635000000000005
+    },
+    {
+      "word": "dentro",
+      "start": 42.721000000000004,
+      "end": 43.105000000000004
+    },
+    {
+      "word": "de",
+      "start": 43.190000000000005,
+      "end": 43.275000000000006
+    },
+    {
+      "word": "esta",
+      "start": 43.318000000000005,
+      "end": 43.531000000000006
+    },
+    {
+      "word": "ilustración.",
+      "start": 43.574000000000005,
+      "end": 44.17100000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 44.17100000000001,
+      "end": 45.071000000000005
+    },
+    {
+      "word": "La",
+      "start": 45.071000000000005,
+      "end": 45.199000000000005
+    },
+    {
+      "word": "escena",
+      "start": 45.242000000000004,
+      "end": 45.541000000000004
+    },
+    {
+      "word": "explica",
+      "start": 45.583000000000006,
+      "end": 45.925000000000004
+    },
+    {
+      "word": "un",
+      "start": 45.967000000000006,
+      "end": 46.010000000000005
+    },
+    {
+      "word": "mecanismo;",
+      "start": 46.053000000000004,
+      "end": 46.757000000000005
+    },
+    {
+      "word": "sus",
+      "start": 46.99100000000001,
+      "end": 47.162000000000006
+    },
+    {
+      "word": "tiempos",
+      "start": 47.205000000000005,
+      "end": 47.589000000000006
+    },
+    {
+      "word": "no",
+      "start": 47.717000000000006,
+      "end": 47.93000000000001
+    },
+    {
+      "word": "son",
+      "start": 47.973000000000006,
+      "end": 48.186
+    },
+    {
+      "word": "una",
+      "start": 48.271,
+      "end": 48.399
+    },
+    {
+      "word": "prueba",
+      "start": 48.442,
+      "end": 48.698
+    },
+    {
+      "word": "diagnóstica.",
+      "start": 48.74100000000001,
+      "end": 49.54600000000001
+    },
+    {
+      "word": "<end>",
+      "start": 49.78938775510204,
+      "end": 49.78938775510204
+    }
+  ]
+}

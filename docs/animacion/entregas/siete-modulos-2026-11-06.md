@@ -56,7 +56,7 @@ La microvasculatura del corte de úlcera sigue el plano dérmico al separar capa
 
 ## Audio y sincronía conservados
 
-Se generaron siete tomas con la voz pública **Rocío - Calm & Trustworthy** de HeyGen, idioma español y velocidad 1×. Se solicitó el motor guardado por defecto y el proveedor devolvió `orca`. No se clonó una voz. Duración nueva total medida: **302,184376 s**, aproximadamente 5 min 2 s.
+Se generaron siete tomas con la voz pública **Rocío - Calm & Trustworthy** de HeyGen, idioma español y reproducción a 1×, sin alterar localmente la velocidad. El parámetro de velocidad del proveedor se omitió. Se solicitó el motor guardado por defecto y el proveedor devolvió `orca`. No se clonó una voz. Duración nueva total medida: **302,184376 s**, aproximadamente 5 min 2 s.
 
 Las pausas y marcas de palabra del proveedor se cotejaron con el texto y la duración real de cada MP3. CEAP se editó en doce tomas usando esas marcas, sin cambiar palabras ni generar otra grabación: C0/C1, C2/C3, C4a/b/c y C5/C6 cambian con la frase correspondiente.
 

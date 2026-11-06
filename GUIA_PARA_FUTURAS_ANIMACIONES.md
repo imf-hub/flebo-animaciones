@@ -52,6 +52,13 @@ Para una necesidad que estas guías no resuelvan, consulta el documento de herra
 
 ## 4. Reutilizar el código existente antes de construir otro motor
 
+**Ampliación vigente:** el catálogo ya tiene 22 temas. `assets/clinical-scenes.js` añade ablación, TVS y obstrucción ilíaca; reutiliza `CLINICAL3D.deform` cuando una sección tubular deba estrecharse sin crear geometría por fotograma. Lee [el cierre de producción](docs/animacion/entregas/cierre-temas-2026-11-06.md) y [la revisión médica completa](docs/animacion/REVISION_MEDICA_CATALOGO_COMPLETO.md).
+
+Las marcas y versiones de los 22 MP3 se concentran en `assets/extension-audio.js`. Los compiladores de narración deben **fusionar**, nunca borrar otros lotes. Tras sustituir voz, cambiar hash de audio además del guion: el reproductor usa `?v=` para evitar reproducir una grabación anterior desde caché. Conservar `AUDIO_DIR` al editar el registro.
+
+**Precedente médico que debe mantenerse:** un deslizador no calcula dosis, riesgo, presión, diagnóstico, Villalta o pronóstico sin un modelo validado. Separar explícitamente una respuesta elegida para aprender de una respuesta predicha. Contrastar también rótulos, flechas y mecanismos, no solo párrafos. Una etiqueta que dice «Regresa» junto a una flecha puede contradecir un texto correcto sobre el retorno linfático.
+
+
 La ampliación a 19 módulos añade siete escenas con el constructor común `FLEBO3D` en [assets/anatomy-scenes.js](assets/anatomy-scenes.js): recorrido venoso, vasos superficiales, compresión, dúplex, edema, CEAP y úlcera. Reutiliza sus superficies paramétricas, partículas ajustadas al lumen y controles de estados. Consulta la [ficha de producción](docs/animacion/entregas/siete-modulos-2026-11-06.md) y el [contraste médico](docs/animacion/REVISION_MEDICA_SIETE_MODULOS.md) antes de extenderlas.
 
 El proyecto es una web estática: HTML, CSS y JavaScript. Las estructuras se generan con código; no hay modelos GLB ni un exportador MP4 integrado.

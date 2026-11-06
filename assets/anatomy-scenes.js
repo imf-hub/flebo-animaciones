@@ -35,14 +35,14 @@ const FLEBO3D=(()=>{
     function opacity(mesh,value){mesh.userData.fade=value}
     function blood(paths,{color=colors.blood,size=.055,density=11,speed=.6,geometry=null}={}){
       const random=mulberry(731),records=[];
-      for(const path of paths){path.samples=path.curve.getSpacedPoints(128);path.frames=path.curve.computeFrenetFrames(128,false);path.length=path.curve.getLength();const n=Math.round(clamp(path.length*density,14,100));for(let i=0;i<n;i++)records.push({path,offset:i/n,radial:Math.sqrt(random())*.5,angle:random()*Math.PI*2,spin:random()*6})}
+      for(const path of paths){path.samples=path.curve.getSpacedPoints(128);path.frames=path.curve.computeFrenetFrames(128,false);path.length=path.curve.getLength();const n=Math.round(clamp(path.length*density,14,100));for(let i=0;i<n;i++)records.push({path,offset:i/n,radial:lerp(path.radialMin??0,path.radialMax??.5,Math.sqrt(random())),angle:random()*Math.PI*2,spin:random()*6})}
       const mesh=new THREE.InstancedMesh(geometry||rbcGeometry(size),material(color,1,{roughness:.48}),records.length);mesh.frustumCulled=false;scene.add(mesh);const dummy=new THREE.Object3D(),pos=new THREE.Vector3(),axis=new THREE.Vector3(0,1,0),q=new THREE.Quaternion();
       return time=>{
         paths.forEach(p=>p.mesh.updateWorldMatrix(true,false));
         for(let k=0;k<records.length;k++){
           const p=records[k],v=p.path,distance=v.travel?v.travel(time):time*(v.speed??speed),s=((p.offset+distance/v.length)%1+1)%1,index=Math.min(127,Math.floor(s*128)),f=s*128-index,n=v.frames.normals[index],b=v.frames.binormals[index];
           const radius=v.radius*(typeof v.radiusScale==='function'?v.radiusScale(s):v.radiusScale??1),rr=radius*p.radial;
-          pos.copy(v.samples[index]).lerp(v.samples[index+1],f).addScaledVector(n,Math.cos(p.angle)*rr).addScaledVector(b,Math.sin(p.angle)*rr).applyMatrix4(v.mesh.matrixWorld);
+          pos.copy(v.samples[index]).lerp(v.samples[index+1],f).addScaledVector(n,Math.cos(p.angle)*rr).addScaledVector(b,Math.sin(p.angle)*rr);pos.z+=v.offsetZ?v.offsetZ(s):0;pos.applyMatrix4(v.mesh.matrixWorld);
           dummy.position.copy(pos);q.setFromUnitVectors(axis,v.frames.tangents[index]);dummy.quaternion.copy(q);dummy.rotateY(p.spin+time*.8);
           const visible=(v.fade??1)*E.factor(v.id)>.24&&(!v.visibleAt||v.visibleAt(s,time));
           dummy.scale.setScalar(visible?Math.min(1,radius*.38/size):0);dummy.updateMatrix();mesh.setMatrixAt(k,dummy.matrix);

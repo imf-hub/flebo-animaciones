@@ -1,0 +1,518 @@
+{
+  "duration": 42.52734693877551,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>La ablación térmica busca cerrar un segmento superficial seleccionado, conservando el drenaje profundo.<break time=\"0.9s\"/>El catéter transmite energía bajo control ecográfico; aquí no se representan parámetros de tratamiento.<break time=\"0.9s\"/>La tumescencia rodea la vena y aporta anestesia, separación y protección de tejidos.<break time=\"0.9s\"/>Durante la retirada ilustrada, la acción se localiza en el segmento seleccionado.<break time=\"0.9s\"/>La vena profunda y las estructuras cercanas deben distinguirse del objetivo tratado.<break time=\"0.9s\"/>El remodelado posterior puede producir un segmento fibroso, pero el resultado no está garantizado.<break time=\"0.9s\"/>La técnica, sus riesgos y el seguimiento se adaptan a cada persona; este modelo no prescribe.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "La",
+      "start": 0.299,
+      "end": 0.4267
+    },
+    {
+      "word": "ablación",
+      "start": 0.469,
+      "end": 0.8107
+    },
+    {
+      "word": "térmica",
+      "start": 0.853,
+      "end": 1.3227
+    },
+    {
+      "word": "busca",
+      "start": 1.408,
+      "end": 1.7067
+    },
+    {
+      "word": "cerrar",
+      "start": 1.749,
+      "end": 2.005
+    },
+    {
+      "word": "un",
+      "start": 2.048,
+      "end": 2.133
+    },
+    {
+      "word": "segmento",
+      "start": 2.176,
+      "end": 2.56
+    },
+    {
+      "word": "superficial",
+      "start": 2.645,
+      "end": 3.2
+    },
+    {
+      "word": "seleccionado,",
+      "start": 3.285,
+      "end": 4.139
+    },
+    {
+      "word": "conservando",
+      "start": 4.352,
+      "end": 4.992
+    },
+    {
+      "word": "el",
+      "start": 5.077,
+      "end": 5.12
+    },
+    {
+      "word": "drenaje",
+      "start": 5.163,
+      "end": 5.461
+    },
+    {
+      "word": "profundo.",
+      "start": 5.547,
+      "end": 6.059
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 6.059,
+      "end": 6.831
+    },
+    {
+      "word": "El",
+      "start": 6.831,
+      "end": 7.002
+    },
+    {
+      "word": "catéter",
+      "start": 7.044,
+      "end": 7.428
+    },
+    {
+      "word": "transmite",
+      "start": 7.471,
+      "end": 7.897
+    },
+    {
+      "word": "energía",
+      "start": 8.068,
+      "end": 8.58
+    },
+    {
+      "word": "bajo",
+      "start": 8.623,
+      "end": 8.836
+    },
+    {
+      "word": "control",
+      "start": 8.879,
+      "end": 9.092
+    },
+    {
+      "word": "ecográfico;",
+      "start": 9.348,
+      "end": 10.266
+    },
+    {
+      "word": "aquí",
+      "start": 10.5,
+      "end": 10.799
+    },
+    {
+      "word": "no",
+      "start": 10.841,
+      "end": 10.884
+    },
+    {
+      "word": "se",
+      "start": 10.927,
+      "end": 11.012
+    },
+    {
+      "word": "representan",
+      "start": 11.055,
+      "end": 11.439
+    },
+    {
+      "word": "parámetros",
+      "start": 11.61,
+      "end": 12.079
+    },
+    {
+      "word": "de",
+      "start": 12.121,
+      "end": 12.164
+    },
+    {
+      "word": "tratamiento.",
+      "start": 12.207,
+      "end": 12.79
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 12.79,
+      "end": 13.69
+    },
+    {
+      "word": "La",
+      "start": 13.69,
+      "end": 14.116999999999999
+    },
+    {
+      "word": "tumescencia",
+      "start": 14.158999999999999,
+      "end": 14.671
+    },
+    {
+      "word": "rodea",
+      "start": 14.714,
+      "end": 14.97
+    },
+    {
+      "word": "la",
+      "start": 15.012,
+      "end": 15.097999999999999
+    },
+    {
+      "word": "vena",
+      "start": 15.14,
+      "end": 15.395999999999999
+    },
+    {
+      "word": "y",
+      "start": 15.439,
+      "end": 15.653
+    },
+    {
+      "word": "aporta",
+      "start": 15.695,
+      "end": 15.994
+    },
+    {
+      "word": "anestesia,",
+      "start": 16.079,
+      "end": 16.697999999999997
+    },
+    {
+      "word": "separación",
+      "start": 16.804,
+      "end": 17.401999999999997
+    },
+    {
+      "word": "y",
+      "start": 17.529999999999998,
+      "end": 17.700999999999997
+    },
+    {
+      "word": "protección",
+      "start": 17.743,
+      "end": 18.212999999999997
+    },
+    {
+      "word": "de",
+      "start": 18.255,
+      "end": 18.340999999999998
+    },
+    {
+      "word": "tejidos.",
+      "start": 18.383,
+      "end": 18.784
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 18.784,
+      "end": 19.684
+    },
+    {
+      "word": "Durante",
+      "start": 19.684,
+      "end": 19.982
+    },
+    {
+      "word": "la",
+      "start": 20.068,
+      "end": 20.153
+    },
+    {
+      "word": "retirada",
+      "start": 20.196,
+      "end": 20.494
+    },
+    {
+      "word": "ilustrada,",
+      "start": 20.58,
+      "end": 21.199
+    },
+    {
+      "word": "la",
+      "start": 21.348,
+      "end": 21.518
+    },
+    {
+      "word": "acción",
+      "start": 21.561,
+      "end": 21.774
+    },
+    {
+      "word": "se",
+      "start": 21.817,
+      "end": 21.945
+    },
+    {
+      "word": "localiza",
+      "start": 21.988,
+      "end": 22.372
+    },
+    {
+      "word": "en",
+      "start": 22.415,
+      "end": 22.457
+    },
+    {
+      "word": "el",
+      "start": 22.5,
+      "end": 22.543
+    },
+    {
+      "word": "segmento",
+      "start": 22.585,
+      "end": 22.969
+    },
+    {
+      "word": "seleccionado.",
+      "start": 23.012,
+      "end": 23.719
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 23.719,
+      "end": 24.619
+    },
+    {
+      "word": "La",
+      "start": 24.619,
+      "end": 25.046
+    },
+    {
+      "word": "vena",
+      "start": 25.089,
+      "end": 25.259
+    },
+    {
+      "word": "profunda",
+      "start": 25.302,
+      "end": 25.729
+    },
+    {
+      "word": "y",
+      "start": 25.771,
+      "end": 25.814
+    },
+    {
+      "word": "las",
+      "start": 25.857,
+      "end": 25.942
+    },
+    {
+      "word": "estructuras",
+      "start": 25.985,
+      "end": 26.454
+    },
+    {
+      "word": "cercanas",
+      "start": 26.538999999999998,
+      "end": 26.966
+    },
+    {
+      "word": "deben",
+      "start": 27.307,
+      "end": 27.563
+    },
+    {
+      "word": "distinguirse",
+      "start": 27.605999999999998,
+      "end": 28.203
+    },
+    {
+      "word": "del",
+      "start": 28.246,
+      "end": 28.288
+    },
+    {
+      "word": "objetivo",
+      "start": 28.331,
+      "end": 28.758
+    },
+    {
+      "word": "tratado.",
+      "start": 28.801,
+      "end": 29.275
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 29.275,
+      "end": 30.09
+    },
+    {
+      "word": "El",
+      "start": 30.09,
+      "end": 30.218
+    },
+    {
+      "word": "remodelado",
+      "start": 30.261,
+      "end": 30.73
+    },
+    {
+      "word": "posterior",
+      "start": 30.773,
+      "end": 31.198999999999998
+    },
+    {
+      "word": "puede",
+      "start": 31.285,
+      "end": 31.541
+    },
+    {
+      "word": "producir",
+      "start": 31.583,
+      "end": 31.839
+    },
+    {
+      "word": "un",
+      "start": 31.967,
+      "end": 32.01
+    },
+    {
+      "word": "segmento",
+      "start": 32.053000000000004,
+      "end": 32.437
+    },
+    {
+      "word": "fibroso,",
+      "start": 32.522,
+      "end": 33.162
+    },
+    {
+      "word": "pero",
+      "start": 33.418,
+      "end": 33.589
+    },
+    {
+      "word": "el",
+      "start": 33.631,
+      "end": 33.674
+    },
+    {
+      "word": "resultado",
+      "start": 33.717,
+      "end": 34.186
+    },
+    {
+      "word": "no",
+      "start": 34.229,
+      "end": 34.442
+    },
+    {
+      "word": "está",
+      "start": 34.485,
+      "end": 34.741
+    },
+    {
+      "word": "garantizado.",
+      "start": 34.783,
+      "end": 35.452
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 35.452,
+      "end": 36.352
+    },
+    {
+      "word": "La",
+      "start": 36.352,
+      "end": 36.77799999999999
+    },
+    {
+      "word": "técnica,",
+      "start": 36.821,
+      "end": 37.312
+    },
+    {
+      "word": "sus",
+      "start": 37.46099999999999,
+      "end": 37.632
+    },
+    {
+      "word": "riesgos",
+      "start": 37.67399999999999,
+      "end": 38.144
+    },
+    {
+      "word": "y",
+      "start": 38.22899999999999,
+      "end": 38.27199999999999
+    },
+    {
+      "word": "el",
+      "start": 38.315,
+      "end": 38.35699999999999
+    },
+    {
+      "word": "seguimiento",
+      "start": 38.39999999999999,
+      "end": 38.955
+    },
+    {
+      "word": "se",
+      "start": 38.99699999999999,
+      "end": 39.12499999999999
+    },
+    {
+      "word": "adaptan",
+      "start": 39.16799999999999,
+      "end": 39.50899999999999
+    },
+    {
+      "word": "a",
+      "start": 39.55199999999999,
+      "end": 39.63699999999999
+    },
+    {
+      "word": "cada",
+      "start": 39.67999999999999,
+      "end": 39.892999999999994
+    },
+    {
+      "word": "persona;",
+      "start": 39.97899999999999,
+      "end": 40.532999999999994
+    },
+    {
+      "word": "este",
+      "start": 40.70399999999999,
+      "end": 40.959999999999994
+    },
+    {
+      "word": "modelo",
+      "start": 41.00299999999999,
+      "end": 41.215999999999994
+    },
+    {
+      "word": "no",
+      "start": 41.343999999999994,
+      "end": 41.556999999999995
+    },
+    {
+      "word": "prescribe.",
+      "start": 41.599999999999994,
+      "end": 42.279999999999994
+    },
+    {
+      "word": "<end>",
+      "start": 42.52734693877551,
+      "end": 42.52734693877551
+    }
+  ]
+}

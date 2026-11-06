@@ -1,0 +1,793 @@
+{
+  "duration": 63.00734693877551,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Una trombosis venosa profunda es un coágulo dentro de una vena profunda.<break time=\"0.9s\"/>El seno valvular es uno de los lugares donde puede iniciarse, pero no es el único.<break time=\"0.9s\"/>La tríada de Virchow agrupa mecanismos; no exige que estén los tres presentes.<break time=\"0.9s\"/>La inmovilidad prolongada puede contribuir al riesgo, que varía entre personas.<break time=\"0.9s\"/>La cirugía es otro contexto en el que pueden coexistir varios factores.<break time=\"0.9s\"/>La activación de la coagulación y de células sanguíneas participa en la formación del trombo.<break time=\"0.9s\"/>El trombo puede extenderse; esta secuencia no predice su velocidad ni su evolución.<break time=\"0.9s\"/>La compresibilidad es parte del estudio ecográfico y se interpreta junto con otros hallazgos.<break time=\"0.9s\"/>Un fragmento puede viajar a las arterias pulmonares y causar embolia pulmonar.<break time=\"0.9s\"/>La anticoagulación reduce extensión y embolia, sin eliminar el riesgo ni disolver directamente el coágulo.<break time=\"0.9s\"/>Ante falta de aire, dolor torácico o desmayo se necesita atención urgente.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Una",
+      "start": 0.299,
+      "end": 0.469
+    },
+    {
+      "word": "trombosis",
+      "start": 0.512,
+      "end": 0.981
+    },
+    {
+      "word": "venosa",
+      "start": 1.024,
+      "end": 1.365
+    },
+    {
+      "word": "profunda",
+      "start": 1.408,
+      "end": 1.92
+    },
+    {
+      "word": "es",
+      "start": 1.963,
+      "end": 2.176
+    },
+    {
+      "word": "un",
+      "start": 2.219,
+      "end": 2.3467
+    },
+    {
+      "word": "coágulo",
+      "start": 2.389,
+      "end": 2.901
+    },
+    {
+      "word": "dentro",
+      "start": 2.944,
+      "end": 3.2427
+    },
+    {
+      "word": "de",
+      "start": 3.328,
+      "end": 3.413
+    },
+    {
+      "word": "una",
+      "start": 3.456,
+      "end": 3.541
+    },
+    {
+      "word": "vena",
+      "start": 3.584,
+      "end": 3.7547
+    },
+    {
+      "word": "profunda.",
+      "start": 3.797,
+      "end": 4.314
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 4.314,
+      "end": 5.214
+    },
+    {
+      "word": "El",
+      "start": 5.214,
+      "end": 5.385000000000001
+    },
+    {
+      "word": "seno",
+      "start": 5.470000000000001,
+      "end": 5.683000000000001
+    },
+    {
+      "word": "valvular",
+      "start": 5.726000000000001,
+      "end": 6.025
+    },
+    {
+      "word": "es",
+      "start": 6.195,
+      "end": 6.409000000000001
+    },
+    {
+      "word": "uno",
+      "start": 6.4510000000000005,
+      "end": 6.622000000000001
+    },
+    {
+      "word": "de",
+      "start": 6.665000000000001,
+      "end": 6.707000000000001
+    },
+    {
+      "word": "los",
+      "start": 6.750000000000001,
+      "end": 6.835000000000001
+    },
+    {
+      "word": "lugares",
+      "start": 6.878000000000001,
+      "end": 7.219
+    },
+    {
+      "word": "donde",
+      "start": 7.2620000000000005,
+      "end": 7.4750000000000005
+    },
+    {
+      "word": "puede",
+      "start": 7.518000000000001,
+      "end": 7.774000000000001
+    },
+    {
+      "word": "iniciarse,",
+      "start": 7.817000000000001,
+      "end": 8.520999999999999
+    },
+    {
+      "word": "pero",
+      "start": 8.713,
+      "end": 8.883
+    },
+    {
+      "word": "no",
+      "start": 8.926,
+      "end": 9.011
+    },
+    {
+      "word": "es",
+      "start": 9.054,
+      "end": 9.097
+    },
+    {
+      "word": "el",
+      "start": 9.139,
+      "end": 9.182
+    },
+    {
+      "word": "único.",
+      "start": 9.225,
+      "end": 9.6
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 9.6,
+      "end": 10.5
+    },
+    {
+      "word": "La",
+      "start": 10.5,
+      "end": 11.054
+    },
+    {
+      "word": "tríada",
+      "start": 11.097000000000001,
+      "end": 11.396
+    },
+    {
+      "word": "de",
+      "start": 11.524000000000001,
+      "end": 11.609
+    },
+    {
+      "word": "Virchow",
+      "start": 11.652000000000001,
+      "end": 11.993
+    },
+    {
+      "word": "agrupa",
+      "start": 12.121,
+      "end": 12.462000000000002
+    },
+    {
+      "word": "mecanismos;",
+      "start": 12.505,
+      "end": 13.252
+    },
+    {
+      "word": "no",
+      "start": 13.401000000000002,
+      "end": 13.742
+    },
+    {
+      "word": "exige",
+      "start": 13.785,
+      "end": 14.169
+    },
+    {
+      "word": "que",
+      "start": 14.212000000000002,
+      "end": 14.297
+    },
+    {
+      "word": "estén",
+      "start": 14.340000000000002,
+      "end": 14.468
+    },
+    {
+      "word": "los",
+      "start": 14.510000000000002,
+      "end": 14.638000000000002
+    },
+    {
+      "word": "tres",
+      "start": 14.681000000000001,
+      "end": 14.766
+    },
+    {
+      "word": "presentes.",
+      "start": 14.852,
+      "end": 15.257000000000001
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 15.257000000000001,
+      "end": 16.157000000000004
+    },
+    {
+      "word": "La",
+      "start": 16.157000000000004,
+      "end": 16.328000000000003
+    },
+    {
+      "word": "inmovilidad",
+      "start": 16.370000000000005,
+      "end": 16.840000000000003
+    },
+    {
+      "word": "prolongada",
+      "start": 16.882000000000005,
+      "end": 17.352000000000004
+    },
+    {
+      "word": "puede",
+      "start": 17.480000000000004,
+      "end": 17.778000000000006
+    },
+    {
+      "word": "contribuir",
+      "start": 17.821000000000005,
+      "end": 18.29
+    },
+    {
+      "word": "al",
+      "start": 18.333000000000006,
+      "end": 18.418
+    },
+    {
+      "word": "riesgo,",
+      "start": 18.461000000000006,
+      "end": 18.93
+    },
+    {
+      "word": "que",
+      "start": 19.058,
+      "end": 19.144000000000005
+    },
+    {
+      "word": "varía",
+      "start": 19.186,
+      "end": 19.442
+    },
+    {
+      "word": "entre",
+      "start": 19.485,
+      "end": 19.656000000000006
+    },
+    {
+      "word": "personas.",
+      "start": 19.698,
+      "end": 20.081000000000003
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 20.081000000000003,
+      "end": 20.834000000000003
+    },
+    {
+      "word": "La",
+      "start": 20.834000000000003,
+      "end": 21.303000000000004
+    },
+    {
+      "word": "cirugía",
+      "start": 21.346000000000004,
+      "end": 21.815000000000005
+    },
+    {
+      "word": "es",
+      "start": 21.858000000000004,
+      "end": 21.901000000000003
+    },
+    {
+      "word": "otro",
+      "start": 21.986000000000004,
+      "end": 22.199000000000005
+    },
+    {
+      "word": "contexto",
+      "start": 22.242000000000004,
+      "end": 22.754000000000005
+    },
+    {
+      "word": "en",
+      "start": 22.839000000000006,
+      "end": 22.882000000000005
+    },
+    {
+      "word": "el",
+      "start": 22.925000000000004,
+      "end": 22.967000000000006
+    },
+    {
+      "word": "que",
+      "start": 23.010000000000005,
+      "end": 23.138000000000005
+    },
+    {
+      "word": "pueden",
+      "start": 23.181000000000004,
+      "end": 23.394000000000005
+    },
+    {
+      "word": "coexistir",
+      "start": 23.437000000000005,
+      "end": 23.991
+    },
+    {
+      "word": "varios",
+      "start": 24.077000000000005,
+      "end": 24.461000000000006
+    },
+    {
+      "word": "factores.",
+      "start": 24.503,
+      "end": 24.973
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 24.973,
+      "end": 25.873
+    },
+    {
+      "word": "La",
+      "start": 25.873,
+      "end": 26.043000000000003
+    },
+    {
+      "word": "activación",
+      "start": 26.086000000000002,
+      "end": 26.598000000000003
+    },
+    {
+      "word": "de",
+      "start": 26.641000000000002,
+      "end": 26.726000000000003
+    },
+    {
+      "word": "la",
+      "start": 26.769000000000002,
+      "end": 26.811000000000003
+    },
+    {
+      "word": "coagulación",
+      "start": 26.854000000000003,
+      "end": 27.537000000000003
+    },
+    {
+      "word": "y",
+      "start": 27.622000000000003,
+      "end": 27.665000000000003
+    },
+    {
+      "word": "de",
+      "start": 27.707,
+      "end": 27.793000000000003
+    },
+    {
+      "word": "células",
+      "start": 27.835,
+      "end": 28.177000000000003
+    },
+    {
+      "word": "sanguíneas",
+      "start": 28.262000000000004,
+      "end": 28.731
+    },
+    {
+      "word": "participa",
+      "start": 28.859,
+      "end": 29.627000000000002
+    },
+    {
+      "word": "en",
+      "start": 29.67,
+      "end": 29.713
+    },
+    {
+      "word": "la",
+      "start": 29.755000000000003,
+      "end": 29.798000000000002
+    },
+    {
+      "word": "formación",
+      "start": 29.841,
+      "end": 30.267000000000003
+    },
+    {
+      "word": "del",
+      "start": 30.310000000000002,
+      "end": 30.395000000000003
+    },
+    {
+      "word": "trombo.",
+      "start": 30.481,
+      "end": 30.846000000000004
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 30.846000000000004,
+      "end": 31.746000000000002
+    },
+    {
+      "word": "El",
+      "start": 31.746000000000002,
+      "end": 32.173
+    },
+    {
+      "word": "trombo",
+      "start": 32.216,
+      "end": 32.557
+    },
+    {
+      "word": "puede",
+      "start": 32.6,
+      "end": 32.941
+    },
+    {
+      "word": "extenderse;",
+      "start": 32.984,
+      "end": 33.624
+    },
+    {
+      "word": "esta",
+      "start": 33.837,
+      "end": 34.093
+    },
+    {
+      "word": "secuencia",
+      "start": 34.135000000000005,
+      "end": 34.605000000000004
+    },
+    {
+      "word": "no",
+      "start": 34.648,
+      "end": 34.776
+    },
+    {
+      "word": "predice",
+      "start": 34.818000000000005,
+      "end": 35.074000000000005
+    },
+    {
+      "word": "su",
+      "start": 35.202000000000005,
+      "end": 35.288000000000004
+    },
+    {
+      "word": "velocidad",
+      "start": 35.330000000000005,
+      "end": 35.800000000000004
+    },
+    {
+      "word": "ni",
+      "start": 35.928000000000004,
+      "end": 36.05500000000001
+    },
+    {
+      "word": "su",
+      "start": 36.098000000000006,
+      "end": 36.18300000000001
+    },
+    {
+      "word": "evolución.",
+      "start": 36.226000000000006,
+      "end": 36.7
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 36.7,
+      "end": 37.6
+    },
+    {
+      "word": "La",
+      "start": 37.6,
+      "end": 37.771
+    },
+    {
+      "word": "compresibilidad",
+      "start": 37.813,
+      "end": 38.496
+    },
+    {
+      "word": "es",
+      "start": 38.539,
+      "end": 38.624
+    },
+    {
+      "word": "parte",
+      "start": 38.667,
+      "end": 38.965
+    },
+    {
+      "word": "del",
+      "start": 39.008,
+      "end": 39.093
+    },
+    {
+      "word": "estudio",
+      "start": 39.136,
+      "end": 39.52
+    },
+    {
+      "word": "ecográfico",
+      "start": 39.563,
+      "end": 40.117
+    },
+    {
+      "word": "y",
+      "start": 40.203,
+      "end": 40.288
+    },
+    {
+      "word": "se",
+      "start": 40.331,
+      "end": 40.416
+    },
+    {
+      "word": "interpreta",
+      "start": 40.459,
+      "end": 40.886
+    },
+    {
+      "word": "junto",
+      "start": 40.928,
+      "end": 41.142
+    },
+    {
+      "word": "con",
+      "start": 41.184,
+      "end": 41.312
+    },
+    {
+      "word": "otros",
+      "start": 41.355,
+      "end": 41.568
+    },
+    {
+      "word": "hallazgos.",
+      "start": 41.611,
+      "end": 42.099
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 42.099,
+      "end": 42.998999999999995
+    },
+    {
+      "word": "Un",
+      "start": 42.998999999999995,
+      "end": 43.51099999999999
+    },
+    {
+      "word": "fragmento",
+      "start": 43.553999999999995,
+      "end": 44.02299999999999
+    },
+    {
+      "word": "puede",
+      "start": 44.10799999999999,
+      "end": 44.40699999999999
+    },
+    {
+      "word": "viajar",
+      "start": 44.44999999999999,
+      "end": 44.70599999999999
+    },
+    {
+      "word": "a",
+      "start": 44.74799999999999,
+      "end": 44.96199999999999
+    },
+    {
+      "word": "las",
+      "start": 45.00399999999999,
+      "end": 45.08999999999999
+    },
+    {
+      "word": "arterias",
+      "start": 45.13199999999999,
+      "end": 45.34599999999999
+    },
+    {
+      "word": "pulmonares",
+      "start": 45.43099999999999,
+      "end": 45.98599999999999
+    },
+    {
+      "word": "y",
+      "start": 46.02799999999999,
+      "end": 46.41199999999999
+    },
+    {
+      "word": "causar",
+      "start": 46.45499999999999,
+      "end": 46.79599999999999
+    },
+    {
+      "word": "embolia",
+      "start": 46.83899999999999,
+      "end": 47.26599999999999
+    },
+    {
+      "word": "pulmonar.",
+      "start": 47.30799999999999,
+      "end": 47.84799999999999
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 47.84799999999999,
+      "end": 48.74799999999999
+    },
+    {
+      "word": "La",
+      "start": 48.74799999999999,
+      "end": 49.21799999999999
+    },
+    {
+      "word": "anticoagulación",
+      "start": 49.25999999999999,
+      "end": 50.36999999999999
+    },
+    {
+      "word": "reduce",
+      "start": 50.49799999999999,
+      "end": 50.92399999999999
+    },
+    {
+      "word": "extensión",
+      "start": 51.09499999999999,
+      "end": 51.81999999999999
+    },
+    {
+      "word": "y",
+      "start": 51.94799999999999,
+      "end": 52.11899999999999
+    },
+    {
+      "word": "embolia,",
+      "start": 52.16199999999999,
+      "end": 52.779999999999994
+    },
+    {
+      "word": "sin",
+      "start": 53.01499999999999,
+      "end": 53.227999999999994
+    },
+    {
+      "word": "eliminar",
+      "start": 53.270999999999994,
+      "end": 53.611999999999995
+    },
+    {
+      "word": "el",
+      "start": 53.654999999999994,
+      "end": 53.739999999999995
+    },
+    {
+      "word": "riesgo",
+      "start": 53.782999999999994,
+      "end": 54.209999999999994
+    },
+    {
+      "word": "ni",
+      "start": 54.337999999999994,
+      "end": 54.507999999999996
+    },
+    {
+      "word": "disolver",
+      "start": 54.550999999999995,
+      "end": 54.934999999999995
+    },
+    {
+      "word": "directamente",
+      "start": 55.019999999999996,
+      "end": 55.489999999999995
+    },
+    {
+      "word": "el",
+      "start": 55.617999999999995,
+      "end": 55.65999999999999
+    },
+    {
+      "word": "coágulo.",
+      "start": 55.702999999999996,
+      "end": 56.157999999999994
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 56.157999999999994,
+      "end": 57.05799999999999
+    },
+    {
+      "word": "Ante",
+      "start": 57.05799999999999,
+      "end": 57.61299999999999
+    },
+    {
+      "word": "falta",
+      "start": 57.65599999999999,
+      "end": 57.86899999999999
+    },
+    {
+      "word": "de",
+      "start": 57.95399999999999,
+      "end": 58.081999999999994
+    },
+    {
+      "word": "aire,",
+      "start": 58.12499999999999,
+      "end": 58.48799999999999
+    },
+    {
+      "word": "dolor",
+      "start": 58.67999999999999,
+      "end": 58.97799999999999
+    },
+    {
+      "word": "torácico",
+      "start": 59.06399999999999,
+      "end": 59.70399999999999
+    },
+    {
+      "word": "o",
+      "start": 59.78899999999999,
+      "end": 60.087999999999994
+    },
+    {
+      "word": "desmayo",
+      "start": 60.12999999999999,
+      "end": 60.64199999999999
+    },
+    {
+      "word": "se",
+      "start": 60.76999999999999,
+      "end": 61.11199999999999
+    },
+    {
+      "word": "necesita",
+      "start": 61.15399999999999,
+      "end": 61.62399999999999
+    },
+    {
+      "word": "atención",
+      "start": 61.66599999999999,
+      "end": 62.04999999999999
+    },
+    {
+      "word": "urgente.",
+      "start": 62.09299999999999,
+      "end": 62.773999999999994
+    },
+    {
+      "word": "<end>",
+      "start": 63.00734693877551,
+      "end": 63.00734693877551
+    }
+  ]
+}

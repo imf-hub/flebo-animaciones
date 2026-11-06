@@ -8,7 +8,7 @@ Una animación nueva debe igualar las capacidades pertinentes de los mejores eje
 
 ## Contexto que debes leer
 
-Estado ampliado: 19 módulos, incluidos siete nuevos modelos 3D y sus narraciones. Consultar la [ficha de producción del lote](docs/animacion/entregas/siete-modulos-2026-11-06.md) y el [contraste documental médico](docs/animacion/REVISION_MEDICA_SIETE_MODULOS.md). Las fuentes y escenas nuevas están separadas en `assets/anatomy-scenes.js`, `assets/extension-data.js` y `assets/extension-audio.js`; el inventario original sigue protegido.
+Estado actual: **22 módulos**, incluidos diez añadidos en 3D; 66 pasos y 22 preguntas. Consultar primero [la entrega de cierre](docs/animacion/entregas/cierre-temas-2026-11-06.md) y [la revisión médica del catálogo completo](docs/animacion/REVISION_MEDICA_CATALOGO_COMPLETO.md). Las doce narraciones originales fueron revisadas y sustituidas por grabaciones coherentes con las correcciones. `assets/extension-audio.js` es la única autoridad activa para tiempos y versiones de los 22 MP3; `AUDIO_DIR` se conserva en el reproductor. El inventario de referencia original permanece intacto.
 
 La entrada principal para crear futuras animaciones, efectos, modelos o videos es [GUIA_PARA_FUTURAS_ANIMACIONES.md](GUIA_PARA_FUTURAS_ANIMACIONES.md). Leerla antes de ese trabajo: reúne qué reutilizar, qué skills consultar, cómo integrar, comprobar y conservar cada nueva entrega. Mantener también las capacidades de la experiencia actual, no solo el mínimo original.
 

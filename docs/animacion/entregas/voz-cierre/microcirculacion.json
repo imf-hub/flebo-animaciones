@@ -1,0 +1,703 @@
+{
+  "duration": 54.648163265306124,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Esta es una representación ampliada de los vasos pequeños de la piel.<break time=\"0.9s\"/>El intercambio microvascular permite relacionar la sangre con el tejido.<break time=\"0.9s\"/>Parte del líquido se filtra hacia el espacio intersticial.<break time=\"0.9s\"/>El transporte linfático contribuye al retorno del líquido; no es solamente una vía para un sobrante mínimo.<break time=\"0.9s\"/>La hipertensión venosa puede modificar la filtración y la barrera vascular.<break time=\"0.9s\"/>Si la filtración supera la capacidad de drenaje, aumenta el líquido intersticial.<break time=\"0.9s\"/>La extravasación de eritrocitos y el depósito de hemosiderina pueden producir pigmentación.<break time=\"0.9s\"/>La activación inflamatoria también participa en las alteraciones de los tejidos.<break time=\"0.9s\"/>La lesión cutánea tiene mecanismos múltiples; un manguito de fibrina no explica por sí solo una úlcera.<break time=\"0.9s\"/>Los colores y la aceleración comparan mecanismos, sin equivaler a años ni calcular daño de una persona.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Esta",
+      "start": 0.299,
+      "end": 0.555
+    },
+    {
+      "word": "es",
+      "start": 0.597,
+      "end": 0.64
+    },
+    {
+      "word": "una",
+      "start": 0.683,
+      "end": 0.8107
+    },
+    {
+      "word": "representación",
+      "start": 0.853,
+      "end": 1.536
+    },
+    {
+      "word": "ampliada",
+      "start": 1.579,
+      "end": 2.005
+    },
+    {
+      "word": "de",
+      "start": 2.133,
+      "end": 2.219
+    },
+    {
+      "word": "los",
+      "start": 2.261,
+      "end": 2.3467
+    },
+    {
+      "word": "vasos",
+      "start": 2.389,
+      "end": 2.645
+    },
+    {
+      "word": "pequeños",
+      "start": 2.688,
+      "end": 3.072
+    },
+    {
+      "word": "de",
+      "start": 3.115,
+      "end": 3.2
+    },
+    {
+      "word": "la",
+      "start": 3.243,
+      "end": 3.285
+    },
+    {
+      "word": "piel.",
+      "start": 3.328,
+      "end": 3.558
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 3.558,
+      "end": 4.458
+    },
+    {
+      "word": "El",
+      "start": 4.458,
+      "end": 4.586
+    },
+    {
+      "word": "intercambio",
+      "start": 4.714,
+      "end": 5.141
+    },
+    {
+      "word": "microvascular",
+      "start": 5.183,
+      "end": 5.738
+    },
+    {
+      "word": "permite",
+      "start": 5.9510000000000005,
+      "end": 6.506
+    },
+    {
+      "word": "relacionar",
+      "start": 6.634,
+      "end": 7.146
+    },
+    {
+      "word": "la",
+      "start": 7.189,
+      "end": 7.274
+    },
+    {
+      "word": "sangre",
+      "start": 7.317,
+      "end": 7.658
+    },
+    {
+      "word": "con",
+      "start": 7.7010000000000005,
+      "end": 7.829
+    },
+    {
+      "word": "el",
+      "start": 7.871,
+      "end": 7.914
+    },
+    {
+      "word": "tejido.",
+      "start": 7.957,
+      "end": 8.392
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 8.392,
+      "end": 9.292
+    },
+    {
+      "word": "Parte",
+      "start": 9.292,
+      "end": 9.803999999999998
+    },
+    {
+      "word": "del",
+      "start": 9.847,
+      "end": 9.975
+    },
+    {
+      "word": "líquido",
+      "start": 10.017,
+      "end": 10.358999999999998
+    },
+    {
+      "word": "se",
+      "start": 10.401,
+      "end": 10.528999999999998
+    },
+    {
+      "word": "filtra",
+      "start": 10.572,
+      "end": 10.956
+    },
+    {
+      "word": "hacia",
+      "start": 11.042,
+      "end": 11.212
+    },
+    {
+      "word": "el",
+      "start": 11.254999999999999,
+      "end": 11.297999999999998
+    },
+    {
+      "word": "espacio",
+      "start": 11.339999999999998,
+      "end": 11.723999999999998
+    },
+    {
+      "word": "intersticial.",
+      "start": 11.767,
+      "end": 12.402999999999999
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 12.402999999999999,
+      "end": 13.302999999999997
+    },
+    {
+      "word": "El",
+      "start": 13.302999999999997,
+      "end": 13.686999999999998
+    },
+    {
+      "word": "transporte",
+      "start": 13.729999999999997,
+      "end": 14.198999999999998
+    },
+    {
+      "word": "linfático",
+      "start": 14.241999999999997,
+      "end": 14.796
+    },
+    {
+      "word": "contribuye",
+      "start": 14.838999999999999,
+      "end": 15.436999999999998
+    },
+    {
+      "word": "al",
+      "start": 15.479,
+      "end": 15.521999999999998
+    },
+    {
+      "word": "retorno",
+      "start": 15.564999999999998,
+      "end": 15.948999999999998
+    },
+    {
+      "word": "del",
+      "start": 15.990999999999996,
+      "end": 16.076999999999998
+    },
+    {
+      "word": "líquido;",
+      "start": 16.118999999999996,
+      "end": 16.674
+    },
+    {
+      "word": "no",
+      "start": 16.843999999999998,
+      "end": 17.014999999999997
+    },
+    {
+      "word": "es",
+      "start": 17.057999999999996,
+      "end": 17.099999999999998
+    },
+    {
+      "word": "solamente",
+      "start": 17.142999999999997,
+      "end": 17.526999999999997
+    },
+    {
+      "word": "una",
+      "start": 17.654999999999998,
+      "end": 17.782999999999998
+    },
+    {
+      "word": "vía",
+      "start": 17.825999999999997,
+      "end": 18.038999999999998
+    },
+    {
+      "word": "para",
+      "start": 18.081999999999997,
+      "end": 18.252999999999997
+    },
+    {
+      "word": "un",
+      "start": 18.294999999999998,
+      "end": 18.337999999999997
+    },
+    {
+      "word": "sobrante",
+      "start": 18.380999999999997,
+      "end": 18.679
+    },
+    {
+      "word": "mínimo.",
+      "start": 18.849999999999998,
+      "end": 19.248999999999995
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 19.248999999999995,
+      "end": 20.150999999999996
+    },
+    {
+      "word": "La",
+      "start": 20.150999999999996,
+      "end": 20.278999999999996
+    },
+    {
+      "word": "hipertensión",
+      "start": 20.321999999999996,
+      "end": 20.961999999999996
+    },
+    {
+      "word": "venosa",
+      "start": 21.003999999999998,
+      "end": 21.345999999999997
+    },
+    {
+      "word": "puede",
+      "start": 21.430999999999997,
+      "end": 21.686999999999998
+    },
+    {
+      "word": "modificar",
+      "start": 21.729999999999997,
+      "end": 22.241999999999997
+    },
+    {
+      "word": "la",
+      "start": 22.283999999999995,
+      "end": 22.369999999999997
+    },
+    {
+      "word": "filtración",
+      "start": 22.411999999999995,
+      "end": 23.009999999999998
+    },
+    {
+      "word": "y",
+      "start": 23.094999999999995,
+      "end": 23.179999999999996
+    },
+    {
+      "word": "la",
+      "start": 23.222999999999995,
+      "end": 23.350999999999996
+    },
+    {
+      "word": "barrera",
+      "start": 23.394,
+      "end": 23.65
+    },
+    {
+      "word": "vascular.",
+      "start": 23.691999999999997,
+      "end": 24.051
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 24.051,
+      "end": 24.951
+    },
+    {
+      "word": "Si",
+      "start": 24.951,
+      "end": 25.207
+    },
+    {
+      "word": "la",
+      "start": 25.25,
+      "end": 25.293
+    },
+    {
+      "word": "filtración",
+      "start": 25.335,
+      "end": 25.89
+    },
+    {
+      "word": "supera",
+      "start": 25.933,
+      "end": 26.189
+    },
+    {
+      "word": "la",
+      "start": 26.231,
+      "end": 26.317
+    },
+    {
+      "word": "capacidad",
+      "start": 26.358999999999998,
+      "end": 26.871
+    },
+    {
+      "word": "de",
+      "start": 26.914,
+      "end": 26.957
+    },
+    {
+      "word": "drenaje,",
+      "start": 26.999,
+      "end": 27.49
+    },
+    {
+      "word": "aumenta",
+      "start": 27.597,
+      "end": 28.279
+    },
+    {
+      "word": "el",
+      "start": 28.322,
+      "end": 28.365
+    },
+    {
+      "word": "líquido",
+      "start": 28.407,
+      "end": 28.749
+    },
+    {
+      "word": "intersticial.",
+      "start": 28.791,
+      "end": 29.447
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 29.447,
+      "end": 30.346999999999998
+    },
+    {
+      "word": "La",
+      "start": 30.346999999999998,
+      "end": 30.858999999999998
+    },
+    {
+      "word": "extravasación",
+      "start": 30.900999999999996,
+      "end": 31.626999999999995
+    },
+    {
+      "word": "de",
+      "start": 31.668999999999997,
+      "end": 31.796999999999997
+    },
+    {
+      "word": "eritrocitos",
+      "start": 31.839999999999996,
+      "end": 32.522999999999996
+    },
+    {
+      "word": "y",
+      "start": 32.608,
+      "end": 32.736
+    },
+    {
+      "word": "el",
+      "start": 32.778999999999996,
+      "end": 32.821
+    },
+    {
+      "word": "depósito",
+      "start": 32.864,
+      "end": 33.376
+    },
+    {
+      "word": "de",
+      "start": 33.419,
+      "end": 33.504
+    },
+    {
+      "word": "hemosiderina",
+      "start": 33.547,
+      "end": 34.059
+    },
+    {
+      "word": "pueden",
+      "start": 34.229,
+      "end": 34.784
+    },
+    {
+      "word": "producir",
+      "start": 34.827,
+      "end": 35.168
+    },
+    {
+      "word": "pigmentación.",
+      "start": 35.296,
+      "end": 36.029999999999994
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 36.029999999999994,
+      "end": 36.92999999999999
+    },
+    {
+      "word": "La",
+      "start": 36.92999999999999,
+      "end": 37.18599999999999
+    },
+    {
+      "word": "activación",
+      "start": 37.22799999999999,
+      "end": 37.697999999999986
+    },
+    {
+      "word": "inflamatoria",
+      "start": 37.73999999999999,
+      "end": 38.20999999999999
+    },
+    {
+      "word": "también",
+      "start": 38.37999999999999,
+      "end": 38.72199999999999
+    },
+    {
+      "word": "participa",
+      "start": 38.76399999999999,
+      "end": 39.31899999999999
+    },
+    {
+      "word": "en",
+      "start": 39.40399999999999,
+      "end": 39.44699999999999
+    },
+    {
+      "word": "las",
+      "start": 39.48999999999999,
+      "end": 39.57499999999999
+    },
+    {
+      "word": "alteraciones",
+      "start": 39.61799999999999,
+      "end": 40.17199999999999
+    },
+    {
+      "word": "de",
+      "start": 40.21499999999999,
+      "end": 40.29999999999999
+    },
+    {
+      "word": "los",
+      "start": 40.34299999999999,
+      "end": 40.42799999999999
+    },
+    {
+      "word": "tejidos.",
+      "start": 40.42799999999999,
+      "end": 40.95899999999999
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 40.95899999999999,
+      "end": 41.89499999999999
+    },
+    {
+      "word": "La",
+      "start": 41.89499999999999,
+      "end": 42.06499999999999
+    },
+    {
+      "word": "lesión",
+      "start": 42.10799999999999,
+      "end": 42.36399999999999
+    },
+    {
+      "word": "cutánea",
+      "start": 42.40699999999999,
+      "end": 42.74799999999999
+    },
+    {
+      "word": "tiene",
+      "start": 42.79099999999999,
+      "end": 42.91899999999999
+    },
+    {
+      "word": "mecanismos",
+      "start": 43.00399999999999,
+      "end": 43.51599999999999
+    },
+    {
+      "word": "múltiples;",
+      "start": 43.55899999999999,
+      "end": 44.26299999999999
+    },
+    {
+      "word": "un",
+      "start": 44.45499999999999,
+      "end": 44.62499999999999
+    },
+    {
+      "word": "manguito",
+      "start": 44.66799999999999,
+      "end": 45.008999999999986
+    },
+    {
+      "word": "de",
+      "start": 45.05199999999999,
+      "end": 45.136999999999986
+    },
+    {
+      "word": "fibrina",
+      "start": 45.17999999999999,
+      "end": 45.47899999999999
+    },
+    {
+      "word": "no",
+      "start": 45.64899999999999,
+      "end": 45.73499999999999
+    },
+    {
+      "word": "explica",
+      "start": 45.77699999999999,
+      "end": 46.11899999999999
+    },
+    {
+      "word": "por",
+      "start": 46.16099999999999,
+      "end": 46.28899999999999
+    },
+    {
+      "word": "sí",
+      "start": 46.33199999999999,
+      "end": 46.41699999999999
+    },
+    {
+      "word": "solo",
+      "start": 46.45999999999999,
+      "end": 46.67299999999999
+    },
+    {
+      "word": "una",
+      "start": 46.71599999999999,
+      "end": 46.84399999999999
+    },
+    {
+      "word": "úlcera.",
+      "start": 46.886999999999986,
+      "end": 47.29999999999999
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 47.29999999999999,
+      "end": 48.19999999999999
+    },
+    {
+      "word": "Los",
+      "start": 48.19999999999999,
+      "end": 48.626999999999995
+    },
+    {
+      "word": "colores",
+      "start": 48.66899999999999,
+      "end": 49.05299999999999
+    },
+    {
+      "word": "y",
+      "start": 49.13899999999999,
+      "end": 49.22399999999999
+    },
+    {
+      "word": "la",
+      "start": 49.26699999999999,
+      "end": 49.30899999999999
+    },
+    {
+      "word": "aceleración",
+      "start": 49.35199999999999,
+      "end": 49.94899999999999
+    },
+    {
+      "word": "comparan",
+      "start": 50.03499999999999,
+      "end": 50.46099999999999
+    },
+    {
+      "word": "mecanismos,",
+      "start": 50.50399999999999,
+      "end": 51.25099999999999
+    },
+    {
+      "word": "sin",
+      "start": 51.44299999999999,
+      "end": 51.57099999999999
+    },
+    {
+      "word": "equivaler",
+      "start": 51.61299999999999,
+      "end": 51.99699999999999
+    },
+    {
+      "word": "a",
+      "start": 52.03999999999999,
+      "end": 52.16799999999999
+    },
+    {
+      "word": "años",
+      "start": 52.21099999999999,
+      "end": 52.46699999999999
+    },
+    {
+      "word": "ni",
+      "start": 52.59499999999999,
+      "end": 52.76499999999999
+    },
+    {
+      "word": "calcular",
+      "start": 52.80799999999999,
+      "end": 53.06399999999999
+    },
+    {
+      "word": "daño",
+      "start": 53.19199999999999,
+      "end": 53.49099999999999
+    },
+    {
+      "word": "de",
+      "start": 53.532999999999994,
+      "end": 53.61899999999999
+    },
+    {
+      "word": "una",
+      "start": 53.660999999999994,
+      "end": 53.74699999999999
+    },
+    {
+      "word": "persona.",
+      "start": 53.788999999999994,
+      "end": 54.41872335600906
+    },
+    {
+      "word": "<end>",
+      "start": 54.648163265306124,
+      "end": 54.648163265306124
+    }
+  ]
+}

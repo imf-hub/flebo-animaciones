@@ -1,0 +1,623 @@
+{
+  "duration": 49.11020408163265,
+  "engine": "orca",
+  "voice_id": "84854979e66846989bc6c5855f53268f",
+  "submitted": "<speak>Observe un corte transversal simplificado de la pierna.<break time=\"0.9s\"/>La piel y el tejido subcutáneo quedan por encima de la fascia muscular.<break time=\"0.9s\"/>Las fascias delimitan relaciones anatómicas entre tejidos y venas.<break time=\"0.9s\"/>La safena mayor discurre en su compartimento, reconocible en ecografía como el ojo safeno.<break time=\"0.9s\"/>Bajo la fascia muscular se sitúan las venas profundas y estructuras arteriales.<break time=\"0.9s\"/>Una perforante atraviesa esa fascia y conecta los dos sistemas venosos.<break time=\"0.9s\"/>Compare ahora un escenario con alteraciones venosas.<break time=\"0.9s\"/>La safena también puede dilatarse a pesar de estar en su compartimento.<break time=\"0.9s\"/>Las tributarias extrafasciales pueden presentar dilatación y tortuosidad.<break time=\"0.9s\"/>El flujo saliente por una perforante puede coexistir con cambios tisulares; el dibujo no demuestra una causa única.</speak>",
+  "word_timestamps": [
+    {
+      "word": "<start>",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "word": "Observe",
+      "start": 0.299,
+      "end": 0.597
+    },
+    {
+      "word": "un",
+      "start": 0.725,
+      "end": 0.768
+    },
+    {
+      "word": "corte",
+      "start": 0.811,
+      "end": 1.024
+    },
+    {
+      "word": "transversal",
+      "start": 1.109,
+      "end": 1.5787
+    },
+    {
+      "word": "simplificado",
+      "start": 1.664,
+      "end": 2.304
+    },
+    {
+      "word": "de",
+      "start": 2.347,
+      "end": 2.389
+    },
+    {
+      "word": "la",
+      "start": 2.432,
+      "end": 2.4747
+    },
+    {
+      "word": "pierna.",
+      "start": 2.517,
+      "end": 2.812
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 2.812,
+      "end": 3.7119999999999997
+    },
+    {
+      "word": "La",
+      "start": 3.7119999999999997,
+      "end": 4.011
+    },
+    {
+      "word": "piel",
+      "start": 4.054,
+      "end": 4.267
+    },
+    {
+      "word": "y",
+      "start": 4.31,
+      "end": 4.352
+    },
+    {
+      "word": "el",
+      "start": 4.395,
+      "end": 4.438
+    },
+    {
+      "word": "tejido",
+      "start": 4.4799999999999995,
+      "end": 4.779
+    },
+    {
+      "word": "subcutáneo",
+      "start": 4.822,
+      "end": 5.3759999999999994
+    },
+    {
+      "word": "quedan",
+      "start": 5.419,
+      "end": 5.675
+    },
+    {
+      "word": "por",
+      "start": 5.718,
+      "end": 5.846
+    },
+    {
+      "word": "encima",
+      "start": 5.888,
+      "end": 6.186999999999999
+    },
+    {
+      "word": "de",
+      "start": 6.2299999999999995,
+      "end": 6.3149999999999995
+    },
+    {
+      "word": "la",
+      "start": 6.358,
+      "end": 6.3999999999999995
+    },
+    {
+      "word": "fascia",
+      "start": 6.443,
+      "end": 6.699
+    },
+    {
+      "word": "muscular.",
+      "start": 6.742,
+      "end": 7.112
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 7.112,
+      "end": 8.012
+    },
+    {
+      "word": "Las",
+      "start": 8.012,
+      "end": 8.353
+    },
+    {
+      "word": "fascias",
+      "start": 8.395999999999999,
+      "end": 8.737
+    },
+    {
+      "word": "delimitan",
+      "start": 8.78,
+      "end": 9.248999999999999
+    },
+    {
+      "word": "relaciones",
+      "start": 9.292,
+      "end": 9.761
+    },
+    {
+      "word": "anatómicas",
+      "start": 9.803999999999998,
+      "end": 10.401
+    },
+    {
+      "word": "entre",
+      "start": 10.486999999999998,
+      "end": 10.7
+    },
+    {
+      "word": "tejidos",
+      "start": 10.742999999999999,
+      "end": 11.168999999999999
+    },
+    {
+      "word": "y",
+      "start": 11.212,
+      "end": 11.34
+    },
+    {
+      "word": "venas.",
+      "start": 11.382,
+      "end": 11.681
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 11.681,
+      "end": 12.581
+    },
+    {
+      "word": "La",
+      "start": 12.581,
+      "end": 12.923
+    },
+    {
+      "word": "safena",
+      "start": 12.965,
+      "end": 13.306999999999999
+    },
+    {
+      "word": "mayor",
+      "start": 13.348999999999998,
+      "end": 13.604999999999999
+    },
+    {
+      "word": "discurre",
+      "start": 13.69,
+      "end": 14.116999999999999
+    },
+    {
+      "word": "en",
+      "start": 14.159999999999998,
+      "end": 14.202
+    },
+    {
+      "word": "su",
+      "start": 14.245,
+      "end": 14.287999999999998
+    },
+    {
+      "word": "compartimento,",
+      "start": 14.329999999999998,
+      "end": 15.12
+    },
+    {
+      "word": "reconocible",
+      "start": 15.268999999999998,
+      "end": 15.866
+    },
+    {
+      "word": "en",
+      "start": 15.952,
+      "end": 15.994
+    },
+    {
+      "word": "ecografía",
+      "start": 16.037,
+      "end": 16.634
+    },
+    {
+      "word": "como",
+      "start": 16.677,
+      "end": 16.848
+    },
+    {
+      "word": "el",
+      "start": 16.891000000000002,
+      "end": 16.976
+    },
+    {
+      "word": "ojo",
+      "start": 17.019,
+      "end": 17.189
+    },
+    {
+      "word": "safeno.",
+      "start": 17.232,
+      "end": 17.669999999999998
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 17.669999999999998,
+      "end": 18.537
+    },
+    {
+      "word": "Bajo",
+      "start": 18.537,
+      "end": 18.750999999999998
+    },
+    {
+      "word": "la",
+      "start": 18.793,
+      "end": 18.921
+    },
+    {
+      "word": "fascia",
+      "start": 18.964,
+      "end": 19.177
+    },
+    {
+      "word": "muscular",
+      "start": 19.22,
+      "end": 19.476
+    },
+    {
+      "word": "se",
+      "start": 19.689,
+      "end": 19.817
+    },
+    {
+      "word": "sitúan",
+      "start": 19.86,
+      "end": 20.159
+    },
+    {
+      "word": "las",
+      "start": 20.201,
+      "end": 20.287
+    },
+    {
+      "word": "venas",
+      "start": 20.372,
+      "end": 20.585
+    },
+    {
+      "word": "profundas",
+      "start": 20.628,
+      "end": 21.224999999999998
+    },
+    {
+      "word": "y",
+      "start": 21.311,
+      "end": 21.439
+    },
+    {
+      "word": "estructuras",
+      "start": 21.480999999999998,
+      "end": 21.993
+    },
+    {
+      "word": "arteriales.",
+      "start": 22.035999999999998,
+      "end": 22.628999999999998
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 22.628999999999998,
+      "end": 23.528999999999996
+    },
+    {
+      "word": "Una",
+      "start": 23.528999999999996,
+      "end": 23.912999999999997
+    },
+    {
+      "word": "perforante",
+      "start": 23.955,
+      "end": 24.339
+    },
+    {
+      "word": "atraviesa",
+      "start": 24.552999999999997,
+      "end": 24.979
+    },
+    {
+      "word": "esa",
+      "start": 25.022,
+      "end": 25.192999999999998
+    },
+    {
+      "word": "fascia",
+      "start": 25.235,
+      "end": 25.619
+    },
+    {
+      "word": "y",
+      "start": 25.705,
+      "end": 25.79
+    },
+    {
+      "word": "conecta",
+      "start": 25.833,
+      "end": 26.259
+    },
+    {
+      "word": "los",
+      "start": 26.302,
+      "end": 26.43
+    },
+    {
+      "word": "dos",
+      "start": 26.473,
+      "end": 26.643
+    },
+    {
+      "word": "sistemas",
+      "start": 26.729,
+      "end": 27.07
+    },
+    {
+      "word": "venosos.",
+      "start": 27.155,
+      "end": 27.621000000000002
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 27.621000000000002,
+      "end": 28.353
+    },
+    {
+      "word": "Compare",
+      "start": 28.353,
+      "end": 28.951
+    },
+    {
+      "word": "ahora",
+      "start": 29.036,
+      "end": 29.249000000000002
+    },
+    {
+      "word": "un",
+      "start": 29.292,
+      "end": 29.335
+    },
+    {
+      "word": "escenario",
+      "start": 29.378,
+      "end": 29.804000000000002
+    },
+    {
+      "word": "con",
+      "start": 29.89,
+      "end": 29.975
+    },
+    {
+      "word": "alteraciones",
+      "start": 30.018,
+      "end": 30.572000000000003
+    },
+    {
+      "word": "venosas.",
+      "start": 30.615000000000002,
+      "end": 31.049999999999997
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 31.049999999999997,
+      "end": 31.95
+    },
+    {
+      "word": "La",
+      "start": 31.95,
+      "end": 32.291
+    },
+    {
+      "word": "safena",
+      "start": 32.333999999999996,
+      "end": 32.632
+    },
+    {
+      "word": "también",
+      "start": 32.675,
+      "end": 32.974
+    },
+    {
+      "word": "puede",
+      "start": 33.016,
+      "end": 33.23
+    },
+    {
+      "word": "dilatarse",
+      "start": 33.272,
+      "end": 33.827
+    },
+    {
+      "word": "a",
+      "start": 33.913,
+      "end": 34.083
+    },
+    {
+      "word": "pesar",
+      "start": 34.126,
+      "end": 34.467
+    },
+    {
+      "word": "de",
+      "start": 34.51,
+      "end": 34.595
+    },
+    {
+      "word": "estar",
+      "start": 34.638,
+      "end": 34.808
+    },
+    {
+      "word": "en",
+      "start": 34.851,
+      "end": 34.894
+    },
+    {
+      "word": "su",
+      "start": 34.936,
+      "end": 35.064
+    },
+    {
+      "word": "compartimento.",
+      "start": 35.064,
+      "end": 35.844
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 35.844,
+      "end": 36.719
+    },
+    {
+      "word": "Las",
+      "start": 36.719,
+      "end": 36.888999999999996
+    },
+    {
+      "word": "tributarias",
+      "start": 36.974999999999994,
+      "end": 37.443999999999996
+    },
+    {
+      "word": "extrafasciales",
+      "start": 37.528999999999996,
+      "end": 38.211999999999996
+    },
+    {
+      "word": "pueden",
+      "start": 38.339999999999996,
+      "end": 38.596
+    },
+    {
+      "word": "presentar",
+      "start": 38.638999999999996,
+      "end": 39.108
+    },
+    {
+      "word": "dilatación",
+      "start": 39.150999999999996,
+      "end": 39.79
+    },
+    {
+      "word": "y",
+      "start": 39.876,
+      "end": 40.004
+    },
+    {
+      "word": "tortuosidad.",
+      "start": 40.046,
+      "end": 40.745
+    },
+    {
+      "word": "<break time=\"0.9s\"/>",
+      "start": 40.745,
+      "end": 41.658
+    },
+    {
+      "word": "El",
+      "start": 41.658,
+      "end": 41.785999999999994
+    },
+    {
+      "word": "flujo",
+      "start": 41.870999999999995,
+      "end": 42.126999999999995
+    },
+    {
+      "word": "saliente",
+      "start": 42.169999999999995,
+      "end": 42.638999999999996
+    },
+    {
+      "word": "por",
+      "start": 42.681999999999995,
+      "end": 42.766999999999996
+    },
+    {
+      "word": "una",
+      "start": 42.809999999999995,
+      "end": 42.980999999999995
+    },
+    {
+      "word": "perforante",
+      "start": 43.022999999999996,
+      "end": 43.407
+    },
+    {
+      "word": "puede",
+      "start": 43.620999999999995,
+      "end": 44.004999999999995
+    },
+    {
+      "word": "coexistir",
+      "start": 44.047,
+      "end": 44.559
+    },
+    {
+      "word": "con",
+      "start": 44.644999999999996,
+      "end": 44.772999999999996
+    },
+    {
+      "word": "cambios",
+      "start": 44.815,
+      "end": 45.114
+    },
+    {
+      "word": "tisulares;",
+      "start": 45.157,
+      "end": 45.796
+    },
+    {
+      "word": "el",
+      "start": 45.967,
+      "end": 46.436
+    },
+    {
+      "word": "dibujo",
+      "start": 46.479,
+      "end": 46.906
+    },
+    {
+      "word": "no",
+      "start": 46.991,
+      "end": 47.247
+    },
+    {
+      "word": "demuestra",
+      "start": 47.29,
+      "end": 47.802
+    },
+    {
+      "word": "una",
+      "start": 47.844,
+      "end": 47.971999999999994
+    },
+    {
+      "word": "causa",
+      "start": 48.015,
+      "end": 48.314
+    },
+    {
+      "word": "única.",
+      "start": 48.355999999999995,
+      "end": 48.872891156462586
+    },
+    {
+      "word": "<end>",
+      "start": 49.11020408163265,
+      "end": 49.11020408163265
+    }
+  ]
+}
